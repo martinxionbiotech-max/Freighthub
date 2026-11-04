@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const guides = [
+  ['china-to-saudi-arabia', 'China → Saudi Arabia'], ['china-to-uae', 'China → UAE'],
+  ['china-to-qatar', 'China → Qatar'], ['china-to-kuwait', 'China → Kuwait'],
+  ['china-to-oman', 'China → Oman'], ['china-to-bahrain', 'China → Bahrain'],
+  ['fcl', 'FCL'], ['lcl', 'LCL'], ['air-freight', 'Air freight'],
+  ['ddp', 'DDP'], ['customs-clearance', 'Customs clearance'], ['certification', 'Certification'],
+  ['cost-and-transit', 'Cost & transit'],
+];
+---
+<BaseLayout title="Guides — Freighthub" description="China to GCC freight guides: methods, customs, certification and cost drivers.">
+  <h1>Guides</h1>
+  <ul>{guides.map(([slug, label]) => <li><a href={`/guides/${slug}/`}>{label}</a></li>)}</ul>
+</BaseLayout>

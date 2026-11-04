@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { gccRegion } from '../../regions/gcc';
+export function getStaticPaths() {
+  return gccRegion.ports.map((port) => ({ params: { slug: port.slug }, props: { port } }));
+}
+const { port } = Astro.props;
+const country = gccRegion.countries.find((c) => c.slug === port.country);
+---
+<BaseLayout title={`${port.name} — Freighthub`} description={`${port.name} port profile for China-origin freight.`} noindex>
+  <p><a href="/ports/">Ports</a> / {port.name}</p>
+  <h1>{port.name}</h1>
+  <p>{country?.name} · port profile scaffold — content production pending.</p>
+</BaseLayout>

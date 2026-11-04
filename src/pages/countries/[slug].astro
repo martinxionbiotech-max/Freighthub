@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { gccRegion } from '../../regions/gcc';
+export function getStaticPaths() {
+  return gccRegion.countries.map((country) => ({ params: { slug: country.slug }, props: { country } }));
+}
+const { country } = Astro.props;
+---
+<BaseLayout title={`${country.name} — Freighthub`} description={`China to ${country.name} freight: ports, customs, VAT and route context.`} noindex>
+  <p><a href="/countries/">Countries</a> / {country.name}</p>
+  <h1>{country.name}</h1>
+  <p>China → {country.name} freight guide. Draft scaffold — content production pending.</p>
+  <h2>At a glance</h2>
+  <ul><li>Currency: {country.currency}</li><li>VAT: {(country.vat * 100).toFixed(0)}%</li></ul>
+  <h2>Ports</h2>
+  <ul>{gccRegion.ports.filter((p) => p.country === country.slug).map((p) => <li><a href={`/ports/${p.slug}/`}>{p.name}</a></li>)}</ul>
+</BaseLayout>

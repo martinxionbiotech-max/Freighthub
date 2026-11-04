@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { gccRegion } from '../../regions/gcc';
+---
+<BaseLayout title="Ports — Freighthub" description="GCC port intelligence for China-origin freight.">
+  <h1>GCC ports</h1>
+  <ul>{gccRegion.ports.map((p) => <li><a href={`/ports/${p.slug}/`}>{p.name}</a></li>)}</ul>
+</BaseLayout>

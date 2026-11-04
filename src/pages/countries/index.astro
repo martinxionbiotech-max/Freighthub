@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { gccRegion } from '../../regions/gcc';
+---
+<BaseLayout title="Countries — Freighthub" description="China to GCC country guides: Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain.">
+  <h1>GCC countries</h1>
+  <p>Six markets, one sourcing origin. Pick a country for customs, ports and route context.</p>
+  <ul>
+    {gccRegion.countries.map((c) => <li><a href={`/countries/${c.slug}/`}>{c.name}</a> — VAT {(c.vat * 100).toFixed(0)}%</li>)}
+  </ul>
+</BaseLayout>
