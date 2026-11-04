@@ -143,3 +143,32 @@
 - 周日晚 07:00 做一次周复盘：删低质页、合并重复、调整下周队列
 
 > 如需我把它落成 cron，请确认时区（Asia/Shanghai 或 UTC）与是否允许夜间自动 push。
+
+---
+
+## 8. 搜索替代（Tavily 停用后）
+
+已验证 **Firecrawl CLI 可用**，作为 Tavily / web_search 的替代：
+
+```bash
+source ~/.bashrc
+firecrawl search "中国到沙特 海运 双清 费用" --limit 8
+firecrawl scrape "https://example.com/article"
+```
+
+- 版本：`firecrawl 1.23.3`
+- `firecrawl --status` 显示 “Not authenticated”，但 `firecrawl search` 实测能返回结果与正文；如后续失效，改用：
+  1. `web_fetch` 直接抓官网/港口/海关页面
+  2. Google News RSS：`https://news.google.com/rss/search?q=...`
+  3. 船公司/港口/海关官网直连
+
+## 9. 已配置的自动化
+
+- **夜间工作**：每天 **00:00（Asia/Shanghai）** 启动，目标在 07:30 前完成一批页面并 commit/push
+  - 任务：方法页 FCL / LCL / Air（后续顺延 customs / certification / DDP）
+  - 每页 2,500–3,500 词；Firecrawl 检索；build + 断链检查；auto-push
+- **每日汇报**：每天 **10:00（Asia/Shanghai）**
+  - 内容：最近 commit、构建、页面/内容进度、阻塞、下一步
+  - 已运行成功；下一次按日触发
+
+> 夜间任务与 10:00 汇报使用独立的 isolated 会话，报告通过 QQ 私聊回传。
