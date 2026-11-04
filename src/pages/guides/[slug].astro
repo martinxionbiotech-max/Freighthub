@@ -11,8 +11,18 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const doc = getDoc('guides', String(slug));
 const label = String(slug).replace(/-/g, ' ');
+const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${label} — Freighthub`);
+const pageDescription = doc?.description || `China to GCC freight guide: ${label}.`;
 ---
-<BaseLayout title={`${label} — Freighthub`} description={`China to GCC freight guide: ${label}.`} noindex={!doc}>
+<BaseLayout title={pageTitle} description={pageDescription} noindex={!doc}>
   <p><a href="/guides/">Guides</a> / {label}</p>
-  {doc ? <div set:html={doc.html} /> : <><h1>{label}</h1><p>Draft scaffold — content production pending.</p></>}
+  {doc ? (
+    <article>
+      <h1>{doc.title || label}</h1>
+      <p class="article-meta">By {doc.author || 'Freighthub editorial'} · Last reviewed {doc.updated || '2026-11-04'}</p>
+      <div set:html={doc.html} />
+    </article>
+  ) : (
+    <><h1>{label}</h1><p>Draft scaffold — content production pending.</p></>
+  )}
 </BaseLayout>
