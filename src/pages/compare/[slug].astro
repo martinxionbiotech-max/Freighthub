@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getDoc } from '../../lib/content';
 export function getStaticPaths() {
-  const comparisons = ['jebel-ali-vs-direct','jebel-ali-vs-khalifa','jeddah-vs-dammam','sea-vs-air','fcl-vs-lcl','ddp-vs-self-clearance','uae-vs-direct'];
+  const comparisons = ['jebel-ali-vs-direct','jebel-ali-vs-khalifa','jeddah-vs-dammam','sea-vs-air','fcl-vs-lcl','ddp-vs-self-clearance','uae-vs-direct','uae-vs-saudi'];
   return comparisons.map((slug) => ({ params: { slug } }));
 }
 const { slug } = Astro.params;
