@@ -1,0 +1,11 @@
+# Freighthub
+
+> China → GCC freight intelligence. Middle East only.
+
+## Core pages
+
+- [Home](/)
+- [Countries](/countries/)
+- [Ports](/ports/)
+- [Guides](/guides/)
+- [Updates](/updates/)

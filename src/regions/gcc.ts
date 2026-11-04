@@ -1,0 +1,26 @@
+export const gccRegion = {
+  slug: 'gcc',
+  name: 'China → GCC',
+  countries: [
+    { slug: 'saudi-arabia', name: 'Saudi Arabia', currency: 'SAR', vat: 0.15 },
+    { slug: 'uae', name: 'United Arab Emirates', currency: 'AED', vat: 0.05 },
+    { slug: 'qatar', name: 'Qatar', currency: 'QAR', vat: 0 },
+    { slug: 'kuwait', name: 'Kuwait', currency: 'KWD', vat: 0 },
+    { slug: 'oman', name: 'Oman', currency: 'OMR', vat: 0.05 },
+    { slug: 'bahrain', name: 'Bahrain', currency: 'BHD', vat: 0.10 },
+  ],
+  ports: [
+    { slug: 'jeddah', name: 'Jeddah Islamic Port', country: 'saudi-arabia' },
+    { slug: 'dammam', name: 'King Abdulaziz Port, Dammam', country: 'saudi-arabia' },
+    { slug: 'riyadh-dry-port', name: 'Riyadh Dry Port', country: 'saudi-arabia' },
+    { slug: 'jebel-ali', name: 'Jebel Ali Port', country: 'uae' },
+    { slug: 'khalifa', name: 'Khalifa Port', country: 'uae' },
+    { slug: 'sharjah', name: 'Sharjah Ports', country: 'uae' },
+    { slug: 'hamad', name: 'Hamad Port', country: 'qatar' },
+    { slug: 'shuwaikh', name: 'Shuwaikh Port', country: 'kuwait' },
+    { slug: 'shuaiba', name: 'Shuaiba Port', country: 'kuwait' },
+    { slug: 'sohar', name: 'Sohar Port', country: 'oman' },
+    { slug: 'salalah', name: 'Salalah Port', country: 'oman' },
+    { slug: 'khalifa-bin-salman', name: 'Khalifa Bin Salman Port', country: 'bahrain' },
+  ],
+} as const;
