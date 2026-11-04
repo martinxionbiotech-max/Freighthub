@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getDoc } from '../../lib/content';
+export function getStaticPaths() {
+  const sectors = ['electronics','batteries','chemicals','food','furniture','machinery','ecommerce'];
+  return sectors.map((slug) => ({ params: { slug } }));
+}
+const { slug } = Astro.params;
+const doc = getDoc('sectors', String(slug));
+const label = String(slug);
+---
+<BaseLayout title={`${label} freight to GCC — Freighthub`} description={`China to GCC freight for ${label}.`} noindex={!doc}>
+  <p><a href="/sectors/">Sectors</a> / {label}</p>
+  {doc ? <div set:html={doc.html} /> : <><h1>{label}</h1><p>Draft scaffold — content production pending.</p></>}
+</BaseLayout>
