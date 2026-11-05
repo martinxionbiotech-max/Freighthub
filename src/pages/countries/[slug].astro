@@ -7,13 +7,18 @@ export function getStaticPaths() {
 }
 const { country } = Astro.props;
 const doc = getDoc('countries', country.slug);
+const pageTitle = doc?.title ? `${doc.title} — Freighthub` : `${country.name} — Freighthub`;
+const pageDescription = doc?.description || `China to ${country.name} freight: ports, customs, VAT and route context.`;
 ---
-<BaseLayout title={`${country.name} — Freighthub`} description={`China to ${country.name} freight: ports, customs, VAT and route context.`} noindex>
+<BaseLayout title={pageTitle} description={pageDescription} noindex={!doc}>
   <p><a href="/countries/">Countries</a> / {country.name}</p>
   <h1>{country.name}</h1>
-  {doc ? <div set:html={doc.html} /> : <p>China → {country.name} freight guide. Draft scaffold — content production pending.</p>}
-  <h2>At a glance</h2>
-  <ul><li>Currency: {country.currency}</li><li>VAT: {(country.vat * 100).toFixed(0)}%</li></ul>
-  <h2>Ports</h2>
-  <ul>{gccRegion.ports.filter((p) => p.country === country.slug).map((p) => <li><a href={`/ports/${p.slug}/`}>{p.name}</a></li>)}</ul>
+  {doc ? (
+    <>
+      <p class="article-meta">By Freighthub editorial · Last reviewed {doc.updated || '2026-11-05'}</p>
+      <div set:html={doc.html} />
+    </>
+  ) : (
+    <p>China → {country.name} freight guide. Draft scaffold — content production pending.</p>
+  )}
 </BaseLayout>
