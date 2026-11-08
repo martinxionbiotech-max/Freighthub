@@ -72,7 +72,7 @@ Sohar was designed as an industrial complex, not a container hub. The port compa
 
 That history explains both Sohar's strength and its limitation. The strength is depth and land: seven container berths, a 2.4 km quay and drafts to 18 m, with a free zone directly behind the gate. The limitation is that container handling is a secondary business in a port built for tonnage. When 2026 pushed an extra 40% of containers through, the terminal could absorb it because it had spare capacity — but spare capacity and service quality are not the same thing, and a terminal can only stretch so far before berth windows and yard density start to bite.
 
-For a Chinese shipper, Sohar is the right answer for: Muscat and the Batinah coast, the Sohar free zone, and road delivery into Dubai and the northern Emirates. It is the wrong answer for Salalah, Dhofar or anything requiring a southern Omani delivery.
+For a Chinese shipper, Sohar is the right answer for: Muscat and the Batinah coast, the Sohar free zone, and road delivery into Dubai and the northern Emirates. It is the wrong answer for Salalah, Dhofar or anything requiring a southern Omani delivery. The [Sohar port page](/ports/sohar/) has the berth-level detail, the CMA CGM terminal timeline and the clearance sequence.
 
 ### Salalah: a relay hub wearing a country's flag
 

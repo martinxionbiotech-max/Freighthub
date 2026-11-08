@@ -4,8 +4,8 @@
 
 ## Status — 8 November 2026
 - Priority 1 (Qatar, Kuwait, Oman, Bahrain): **complete**. All four hubs published at 3,900–4,200 words.
-- Priority 2: `hamad.md` and `shuwaikh.md` **complete** (2,500–2,800 words). Remaining: shuaiba, sohar, salalah, khalifa-bin-salman, dammam, riyadh-dry-port, khalifa, sharjah.
-- Next night: `shuaiba.md` + `sohar.md`.
+- Priority 2: `hamad.md`, `shuwaikh.md`, `shuaiba.md` and `sohar.md` **complete** (2,500–3,700 words). Remaining: salalah, khalifa-bin-salman, dammam, riyadh-dry-port, khalifa, sharjah.
+- Next night: `salalah.md` + `khalifa-bin-salman.md`.
 
 ## Priority 1 — remaining country hubs (2 per night)
 1. `src/content/countries/qatar.md` — 3,000–4,000 words
