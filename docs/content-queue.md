@@ -2,10 +2,10 @@
 
 > Domain `freighthub.net` is a **placeholder** until content is complete. Do not block on deployment; build locally and keep the repo clean.
 
-## Status — 9 November 2026
+## Status — 10 November 2026
 - Priority 1 (Qatar, Kuwait, Oman, Bahrain): **complete**. All four hubs published at 3,900–4,200 words.
-- Priority 2: `hamad.md`, `shuwaikh.md`, `shuaiba.md`, `sohar.md`, `salalah.md` and `khalifa-bin-salman.md` **complete**. Remaining: dammam, riyadh-dry-port, khalifa, sharjah.
-- Next night: `dammam.md` + `riyadh-dry-port.md`.
+- Priority 2: `hamad.md`, `shuwaikh.md`, `shuaiba.md`, `sohar.md`, `salalah.md`, `khalifa-bin-salman.md`, `dammam.md` and `riyadh-dry-port.md` **complete**. Remaining: khalifa, sharjah.
+- Next night: `khalifa.md` + `sharjah.md`.
 
 ## Priority 1 — remaining country hubs (2 per night)
 1. `src/content/countries/qatar.md` — 3,000–4,000 words
