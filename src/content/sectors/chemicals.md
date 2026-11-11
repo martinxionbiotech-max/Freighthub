@@ -1,6 +1,7 @@
 ---
+seoTitle: "Chemical Freight to the GCC (2026) — Freighthub"
 title: "Chemical Freight to the GCC: Classification, SDS and Import Permits (2026)"
-description: "Shipping chemicals from China to the GCC in 2026: UN classification, GHS safety data sheets, import permits, UN packaging, ISO tanks, segregation, storage, country differences and the cost of a mis-declared hazardous cargo."
+description: "Shipping chemicals from China to the GCC: UN classification, GHS safety data sheets, import permits, packaging, segregation and storage rules."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

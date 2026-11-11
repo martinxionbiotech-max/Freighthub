@@ -1,6 +1,7 @@
 ---
+seoTitle: "Oman at 5% VAT: Sohar Arithmetic — Freighthub"
 title: "Oman at 5% VAT: Sohar's landed-cost arithmetic"
-description: "Oman's 5% VAT is low by GCC standards, but the Sohar land leg and the UAE border change the total. A short briefing for importers using Oman as a northern gateway."
+description: "Oman's 5% VAT is low by GCC standards, but the Sohar land leg and the UAE border change the total. A briefing for northern-gateway importers."
 date: "2026-10-30"
 country: "Oman"
 topic: "VAT"

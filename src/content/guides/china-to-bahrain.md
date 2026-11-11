@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Bahrain Freight Guide 2026 — Freighthub"
 title: "China to Bahrain Freight: Khalifa Bin Salman Port and the Causeway Economy (2026)"
-description: "Shipping from China to Bahrain in 2026: Khalifa Bin Salman Port, 10% VAT, 5% duty, the Saudi causeway, free zones, conformity, importer rules, transit ranges and the cost drivers in the GCC's smallest market."
+description: "Shipping from China to Bahrain in 2026: KBSP, 10% VAT, 5% duty, the Saudi causeway, conformity, importer rules and the cost drivers."
 country: "bahrain"
 updated: "2026-11-11"
 ---

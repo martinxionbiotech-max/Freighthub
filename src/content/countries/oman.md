@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Oman Freight 2026 — Freighthub"
 title: "China to Oman Freight 2026: Sohar, Salalah and the Only GCC Door Outside Hormuz"
-description: "Why Oman became the Gulf's pressure valve in 2026: Sohar's 40% container surge, Salalah's 2028 concession cliff, Duqm's project-cargo bet, 5% duty, 5% VAT and the Bayan and CoC gates."
+description: "Why Oman became the Gulf's pressure valve in 2026: Sohar's container surge, Salalah's 2028 concession cliff, 5% duty, 5% VAT and the Bayan and CoC gates."
 country: "oman"
 updated: "2026-11-06"
 ---
@@ -58,7 +59,7 @@ That is not a marketing story. It is a routing fact with three consequences.
 
 **First, Oman is now the default contingency, not the alternative.** Before 2026, a forwarder quoting Oman was usually solving a specific problem: a project cargo, a Salalah relay, a Sohar free-zone factory. In 2026, Oman became the answer to a general question — "where do we discharge if the Gulf is closed?" That shift in default status is worth more than any tariff differential, because defaults are sticky. Buyers who built a Sohar routing in March will still be using it in 2028.
 
-**Second, the benefit is concentrated in the north.** Sohar sits on the Gulf of Oman, outside the strait, close to the UAE border and within trucking range of Dubai, Abu Dhabi and the Saudi Eastern Province. Salalah sits 1,000 km south of Muscat on the Arabian Sea. Both are outside Hormuz, but only Sohar is inside the commercial gravity of the Gulf. That is why Sohar's container volume moves with regional disruption while Salalah's moves with carrier network design.
+**Second, the benefit is concentrated in the north.** [Sohar](/ports/sohar/) sits on the Gulf of Oman, outside the strait, close to the UAE border and within trucking range of Dubai, Abu Dhabi and the Saudi Eastern Province. [Salalah](/ports/salalah/) sits 1,000 km south of Muscat on the Arabian Sea. Both are outside Hormuz, but only Sohar is inside the commercial gravity of the Gulf. That is why Sohar's container volume moves with regional disruption while Salalah's moves with carrier network design.
 
 **Third, Oman's domestic market cannot absorb the capacity it has built.** The country has about five million people and an import base that supports perhaps a few hundred thousand TEU of genuine gateway cargo. Everything above that is relay, transshipment or trans-border road haulage. A Chinese exporter who mistakes Oman's port statistics for Omani demand will over-invest in a market that is smaller than a single Chinese prefecture.
 
@@ -78,7 +79,7 @@ For a Chinese shipper, Sohar is the right answer for: Muscat and the Batinah coa
 
 Salalah is one of the most efficient container terminals in the world — second globally in the World Bank's 2022 Container Port Performance Index — and almost none of that performance is for Oman. The port sits 15 km south of Salalah city with near-zero deviation from the Asia–Europe lane, equidistant from East Africa, the Indian subcontinent and the Gulf. It handles more than 3,200 vessel calls a year and connects to more than 50 direct ports.
 
-The cargo mix tells the story: 90–95% transshipment, 5–10% gateway. Salalah is a network node, and its customers are carriers, not importers. A Chinese seller shipping to Oman who is told "we discharge at Salalah" should immediately ask how the box gets to Muscat. The answer is usually a 1,000 km truck leg or a feeder, and neither is included in the ocean rate.
+The cargo mix tells the story: 90–95% transshipment, 5–10% gateway. Salalah is a network node, and its customers are carriers, not importers. A Chinese seller shipping to Oman who is told "we discharge at Salalah" should immediately ask how the box gets to Muscat. The answer is usually a 1,000 km truck leg or a feeder, and neither is included in the ocean rate. The [Salalah port page](/ports/salalah/) has the concession and relay detail.
 
 ### Duqm: the long bet
 
@@ -104,11 +105,11 @@ Our judgment: the 2028 transition is more likely to be orderly than chaotic, bec
 
 **1. Decide which Oman you are buying.** Sohar for northern delivery and UAE road haulage. Salalah only if your forwarder can show you the onward leg and its cost. Duqm for project cargo and heavy lifts. These are not interchangeable, and a quote that names "Oman" without a port is not a quote.
 
-**2. Price the road leg before the ocean leg.** Sohar to Dubai is about 170 km; Sohar to Riyadh is roughly 1,200 km. Both are routine. Neither is free, and both cross a border where your Omani clearance stops being valid.
+**2. Price the road leg before the ocean leg.** Sohar to Dubai is about 170 km; Sohar to Riyadh is roughly 1,200 km. Both are routine. Neither is free, and both cross a border where your Omani clearance stops being valid. If the onward market is the UAE, start from the [China to UAE guide](/guides/china-to-uae/); if it is Saudi Arabia, use the [China to Saudi guide](/guides/china-to-saudi-arabia/) and price the border separately.
 
 **3. Get the importer of record and Bayan access right.** Bayan is Oman's single-window customs environment, operated by the Royal Oman Police, authenticated by PKI. It is a company system: the importer needs a commercial registration and an authorised user, and the declaration runs on 12-digit HS codes. A Chinese seller quoting DDP still needs an Omani entity on the declaration.
 
-**4. Start the conformity file before production, not before shipment.** The Omani Conformity Scheme, run by the Directorate General for Standards and Metrology, requires a certificate of conformity or a type examination certificate for regulated products, valid for one year. Low-voltage electrical equipment and appliances are the core of the scope, and the list is growing.
+**4. Start the conformity file before production, not before shipment.** The Omani Conformity Scheme, run by the Directorate General for Standards and Metrology, requires a certificate of conformity or a type examination certificate for regulated products, valid for one year. Low-voltage electrical equipment and appliances are the core of the scope, and the list is growing. The [GCC certification guide](/guides/certification/) compares the Omani route with SABER, ECAS and KUCAS.
 
 **5. Treat VAT as working capital, not cost.** Five percent VAT is recoverable for a registered importer, but it is paid at the border and reclaimed later. On a 40-foot container of mid-value goods, that is a real cash-flow item, and it is the reason some Omani importers prefer to buy on a landed-price basis rather than clear themselves.
 
@@ -116,7 +117,7 @@ Our judgment: the 2028 transition is more likely to be orderly than chaotic, bec
 
 ## Cost and transit drivers: where the money actually goes
 
-Ocean freight is the visible line; it is rarely the largest one for Oman. A typical China→Sohar FCL shipment splits roughly like this *(editorial judgment based on quote structures, not a rate survey)*:
+Ocean freight is the visible line; it is rarely the largest one for Oman. A typical China→Sohar FCL shipment splits roughly like this *(editorial judgment based on quote structures, not a rate survey)*. The [cost and transit guide](/guides/cost-and-transit/) explains how to compare these buckets across modes:
 
 | Cost bucket | Share of landed cost | What moves it |
 |---|---|---|
@@ -165,6 +166,18 @@ Four structural points explain most of the dispersion.
 **Avoid** planning a 2029 supply chain around Salalah's current service pattern until the post-2028 operator is named and its carrier commitments are visible.
 
 The contrarian view: Oman is the GCC market where a Chinese exporter can most easily build a *resilient* channel, precisely because the country has over-built its ports and under-built its domestic demand. The constraint is not access. It is knowing which of the three Omans you are actually selling into.
+
+## Related reading
+
+- [China to Oman freight guide](/guides/china-to-oman/) — the route-level version, with transit bands and quote anatomy.
+- [Sohar Port](/ports/sohar/) — berth data, the CMA CGM–Asyad terminal and the diversion-boom limits.
+- [Salalah Port](/ports/salalah/) — the relay economics and the 2028 concession cliff.
+- [Oman at 5% VAT: Sohar's landed-cost arithmetic](/updates/oman-vat-sohar/) — the dated tax briefing.
+- [Jebel Ali versus a direct call](/compare/jebel-ali-vs-direct/) — why so much Oman cargo still relays.
+- [Machinery freight to the GCC](/sectors/machinery/) — the project-cargo case for Duqm and Sohar.
+- [Jebel Ali Port](/ports/jebel-ali/) — the hub that feeds Oman's relay and road-haulage model.
+- [GCC customs clearance](/guides/customs-clearance/) — the Bayan, valuation and inspection sequence.
+- [Sea versus air to the GCC](/compare/sea-vs-air/) — when air is viable for Muscat or Dubai delivery.
 
 ## FAQ
 

@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Kuwait Freight Guide 2026 — Freighthub"
 title: "China to Kuwait Freight: Shuwaikh, Shuaiba and the Agency Question (2026)"
-description: "Shipping from China to Kuwait in 2026: Shuwaikh and Shuaiba ports, transit ranges, 5% duty, no VAT, KUCAS conformity, local agency rules, importer requirements and the cost drivers that make Kuwait expensive."
+description: "Shipping from China to Kuwait in 2026: Shuwaikh and Shuaiba, transit ranges, 5% duty, no VAT, KUCAS, agency rules and the cost drivers."
 country: "kuwait"
 updated: "2026-11-11"
 ---

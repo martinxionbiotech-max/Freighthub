@@ -1,4 +1,5 @@
 ---
+seoTitle: "Shuaiba Port 2026: Berths and Limits — Freighthub"
 title: "Shuaiba Port 2026: 20 Berths, No Storage"
 description: "Shuaiba Port in November 2026: 20 berths, 282,870 TEU, no storage and no shore cranes, the AD Ports MoU, the 2026 tender and Kuwait's war-risk premium."
 country: "kuwait"

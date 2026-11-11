@@ -1,4 +1,5 @@
 ---
+seoTitle: "UAE E-Invoicing: What to Prepare — Freighthub"
 title: "UAE e-invoicing: what importers should prepare"
 description: "The UAE is phasing in electronic invoicing for business transactions. What it means for importers, customs files and the VAT return."
 date: "2026-11-04"

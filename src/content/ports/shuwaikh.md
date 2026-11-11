@@ -1,6 +1,7 @@
 ---
+seoTitle: "Shuwaikh Port 2026 — Freighthub"
 title: "Shuwaikh Port 2026: Tide Windows, Two Box Berths"
-description: "Shuwaikh Port in November 2026: the 8.5 m channel, a two-metre tide window, 21 berths of which two take containers, KUCAS clearance, drone-attack risk and booking rules."
+description: "Shuwaikh Port in November 2026: the 8.5 m channel, the tide window, 21 berths of which two take containers, KUCAS clearance and drone-attack risk."
 country: "kuwait"
 updated: "2026-11-08"
 ---

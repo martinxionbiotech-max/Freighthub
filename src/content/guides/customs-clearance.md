@@ -1,6 +1,7 @@
 ---
+seoTitle: "GCC Customs Clearance Guide 2026 — Freighthub"
 title: "Customs Clearance in the GCC: The File That Actually Clears (2026)"
-description: "A practical guide to GCC customs clearance in 2026: documents, HS classification, CIF valuation, inspection, free time, single windows, the country differences that trip up exporters, and how to choose a broker."
+description: "A practical guide to GCC customs clearance in 2026: documents, HS classification, CIF valuation, inspection, free time and choosing a broker."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

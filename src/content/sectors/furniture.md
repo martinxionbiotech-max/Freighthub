@@ -1,6 +1,7 @@
 ---
+seoTitle: "Furniture Freight to the GCC (2026) — Freighthub"
 title: "Furniture Freight to the GCC: Volume, Damage and Container Loading (2026)"
-description: "Shipping furniture from China to the GCC in 2026: LCL versus FCL, volumetric weight, flat-pack loading, moisture and damage control, ISPM 15, formaldehyde and upholstery rules, project furniture and the cost drivers that decide the margin."
+description: "Shipping furniture from China to the GCC: LCL versus FCL, volumetric weight, flat-pack loading, moisture damage, ISPM 15 and upholstery rules."
 country: "uae"
 updated: "2026-11-11"
 ---

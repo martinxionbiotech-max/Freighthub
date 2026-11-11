@@ -1,4 +1,5 @@
 ---
+seoTitle: "Kuwait Agency Rules: Decide First — Freighthub"
 title: "Kuwait agency rules: the decision before the first shipment"
 description: "Kuwait's commercial agency law can determine who is allowed to import and sell a product. Why the agency agreement matters more than the freight rate."
 date: "2026-10-28"

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Q4 Booking Window: December Cut-Off — Freighthub"
 title: "Q4 booking window: the dates that decide December delivery"
 description: "Why the first week of November is the practical cut-off for pre-Christmas and Q4 GCC replenishment, and what to do if you have already missed it."
 date: "2026-11-11"

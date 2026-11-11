@@ -1,6 +1,7 @@
 ---
+seoTitle: "Jebel Ali vs Direct Calls (2026) — Freighthub"
 title: "Jebel Ali vs Direct: Transhipment or a Direct Call? (2026)"
-description: "A decision guide for China–GCC routing in 2026: when transhipping through Jebel Ali beats a direct call to Jeddah, Dammam, Hamad or Shuwaikh, and when the extra handling and customs cost make direct the obvious choice."
+description: "When transhipping through Jebel Ali beats a direct call to Jeddah, Dammam, Hamad or Shuwaikh, and when the extra handling makes direct the obvious choice."
 country: "uae"
 updated: "2026-11-11"
 ---

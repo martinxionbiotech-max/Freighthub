@@ -1,6 +1,7 @@
 ---
+seoTitle: "Machinery Freight to the GCC (2026) — Freighthub"
 title: "Machinery Freight to the GCC: Project Cargo, Crating and Installation Risk (2026)"
-description: "Shipping machinery from China to the GCC in 2026: HS 84/85/90, flat racks and open tops, heavy lift, ISPM 15 crating, voltage and manual requirements, pre-shipment inspection, spare parts and the delivery risks that stop a project."
+description: "Shipping machinery from China to the GCC: HS 84/85/90, flat racks, heavy lift, ISPM 15 crating, voltage requirements and installation risk."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

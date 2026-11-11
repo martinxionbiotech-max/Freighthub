@@ -6,7 +6,7 @@ export function getStaticPaths() {
 }
 const { doc } = Astro.props;
 ---
-<BaseLayout title={`${doc.title} — Freighthub`} description={doc.description} noindex={!doc}>
+<BaseLayout title={doc.seoTitle || `${doc.title} — Freighthub`} description={doc.description} noindex={!doc}>
   <p><a href="/updates/">Updates</a> / {doc.date}</p>
   <article>
     <h1>{doc.title}</h1>

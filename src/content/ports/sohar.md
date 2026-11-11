@@ -1,4 +1,5 @@
 ---
+seoTitle: "Sohar Port 2026 — Freighthub"
 title: "Sohar Port 2026: Outside Hormuz, Inside the Box Trade"
 description: "Sohar Port in November 2026: 545,295 TEU in H1, 18 m drafts, the CMA CGM–Asyad terminal, Hafeet Rail and the limits of Oman's diversion boom."
 country: "oman"

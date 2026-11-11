@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Qatar Freight Guide 2026 — Freighthub"
 title: "China to Qatar Freight: Hamad Port, 0% VAT and Small-Market Economics (2026)"
-description: "Shipping from China to Qatar in 2026: Hamad Port, transit ranges, 5% duty, the absent VAT, QGOSM conformity, importer rules, free zones, cost drivers and why small-market cargo prices differently."
+description: "Shipping from China to Qatar in 2026: Hamad Port, transit ranges, 5% duty, no VAT, QGOSM conformity, importer rules and small-market economics."
 country: "qatar"
 updated: "2026-11-11"
 ---

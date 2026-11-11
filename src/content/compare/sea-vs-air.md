@@ -1,6 +1,7 @@
 ---
+seoTitle: "Sea vs Air to the GCC: Break-Even (2026) — Freighthub"
 title: "Sea vs Air Freight to the GCC: The Break-Even (2026)"
-description: "Sea versus air freight from China to the GCC in 2026: cost per kilo, transit, value density, capacity, battery and DG limits, carbon and the decision rules that tell you when speed is worth the premium."
+description: "Sea versus air from China to the GCC: cost per kilo, transit, value density, capacity, battery limits and the rules that decide when speed pays."
 country: "uae"
 updated: "2026-11-11"
 ---

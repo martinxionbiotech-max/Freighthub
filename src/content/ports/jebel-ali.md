@@ -1,4 +1,5 @@
 ---
+seoTitle: "Jebel Ali Port 2026 — Freighthub"
 title: "Jebel Ali Port 2026: Landbridge, Congestion and Clearance"
 description: "Jebel Ali in November 2026: ad hoc vessel calls, the Khor Fakkan landbridge, 12–15 day transfers, JAFZA clearance and what to book instead."
 country: "united-arab-emirates"

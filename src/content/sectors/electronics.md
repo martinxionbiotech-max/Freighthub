@@ -1,6 +1,7 @@
 ---
+seoTitle: "Electronics Freight to the GCC (2026) — Freighthub"
 title: "Electronics Freight to the GCC: Air, Sea and the Certification Trap (2026)"
-description: "Shipping electronics from China to the GCC in 2026: air versus sea economics, lithium battery rules, SABER/ECAS/TDRA certification, packaging, insurance, pilferage, warranty returns and the cost drivers that decide the mode."
+description: "Shipping electronics from China to the GCC: air versus sea economics, battery rules, SABER/ECAS certification, packaging, insurance and returns."
 country: "uae"
 updated: "2026-11-11"
 ---

@@ -1,4 +1,5 @@
 ---
+seoTitle: "SABER Model Mismatch — Freighthub"
 title: "SABER model mismatch: the certificate problem that stops the most cargo"
 description: "A practical note on the most common Saudi conformity failure: a valid product certificate that does not cover the model in the shipment."
 date: "2026-11-06"

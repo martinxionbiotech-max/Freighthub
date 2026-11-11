@@ -1,6 +1,7 @@
 ---
+seoTitle: "FCL vs LCL to the GCC: The Crossover (2026) — Freighthub"
 title: "FCL vs LCL to the GCC: The Crossover Point (2026)"
-description: "Full container versus less-than-container load for China–GCC shipping in 2026: cost crossover, handling risk, transit, destination charges, dangerous goods and the volume rules that decide which is cheaper."
+description: "FCL versus LCL for China–GCC shipping: the cost crossover, handling risk, transit, destination charges and the volume rules that decide."
 country: "uae"
 updated: "2026-11-11"
 ---

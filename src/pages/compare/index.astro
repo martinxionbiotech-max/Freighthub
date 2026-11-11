@@ -1,7 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { collection } from '../../lib/content';
+const comparisons = collection('compare').sort((a, b) => a.slug.localeCompare(b.slug));
 ---
-<BaseLayout title="Compare — Freighthub" description="GCC freight decisions compared.">
-  <h1>Compare</h1>
-  <p>Decision pages scaffold.</p>
+<BaseLayout title="Freight Comparisons for the GCC — Freighthub" description="Eight decision pages on China–GCC freight: ports, modes, Incoterms and market entry, compared on cost, control, transit and compliance.">
+  <h1>Freight comparisons</h1>
+  <p class="article-meta">Decision pages · Last reviewed 11 November 2026</p>
+  <p>GCC freight decisions are usually framed as a choice between two obvious options: Jebel Ali or a direct call, sea or air, DDP or self-clearance. The useful answer depends on the consignee's geography, the cargo's value density, who holds the import licence and who can recover the VAT. Each page below sets out the comparison, the crossover point and the cases where the obvious choice is wrong. The numbers are planning ranges and the reasoning is labelled where it is editorial judgement.</p>
+  <ul class="compare-list">
+    {comparisons.map((c) => (
+      <li>
+        <h2><a href={`/compare/${c.slug}/`}>{c.title}</a></h2>
+        <p>{c.description}</p>
+      </li>
+    ))}
+  </ul>
+  <p>For the standards behind these pages, see <a href="/methodology/">methodology</a>. For current conditions, see <a href="/updates/">updates</a>.</p>
 </BaseLayout>

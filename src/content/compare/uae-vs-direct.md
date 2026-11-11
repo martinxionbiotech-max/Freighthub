@@ -1,6 +1,7 @@
 ---
+seoTitle: "UAE Hub vs Direct Import (2026) — Freighthub"
 title: "UAE Hub vs Direct Import: Which Supply Model? (2026)"
-description: "Using the UAE as a GCC distribution hub versus importing direct into Saudi Arabia, Qatar, Kuwait, Oman or Bahrain: cost, duty, stock, control and the order profiles that make each model work."
+description: "Using the UAE as a GCC distribution hub versus importing direct: cost, duty, stock, control and the order profiles that make each model work."
 country: "uae"
 updated: "2026-11-11"
 ---

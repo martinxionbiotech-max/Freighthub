@@ -1,6 +1,7 @@
 ---
+seoTitle: "Riyadh Dry Port 2026 — Freighthub"
 title: "Riyadh Dry Port: Rail, Bonded Storage and Clearance (2026)"
-description: "Riyadh Dry Port in November 2026: 30 days of free storage, seven daily trains from Dammam, a 1.5m-container expansion and the customs sequence that decides whether inland clearance pays."
+description: "Riyadh Dry Port in November 2026: 30 days of free storage, seven daily trains from Dammam, a 1.5m-container expansion and the inland clearance sequence."
 country: "saudi-arabia"
 updated: "2026-11-10"
 ---

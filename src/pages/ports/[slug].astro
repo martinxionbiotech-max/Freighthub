@@ -9,8 +9,15 @@ const { port } = Astro.props;
 const country = gccRegion.countries.find((c) => c.slug === port.country);
 const doc = getDoc('ports', port.slug);
 ---
-<BaseLayout title={doc?.title ? `${doc.title} — Freighthub` : `${port.name} — Freighthub`} description={doc?.description || `${port.name} port profile for China-origin freight.`} noindex={!doc}>
+<BaseLayout title={doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${port.name} — Freighthub`)} description={doc?.description || `${port.name} port profile for China-origin freight.`} noindex={!doc}>
   <p><a href="/ports/">Ports</a> / {port.name}</p>
   <h1>{port.name}</h1>
-  {doc ? <div set:html={doc.html} /> : <p>{country?.name} · port profile scaffold — content production pending.</p>}
+  {doc ? (
+    <>
+      <p class="article-meta">By {doc.author || 'Freighthub editorial'} · Last reviewed {doc.updated || '2026-11-04'}</p>
+      <div set:html={doc.html} />
+    </>
+  ) : (
+    <p>{country?.name} · port profile scaffold — content production pending.</p>
+  )}
 </BaseLayout>

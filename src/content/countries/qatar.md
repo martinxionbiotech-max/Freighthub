@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Qatar Freight 2026 — Freighthub"
 title: "China to Qatar Freight 2026: Hamad Port, Hormuz Exposure and the Zero-VAT Trap"
-description: "How China–Qatar freight actually works in late 2026: Hamad Port's capacity versus service frequency, Hormuz-only access, 5% duty, no VAT, and the QGOSM conformity gate."
+description: "How China–Qatar freight works in late 2026: Hamad Port's capacity versus service frequency, Hormuz-only access, 5% duty, no VAT and QGOSM conformity."
 country: "qatar"
 updated: "2026-11-05"
 ---
@@ -9,7 +10,7 @@ updated: "2026-11-05"
 
 China to Qatar is a one-port market. Almost every container enters through [Hamad Port](/ports/hamad/), south of Doha, and almost every container reaches Hamad through the Strait of Hormuz. That single fact explains more about your transit time and your risk premium than any rate sheet.
 
-Ocean transit from Shanghai, Ningbo or Shekou is commonly 18–25 days on a direct rotation and 24–34 days with transshipment *(industry claim)*. Add two to five days for clearance and inland delivery. Duty is 5% on CIF for most goods. VAT is zero — Qatar still has no VAT — which makes a DDP quote simpler to build than a Saudi or UAE one, but not cheaper. The real gates are service frequency, Hormuz risk and QGOSM conformity, not tax.
+Ocean transit from Shanghai, Ningbo or Shekou is commonly 18–25 days on a direct rotation and 24–34 days with [transshipment](/compare/jebel-ali-vs-direct/) *(industry claim)*. Add two to five days for clearance and inland delivery. Duty is 5% on CIF for most goods. VAT is zero — Qatar still has no VAT — which makes a DDP quote simpler to build than a Saudi or UAE one, but not cheaper. The real gates are service frequency, Hormuz risk and QGOSM conformity, not tax.
 
 ## Key facts
 
@@ -93,7 +94,7 @@ The lesson is unglamorous: Qatar rewards relationships. A forwarder with a nomin
 
 ## Cost and transit drivers: where the money actually goes
 
-Ocean freight is visible; it is rarely the largest line. A typical China→Qatar FCL shipment splits roughly like this *(editorial judgment based on quote structures, not a rate survey)*:
+Ocean freight is visible; it is rarely the largest line. A typical China→Qatar FCL shipment splits roughly like this *(editorial judgment based on quote structures, not a rate survey)*. The [cost and transit guide](/guides/cost-and-transit/) explains how the buckets compare across modes:
 
 | Cost bucket | Share of landed cost | What moves it |
 |---|---|---|
@@ -115,7 +116,7 @@ Three structural points explain most of the dispersion.
 
 ## Ports and routing: one container port, three supporting facilities
 
-**Hamad Port** is the container gateway: two 1,200 m container berths at 17 m draft, a general cargo terminal, a grain terminal and a free zone adjacent to the quay.
+**[Hamad Port](/ports/hamad/)** is the container gateway: two 1,200 m container berths at 17 m draft, a general cargo terminal, a grain terminal and a free zone adjacent to the quay.
 
 **Al Ruwais Port** is the northern gateway, close to the Saudi border and the north-field industrial area. It handles general cargo, livestock and some feeder traffic. For northern destinations it can save a day of trucking; for Doha it is the wrong end of the country.
 
@@ -131,7 +132,7 @@ There is no VAT. That is the structural difference between Qatar and Saudi Arabi
 
 The absence of VAT does not make Qatar cheap. Duty is still assessed on CIF, and CIF includes freight. In a market where the Hormuz premium can add four figures per FEU, the dutiable base moves with the risk premium. That is the "zero-VAT trap": a quote that assumes zero tax and a normal freight rate can still land 20% above plan.
 
-Clearance runs through **Al Nadeeb**, Qatar's electronic single window. The declaration, permits, inspection and release are handled in one system, and most routine consignments clear in two to five working days. The delays come from three places: a missing CoC for a regulated product, a valuation query, and an inspection triggered by the HS line. All three are avoidable before the vessel sails.
+Clearance runs through **Al Nadeeb**, Qatar's electronic single window. The declaration, permits, inspection and release are handled in one system, and most routine consignments clear in two to five working days. The delays come from three places: a missing CoC for a regulated product, a valuation query, and an inspection triggered by the HS line. All three are avoidable before the vessel sails. The [GCC customs clearance guide](/guides/customs-clearance/) covers the document set and the valuation logic.
 
 Two procedural points that catch Chinese exporters:
 
@@ -140,7 +141,7 @@ Two procedural points that catch Chinese exporters:
 
 ## Conformity: QGOSM, the G mark and food
 
-Qatar's conformity regime is narrower than Saudi Arabia's SABER but it is not optional. The Qatar General Organization for Standards and Metrology (QGOSM) runs a pre-shipment verification programme. Regulated products must be accompanied by a certificate of conformity issued by an approved body before shipment.
+Qatar's conformity regime is narrower than Saudi Arabia's SABER but it is not optional. The Qatar General Organization for Standards and Metrology (QGOSM) runs a pre-shipment verification programme. Regulated products must be accompanied by a certificate of conformity issued by an approved body before shipment. The [GCC certification guide](/guides/certification/) maps the Qatari route against the other five markets.
 
 The regulated list has been built in phases. The first two phases cover vehicle tyres, safety belts, wheel rims, brake pads, exhaust fans, electric irons and hair dryers. Later phases extend into electrical products and building materials. The list is not static, and the direction is expansion.
 
@@ -170,9 +171,20 @@ The practical advice: **treat conformity as a lead-time item, not a documentatio
 
 **Avoid** assuming that a Gulf-wide port story applies to Qatar. Jebel Ali's capacity, Jeddah's congestion and Hamad's underutilisation are three different problems. Qatar's issue is connectivity and chokepoint risk, not berth space.
 
-**Avoid** competing on ocean rate alone. In a market where the risk premium can move by four figures per FEU, a US$150 difference in base rate is noise. Compete on clearance certainty and landed cost.
+**Avoid** competing on ocean rate alone. In a market where the risk premium can move by four figures per FEU, a US$150 difference in base rate is noise. Compete on clearance certainty and landed cost. If a buyer asks for DDP, the [DDP guide](/guides/ddp/) explains why the importer of record still has to be Qatari.
 
 The contrarian view: Qatar is the GCC market where a small exporter can most easily build a compliant, predictable channel — precisely because the port is not congested and the tax system is simple. The constraint is not the country. It is the number of sailings.
+
+## Related reading
+
+- [China to Qatar freight guide](/guides/china-to-qatar/) — the route-level version, with quote anatomy and transit bands.
+- [Hamad Port](/ports/hamad/) — CT1 versus CT2, the channel constraint and the free-zone rules.
+- [Qatar's no-VAT position](/updates/qatar-no-vat/) — why the advantage has an expiry date.
+- [Sea versus air to the GCC](/compare/sea-vs-air/) — when the Doha air route beats a relay.
+- [Electronics freight to the GCC](/sectors/electronics/) — the sector most exposed to air capacity and certification.
+- [Food freight to the GCC](/sectors/food/) — the separate Ministry of Public Health route.
+- [Jebel Ali versus Khalifa Port](/compare/jebel-ali-vs-khalifa/) — the UAE relay alternatives.
+- [China to UAE freight guide](/guides/china-to-uae/) — the hub that supplies most Qatari relay capacity.
 
 ## FAQ
 

@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to UAE Freight Guide 2026 — Freighthub"
 title: "China to UAE Freight: Ports, Free Zones and Landed Cost (2026)"
-description: "Shipping from China to the UAE in 2026: Jebel Ali, Khalifa and Sharjah, 5% VAT, 5% duty, free-zone treatment, ESMA/ECAS conformity, importer rules, transit ranges and the cost traps that decide the total."
+description: "Shipping from China to the UAE in 2026: Jebel Ali, Khalifa and Sharjah, 5% VAT, 5% duty, free zones, ECAS conformity and the cost traps."
 country: "uae"
 updated: "2026-11-11"
 ---

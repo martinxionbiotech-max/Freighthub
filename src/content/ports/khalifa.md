@@ -1,6 +1,7 @@
 ---
+seoTitle: "Khalifa Port Abu Dhabi 2026 — Freighthub"
 title: "Khalifa Port: Abu Dhabi's Deep-Water Gateway (2026)"
-description: "Khalifa Port in 2026: the Taweelah terminal, CMA Terminals' container concession, KEZAD industrial hinterland, rail and road links, Abu Dhabi clearance and the cost drivers that decide whether it beats Jebel Ali."
+description: "Khalifa Port in 2026: the Taweelah terminal, CMA Terminals, KEZAD's industrial hinterland, Abu Dhabi clearance and the cost drivers versus Jebel Ali."
 country: "uae"
 updated: "2026-11-11"
 ---

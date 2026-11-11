@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Saudi Arabia Freight Guide 2026 — Freighthub"
 title: "China to Saudi Arabia Freight: Routes, Customs and Realistic Transit (2026)"
-description: "A working guide to shipping from China to Saudi Arabia in 2026: Jeddah, Dammam and Riyadh Dry Port, 15% VAT, SABER and SASO, importer-of-record rules, cost drivers and the failure modes that cost the most."
+description: "A working guide to China–Saudi freight in 2026: Jeddah, Dammam and Riyadh Dry Port, 15% VAT, SABER, importer rules and the cost drivers."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

@@ -1,4 +1,5 @@
 ---
+seoTitle: "Khalifa Bin Salman Port 2026 — Freighthub"
 title: "Khalifa Bin Salman Port 2026: Bahrain's Single Gate After the Shock"
 description: "KBSP in November 2026: the March shutdown, the 80% import collapse, the June general-cargo rebound, four cranes, 15 m depth and the Saudi causeway play."
 country: "bahrain"

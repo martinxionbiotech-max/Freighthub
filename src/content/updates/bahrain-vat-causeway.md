@@ -1,4 +1,5 @@
 ---
+seoTitle: "Bahrain at 10% VAT: Causeway Maths — Freighthub"
 title: "Bahrain at 10% VAT: the causeway calculation"
 description: "Bahrain's 10% VAT changes the maths for Saudi-bound cargo that uses the kingdom as a staging point. Where the cost lands and how to structure the file."
 date: "2026-11-02"

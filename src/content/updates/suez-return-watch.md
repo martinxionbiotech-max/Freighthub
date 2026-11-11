@@ -1,4 +1,5 @@
 ---
+seoTitle: "Suez Return: What Changes for Gulf Cargo — Freighthub"
 title: "Suez return watch: what normalisation changes for Gulf cargo"
 description: "A partial return to Suez would improve Asia–Europe schedules and equipment flow, but Gulf cargo would feel it indirectly. What to watch and what to do now."
 date: "2026-11-09"

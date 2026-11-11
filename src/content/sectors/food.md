@@ -1,6 +1,7 @@
 ---
+seoTitle: "Food Freight to the GCC (2026) — Freighthub"
 title: "Food Freight to the GCC: SFDA, Labelling and the Cold Chain (2026)"
-description: "Shipping food and beverages from China to the GCC in 2026: SFDA, Dubai Municipality, MOPH and PAFN registration, Arabic labelling, shelf life, halal, reefer logistics, inspection and the rejection risks that destroy margin."
+description: "Shipping food and beverages from China to the GCC: SFDA and municipal registration, Arabic labelling, shelf life, halal, reefer logistics and inspection."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

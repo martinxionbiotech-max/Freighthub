@@ -1,6 +1,7 @@
 ---
+seoTitle: "Jeddah vs Dammam: Saudi Gateway (2026) — Freighthub"
 title: "Jeddah vs Dammam: Choosing a Saudi Gateway (2026)"
-description: "Jeddah Islamic Port versus King Abdulaziz Port, Dammam in 2026: transit, congestion, inland distance to Riyadh, rail, Red Sea risk and the consignee geography that decides which Saudi port is cheaper end to end."
+description: "Jeddah versus Dammam: transit, congestion, inland distance to Riyadh, rail, Red Sea risk and the consignee geography that decides the cheaper port."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

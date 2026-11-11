@@ -1,4 +1,5 @@
 ---
+seoTitle: "Salalah Port 2026 — Freighthub"
 title: "Salalah Port 2026: The Relay Hub Outside Both Chokepoints"
 description: "Salalah in November 2026: 511,209 TEU in September, 6.5 million TEU of capacity, a 2028 concession cliff and why a relay hub is not an Omani market."
 country: "oman"

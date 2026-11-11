@@ -1,7 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { collection } from '../../lib/content';
+const sectors = collection('sectors').sort((a, b) => a.slug.localeCompare(b.slug));
 ---
-<BaseLayout title="Sectors — Freighthub" description="China to GCC freight by product sector.">
-  <h1>Sectors</h1>
-  <p>Sector guides scaffold.</p>
+<BaseLayout title="Freight by Product Sector — Freighthub" description="China–GCC freight by sector: electronics, batteries, chemicals, food, furniture, machinery and ecommerce, with the compliance gate that decides each one.">
+  <h1>Freight by sector</h1>
+  <p class="article-meta">Sector guides · Last reviewed 11 November 2026</p>
+  <p>Product sector changes the freight answer more than most shippers expect. A container of furniture and a pallet of lithium batteries can leave the same Chinese factory, but they face different carrier approvals, different certification routes and different damage economics. These guides cover the seven sectors that make up most China–GCC volume, with the compliance gate, packaging risk and cost drivers specific to each. They do not quote rates; they explain what moves the number.</p>
+  <ul class="sector-list">
+    {sectors.map((s) => (
+      <li>
+        <h2><a href={`/sectors/${s.slug}/`}>{s.title}</a></h2>
+        <p>{s.description}</p>
+      </li>
+    ))}
+  </ul>
+  <p>Certification requirements are collected in the <a href="/guides/certification/">GCC certification guide</a>; route economics are in <a href="/guides/cost-and-transit/">cost and transit</a>.</p>
 </BaseLayout>

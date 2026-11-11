@@ -1,6 +1,7 @@
 ---
+seoTitle: "Ecommerce Freight to the GCC (2026) — Freighthub"
 title: "Ecommerce Freight to the GCC: Amazon FBA, noon and the Last Mile (2026)"
-description: "Selling physical products in the UAE and Saudi Arabia in 2026: FBA and noon fulfilment, import models, VAT, customs thresholds, product certification, labelling, returns and the unit economics that decide whether a SKU works."
+description: "Selling physical products in the UAE and Saudi Arabia: FBA and noon fulfilment, import models, VAT, thresholds, certification and unit economics."
 country: "uae"
 updated: "2026-11-11"
 ---

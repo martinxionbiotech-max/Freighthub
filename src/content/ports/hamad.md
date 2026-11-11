@@ -1,4 +1,5 @@
 ---
+seoTitle: "Hamad Port 2026: Channel and Capacity — Freighthub"
 title: "Hamad Port 2026: 14 m Channel, 7.5 m TEU"
 description: "Hamad Port in November 2026: 17 m berths behind a 14 m channel, CT1 versus CT2, Mwani Qatar's fee discount, free-zone customs rules and real transit times."
 country: "qatar"

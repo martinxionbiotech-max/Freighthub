@@ -1,4 +1,5 @@
 ---
+seoTitle: "Qatar's No-VAT Advantage — Freighthub"
 title: "Qatar's no-VAT position: an advantage with an expiry date"
 description: "Qatar has not implemented VAT, which flatters landed cost and cash flow. Why long-term contracts should still include a change-in-law clause."
 date: "2026-10-26"

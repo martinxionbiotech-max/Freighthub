@@ -1,6 +1,7 @@
 ---
+seoTitle: "Dammam Port (King Abdulaziz) 2026 — Freighthub"
 title: "King Abdulaziz Port, Dammam: Terminals, Rail and Clearance (2026)"
-description: "Dammam in November 2026: 3.8m TEU of terminal capacity, the T2 berth expansion, seven daily trains to Riyadh, SABER clearance and the Hormuz exposure that decides your schedule."
+description: "Dammam in November 2026: 3.8m TEU of terminal capacity, the T2 expansion, seven daily trains to Riyadh, SABER clearance and Hormuz exposure."
 country: "saudi-arabia"
 updated: "2026-11-10"
 ---

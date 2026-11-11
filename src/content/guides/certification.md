@@ -1,6 +1,7 @@
 ---
+seoTitle: "GCC Product Certification 2026 — Freighthub"
 title: "GCC Product Certification: SABER, ECAS, KUCAS and the Rest (2026)"
-description: "How GCC product conformity actually works in 2026: Saudi SABER and SASO, UAE ESMA and ECAS, Kuwait KUCAS, Qatar QGOSM, Oman and Bahrain, the certificates each shipment needs, testing timelines and the mismatches that stop cargo."
+description: "How GCC product conformity works in 2026: Saudi SABER, UAE ECAS, Kuwait KUCAS, Qatar QGOSM, the certificates each shipment needs and what stops cargo."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

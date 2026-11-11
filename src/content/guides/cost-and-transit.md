@@ -1,6 +1,7 @@
 ---
+seoTitle: "China–GCC Freight Costs & Transit 2026 — Freighthub"
 title: "China to GCC Freight Costs and Transit: Ranges, Drivers and Quote Anatomy (2026)"
-description: "What China–GCC freight really costs in 2026: planning ranges by mode and country, the eight lines in every quote, transit bands, seasonal drivers, hidden charges and how to compare two quotes that look nothing alike."
+description: "What China–GCC freight costs in 2026: planning ranges by mode and country, the eight lines in every quote, transit bands and hidden charges."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to Oman Freight Guide 2026 — Freighthub"
 title: "China to Oman Freight: Sohar, Salalah and the Hormuz Hedge (2026)"
-description: "Shipping from China to Oman in 2026: Sohar and Salalah, Duqm, 5% VAT, 5% duty, free zones, conformity, land borders to the UAE and Saudi Arabia, transit ranges and the cost drivers behind Oman's two-coast system."
+description: "Shipping from China to Oman in 2026: Sohar and Salalah, Duqm, 5% VAT, 5% duty, free zones, conformity and the cost drivers behind two coasts."
 country: "oman"
 updated: "2026-11-11"
 ---

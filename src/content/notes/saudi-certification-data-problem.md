@@ -1,6 +1,7 @@
 ---
+seoTitle: "Saudi Certification Is a Data Problem — Freighthub"
 title: "Saudi certification is a data problem"
-description: "SABER failures are usually not failed tests. They are mismatched model numbers, factories, importers and label versions — a master-data problem that costs more than the certificate."
+description: "SABER failures are usually not failed tests. They are mismatched model numbers, factories, importers and label versions — a master-data problem."
 date: "2026-11-11"
 author: "Freighthub editorial"
 updated: "2026-11-11"

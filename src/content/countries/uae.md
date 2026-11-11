@@ -1,6 +1,7 @@
 ---
+seoTitle: "China to UAE Freight 2026 — Freighthub"
 title: "UAE Freight Guide 2026: Customs, VAT and Routing After the Hormuz Closure"
-description: "China to UAE shipping in November 2026: Jebel Ali's landbridge, Khor Fakkan congestion, 5% VAT, 5% customs duty and the free-zone decision that changes your landed cost."
+description: "China to UAE shipping in November 2026: Jebel Ali's landbridge, Khor Fakkan congestion, 5% VAT, 5% duty and the free-zone choice that changes landed cost."
 country: "united-arab-emirates"
 updated: "2026-11-04"
 ---

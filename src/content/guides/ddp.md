@@ -1,6 +1,7 @@
 ---
+seoTitle: "DDP Shipping to the GCC 2026 — Freighthub"
 title: "DDP Shipping to the GCC: What It Really Means (2026)"
-description: "DDP in Saudi Arabia, the UAE and the wider GCC: who is the importer of record, how VAT and duty are handled, why all-in quotes fail, DDP versus DAP, and the cases where delivered duty paid is the right contract."
+description: "DDP in Saudi Arabia, the UAE and the GCC: importer of record, VAT and duty, why all-in quotes fail, DDP versus DAP and when it fits."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

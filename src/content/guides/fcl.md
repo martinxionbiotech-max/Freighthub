@@ -1,6 +1,6 @@
 ---
-title: "FCL to the GCC in 2026: Container Choice, Free Time and the Landbridge Tax"
 seoTitle: "FCL Shipping to the GCC 2026 — Freighthub"
+title: "FCL to the GCC in 2026: Container Choice, Free Time and the Landbridge Tax"
 description: "China to Saudi Arabia and the UAE by FCL in November 2026: rate ranges, payload limits, free time and why the discharge port beats the ocean rate."
 author: "Freighthub editorial"
 updated: "2026-11-04"

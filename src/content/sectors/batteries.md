@@ -1,6 +1,7 @@
 ---
+seoTitle: "Lithium Battery Freight to the GCC (2026) — Freighthub"
 title: "Lithium Battery Freight to the GCC: UN38.3, DG and Carrier Reality (2026)"
-description: "Shipping lithium batteries and battery-powered products from China to the GCC in 2026: UN3480/3481/3090/3091, UN38.3, state of charge, air and sea rules, carrier approval, GCC certification, warehousing and the cost of getting the paperwork wrong."
+description: "Shipping lithium batteries and battery products from China to the GCC: UN38.3, state of charge, air and sea rules, carrier approval and certification."
 country: "uae"
 updated: "2026-11-11"
 ---

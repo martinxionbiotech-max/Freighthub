@@ -8,8 +8,17 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const doc = getDoc('compare', String(slug));
 const label = String(slug).replace(/-/g, ' ').replace(/ vs /g, ' vs ');
+const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${label} — Freighthub`);
 ---
-<BaseLayout title={`${label} — Freighthub`} description={`Freight decision: ${label}.`} noindex={!doc}>
+<BaseLayout title={pageTitle} description={doc?.description || `Freight decision: ${label}.`} noindex={!doc}>
   <p><a href="/compare/">Compare</a> / {label}</p>
-  {doc ? <div set:html={doc.html} /> : <><h1>{label}</h1><p>Draft scaffold — content production pending.</p></>}
+  {doc ? (
+    <article>
+      <h1>{doc.title || label}</h1>
+      <p class="article-meta">By {doc.author || 'Freighthub editorial'} · Last reviewed {doc.updated || '2026-11-11'}</p>
+      <div set:html={doc.html} />
+    </article>
+  ) : (
+    <><h1>{label}</h1><p>Draft scaffold — content production pending.</p></>
+  )}
 </BaseLayout>

@@ -1,6 +1,7 @@
 ---
+seoTitle: "Sharjah Ports 2026 — Freighthub"
 title: "Sharjah Ports: Khalid, Hamriyah and Khor Fakkan (2026)"
-description: "How Sharjah's three ports divide the work in 2026: Port Khalid for city and project cargo, Hamriyah for free-zone industry, and Khor Fakkan as the GCC container gateway outside the Strait of Hormuz."
+description: "Sharjah's three ports in 2026: Port Khalid for city and project cargo, Hamriyah for free-zone industry, and Khor Fakkan outside the Strait of Hormuz."
 country: "uae"
 updated: "2026-11-11"
 ---

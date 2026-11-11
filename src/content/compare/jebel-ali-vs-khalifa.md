@@ -1,6 +1,7 @@
 ---
+seoTitle: "Jebel Ali vs Khalifa Port (2026) — Freighthub"
 title: "Jebel Ali vs Khalifa Port: Which UAE Gateway? (2026)"
-description: "Jebel Ali versus Khalifa Port in 2026: sailing frequency, terminal economics, Abu Dhabi versus Dubai hinterlands, free-zone treatment, project cargo and the total-cost comparison that decides the right UAE port."
+description: "Jebel Ali versus Khalifa Port: sailing frequency, terminal economics, Abu Dhabi versus Dubai hinterlands, free-zone treatment and total cost."
 country: "uae"
 updated: "2026-11-11"
 ---

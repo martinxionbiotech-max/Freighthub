@@ -1,6 +1,7 @@
 ---
+seoTitle: "DDP vs Self-Clearance in the GCC (2026) — Freighthub"
 title: "DDP vs Self-Clearance in the GCC: Who Should Clear? (2026)"
-description: "Delivered duty paid versus self-clearance for GCC imports in 2026: control, VAT recovery, importer-of-record risk, cost, compliance and the buyer profiles that make each model work."
+description: "Delivered duty paid versus self-clearance in the GCC: control, VAT recovery, importer-of-record risk, cost and the buyer profiles each model suits."
 country: "saudi-arabia"
 updated: "2026-11-11"
 ---

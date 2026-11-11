@@ -7,7 +7,7 @@ export function getStaticPaths() {
 }
 const { country } = Astro.props;
 const doc = getDoc('countries', country.slug);
-const pageTitle = doc?.title ? `${doc.title} — Freighthub` : `${country.name} — Freighthub`;
+const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${country.name} — Freighthub`);
 const pageDescription = doc?.description || `China to ${country.name} freight: ports, customs, VAT and route context.`;
 ---
 <BaseLayout title={pageTitle} description={pageDescription} noindex={!doc}>
