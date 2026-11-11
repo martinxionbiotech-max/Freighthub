@@ -122,6 +122,14 @@ A common and sensible sequence:
 
 This sequence uses the UAE's speed and the Saudi scale without forcing a choice.
 
+## The services gap
+
+The UAE has a deeper professional services market: freight forwarders, customs brokers, 3PLs, lawyers, auditors and marketing agencies. That matters for a new entrant, because the supporting infrastructure is part of the market's ease.
+
+Saudi Arabia has improved significantly, and Riyadh and Jeddah have strong service markets. But outside the main cities, the pool is thinner, and a company may need to work with a Jeddah or Riyadh provider at a distance. That adds travel, response time and cost.
+
+For a first market entry, the UAE's services depth reduces the learning cost. For a scale market entry, Saudi Arabia's depth in the main cities is sufficient, but the regional coverage is not.
+
 ## Our read
 
 The UAE is the easier market and the better test. Saudi Arabia is the bigger prize and the harder gate. A supplier that starts in the UAE and never enters Saudi Arabia is leaving most of the region's volume on the table. A supplier that starts in Saudi Arabia without a local partner usually underestimates the compliance work.

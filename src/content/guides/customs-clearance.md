@@ -150,6 +150,21 @@ If the broker cannot answer questions 3 to 5, the relationship is a transaction,
 **Storage surprise.** Fix: get the free-time terms in writing and diarise the expiry.
 **Inspection queue.** Fix: build a buffer into the delivery promise; do not promise a date you cannot control.
 
+## The 48-hour pre-arrival review
+
+The single most useful habit in GCC clearance is a 48-hour pre-arrival review. Two working days before the vessel berths, the shipper, the broker and the importer should confirm six things:
+
+1. **The bill of lading is issued and the consignee is correct.** A last-minute change of consignee is a last-minute change of importer, and it can invalidate the certificate.
+2. **The invoice and packing list match.** Quantity, weight, description and HS code should be consistent across both documents.
+3. **The certificate is valid for the shipment.** PCoC, SCoC, ECAS, KUCAS or QGOSM, as applicable.
+4. **The importer's registration covers the product.** The licence activity and the customs account must match.
+5. **The duty and VAT funding is in place.** A payment delay at the assessment stage is a storage delay.
+6. **The delivery slot is booked.** The truck and the warehouse should be ready before release, not after.
+
+The review takes under an hour and prevents most of the failures described on this page. It also gives the broker a clean file to submit as soon as the manifest is available, which is the difference between a two-day and a five-day release.
+
+The review should be documented, not verbal. A one-page checklist with the six items, the responsible person and the date is enough. When a shipment goes wrong, the checklist shows whether the file was clean before arrival or whether the gap was created at the port.
+
 ## Our read
 
 Customs clearance is the part of freight that rewards boring discipline. The shippers with the fewest delays are not the ones with the best contacts; they are the ones with a complete file, a consistent HS code and a broker who files early.

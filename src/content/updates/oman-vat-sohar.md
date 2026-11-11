@@ -54,3 +54,12 @@ For an Oman-bound importer, Sohar is a good gateway: short land leg, low VAT, a 
 - Duqm Special Economic Zone Authority — https://www.duqm.gov.om/
 
 *This is an editorial briefing, not tax advice.*
+
+## Related
+
+- [China → Oman guide](/guides/china-to-oman/)
+- [Oman hub](/countries/oman/)
+- [Sohar Port](/ports/sohar/)
+- [Salalah Port](/ports/salalah/)
+- [DDP guide](/guides/ddp/)
+- [Cost and transit](/guides/cost-and-transit/)

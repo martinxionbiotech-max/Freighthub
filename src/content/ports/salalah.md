@@ -226,3 +226,23 @@ It offers a 30-year exemption from taxes on profits and dividends, 100% foreign 
 **Update log.** 9 November 2026: first publication. Covers the September 2026 throughput record, the first-half 2026 transshipment and import split, the US$300 million capacity upgrade, the 1 November 2028 concession decision and APM Terminals' response, the Salalah Free Zone pipeline and the 2026 chokepoint context. Next scheduled review: 9 January 2027, or earlier if the concession transition, carrier rotations or Salalah volumes change materially.
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+
+## Related reading
+
+- [China → Oman guide](/guides/china-to-oman/)
+- [Oman hub](/countries/oman/)
+- [Sohar Port](/ports/sohar/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Hamad Port](/ports/hamad/)
+- [Khalifa Port](/ports/khalifa/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Sea vs air](/compare/sea-vs-air/)
+- [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+- [Machinery sector](/sectors/machinery/)
+- [Food sector](/sectors/food/)
+- [China → UAE guide](/guides/china-to-uae/)

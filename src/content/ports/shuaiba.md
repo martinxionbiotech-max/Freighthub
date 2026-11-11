@@ -211,3 +211,23 @@ Yes, as a corridor. Kuwaiti clearance is only the first regime; the Abdali cross
 **Update log.** 8 November 2026: first publication. Covers the AD Ports MoU, the April 2026 infrastructure tender and July bid round, the 1 March strike on the military site at Port Shuaiba, the September tanker warning, the KPMG strategy mandate and the 2026 waiting-time data. Next scheduled review: 8 January 2027, or earlier if the AD Ports feasibility, the infrastructure tender or the security picture changes materially.
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+
+## Related reading
+
+- [China → Kuwait guide](/guides/china-to-kuwait/)
+- [Kuwait hub](/countries/kuwait/)
+- [Shuwaikh Port](/ports/shuwaikh/)
+- [Dammam Port](/ports/dammam/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Chemicals sector](/sectors/chemicals/)
+- [Machinery sector](/sectors/machinery/)
+- [Food sector](/sectors/food/)
+- [UAE vs Saudi](/compare/uae-vs-saudi/)
+- [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
+- [Sea vs air](/compare/sea-vs-air/)

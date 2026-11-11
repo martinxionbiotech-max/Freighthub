@@ -176,6 +176,22 @@ For a first-pass budget, use this sequence:
 
 The output is a range, not a number. That is appropriate: the inputs are ranges.
 
+Keep the model in a spreadsheet with the assumptions visible: the lane, the date, the equipment, the exchange rate and the free-time allowance. A budget that cannot be re-run when a rate moves is a budget that becomes stale within a month.
+
+## The seasonal budget calendar
+
+Freight budgeting is easier with a calendar. The GCC year has four predictable tight spots:
+
+**Chinese New Year (January or February).** Factories close for one to three weeks, and the pre-holiday rush tightens space in the last two weeks of January. Book December shipments for arrival before the shutdown.
+
+**Ramadan (moving about 11 days earlier each year).** In 2026 it falls in February and March. Food, beverages, gifts and household goods peak in the four to six weeks before. Customs and port working hours shorten during the month.
+
+**Q4 retail season (October–November).** White Friday, National Day promotions and year-end stocking tighten capacity and raise air rates. Book six to eight weeks ahead.
+
+**Annual contract season (March–May).** Carriers and shippers negotiate annual contracts. Spot rates can move sharply as capacity is committed.
+
+The calendar is not a forecast. A Red Sea disruption, a port strike or a fuel spike can override it. But it is a useful default for when to book, when to hold and when to expect a surcharge.
+
 ## Our read
 
 Most shippers over-focus on the ocean rate and under-focus on the three lines that decide the landed cost: destination charges, inland delivery and the cost of a clearance delay. A 10% saving on freight can be erased by a week of storage or a bad empty-return location.

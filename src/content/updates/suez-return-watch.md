@@ -52,3 +52,12 @@ The shippers who benefit most are the ones who book on proforma and verify the r
 - Maersk, service updates — https://www.maersk.com/
 
 *This is an editorial briefing based on market structure, not a report of a specific incident.*
+
+## Related
+
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Jeddah Port](/ports/jeddah/)
+- [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+- [Cost and transit](/guides/cost-and-transit/)
+- [Sohar Port](/ports/sohar/)
+- [Salalah Port](/ports/salalah/)

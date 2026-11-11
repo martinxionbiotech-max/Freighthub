@@ -165,3 +165,23 @@ Yes, subject to carrier acceptance, UN38.3 documentation and terminal DG rules. 
 **Update log.** 4 November 2026: first publication. Covers the September Suez restoration, the August Terminal 4 agreement, the 1 August transit rule and the October Al-Khumrah announcement. Next review: 4 January 2027, or immediately if terminal operations or Red Sea war-risk pricing change.
 
 *Method note: our research conventions are documented in [methodology](/methodology/). "Reported" figures come from the cited trade press or official statements; "industry claim" marks forwarder ranges; "editorial judgment" marks our assessment. Cargo-specific routing questions belong in the [China–Saudi route guide](/guides/china-to-saudi-arabia/), not in a port average.*
+
+## Related reading
+
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Saudi Arabia hub](/countries/saudi-arabia/)
+- [Dammam Port](/ports/dammam/)
+- [Riyadh Dry Port](/ports/riyadh-dry-port/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
+- [Food sector](/sectors/food/)
+- [Electronics sector](/sectors/electronics/)
+- [Machinery sector](/sectors/machinery/)
+- [UAE vs Saudi](/compare/uae-vs-saudi/)
+- [Sea vs air](/compare/sea-vs-air/)

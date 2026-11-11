@@ -140,6 +140,8 @@ A defensible DDP price has eight lines:
 
 Add a contingency for classification, inspection and storage. A DDP quote with no contingency is a quote that assumes everything goes right.
 
+The contingency should be visible to the buyer, even if it is not itemised in the price. A DDP quote that is 10% below the market is usually a quote that has omitted the contingency, the certificate cost or the VAT. The buyer discovers the gap later, in a storage invoice or a penalty.
+
 ## Compliance and liability
 
 Under DDP, the seller is the importer in commercial terms, even if the declaration is in another entity's name. That creates liability exposure:
@@ -150,6 +152,22 @@ Under DDP, the seller is the importer in commercial terms, even if the declarati
 - **Reputational risk** with the buyer and the broker.
 
 Insurance should cover the goods, but it does not cover customs penalties. The contract should allocate them explicitly.
+
+## DDP and the free zones
+
+Free zones complicate DDP more than any other structure. A UAE free zone, a Saudi special economic zone or a Bahraini logistics zone is a separate customs territory in practice. Goods entering the zone are generally not subject to duty or VAT while they remain there. Goods leaving the zone for the domestic market become imports.
+
+Under a DDP contract, the seller promises delivery to a named place. If that place is inside a free zone, the seller's obligation may end before the goods become a domestic import. If the place is a mainland warehouse, the goods must leave the zone and the duty and VAT become payable.
+
+Three questions decide the treatment:
+
+1. **Is the named place inside or outside the zone?** A warehouse address inside Jafza is not the same as a Dubai mainland address.
+2. **Who is the importer when the goods leave the zone?** The zone tenant, the mainland buyer or the seller's local entity.
+3. **Is the goods' status preserved?** A re-export from the zone can preserve the suspension; a mainland sale cannot.
+
+A seller that quotes DDP to a free-zone address and assumes the goods will stay duty-suspended may be right. A seller that quotes DDP to a mainland address and assumes the same is wrong. The contract should name the place precisely and state the customs status.
+
+The free-zone route can be a genuine advantage for a regional distributor: stock is held without duty, and the DDP price is agreed for each onward market. It is not a way to avoid the destination's import rules. Saudi duty, VAT and SABER still apply when the goods cross the border.
 
 ## Our read
 

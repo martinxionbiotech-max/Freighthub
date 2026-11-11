@@ -171,6 +171,12 @@ The industrial base has two consequences for a shipper.
 4. **Decide free zone or mainland.** For Saudi distribution, a free zone can help with stockholding but not with Saudi duty.
 5. **Quote the total.** Freight, destination, duty, VAT, inland and a causeway buffer if Saudi-bound.
 
+## The airport and the sea-air option
+
+Bahrain International Airport has limited direct freighter capacity compared with Dubai, Doha and Riyadh. Most air cargo enters via a Gulf hub and moves by truck or a short feeder flight. That makes the sea-air option less attractive than it is for Dubai: the cargo often has to clear in the hub first, which adds a handling and a customs step.
+
+For urgent cargo, the practical route is usually air to Dubai or Doha, then truck to Bahrain. The truck leg is a few hours, and the Bahrain import can be cleared at the border or at the airport. The total door-to-door time is often faster than a dedicated air service with a long connection.
+
 ## Our read
 
 Bahrain is a niche market with a strategic location. For a small domestic importer, it is straightforward: one port, one customs authority, a short land leg and a clear cost structure. For a regional distributor, it is a useful bonded base, but it is not a shortcut into Saudi Arabia.

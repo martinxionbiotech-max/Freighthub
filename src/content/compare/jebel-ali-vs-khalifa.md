@@ -120,6 +120,10 @@ The Khalifa route usually wins for an Abu Dhabi consignee, even if the ocean rat
 - The buyer wants a less congested gate.
 - The empty return can be arranged in Abu Dhabi.
 
+## What about Sharjah?
+
+Sharjah is the third option, and it is not a tie-breaker. Port Khalid is the city port, Hamriyah serves the free zone, and Khor Fakkan is the east-coast container gateway outside Hormuz. Sharjah is better for a Sharjah consignee, a Hamriyah tenant or a cargo that wants the Hormuz bypass. It is not a substitute for Jebel Ali's frequency or Khalifa's Abu Dhabi hinterland. See the [Sharjah port profile](/ports/sharjah/).
+
 ## Our read
 
 The UAE port choice is a land-leg decision disguised as an ocean-rate decision. Jebel Ali is the better port for most cargo, but "better port" is not the same as "better total cost" for an Abu Dhabi consignee.

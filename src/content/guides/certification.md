@@ -136,6 +136,8 @@ Certification cost is driven by:
 
 As a planning range, a single-product certificate for one GCC country can cost from a few hundred to several thousand dollars, depending on the category. A multi-country, multi-model programme can run into five figures. The cost per shipment falls sharply after the first certificate.
 
+The budget line that is usually missed is the **certificate maintenance** cost: re-testing when a standard is revised, re-issuing when a factory or importer changes, and adding a model when the sales team extends the range. A certificate is a living record, not a one-off purchase, and the annual maintenance can be 10–20% of the initial cost.
+
 ## The mismatches that stop cargo
 
 **Model mismatch.** The certificate covers a product family, but the shipment contains a variant outside the family.
@@ -158,6 +160,20 @@ Each mismatch has the same consequence: the shipment cannot be cleared until it 
 - Confirm the shipment certificate can be issued before arrival.
 - Confirm the certificate's expiry date is after the planned shipment date.
 - Keep a digital copy of the full file with the broker.
+
+## Spare parts, warranty and after-sales
+
+Certification does not end with the first shipment. Spare parts, warranty replacements and after-sales kits create a second wave of compliance questions, and they are often handled by a different team with less product knowledge.
+
+**Spare parts.** A part that is not itself regulated may still be part of a regulated product. A replacement power supply for a certified appliance must match the certified specification; a substitute with a different rating can invalidate the product's conformity. Keep the spare part on the same certificate or confirm that it is outside the regulation.
+
+**Warranty replacements.** A replacement unit shipped to a customer is an import. It needs the same certificate, the same importer and the same declaration as the original sale. Many companies treat warranty shipments as "not a sale" and skip the file; the customs authority does not.
+
+**After-sales kits.** A kit that combines a regulated product with accessories may need its own classification and certificate. The kit's HS code can differ from the components' codes.
+
+**Returns and repairs.** A product returned to China for repair and re-exported needs a temporary export/import procedure. If it is replaced rather than repaired, the replacement is a new import.
+
+The practical fix is to extend the model matrix to cover service parts and warranty SKUs. If a part is not on the matrix, it is not approved for shipment. That rule prevents the common failure where a certified product is supported by an uncertified spare.
 
 ## Our read
 
@@ -205,6 +221,9 @@ The shipment is held at the port until the certificate is corrected or re-issued
 **Update log.** 11 November 2026: first publication. Covers SABER, ESMA/ECAS, KUCAS, QGOSM, Oman and Bahrain, the G-Mark, the certification process and common mismatches. Next review: 11 January 2027.
 
 *Method note: our research conventions are documented in [methodology](/methodology/). Certification requirements change; confirm the current regulation with the regulator or an accredited body.*
+
+
+A final budgeting note: the certificate cost is per product family, not per container. A supplier that ships ten containers a year under one certificate pays the same certificate cost as a supplier that ships one. That is why certification is a scale business: the cost per unit falls as the volume rises, and the first shipment carries most of the burden.
 
 ## Related reading
 

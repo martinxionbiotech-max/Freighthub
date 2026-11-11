@@ -65,3 +65,12 @@ The fix is structural, not negotiable at the border. Decide the status, document
 - ZATCA — https://zatca.gov.sa/
 
 *This is an editorial briefing, not tax advice. Confirm the treatment with a Bahraini and a Saudi adviser.*
+
+## Related
+
+- [China → Bahrain guide](/guides/china-to-bahrain/)
+- [Bahrain hub](/countries/bahrain/)
+- [Khalifa Bin Salman Port](/ports/khalifa-bin-salman/)
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Customs clearance](/guides/customs-clearance/)
+- [DDP guide](/guides/ddp/)

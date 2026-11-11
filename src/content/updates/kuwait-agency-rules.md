@@ -54,3 +54,12 @@ The right sequence is: choose the agent, register the agency, register the produ
 - Kuwait Chamber of Commerce and Industry — https://www.kkcif.com/
 
 *This is an editorial briefing, not legal advice. Confirm the agency requirement with a Kuwaiti lawyer.*
+
+## Related
+
+- [China → Kuwait guide](/guides/china-to-kuwait/)
+- [Kuwait hub](/countries/kuwait/)
+- [Shuwaikh Port](/ports/shuwaikh/)
+- [Shuaiba Port](/ports/shuaiba/)
+- [Customs clearance](/guides/customs-clearance/)
+- [Certification](/guides/certification/)

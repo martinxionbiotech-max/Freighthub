@@ -117,6 +117,10 @@ The Red Sea risk premium can tilt the comparison. When war-risk surcharges rise,
 | Eastern Province project | Dammam | Jeddah has better heavy-lift capacity |
 | National distributor | Jeddah | The distribution centre is in Riyadh |
 
+## What about Jubail and Yanbu?
+
+Jubail is an industrial port north of Dammam, served by the same Eastern Province logistics cluster. Yanbu is a Red Sea industrial port, closer to the western petrochemical belt. Neither is a general container gateway for most shippers, but both matter for project and bulk cargo. If your consignee is a Jubail petrochemical plant, Dammam is the natural container gateway; if it is a Yanbu plant, Jeddah or Yanbu itself may be better. Confirm the port's container capability before assuming.
+
 ## Our read
 
 Jeddah is the default because it is the biggest, not because it is always best. For a Riyadh consignee, Dammam plus rail is often the smarter route, and the difference can be a week and a few hundred dollars.

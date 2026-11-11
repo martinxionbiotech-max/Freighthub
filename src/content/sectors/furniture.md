@@ -127,6 +127,28 @@ For flat-pack furniture, the cartons are rectangular and load well. For assemble
 7. **Insure the cargo** — damage and general average.
 8. **Book the delivery** — truck size, access and unloading.
 
+## Project furniture: hotels, offices and fit-outs
+
+Project furniture is a different business from retail furniture, and it is a significant part of the GCC market. Hotel openings, office fit-outs, residential compounds and government buildings buy furniture in project quantities, against a specification, a delivery date and a handover schedule.
+
+The differences that matter for freight:
+
+**The specification is contractual.** The buyer may require a specific finish, fabric, fire rating or dimension. A substitution can be rejected at the site, even if the product is visually similar. Confirm the specification before production, not after.
+
+**The delivery date is a penalty date.** A hotel opening or a lease commencement does not move because a container is late. The freight contract should include a delivery window with a buffer, and the project manager should know the risk.
+
+**The order is often phased.** A project may need the public areas first, the guest rooms later and the back-of-house last. Phased deliveries require warehouse space at the destination and a loading plan that matches the installation sequence.
+
+**The certification is project-specific.** Commercial upholstered furniture may need a fire-safety certificate; children's furniture may need a SASO certificate; electrical components may need ECAS. The project specification can add requirements beyond the minimum.
+
+**The site access is the constraint.** A large sofa or a boardroom table may fit the container but not the lift, the stairwell or the door. Survey the site before the shipment, and ask for the delivery route and the unloading equipment.
+
+The commercial model is also different. Project furniture is often sold through a contractor or an interior fit-out company, not a retailer. The importer of record may be the contractor, and the payment terms may be tied to the project milestone rather than the shipment. That affects the cash-flow planning and the risk of a delayed payment.
+
+For a supplier, project furniture is a higher-margin, higher-risk business. The freight is a small share of the contract value, but a delay or a damage claim can be a large share of the profit. The suppliers who succeed treat the project as a logistics programme, not a container booking.
+
+The same logic applies to retail furniture: the packaging and the loading plan are the margin.
+
 ## Our read
 
 Furniture is a category where the factory's packaging and the forwarder's loading plan matter more than the ocean rate. A supplier who invests in corner protection, moisture control and a 3D loading plan can beat a competitor who saves 5% on freight and pays 15% in damage claims.

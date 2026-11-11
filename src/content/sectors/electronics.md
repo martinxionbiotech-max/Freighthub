@@ -145,6 +145,27 @@ Under FOB or CIF, the buyer or seller insures according to the term. Under DAP o
 6. **Insure at replacement value** — all-risk, warehouse-to-warehouse.
 7. **Plan the returns** — local repair, replacement or scrapping.
 
+## Warranty and repair logistics
+
+Electronics generates returns and warranty claims, and the reverse flow is a freight problem that many sellers plan too late.
+
+Three models are common:
+
+**Local repair.** A UAE or Saudi service partner holds spare parts and repairs the unit. The outbound freight is a normal import; the spare parts are a separate import with their own classification. This is the fastest model for the customer and the cheapest for the seller, but it requires a partner and a spare-parts stock.
+
+**Return to origin.** The unit is shipped back to China for repair or replacement. The reverse freight, the customs procedure and the lead time are all costs, and the customer is without the product for weeks. This model works for high-value, low-volume equipment, not for consumer electronics.
+
+**Replacement and scrap.** The seller ships a new unit and scraps or liquidates the returned one locally. The cost is the replacement unit plus the local disposal, but the customer gets a fast resolution. This is common for low-value accessories.
+
+The freight implications:
+
+- A warranty shipment is still an import and needs the same certificate and importer.
+- A returned lithium battery is a dangerous goods shipment in reverse.
+- A repair-and-return shipment may qualify for a temporary import procedure, but the paperwork must be arranged before the return.
+- The reverse leg is often priced worse than the outbound leg, because the volume is small and the routing is ad hoc.
+
+The practical advice is to choose the warranty model before the first sale. A seller that promises local replacement without a local partner is a seller that will discover the reverse logistics cost after the first failure.
+
 ## Our read
 
 Electronics rewards planning and punishes improvisation. The freight rate is rarely the deciding cost; certification, battery compliance and launch timing are. A supplier who certifies the model before production and books air for the launch can usually beat a competitor who saves 10% on freight and misses the season.

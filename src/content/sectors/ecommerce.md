@@ -151,6 +151,16 @@ If the contribution margin after those lines is below 20%, the SKU is fragile. A
 7. **Plan the inventory** — 6–8 weeks before Ramadan and White Friday.
 8. **Set up returns** — inspection, restocking, disposal.
 
+## Displaying VAT and duty in the price
+
+GCC marketplaces display prices inclusive of VAT, and the buyer expects the price at checkout to be the price paid. That creates a pricing decision for the seller: absorb the import VAT and duty into the price, or pass them through as a separate line.
+
+For a VAT-registered seller holding stock, the import VAT is recoverable, so the true cost is the duty plus the cash-flow timing. For an unregistered seller or a direct-to-consumer parcel, the VAT is a real cost.
+
+The display rules matter. A price that excludes VAT or duty can be misleading, and a marketplace may remove a listing that does not show the final price. The seller should model the inclusive price, the marketplace fee, the fulfilment fee and the returns reserve before setting the retail price.
+
+A second issue is currency. Amazon.ae prices in dirhams and Amazon.sa in riyals. The seller's costs are in dollars or yuan. A currency swing can change the margin without any change in the freight rate.
+
 ## Our read
 
 GCC ecommerce rewards sellers who treat it as a retail business with a logistics cost, not as a freight arbitrage. The winners have a narrow catalogue, a certified product, a local importer and a returns process. The losers ship a container of unregistered SKUs to a 3PL and discover the category rules after the listing goes live.

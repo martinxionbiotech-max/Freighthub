@@ -168,6 +168,10 @@ For a distributor, the practical choice is between a mainland warehouse in Musca
 4. **Decide free zone or mainland.** The duty and VAT treatment follows.
 5. **Quote the total.** Freight, destination, duty, VAT, inland and a border buffer if the cargo is UAE-bound.
 
+## Salalah's transhipment role
+
+Salalah is not only an Omani import port. It is a transhipment hub, where deep-sea services exchange cargo with feeders for the Indian Ocean, East Africa and the Gulf. For a shipper whose cargo is transhipped there, the port is a connection point rather than a destination. That changes the risk profile: a missed feeder is a delay, and the port's performance matters more than the Omani inland leg.
+
 ## Our read
 
 Oman is the GCC's most underrated logistics market. It has deep water, two coasts, free zones, a stable currency and a government that wants industrial investment. It is also small, with a limited forwarder pool and a service board that rewards planning.

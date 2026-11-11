@@ -137,6 +137,18 @@ A project-cargo shipment can cost several times a container shipment of the same
 8. **Ship the manuals and spare parts** with the machine.
 9. **Insure the project cargo** — all-risk, including installation.
 
+## Installation and commissioning
+
+The freight scope usually ends at the site, but the project does not. Installation and commissioning require the manual, the wiring diagram, the spare-parts list and, often, a technician from the manufacturer.
+
+Three freight implications:
+
+- **The technician's visa and travel** are separate from the cargo and should be planned with the same lead time.
+- **The commissioning spares** should travel with the machine, not in a later shipment. A missing sensor can delay a start-up by weeks.
+- **The installation tools** may be classified separately from the machine and need their own declaration.
+
+A machine that arrives on time but cannot be commissioned is a machine that is late. The logistics plan should include the installation sequence, not just the delivery date.
+
 ## Our read
 
 Machinery is the category where a cheap forwarder is most expensive. The machine is often the most valuable thing in the container, the installation date is contractual, and the cost of a delay or a damage claim dwarfs the freight saving.

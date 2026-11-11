@@ -54,3 +54,12 @@ The fix is operational, not technical: a model matrix, a pre-shipment check and 
 - Saudi Customs (ZATCA) — https://zatca.gov.sa/
 
 *This is an editorial compliance briefing, not a legal opinion. Confirm the certificate requirement with SASO or an accredited body.*
+
+## Related
+
+- [Certification guide](/guides/certification/)
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Saudi Arabia hub](/countries/saudi-arabia/)
+- [Jeddah Port](/ports/jeddah/)
+- [Dammam Port](/ports/dammam/)
+- [Customs clearance](/guides/customs-clearance/)

@@ -231,3 +231,23 @@ A US$2.5 billion Oman–UAE railway link, about 40% complete in April 2026, with
 **Update log.** 8 November 2026: first publication. Covers Sohar's H1 2026 throughput, the CMA CGM–Asyad terminal agreement, the new CEO, the October tanker attack, the freezone's OMR 63 million agreements, Hafeet Rail's progress and the Marsa LNG schedule slip. Next scheduled review: 8 January 2027, or earlier if the CMA CGM terminal, Hafeet Rail or the security picture changes materially.
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+
+## Related reading
+
+- [China → Oman guide](/guides/china-to-oman/)
+- [Oman hub](/countries/oman/)
+- [Salalah Port](/ports/salalah/)
+- [Khalifa Port](/ports/khalifa/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [China → UAE guide](/guides/china-to-uae/)
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Machinery sector](/sectors/machinery/)
+- [Chemicals sector](/sectors/chemicals/)
+- [Food sector](/sectors/food/)
+- [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)

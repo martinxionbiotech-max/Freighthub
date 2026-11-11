@@ -50,3 +50,12 @@ The sensible approach is to test one shipment end to end: e-invoice, customs dec
 - UAE Federal Customs Authority — https://www.fca.gov.ae/
 
 *This is an editorial briefing. Confirm the current e-invoicing phase and technical requirements with the FTA.*
+
+## Related
+
+- [China → UAE guide](/guides/china-to-uae/)
+- [UAE hub](/countries/uae/)
+- [Customs clearance](/guides/customs-clearance/)
+- [DDP guide](/guides/ddp/)
+- [Cost and transit](/guides/cost-and-transit/)
+- [Jebel Ali Port](/ports/jebel-ali/)

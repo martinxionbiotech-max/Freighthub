@@ -170,6 +170,10 @@ The practical implications for a shipper:
 4. **Confirm the importer and broker.** Kuwaiti licence, customs account, product registration.
 5. **Quote the total.** Freight, destination, duty, inland, inspection buffer and payment cost.
 
+## Ahmadi and the oil economy
+
+Kuwait's oil sector uses dedicated facilities at Ahmadi and Shuaiba, not the commercial container terminals. For a supplier of oil-field equipment, the routing may be through Shuwaikh or Shuaiba for containers, or through Ahmadi for bulk and project cargo. The port choice should be confirmed with the end user, because the Kuwait Oil Company's procurement and logistics chain may specify a terminal.
+
 ## Our read
 
 Kuwait is a market for committed exporters, not for opportunistic ones. The volumes are small, the agent structure is binding, and the procedural friction is high relative to the order size. The reward is a wealthy, import-dependent market with limited local manufacturing and a preference for established brands.

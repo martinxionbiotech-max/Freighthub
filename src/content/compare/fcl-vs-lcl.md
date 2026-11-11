@@ -130,6 +130,22 @@ When comparing FCL and LCL, include:
 
 The last item is often omitted. If the LCL adds five days and the cargo is launch stock, the delay may cost more than the freight difference.
 
+## The 20-foot versus 40-foot decision
+
+The container size is a second decision, and it changes the economics.
+
+A 20-foot container holds about 28–33 cbm and is weight-efficient: it can carry dense cargo up to the road limits without filling the space. A 40-foot high-cube holds about 65–76 cbm and is volume-efficient: it is the right choice for light, bulky cargo.
+
+The freight difference between a 20-foot and a 40-foot is usually smaller than the capacity difference. For light cargo, a 40-foot high-cube is often the cheapest per cubic metre. For dense cargo, a 20-foot may be cheaper because the 40-foot would hit the weight limit before it fills.
+
+The practical test is the cargo's density:
+
+- **Under about 150 kg per cbm:** a 40-foot high-cube is usually the best value.
+- **150–250 kg per cbm:** compare both; the answer depends on the lane and the weight limit.
+- **Over 250 kg per cbm:** a 20-foot is often the better fit, and the weight limit may bind before the volume.
+
+For LCL, the density affects the chargeable weight: a dense cargo is charged per tonne, a light cargo per cubic metre. That is another reason the LCL quote can look different from the FCL quote for the same shipment.
+
 ## Our read
 
 FCL is the better product for most cargo above 15 cbm, and the gap widens for fragile, high-value or DG cargo. LCL is a useful tool for small volumes, but it is not a cheap version of FCL; it is a different service with more handling and less control.

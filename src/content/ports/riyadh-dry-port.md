@@ -218,3 +218,23 @@ Two to five days with a complete file, up to two weeks with a SABER gap or valua
 **Update log.** 10 November 2026: first publication. Covers the April 2026 30-day storage extension, the five new SAR corridors, the 1/2026 tariff, the 1.5 million container expansion and the 2026 rail volumes. Next review: 10 January 2027, or immediately if the tariff or the bond rules change.
 
 *Method note: our research conventions are documented in [methodology](/methodology/). "Reported" figures come from the cited trade press or official statements; "editorial range" marks our estimate; "editorial judgment" marks our assessment. Route-specific questions belong in the [Saudi Arabia hub](/countries/saudi-arabia/), not in a dry-port average.*
+
+## Related reading
+
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Saudi Arabia hub](/countries/saudi-arabia/)
+- [Jeddah Islamic Port](/ports/jeddah/)
+- [Dammam Port](/ports/dammam/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Machinery sector](/sectors/machinery/)
+- [Food sector](/sectors/food/)
+- [Electronics sector](/sectors/electronics/)
+- [FCL vs LCL](/compare/fcl-vs-lcl/)
+- [Sea vs air](/compare/sea-vs-air/)

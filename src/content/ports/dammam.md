@@ -199,3 +199,23 @@ For most Riyadh cargo, yes. Dammam is about 400 km from Riyadh with a direct rai
 **Update log.** 10 November 2026: first publication. Covers the October 2026 TOS launch, the 2025 throughput ranking, the 2025 T2 expansion, the April 2026 Riyadh storage extension and the 2026 Hormuz routing pattern. Next review: 10 January 2027, or immediately if the strait status or SGP terminal operations change.
 
 *Method note: our research conventions are documented in [methodology](/methodology/). "Reported" figures come from the cited trade press or official statements; "industry claim" marks forwarder ranges; "editorial judgment" marks our assessment. Route-specific questions belong in the [Saudi Arabia hub](/countries/saudi-arabia/), not in a port average.*
+
+## Related reading
+
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [Saudi Arabia hub](/countries/saudi-arabia/)
+- [Jeddah Islamic Port](/ports/jeddah/)
+- [Riyadh Dry Port](/ports/riyadh-dry-port/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Sohar Port](/ports/sohar/)
+- [Khalifa Port](/ports/khalifa/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
+- [Machinery sector](/sectors/machinery/)
+- [Chemicals sector](/sectors/chemicals/)
+- [Food sector](/sectors/food/)

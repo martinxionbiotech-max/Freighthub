@@ -1,7 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { collection } from '../../lib/content';
+const notes = collection('notes').sort((a, b) => (a.date < b.date ? 1 : -1));
 ---
-<BaseLayout title="Notes — Freighthub" description="Editorial analysis of China–GCC freight.">
+<BaseLayout title="Notes — Freighthub Editorial Analysis" description="Original analysis of China–GCC freight, customs and port economics. Editorial judgement, clearly labelled.">
   <h1>Notes</h1>
-  <p>Original analysis scaffold.</p>
+  <p class="article-meta">Original analysis. These are arguments, not news: each note takes a position and shows the reasoning. Regulatory facts are sourced; the judgement is ours.</p>
+  <ul class="note-list">
+    {notes.map((n) => (
+      <li>
+        <p class="article-meta">{n.date} · {n.author || 'Freighthub editorial'}</p>
+        <h2><a href={`/notes/${n.slug}/`}>{n.title}</a></h2>
+        <p>{n.description}</p>
+      </li>
+    ))}
+  </ul>
+  <p>Our standards are in <a href="/methodology/">methodology</a>; fixes are logged in <a href="/corrections/">corrections</a>.</p>
 </BaseLayout>

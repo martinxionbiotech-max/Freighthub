@@ -164,3 +164,23 @@ QGOSM conformity for tyres, brake pads, seat belts, rims and some electricals; a
 ---
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+
+## Related reading
+
+- [China → Qatar guide](/guides/china-to-qatar/)
+- [Qatar hub](/countries/qatar/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Khalifa Port](/ports/khalifa/)
+- [Dammam Port](/ports/dammam/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Electronics sector](/sectors/electronics/)
+- [Food sector](/sectors/food/)
+- [Machinery sector](/sectors/machinery/)
+- [UAE vs Saudi](/compare/uae-vs-saudi/)
+- [Sea vs air](/compare/sea-vs-air/)
+- [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)

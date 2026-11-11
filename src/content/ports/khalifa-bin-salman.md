@@ -251,3 +251,23 @@ KBSP is smaller, shallower and more concentrated. It is a competent gateway for 
 **Update log.** 9 November 2026: first publication. Covers the March–April 2026 port closure and force majeure, the 80% import collapse and partial recovery, the Q1 and Q2 2026 financial results, the June general-cargo rebound, the October car-shipment restart, KBSP's terminal specifications and the Bahrain Logistics Zone. Next scheduled review: 9 January 2027, or earlier if the Q3 results, the Saudi causeway plan or KBSP volumes change materially.
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+
+## Related reading
+
+- [China → Bahrain guide](/guides/china-to-bahrain/)
+- [Bahrain hub](/countries/bahrain/)
+- [Khalifa Port (UAE)](/ports/khalifa/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Dammam Port](/ports/dammam/)
+- [China → Saudi Arabia guide](/guides/china-to-saudi-arabia/)
+- [China → UAE guide](/guides/china-to-uae/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [UAE vs Saudi](/compare/uae-vs-saudi/)
+- [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+- [Food sector](/sectors/food/)
+- [Ecommerce sector](/sectors/ecommerce/)

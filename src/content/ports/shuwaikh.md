@@ -159,3 +159,23 @@ Not this decade. Phase one is a 1,200 m container terminal on Boubyan Island wit
 ---
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+
+## Related reading
+
+- [China → Kuwait guide](/guides/china-to-kuwait/)
+- [Kuwait hub](/countries/kuwait/)
+- [Shuaiba Port](/ports/shuaiba/)
+- [Dammam Port](/ports/dammam/)
+- [Jebel Ali Port](/ports/jebel-ali/)
+- [Customs clearance guide](/guides/customs-clearance/)
+- [Certification guide](/guides/certification/)
+- [Cost and transit guide](/guides/cost-and-transit/)
+- [DDP guide](/guides/ddp/)
+- [FCL guide](/guides/fcl/)
+- [LCL guide](/guides/lcl/)
+- [Food sector](/sectors/food/)
+- [Electronics sector](/sectors/electronics/)
+- [Machinery sector](/sectors/machinery/)
+- [UAE vs Saudi](/compare/uae-vs-saudi/)
+- [Sea vs air](/compare/sea-vs-air/)
+- [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)

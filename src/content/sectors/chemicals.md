@@ -178,6 +178,14 @@ A chemical shipment can cost 30–60% more than a general cargo shipment once pa
 7. **Prepare the DG declaration** and the Arabic label.
 8. **Book with a buffer** for permit and inspection delays.
 
+## Arabic labelling and the SDS language
+
+The SDS is usually accepted in English, but the label on the drum or the package is a different matter. GCC markets increasingly require Arabic and English on the label, with the hazard pictograms, signal word, hazard statements and precautionary statements in both languages.
+
+A Chinese supplier's label is often English-only or Chinese-only. The importer may need to re-label at a licensed facility before delivery, which adds cost and a handling step. For consumer chemicals, a missing Arabic label can stop the shipment at the port.
+
+The practical fix is to design the label for the destination before the first order: bilingual, GHS-compliant, with the importer's name and an emergency contact number. The SDS should also include the destination's regulatory information in section 15, even if the rest of the document is in English.
+
 ## Our read
 
 Chemicals are a specialist trade, and the GCC is not a market for generalist forwarders. The shippers who succeed have a fixed set of products, a repeatable SDS file, a licensed warehouse and a carrier relationship that accepts their class. The ones who fail treat a chemical as a product with a freight rate.

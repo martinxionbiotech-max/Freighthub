@@ -103,6 +103,18 @@ A practical hybrid:
 
 The hybrid requires visibility across the channel: what is in the hub, what is in transit, what is at the buyer. Without that visibility, the hub becomes a cost centre and the direct shipments duplicate stock.
 
+## The cash-flow comparison
+
+The two models tie up cash differently.
+
+**UAE hub:** cash goes into inventory, warehouse rent and the UAE entity before the first sale. The payoff is fast replenishment and the ability to serve several markets from one stock. The risk is obsolescence: stock that does not sell becomes a write-off.
+
+**Direct import:** cash goes into the order and the freight, and the buyer often pays on shipment or on delivery. There is less fixed cost and less inventory risk, but the lead time is longer and the stock-out risk is higher.
+
+For a small supplier, direct import is usually the lower-risk model because it does not require a fixed presence. For a supplier with a proven multi-market demand, the hub can improve the return on capital by reducing stock-outs and enabling faster reorders.
+
+The decision should be modelled with the cost of capital, not just the freight rate. A hub that saves 5% on freight but ties up 20% more capital may be a worse deal.
+
 ## Our read
 
 The UAE hub is a supply-chain decision, not a tax decision. It works when the volume and the market coverage justify the fixed cost. It fails when a single-market seller sets up a free-zone entity to save duty and discovers that the rent, the licence and the inventory carrying cost exceed the saving.
