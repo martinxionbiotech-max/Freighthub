@@ -1,7 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { collection } from '../../lib/content';
+const updates = collection('updates').sort((a, b) => (a.date < b.date ? 1 : -1));
 ---
-<BaseLayout title="Updates — Freighthub" description="Live GCC freight intelligence and market changes.">
+<BaseLayout title="Updates — GCC Freight Intelligence" description="Dated briefings on GCC freight, customs, VAT and port conditions, with impact and action notes.">
   <h1>Updates</h1>
-  <p>Live intelligence feed scaffold. Dated updates will appear here.</p>
+  <p class="article-meta">Dated briefings. Each entry states what changed, who is affected and what to do. Newest first.</p>
+  <ul class="update-list">
+    {updates.map((u) => (
+      <li>
+        <p class="article-meta">{u.date} · {u.country} · {u.topic}</p>
+        <h2><a href={`/updates/${u.slug}/`}>{u.title}</a></h2>
+        <p>{u.description}</p>
+      </li>
+    ))}
+  </ul>
+  <p>For the method behind these briefings, see <a href="/methodology/">methodology</a> and <a href="/corrections/">corrections</a>.</p>
 </BaseLayout>

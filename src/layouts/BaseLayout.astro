@@ -24,13 +24,28 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
   </head>
   <body>
     <header class="site-header">
-      <div class="container"><a href="/"><strong>Freighthub</strong> · China → GCC</a></div>
+      <div class="container">
+        <a href="/"><strong>Freighthub</strong> · China → GCC</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="/countries/">Countries</a>
+          <a href="/ports/">Ports</a>
+          <a href="/guides/">Guides</a>
+          <a href="/sectors/">Sectors</a>
+          <a href="/compare/">Compare</a>
+          <a href="/updates/">Updates</a>
+          <a href="/notes/">Notes</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
     </header>
     <main class="container">
       <slot />
     </main>
     <footer class="site-footer">
-      <div class="container">Freighthub — Middle East freight intelligence. Rebuild in progress.</div>
+      <div class="container">
+        <p>Freighthub — China → GCC freight intelligence. Independent editorial analysis; no carrier or forwarder commissions.</p>
+        <p><a href="/about/">About</a> · <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> · <a href="/contact/">Contact</a></p>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { collection } from '../../lib/content';
+export function getStaticPaths() {
+  return collection('updates').map((doc) => ({ params: { slug: doc.slug }, props: { doc } }));
+}
+const { doc } = Astro.props;
+---
+<BaseLayout title={`${doc.title} — Freighthub`} description={doc.description} noindex={!doc}>
+  <p><a href="/updates/">Updates</a> / {doc.date}</p>
+  <article>
+    <h1>{doc.title}</h1>
+    <p class="article-meta">Published {doc.date} · {doc.country} · {doc.topic}</p>
+    <div set:html={doc.html} />
+  </article>
+</BaseLayout>
