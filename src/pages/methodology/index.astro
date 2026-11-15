@@ -1,37 +1,69 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Methodology — Freighthub" description="How Freighthub researches, labels and updates China–GCC freight intelligence, including how we separate reported facts, industry claims and editorial judgement.">
+<BaseLayout title="Methodology — how Freighthub researches and verifies" description="Freighthub's editorial method: source hierarchy, pre-publication checks, how ranges and simulations are labelled, and what is automated.">
   <article>
     <h1>Methodology</h1>
-    <p class="article-meta">Editorial standards · Last reviewed 11 November 2026</p>
+    <p class="article-meta">Editorial standards · Last reviewed 15 November 2026</p>
 
-    <p>This page explains how Freighthub is researched, written and corrected. It is deliberately specific: a reader should be able to tell what kind of claim they are reading and how much weight to give it.</p>
+    <p>How Freighthub is researched, written, reviewed and corrected — and how much weight to give each kind of claim.</p>
 
     <h2>1. The question comes first</h2>
-    <p>Every page starts with the decision a shipper actually faces: which port, which mode, who clears, what certificate, how much, how long, what can go wrong. The page is organised around that decision, not around a template. That is why the H2 order differs between countries and ports.</p>
+    <p>Every page starts with the decision a shipper faces: which port, which mode, who clears, what certificate, how much, how long, what goes wrong. The page is organised around that decision, not a template, which is why the H2 order differs between countries and ports.</p>
 
     <h2>2. Three kinds of statement</h2>
-    <p>We separate:</p>
     <ul>
-      <li><strong>Reported</strong> — a fact from an official source, a port authority, a regulator or the trade press, cited at the bottom of the page.</li>
-      <li><strong>Industry claim</strong> — a range, practice or expectation attributed to forwarders, carriers or importers, labelled as a claim rather than a verified fact.</li>
-      <li><strong>Editorial judgement</strong> — our assessment of what the evidence means. It is labelled, arguable and never presented as a regulator's position.</li>
+      <li><strong>Reported</strong> — a fact from an official source, port authority, regulator or trade press, cited at the foot of the page.</li>
+      <li><strong>Industry claim</strong> — a range or practice attributed to forwarders, carriers or importers, labelled as a claim.</li>
+      <li><strong>Editorial judgement</strong> — our reading of the evidence: labelled, arguable, never a regulator's position.</li>
     </ul>
-    <p>The labels are not decoration. They tell the reader which statements can be checked against a document and which are an opinion.</p>
+    <p>The labels tell the reader what can be checked and what is opinion.</p>
 
     <h2>3. Source hierarchy</h2>
-    <p>When sources conflict, we prefer:</p>
+    <p>When sources conflict, we resolve in this order; an official document beats any description of it.</p>
     <ol>
-      <li>Primary official sources: customs authorities, standards bodies, port authorities, tax authorities, the IMO and IATA.</li>
-      <li>Carrier and terminal operator publications.</li>
-      <li>Recognised trade press and freight indices.</li>
-      <li>Forwarder and industry commentary, treated as a claim.</li>
-      <li>Chinese-language trade sources, used for operational texture and cross-checked where possible.</li>
+      <li><strong>Primary official documents.</strong> Customs regulations, tariff schedules and e-service guidance; standards and their scope; port tariffs; tax filing rules; IMO and IATA instruments — read in the original where the desk can.</li>
+      <li><strong>Peer-reviewed and institutional research.</strong> Academic work on trade logistics, and World Bank, UNCTAD, ITC or WTO datasets: used for baselines and direction, rarely for a live price.</li>
+      <li><strong>Industry publications.</strong> Carrier and terminal notices, recognised trade press, freight indices — reliable on what is happening, weaker on why, often wrong on rules.</li>
+      <li><strong>Industry commentary.</strong> Forwarder guides and practitioner posts, treated as a claim.</li>
     </ol>
-    <p>A single source is rarely enough for a number that a reader might budget against. Where a figure is uncertain, we give a range and say what moves it.</p>
 
-    <h2>4. What we will not publish</h2>
+    <h2>4. What is never used as a sole source</h2>
+    <p>Useful for orientation, never the only basis for a published claim:</p>
+    <ul>
+      <li>encyclopaedias and their citations;</li>
+      <li>AI-generated summaries, answer engines and chatbot output;</li>
+      <li>commercial content sites, competitor guides, forums and social posts;</li>
+      <li>undated rate cards, brochures and a company's own press release;</li>
+      <li>quotation screenshots, figures with no establishable date, and a single anonymous source.</li>
+    </ul>
+    <p>Each can be right; none can be checked.</p>
+
+    <h2>5. The verification steps before publication</h2>
+    <ol>
+      <li><strong>Claim inventory</strong> — every assertion listed against a source; the source is opened, not recalled, and must say what the draft claims.</li>
+      <li><strong>Currency</strong> — is the rule still in force, or superseded?</li>
+      <li><strong>Second check on numbers</strong> — anything a reader might budget against is confirmed independently, or published as a range with its basis.</li>
+      <li><strong>Label and range check</strong> — as-of date, shipment assumed, inclusions and drivers present; fact, claim and judgement distinguishable.</li>
+      <li><strong>Consistency</strong> — the page agrees with the pages it links to, or says why it differs.</li>
+      <li><strong>Link check</strong> — each external link resolves to the document described.</li>
+      <li><strong>Sign-off</strong> — the person who publishes answers for it.</li>
+    </ol>
+    <p>If a step fails the claim is removed, not softened: a hedged sentence nobody can support is still unsupported.</p>
+
+    <h2>6. How ranges are set and labelled</h2>
+    <p>Ranges are built, not remembered: a base port-to-port or airport-to-airport band at a stated date, plus origin handling, destination charges, duty and VAT where they apply, the inland leg, and a buffer for the known failure modes on that lane. Bands come from published indices or carrier rate levels, add-ons from tariff schedules.</p>
+    <p>Every range states when it was built, the shipment it assumes (usually one 40ft container, port-to-port, or one cubic metre for LCL), what is included, and what would move it most. It is labelled <em>planning range, not a quotation</em>, and a range over two quarters old is flagged.</p>
+
+    <h2>7. Worked examples and simulations</h2>
+    <p>Some pages use a worked example or simulation: a constructed shipment showing how a decision plays out, labelled where it appears with its assumptions — commodity, value, volume, route, Incoterm, month — and which figures are illustrative.</p>
+    <p>A simulation is not evidence. It describes no real shipment, company or forwarder price, and must not be cited as a benchmark. Its job is to make a mechanism visible: how duty stacks on freight, where a demurrage clock starts.</p>
+
+    <h2>8. Language, translation and terminology</h2>
+    <p>Most primary documents here are Arabic or Chinese. They are read in the original where the desk can; where it cannot, the page says which translation it relied on, and an official English version is used where one exists.</p>
+    <p>First use of a foreign term gives the original with a plain-English gloss. Official English names are preferred to translations of convenience; where a rendering is contested, the page uses the authority's own and notes the variant. HS codes are given at heading level unless a subheading is the point.</p>
+
+    <h2>9. What we will not publish</h2>
     <ul>
       <li>Precise freight rates presented as current prices.</li>
       <li>Guaranteed transit times.</li>
@@ -39,37 +71,30 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <li>Certifications, awards or credentials we do not hold.</li>
       <li>Invented sources, dates or quotations.</li>
     </ul>
-    <p>Where a page uses a range, the range is a planning aid. It is not a quotation and should not be treated as one.</p>
 
-    <h2>5. How the pages are built</h2>
-    <p>Each major page normally contains:</p>
+    <h2>10. How the pages are built</h2>
+    <p>A major page normally carries a direct answer in the first hundred words, a key-facts table, cost and transit drivers as ranges, failure modes, a labelled judgement, an FAQ, sources, an update log and related links. Not every page uses every module: a comparison leads with a verdict, a port page with the terminal.</p>
+
+    <h2>11. Automation: what is checked by machine, and what is not</h2>
+    <p>Freighthub does not run an automated fact-checker. No tool reads a page and confirms its claims, and nothing is published because a model was confident.</p>
+    <p>Automation is narrow and mechanical: research support (finding documents a person then opens), drafting and copy-editing, and checks on form — a failed build, missing metadata, a malformed table, a bad date format, a dead link. Those catch presentation defects; they cannot tell whether a sentence is true.</p>
+    <p>Every step in section 5 is done by a person, and so are the judgement calls; the desk is accountable for what is published and a model is not. A sentence published without verification is a defect.</p>
+
+    <h2>12. Dates, review cadence and updates</h2>
+    <p>Review follows how fast the facts move, not a single calendar:</p>
     <ul>
-      <li>A direct answer in the first 100 words.</li>
-      <li>A key-facts table with the numbers that matter.</li>
-      <li>An explanation of what changed or what is structurally different.</li>
-      <li>Cost and transit drivers, with ranges rather than point prices.</li>
-      <li>Risk and compliance failure modes.</li>
-      <li>An editorial judgement, clearly labelled.</li>
-      <li>An FAQ that answers the questions a buyer would actually ask.</li>
-      <li>Sources and an update log.</li>
-      <li>Internal links to the related country, port, method and sector pages.</li>
+      <li><strong>Country and port pages</strong> — at least twice a year, and within thirty days of a change to a tariff, port rule or service.</li>
+      <li><strong>Method guides and sector pages</strong> — at least annually, or when a standard or process changes.</li>
+      <li><strong>Policy pages</strong> — <a href="/about/">about</a>, corrections, privacy and terms, and this page: at least annually.</li>
+      <li><strong>Updates</strong> — dated entries as events happen; earlier entries are not rewritten.</li>
     </ul>
-    <p>Not every page uses every module. A comparison page leads with a verdict; a port page leads with the terminal and landside reality. The structure follows the decision.</p>
+    <p>A review is recorded as a change to the <em>last reviewed</em> date: the page was checked for accuracy, stale ranges and broken links, not rewritten. The <a href="/updates/">updates feed</a> states what changed, why it matters and what to do.</p>
 
-    <h2>6. AI assistance</h2>
-    <p>Freighthub uses AI tools for research support, drafting and editing. The editorial desk sets the questions, checks the sources, edits the copy and owns the judgements. AI is not credited as an author, and it is not used to invent facts or sources. When a claim cannot be checked, it is labelled as a claim or removed.</p>
+    <h2>13. Corrections</h2>
+    <p>Errors are corrected on the page and logged in <a href="/corrections/">corrections</a>: a correction is a factual fix, a clarification a wording fix, an update new information. We do not silently delete pages to avoid a correction.</p>
 
-    <h2>7. Dates and updates</h2>
-    <p>Every page carries a <em>last reviewed</em> date. A review means the page has been checked for factual accuracy, broken links and stale ranges. It does not mean every sentence has changed.</p>
-    <p>The <a href="/updates/">updates feed</a> carries dated briefings. Each entry states what changed, why it matters, who is affected and what to do. The feed is not a news wire; it is a set of operational notes.</p>
-
-    <h2>8. Corrections</h2>
-    <p>Errors are corrected on the page and logged in <a href="/corrections/">corrections</a>. A correction is a factual fix; a clarification is a wording fix; an update is new information. We do not silently delete pages to avoid a correction.</p>
-
-    <h2>9. What this site is not</h2>
-    <p>Freighthub is not a forwarder, a broker, a carrier or a marketplace. It does not sell freight, take bookings or earn commissions on shipments. It is an editorial project. The advice is general and should be checked against the current regulations and the specific shipment.</p>
-
-    <h2>10. Contact</h2>
-    <p>Questions, corrections and source suggestions: <a href="/contact/">contact the editorial desk</a>.</p>
+    <h2>14. What this site is not, and how to reach it</h2>
+    <p>Freighthub is not a forwarder, broker, carrier or marketplace. The advice is general and should be checked against current regulations and the specific shipment; the <a href="/disclaimer/">disclaimer</a> sets out those limits.</p>
+    <p>Questions, corrections and source suggestions go to the <a href="/contact/">editorial desk</a>. Personal data is covered by the <a href="/privacy/">privacy notice</a>; reuse of the text by the <a href="/terms/">terms</a>.</p>
   </article>
 </BaseLayout>

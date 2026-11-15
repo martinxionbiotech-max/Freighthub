@@ -1,22 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Corrections — Freighthub" description="How Freighthub handles errors: what counts as a correction, how it is dated, and the log of changes made to published pages.">
+<BaseLayout title="Corrections policy and log — Freighthub" description="How Freighthub handles errors: what counts as a material correction, how changes are recorded, how to appeal a decision, and the public log.">
   <article>
     <h1>Corrections</h1>
-    <p class="article-meta">Policy and log · Last reviewed 11 November 2026</p>
+    <p class="article-meta">Policy and log · Last reviewed 15 November 2026</p>
 
     <h2>Our policy</h2>
-    <p>Freighthub publishes analysis, not a live quotation service. Errors are inevitable, and the useful response is a visible one.</p>
-    <p>When we find an error, we:</p>
+    <p>Errors are inevitable, and the useful response is a visible one. When we find an error, we:</p>
     <ol>
-      <li><strong>Correct the page</strong> as soon as the error is confirmed.</li>
-      <li><strong>Add a dated line to the update log</strong> at the bottom of the page.</li>
-      <li><strong>Record the correction here</strong> if it changes a material fact, a range or a judgement.</li>
+      <li><strong>Correct the page</strong> as soon as the error is confirmed, with a dated line in its update log.</li>
+      <li><strong>Record it here</strong> if it changes a material fact, a range or a judgement.</li>
       <li><strong>Remove or rewrite the claim</strong> if it cannot be supported.</li>
     </ol>
-    <p>We distinguish between a <strong>correction</strong> (a factual error, a wrong number, a misnamed authority or a broken source), a <strong>clarification</strong> (wording that was accurate but ambiguous) and an <strong>update</strong> (new information that changes the picture, even if the original was correct).</p>
-    <p>We do not silently delete a page to avoid a correction. If a page is withdrawn, the withdrawal is noted.</p>
+    <p>We distinguish a <strong>correction</strong> (a factual error, a wrong number, a misnamed authority or a broken source), a <strong>clarification</strong> (accurate but ambiguous wording) and an <strong>update</strong> (new information, even if the original was right). No page is quietly deleted to avoid a correction.</p>
+
+    <h2>What counts as a material correction</h2>
+    <p>A correction is material if a reasonable reader could have decided differently had the original been right:</p>
+    <ul>
+      <li>a number a reader might budget against — a duty or VAT rate, a threshold, a charge;</li>
+      <li>a regulatory requirement — which document, who issues it, whether it is mandatory;</li>
+      <li>the identity or status of an authority, standard or certification scheme;</li>
+      <li>a named organisation's role in an example, or a verdict whose underlying fact changed;</li>
+      <li>anything touching safety, prohibited goods or a compliance deadline.</li>
+    </ul>
+    <p>Not material: typos, formatting, a reordered list. Those are fixed but not logged — a log full of comma fixes is a log nobody reads.</p>
 
     <h2>What each type looks like</h2>
     <div class="table-wrap">
@@ -28,26 +36,40 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <tr>
             <td><strong>Correction</strong></td>
             <td>A fact, figure, name or source was wrong</td>
-            <td>Page edited; dated line in the page's update log; entry in the log below</td>
+            <td>Page edited; dated line in its update log; entry below</td>
           </tr>
           <tr>
             <td><strong>Clarification</strong></td>
-            <td>The wording was accurate but could be misread</td>
-            <td>Page edited; note in the update log, no entry below unless it changes a decision</td>
+            <td>Accurate but could be misread</td>
+            <td>Page edited; update-log note; entry below only if it changes a decision</td>
           </tr>
           <tr>
             <td><strong>Update</strong></td>
-            <td>The underlying situation changed — a tariff, a port rule, a service</td>
-            <td>Page edited; dated update log entry; sector or country page linked</td>
+            <td>The situation changed — a tariff, port rule or service</td>
+            <td>Page edited; dated update-log entry; relevant country page linked</td>
           </tr>
           <tr>
             <td><strong>Withdrawal</strong></td>
-            <td>The claim cannot be supported and no corrected version exists</td>
-            <td>Page removed from navigation; withdrawal noted here and the URL redirected to the nearest hub</td>
+            <td>Claim unsupported, no corrected version</td>
+            <td>Removed from navigation; noted here; URL redirected</td>
           </tr>
         </tbody>
       </table>
     </div>
+
+    <h2>How a correction is recorded</h2>
+    <p><strong>On the page:</strong> a dated line in the update log at the foot of it, saying what changed and why. Where a number or requirement changes, the original wording is quoted so a reader who relied on it can see what they read.</p>
+    <p><strong>In this log:</strong> page, date, type, what was wrong, what it says now, and the source that settled it. The log is append-only: entries are not edited or deleted; a correction to a correction is a new entry.</p>
+
+    <h2>A worked example</h2>
+    <p>The entry below is real and deliberately small; it shows the shape every entry takes.</p>
+    <ul>
+      <li><strong>Page:</strong> <a href="/sectors/batteries/">Batteries sector</a></li>
+      <li><strong>Date:</strong> 11 November 2026 · <strong>Type:</strong> correction, terminology</li>
+      <li><strong>What was wrong:</strong> the acronym "SCoB" · <strong>now:</strong> "SCoC" (Shipment Certificate of Conformity)</li>
+      <li><strong>Effect:</strong> no change of meaning; the wrong acronym would not appear in the issuer's own documents</li>
+    </ul>
+    <p>An entry that changed a figure would add the old figure, the new one and the source.</p>
 
     <h2>How to report an error</h2>
     <p>Use the <a href="/contact/">contact page</a>. Include the page URL, the sentence and, if possible, the source that shows the error.</p>
@@ -61,12 +83,28 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <tr><td>Correction of a confirmed factual error</td><td>Within ten working days of confirmation</td></tr>
           <tr><td>Material error affecting a decision</td><td>Noted on the page as soon as it is confirmed</td></tr>
           <tr><td>Broken or dead source link</td><td>Replaced or removed within thirty days</td></tr>
+          <tr><td>Decision on an appeal</td><td>Within fifteen working days</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="meta">These are targets, not guarantees; if a correction takes longer, the log entry says why.</p>
+    <p class="meta">These are targets, not guarantees; if a correction takes longer, the log says why.</p>
+
+    <h2>If you disagree with a correction decision</h2>
+    <p>Either we corrected something that was right, or declined to correct something wrong. The route is the same:</p>
+    <ol>
+      <li><strong>Reply</strong> with the sentence and the source you rely on, and say what you think the correct position is.</li>
+      <li><strong>The source is reopened.</strong> Where the point is contestable, a second reviewer who did not make the original call looks at it.</li>
+      <li><strong>Written decision</strong> within fifteen working days: the page changes, or the desk explains why it stands by the original, with its source.</li>
+      <li><strong>Still disagree?</strong> If the objection is substantive, it is published as a short note on the page, attributed as a reader's objection with our response, rather than left in email.</li>
+    </ol>
+    <p>A regulator's or court's ruling on the fact governs. There is no charge, and no way to pay to have a correction removed.</p>
 
     <h2>Correction log</h2>
+    <h3>15 November 2026 — policy pages</h3>
+    <p><strong>Pages:</strong> <a href="/about/">About</a>, <a href="/methodology/">Methodology</a>, Corrections.<br />
+    <strong>Change:</strong> Expanded to state the publishing arrangement, source hierarchy, verification steps and appeals route. No earlier claim needed correcting.<br />
+    <strong>Type:</strong> Update, not a correction.</p>
+
     <h3>11 November 2026 — battery sector</h3>
     <p><strong>Page:</strong> <a href="/sectors/batteries/">Batteries sector</a><br />
     <strong>Change:</strong> Corrected the acronym "SCoB" to "SCoC" (Shipment Certificate of Conformity).<br />
@@ -82,13 +120,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <li>Copy edits that do not change meaning.</li>
       <li>Formatting changes.</li>
       <li>Updates to internal links.</li>
-      <li>Changes to the "last reviewed" date when no substantive content changed.</li>
+      <li>Changes to the last-reviewed date when nothing substantive changed.</li>
     </ul>
 
     <h2>A note on ranges</h2>
-    <p>Most of our cost and transit figures are ranges, not point estimates. A range is not a correction target unless it is clearly wrong or unsupported. If a range is stale, we update the page and note the new market conditions in the update log.</p>
+    <p>Most cost and transit figures here are ranges, not point estimates. A range is not a correction target unless it is clearly wrong or unsupported; if it goes stale, the page is updated and the new conditions noted.</p>
 
     <h2>Related</h2>
-    <p><a href="/methodology/">Methodology</a> — how the research is done. <a href="/about/">About</a> — who writes the site and how it is funded. <a href="/contact/">Contact</a> — how to reach the desk.</p>
+    <p><a href="/methodology/">Methodology</a> — how the research is done. <a href="/about/">About</a> — who writes the site and how it is funded. <a href="/disclaimer/">Disclaimer</a> — what can and cannot be relied on. <a href="/privacy/">Privacy</a> and <a href="/terms/">terms</a>. <a href="/contact/">Contact</a>.</p>
   </article>
 </BaseLayout>
