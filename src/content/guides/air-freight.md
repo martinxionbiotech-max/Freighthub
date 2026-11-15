@@ -203,3 +203,53 @@ Yes. Duty is assessed on CIF value, which includes air freight; VAT is charged o
 ## In our view
 
 We would decide air freight on the chargeable weight and the value of the week saved, not on the advertised per-kilo rate. This page shows why: a light carton is billed on the space it occupies, and surcharges can account for a large share of the all-in price. Our position holds for launches, spare parts and high-value electronics. It does not hold for dense, low-value goods when a sea schedule already meets the delivery date; there the air premium is simply a subsidy to impatience.
+
+## Case simulation: 300 kg of electronics from Shenzhen to Dubai
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation and not a customs ruling.
+
+**Assumptions**
+
+1. Gross weight 300 kg, volume 1.2 cbm; chargeable weight is the greater of gross weight and volume × 167.
+2. Air rate USD 4.20/kg (working range 3.50–5.50), all-in.
+3. FOB value USD 12,000, insured at 0.5%.
+4. Origin USD 120, destination USD 180, clearance USD 150, local delivery USD 120.
+5. UAE import VAT 5% on CIF; the importer is VAT-registered.
+
+**Parameters**
+
+| Parameter | Value | Range | Source |
+|---|---|---|---|
+| Gross weight | 300 kg | — | assumption |
+| Volume | 1.2 cbm | — | assumption |
+| Volumetric weight | 200.4 kg (1.2 × 167) | — | air convention |
+| Chargeable weight | 300 kg | 200.4–300 | max of the two |
+| Air rate | USD 4.20/kg | 3.50–5.50 | working range |
+| VAT | 5% | statutory | UAE VAT rate |
+
+**Calculation**
+
+Chargeable weight = max(300, 200.4) = **300 kg**.  
+Freight = 300 × 4.20 = **1,260**. CIF = 12,000 + 1,260 + 60 = **13,320**.  
+VAT = 13,320 × 5% = **666**. Extras = 120 + 180 + 150 + 120 = **570**.  
+Total outlay = 13,320 + 666 + 570 = **14,556** (USD 48.52 per kg landed).
+
+**Result**
+
+| Item | USD |
+|---|---:|
+| Freight | 1,260 |
+| CIF | 13,320 |
+| VAT (recoverable if registered) | 666 |
+| Origin, destination, clearance, delivery | 570 |
+| Total outlay | 14,556 |
+
+**Sensitivity**
+
+- Rate USD 5.50/kg → freight 1,650, total 14,965.50 (+409.50).
+- If the volume were 2.0 cbm instead, volumetric weight becomes 334 kg and chargeable weight rises to 334 kg — the freight is set by volume, not by the scale.
+- At a 0.8 cbm / 300 kg profile, chargeable weight stays at 300 kg and the rate is the only lever.
+
+**Limits**
+
+The comparison with sea freight is not in this model. Air is chosen for speed or for value density; at 300 kg the air freight alone (USD 1,260) is several times an LCL ocean charge for 1.2 cbm, and the relevant question is what the extra three to five weeks cost the buyer, not whether air is cheaper per kilogram.

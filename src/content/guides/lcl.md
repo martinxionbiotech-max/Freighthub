@@ -196,3 +196,54 @@ Yes, usually via Jeddah or Dammam then rail or truck to [Riyadh Dry Port](/ports
 ## In our view
 
 We would price LCL from the destination tariff backwards, not from the per-cubic-metre ocean rate. The page shows that fixed destination fees are charged per bill and can exceed the ocean freight on small lots, so consolidating several orders into one house bill changes the economics more than shopping for a cheaper sailing. That is the right first move below container volume. The exception is dense cargo billed on weight, where the destination charge is spread across a larger W/M base and the ocean rate regains its importance.
+
+## Case simulation: 8 cbm / 1,200 kg LCL from Shenzhen to Dammam
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation and not a customs ruling.
+
+**Assumptions**
+
+1. 8 cbm, 1,200 kg; LCL chargeable volume is the greater of cubic metres and weight ÷ 1,000.
+2. LCL rate USD 85 per chargeable cbm (working range 70–110), excluding destination charges.
+3. FOB value USD 18,000, insured at 0.5%.
+4. Origin USD 150, destination USD 220, clearance USD 180, delivery USD 250.
+5. Saudi duty 5%, VAT 15% on CIF plus duty; importer is VAT-registered.
+
+**Parameters**
+
+| Parameter | Value | Range | Source |
+|---|---|---|---|
+| Volume | 8 cbm | — | assumption |
+| Weight | 1,200 kg | — | assumption |
+| Chargeable volume | 8 cbm (8.0 vs 1.2) | — | W/M rule |
+| LCL rate | USD 85/cbm | 70–110 | working range |
+| Duty | 5% | 0–15% by HS line | assumption |
+| VAT | 15% | statutory | Saudi VAT rate |
+
+**Calculation**
+
+Chargeable volume = max(8, 1.2) = **8 cbm**.  
+Freight = 8 × 85 = **680**. CIF = 18,000 + 680 + 90 = **18,770**.  
+Duty = 938.50. VAT = (18,770 + 938.50) × 15% = **2,956.28**. Extras = **800**.  
+Total outlay = 18,770 + 938.50 + 2,956.28 + 800 = **23,464.78**.
+
+**Result**
+
+| Item | USD |
+|---|---:|
+| Freight (8 cbm × 85) | 680 |
+| CIF | 18,770 |
+| Duty (5%) | 938.50 |
+| VAT (15%) | 2,956.28 |
+| Origin, destination, clearance, delivery | 800 |
+| Total outlay | 23,464.78 |
+
+**Sensitivity**
+
+- Rate USD 110/cbm → freight 880, total 23,706.28 (+241.50).
+- If the cargo were 1,200 kg but 12 cbm, chargeable volume becomes 12 cbm and freight rises to 1,020.
+- Above roughly 15 cbm, a 20GP is usually cheaper than LCL on this lane; the crossover is a rule of thumb, not a published tariff, and depends on the destination charges.
+
+**Limits**
+
+The model assumes direct consolidation and no demurrage. LCL cargo waits for co-loaders, so the transit range is wider than FCL and a missed sailing costs more than the freight difference. Destination charges at Dammam are also frequently the larger surprise; they are treated here as a range, not a fixed number.

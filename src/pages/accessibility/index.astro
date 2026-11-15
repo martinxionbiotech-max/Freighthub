@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Accessibility — Freighthub"
+  description="How Freighthub is built for accessibility: semantic HTML, keyboard support, contrast, no autoplay, known limitations and how to report a barrier."
+>
+  <article>
+    <h1>Accessibility</h1>
+    <p class="article-meta">Last reviewed 15 November 2026</p>
+
+    <p class="lede">
+      The site is built to be readable without a mouse, without colour, and without the images. This
+      page states what is done, what is not perfect, and how to report a barrier.
+    </p>
+
+    <h2>Standard targeted</h2>
+    <p>
+      The aim is WCAG 2.2 level AA for the content pages. That is a target, not a certification: no
+      external audit has been carried out, and the site does not claim conformance it has not tested.
+    </p>
+
+    <h2>What is in place</h2>
+    <ul>
+      <li>Semantic HTML: one <code>h1</code> per page, headings in order, lists for lists, tables with header cells and captions where a table carries data.</li>
+      <li>Keyboard access: navigation and links are reachable and visible on focus; no custom widget traps focus.</li>
+      <li>Contrast: body text and links are chosen to meet AA against their background.</li>
+      <li>No autoplay, no carousels, no motion that cannot be stopped.</li>
+      <li>Text is not locked to images; pages remain readable at 200% zoom and with images disabled.</li>
+      <li>Language is declared as English, so screen readers do not mispronounce the page.</li>
+    </ul>
+
+    <h2>Known limitations</h2>
+    <ul>
+      <li>Wide data tables scroll horizontally on narrow screens; the content is available but the reading experience is cramped below 400 px.</li>
+      <li>Some external documents linked from the site (regulator PDFs) are outside our control and may not be tagged for accessibility.</li>
+      <li>Chinese characters and Arabic port names appear in some pages; pronunciation depends on the screen reader's language data.</li>
+    </ul>
+
+    <h2>Reporting a barrier</h2>
+    <p>
+      Write to <a href="mailto:editor@freighthub.net">editor@freighthub.net</a> with the page URL and
+      what happened. Accessibility fixes are treated as corrections and dated on the page when the
+      change is material.
+    </p>
+
+    <h2>Related</h2>
+    <p><a href="/privacy/">Privacy policy</a> · <a href="/terms/">Terms of use</a> · <a href="/corrections/">Corrections</a></p>
+  </article>
+</BaseLayout>
