@@ -212,3 +212,7 @@ For high-value, urgent or launch cargo, yes. For routine replenishment of bulky 
 ---
 
 *Freighthub editorial. We label claims as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations; confirm with a licensed forwarder before booking.*
+
+## In our view
+
+We read the UAE in late 2026 as a land-bridge market, which makes the discharge port a trucking decision rather than a shipping one. The page supports that: most boxes land at Khor Fakkan, Fujairah or Sohar and move by road, with thirty to fifty days door to door and a five-plus-five duty and VAT stack. The reading fails for inventory held in JAFZA, where the deferral benefit can justify keeping Jebel Ali in the plan.

@@ -235,3 +235,7 @@ A special economic zone and port on Oman's central coast, focused on heavy indus
 - [Food sector](/sectors/food/) — labelling and shelf life
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would separate Oman's strategic case from its tactical one. Pay for the Hormuz hedge only if you have regional exposure that justifies a route which is not always the cheapest; for a single-market importer, choose Sohar or Salalah by where the consignee actually is. The page makes that distinction, noting the strategic case can be worth building even when the daily rate is not the lowest. The exception is project cargo tied to a free zone, where the zone's incentives rather than either argument should decide the port.

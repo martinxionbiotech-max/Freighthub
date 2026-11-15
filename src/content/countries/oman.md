@@ -228,3 +228,7 @@ The Salalah concession transition in November 2028, followed by Sohar congestion
 **Update log.** 6 November 2026: first publication, incorporating Sohar's H1 2026 throughput, the CMA CGM–Asyad terminal agreement, the Salalah concession decision and capacity upgrade, the September 2026 Salalah record, the Asyad–JD.com warehouse agreement, and the 2026 additions to the Omani Conformity Scheme. Next scheduled review: 6 January 2027, or earlier if the Salalah transition or Sohar capacity plans change materially.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and are not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We read Oman as three ports doing three jobs rather than one national gateway, and we would plan each flow against a different port. The page lays out the split: Sohar as the northern gateway and non-Hormuz option, Salalah as a relay hub where nine boxes in ten are transshipment, Duqm as a project bet. The reading fails once the strait reopens and the bypass premium disappears.

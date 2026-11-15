@@ -251,3 +251,7 @@ Yes, but a sample is still a DG shipment. The classification, packaging and docu
 - [Sea vs air](/compare/sea-vs-air/) — mode decision
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read chemical freight as a permitting sequence with a shipping leg attached, and we would judge a forwarder on the sequence rather than the rate. The page is blunt about why: the permit timeline is often longer than the shipping time, and a first-time importer should start the permit before the production order. The position stops holding for a repeat importer moving the same product on a standing permit, where packaging and stowage become the real constraint.

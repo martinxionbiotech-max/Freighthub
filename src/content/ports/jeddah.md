@@ -186,3 +186,7 @@ Yes, subject to carrier acceptance, UN38.3 documentation and terminal DG rules. 
 - [Machinery sector](/sectors/machinery/)
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Sea vs air](/compare/sea-vs-air/)
+
+## In our view
+
+We read Jeddah's constraint as landside, not maritime, so the terminal and the free-time terms deserve more attention than the ocean rate. The page points the same way: diverted volumes made the yard and truck gate the bottleneck, clearance runs five to twelve days, and SCT and RSGT differ in equipment, free time and release behaviour. The reading matters less for Eastern Province cargo, where Dammam's rail link is the better answer.

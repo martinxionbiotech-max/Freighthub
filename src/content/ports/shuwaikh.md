@@ -180,3 +180,7 @@ Not this decade. Phase one is a 1,200 m container terminal on Boubyan Island wit
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Sea vs air](/compare/sea-vs-air/)
 - [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
+
+## In our view
+
+We read Shuwaikh as a tide-constrained city port, so we would plan the arrival around water depth rather than berth availability. The page supplies the reason: an 8.5-metre channel that takes 7.5 metres at zero tide and 9.5 metres at high water, with only two container berths among twenty-one. The reading fails for heavy lifts and project cargo that need a deep berth on demand, where Shuaiba is the honest recommendation.

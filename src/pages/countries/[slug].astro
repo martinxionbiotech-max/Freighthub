@@ -10,7 +10,7 @@ const doc = getDoc('countries', country.slug);
 const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${country.name} — Freighthub`);
 const pageDescription = doc?.description || `China to ${country.name} freight: ports, customs, VAT and route context.`;
 ---
-<BaseLayout title={pageTitle} description={pageDescription} noindex={!doc}>
+<BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={pageTitle} description={pageDescription} noindex={!doc}>
   <p><a href="/countries/">Countries</a> / {country.name}</p>
   <h1>{country.name}</h1>
   {doc ? (

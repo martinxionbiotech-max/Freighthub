@@ -10,7 +10,7 @@ const doc = getDoc('compare', String(slug));
 const label = String(slug).replace(/-/g, ' ').replace(/ vs /g, ' vs ');
 const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${label} — Freighthub`);
 ---
-<BaseLayout title={pageTitle} description={doc?.description || `Freight decision: ${label}.`} noindex={!doc}>
+<BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={pageTitle} description={doc?.description || `Freight decision: ${label}.`} noindex={!doc}>
   <p><a href="/compare/">Compare</a> / {label}</p>
   {doc ? (
     <article>

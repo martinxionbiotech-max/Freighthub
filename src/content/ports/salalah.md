@@ -247,3 +247,7 @@ It offers a 30-year exemption from taxes on profits and dividends, 100% foreign 
 - [Machinery sector](/sectors/machinery/)
 - [Food sector](/sectors/food/)
 - [China → UAE guide](/guides/china-to-uae/)
+
+## In our view
+
+We read Salalah as infrastructure for carriers rather than a market for importers. The page's own cargo mix makes the point: ninety to ninety-five per cent of boxes are transshipment, and the six and a half million TEU design capacity serves a relay role rather than Omani consumption. The stance breaks for Dhofar consignees, Omani exporters and free-zone tenants, for whom Salalah is the natural and often only sensible gateway.

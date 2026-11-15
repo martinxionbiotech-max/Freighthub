@@ -252,3 +252,7 @@ A US$2.5 billion Oman–UAE railway link, about 40% complete in April 2026, with
 - [Chemicals sector](/sectors/chemicals/)
 - [Food sector](/sectors/food/)
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+
+## In our view
+
+We read Sohar's 2026 growth as diverted cargo rather than Omani demand, which makes it a contingency worth keeping warm instead of a market to build around. The page supports that: container volume rose while dry bulk fell, and the throughput came from a strait closure, not from local consumption. The reading weakens if Hormuz normalises and carriers restore direct Gulf calls, when Sohar returns to being a northern-Oman gateway.

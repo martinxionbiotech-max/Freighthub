@@ -1,8 +1,60 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { gccRegion } from '../../regions/gcc';
+
+const byCountry = gccRegion.countries.map((c) => ({
+  ...c,
+  ports: gccRegion.ports.filter((p) => p.country === c.slug),
+}));
 ---
-<BaseLayout title="Ports — Freighthub" description="GCC port intelligence for China-origin freight.">
+
+<BaseLayout
+  title="GCC ports for China-origin freight"
+  description="Port profiles for China-to-GCC freight: Jebel Ali, Jeddah, Dammam, Hamad, Sohar, Shuwaikh, Salalah and the inland dry ports, with what each one changes."
+>
   <h1>GCC ports</h1>
-  <ul>{gccRegion.ports.map((p) => <li><a href={`/ports/${p.slug}/`}>{p.name}</a></li>)}</ul>
+
+  <p class="lede">
+    A port choice is not a preference; it is a decision about inland distance, congestion, free-zone
+    status and which carrier services call there. The profiles below cover the gateways that actually
+    handle China-origin cargo into the six GCC markets, including the inland dry ports that sit behind
+    them.
+  </p>
+
+  <h2>How to choose a gateway</h2>
+  <p>
+    Four variables decide most of it. The first is the final destination: a container bound for Riyadh
+    that lands in Jeddah still has a long inland leg, while Dammam shortens it for the Eastern
+    Province. The second is congestion and berth waiting, which moves with season and service changes
+    rather than with the port's brochure. The third is whether the consignee needs a free zone or a
+    mainland clearance. The fourth is certification and inspection capacity — a port that cannot
+    complete the required conformity check quickly turns a cheap freight rate into demurrage.
+  </p>
+  <p>
+    Where two ports are genuinely interchangeable, the comparison pages set out the trade-off rather
+    than declaring a winner: <a href="/compare/jebel-ali-vs-khalifa/">Jebel Ali vs Khalifa</a>,
+    <a href="/compare/jeddah-vs-dammam/">Jeddah vs Dammam</a>, and
+    <a href="/compare/jebel-ali-vs-direct/">Jebel Ali vs direct GCC calls</a>.
+  </p>
+
+  <h2>Ports by market</h2>
+  {byCountry.map((c) => (
+    <section>
+      <h3>{c.name} <span class="meta">· {c.currency} · {c.vat === 0 ? 'no VAT' : `${Math.round(c.vat * 100)}% VAT`}</span></h3>
+      <ul>
+        {c.ports.map((p) => (
+          <li><a href={`/ports/${p.slug}/`}>{p.name}</a></li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <h2>What a port profile contains</h2>
+  <p>
+    Each profile covers the berths and terminal operators, the services that connect it to Chinese
+    ports, the inland connections, the customs and inspection regime at that gate, and the failure
+    modes that show up in practice — rolled cargo, congested berths, or a free zone that does not
+    permit the re-export the buyer assumed. Figures are given as ranges where the source is a
+    published tariff and as estimates where it is not; the page says which.
+  </p>
 </BaseLayout>

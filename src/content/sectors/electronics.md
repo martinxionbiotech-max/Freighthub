@@ -230,3 +230,7 @@ Yes, but the product must be certified for the market, labelled correctly and co
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read electronics as a certification timetable that happens to need freight. The page is explicit that the binding constraints are SABER, ECAS, telecoms approval and battery rules, not the ocean rate, so air versus sea is really a question about when the certificate lands. The reading breaks for accessories and slow-moving stock, where the sailing board and unit cost genuinely decide the mode.

@@ -221,3 +221,7 @@ No, usually more expensive per container because of lower volumes and transhipme
 - [Machinery sector](/sectors/machinery/) — project cargo
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would not use Qatar as a first Gulf test. The page's own reading is that volumes are small, the service board is thin and the registration work is disproportionate to a single container, which makes a standalone entry expensive. Qatar works better as one market inside a wider Gulf distribution model. The exception is a supplier with a narrow, high-value range and a local partner who already handles registration; for that shipper, the concentrated port and the absent VAT can make Qatar a clean, profitable market.

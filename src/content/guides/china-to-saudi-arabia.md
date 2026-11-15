@@ -235,3 +235,7 @@ A missing or mismatched conformity certificate. The second is a valuation query.
 - [Machinery sector](/sectors/machinery/) — project cargo
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would settle the importer of record and the SABER file before comparing Saudi freight rates at all. The page shows that the market is document-heavy and that a supplier's own conformity paperwork is not the same as a Saudi-registered certificate; a rate saving cannot rescue a file that cannot clear. That is the right order of decisions for anyone planning repeat volume. It does not hold for a supplier selling through a Saudi distributor who is already the importer; there the product file comes first and freight can follow.

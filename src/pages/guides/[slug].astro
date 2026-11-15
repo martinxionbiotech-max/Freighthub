@@ -14,7 +14,7 @@ const label = String(slug).replace(/-/g, ' ');
 const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${label} — Freighthub`);
 const pageDescription = doc?.description || `China to GCC freight guide: ${label}.`;
 ---
-<BaseLayout title={pageTitle} description={pageDescription} noindex={!doc}>
+<BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={pageTitle} description={pageDescription} noindex={!doc}>
   <p><a href="/guides/">Guides</a> / {label}</p>
   {doc ? (
     <article>

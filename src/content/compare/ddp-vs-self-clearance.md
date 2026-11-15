@@ -178,3 +178,7 @@ DDP or a marketplace import model is standard, because the consumer is not an im
 - [Electronics sector](/sectors/electronics/) — high-value cargo
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would make this a capability question: if the buyer holds a licence, a VAT registration and a broker it trusts, self-clearance keeps control of the file and the VAT recovery; if it does not, DDP buys a service it cannot perform itself. The page's warning is that DDP transfers the commercial burden, not the legal liability of the importer. The exception runs the other way: a buyer with full capability should still self-clear a high-value, regulated shipment, because DDP's convenience is least worth its loss of control exactly there.

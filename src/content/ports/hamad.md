@@ -185,3 +185,7 @@ QGOSM conformity for tyres, brake pads, seat belts, rims and some electricals; a
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Sea vs air](/compare/sea-vs-air/)
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+
+## In our view
+
+We read Hamad as a terminal ahead of its market: the quay is not the constraint, the rotation is. The page's figures support that, with a design capacity of seven and a half million TEU against roughly half a million TEU moved nationally in the first half of 2026 and few direct China calls, all through Hormuz. The stance fails for project and breakbulk cargo, which cares about berth availability rather than service frequency.

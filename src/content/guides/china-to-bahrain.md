@@ -239,3 +239,7 @@ The domestic land leg is cheaper and shorter, but the ocean leg is usually more 
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would decide Bahrain on the destination of the cargo, not on the attractiveness of the port. If the goods are bound for Saudi Arabia's Eastern Province, Bahrain is a credible stockholding base; if they sell only inside Bahrain, the causeway is irrelevant and the small-market premium is the whole story. The page is clear that Bahrain is not a shortcut into Saudi Arabia, and we agree. The exception is a Bahrain-only importer with steady volume, for whom one port and one customs authority make the market genuinely simple.

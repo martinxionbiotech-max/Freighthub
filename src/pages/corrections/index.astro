@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Corrections — Freighthub" description="How Freighthub handles errors, what counts as a correction, and the log of changes made to published pages.">
+<BaseLayout title="Corrections — Freighthub" description="How Freighthub handles errors: what counts as a correction, how it is dated, and the log of changes made to published pages.">
   <article>
     <h1>Corrections</h1>
     <p class="article-meta">Policy and log · Last reviewed 11 November 2026</p>
@@ -18,8 +18,53 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <p>We distinguish between a <strong>correction</strong> (a factual error, a wrong number, a misnamed authority or a broken source), a <strong>clarification</strong> (wording that was accurate but ambiguous) and an <strong>update</strong> (new information that changes the picture, even if the original was correct).</p>
     <p>We do not silently delete a page to avoid a correction. If a page is withdrawn, the withdrawal is noted.</p>
 
+    <h2>What each type looks like</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Trigger</th><th>Where it appears</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Correction</strong></td>
+            <td>A fact, figure, name or source was wrong</td>
+            <td>Page edited; dated line in the page's update log; entry in the log below</td>
+          </tr>
+          <tr>
+            <td><strong>Clarification</strong></td>
+            <td>The wording was accurate but could be misread</td>
+            <td>Page edited; note in the update log, no entry below unless it changes a decision</td>
+          </tr>
+          <tr>
+            <td><strong>Update</strong></td>
+            <td>The underlying situation changed — a tariff, a port rule, a service</td>
+            <td>Page edited; dated update log entry; sector or country page linked</td>
+          </tr>
+          <tr>
+            <td><strong>Withdrawal</strong></td>
+            <td>The claim cannot be supported and no corrected version exists</td>
+            <td>Page removed from navigation; withdrawal noted here and the URL redirected to the nearest hub</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <h2>How to report an error</h2>
-    <p>Use the <a href="/contact/">contact page</a>. Include the page URL, the sentence and, if possible, the source that shows the error. We aim to acknowledge within five working days.</p>
+    <p>Use the <a href="/contact/">contact page</a>. Include the page URL, the sentence and, if possible, the source that shows the error.</p>
+
+    <h3>Response standards</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Stage</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td>Acknowledgement</td><td>Within five working days</td></tr>
+          <tr><td>Correction of a confirmed factual error</td><td>Within ten working days of confirmation</td></tr>
+          <tr><td>Material error affecting a decision</td><td>Noted on the page as soon as it is confirmed</td></tr>
+          <tr><td>Broken or dead source link</td><td>Replaced or removed within thirty days</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta">These are targets, not guarantees; if a correction takes longer, the log entry says why.</p>
 
     <h2>Correction log</h2>
     <h3>11 November 2026 — battery sector</h3>

@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "Freighthub — China → GCC freight intelligence (Middle East only).",
+  "description": "Freighthub \u2014 China \u2192 GCC freight intelligence (Middle East only).",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/generate-llms.mjs && node scripts/generate-sidecars.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -14,5 +14,8 @@
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.2.9",
     "marked": "^18.1.3"
+  },
+  "devDependencies": {
+    "turndown": "^7.2.5"
   }
 }

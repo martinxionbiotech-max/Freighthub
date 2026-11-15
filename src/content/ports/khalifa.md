@@ -188,3 +188,7 @@ The Khalifa Economic Zones Abu Dhabi, the industrial and free-zone area around t
 - [Machinery sector](/sectors/machinery/) — project and heavy lift
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read Khalifa as a hinterland port, not a hub. Its value is set by the consignee's postcode and free-zone status rather than by sailing frequency, and the page supports that: China transit sits in the same eighteen-to-twenty-eight-day band as Jebel Ali, so the landside and KEZAD are the only real differentiators. The stance fails for feeder-dependent or transshipment cargo, where Jebel Ali's sailing board still wins.

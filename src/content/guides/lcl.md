@@ -192,3 +192,7 @@ Yes, usually via Jeddah or Dammam then rail or truck to [Riyadh Dry Port](/ports
 **Update log.** 4 November 2026: first publication, reflecting the October Khor Fakkan CFS shift, the 30 October congestion data, the current Dubai destination tariff and post-February Hormuz routing. Next scheduled review: 4 January 2027, or earlier if a Gulf CFS returns to normal dwell.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited tariff or trade press. Figures labelled "industry claim" are ranges assembled from forwarder quotes and operational practice, not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We would price LCL from the destination tariff backwards, not from the per-cubic-metre ocean rate. The page shows that fixed destination fees are charged per bill and can exceed the ocean freight on small lots, so consolidating several orders into one house bill changes the economics more than shopping for a cheaper sailing. That is the right first move below container volume. The exception is dense cargo billed on weight, where the destination charge is spread across a larger W/M base and the ocean rate regains its importance.

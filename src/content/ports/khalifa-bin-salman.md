@@ -272,3 +272,7 @@ KBSP is smaller, shallower and more concentrated. It is a competent gateway for 
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
 - [Food sector](/sectors/food/)
 - [Ecommerce sector](/sectors/ecommerce/)
+
+## In our view
+
+We read Khalifa Bin Salman as a Saudi distribution platform with a Bahraini address, where the causeway rather than the quay sets the value. The page shows the cost of the alternative: one port, one operator, no second channel, and an eighty per cent collapse in monthly import containers during the 2026 disruption. The reading fails for purely domestic Bahraini volumes too small to justify a Saudi clearance.

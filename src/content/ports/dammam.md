@@ -220,3 +220,7 @@ For most Riyadh cargo, yes. Dammam is about 400 km from Riyadh with a direct rai
 - [Machinery sector](/sectors/machinery/)
 - [Chemicals sector](/sectors/chemicals/)
 - [Food sector](/sectors/food/)
+
+## In our view
+
+We read Dammam as a rail product for central Saudi rather than a Gulf gateway competing with Jeddah. The page's own numbers make the case: up to seven daily trains into Riyadh Dry Port, thirty days of free storage at the inland end, and eighteen to twenty-six days from China. The reading stops holding west of Riyadh, where Makkah, Madinah and the Red Sea hinterland make Jeddah the shorter and cheaper land leg.

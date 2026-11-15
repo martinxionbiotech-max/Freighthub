@@ -242,3 +242,7 @@ Only if the broker is licensed and registered there. Many Dubai brokers do not f
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would decide mainland or free zone before choosing a port, because that single question sets the duty and VAT treatment and therefore the landed cost. The page is blunt that a quote naming only the UAE is not a quote, since Dubai, Abu Dhabi and Sharjah carry different ports, brokers and costs. Our position holds for anyone selling into the local market. It does not hold for cargo re-exported without entering the mainland, where the free zone is the default and the sailing board should pick the port.

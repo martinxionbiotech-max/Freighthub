@@ -199,3 +199,7 @@ Yes. Duty is assessed on CIF value, which includes air freight; VAT is charged o
 **Update log.** 4 November 2026: first publication, reflecting the post-February Hormuz disruption, the October capacity data, the November fuel-surcharge schedule and the current battery rules. Next scheduled review: 4 January 2027, or earlier if Gulf belly capacity or war-risk surcharges change materially.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or airline statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and operational practice, not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We would decide air freight on the chargeable weight and the value of the week saved, not on the advertised per-kilo rate. This page shows why: a light carton is billed on the space it occupies, and surcharges can account for a large share of the all-in price. Our position holds for launches, spare parts and high-value electronics. It does not hold for dense, low-value goods when a sea schedule already meets the delivery date; there the air premium is simply a subsidy to impatience.

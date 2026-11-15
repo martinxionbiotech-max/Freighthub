@@ -183,3 +183,7 @@ Only for regulated products, but the regulated list is broad: electronics, elect
 **Update log.** 4 November 2026: first publication, reflecting the post-February Hormuz closure, the October Khor Fakkan rotation change, the 30 October congestion data and the current free-time environment. Next scheduled review: 4 January 2027, or earlier if a sustained Hormuz reopening or a Jeddah clearance improvement is confirmed.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and operational practice, not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We would negotiate free time and a demurrage-and-detention cap at the same time as the ocean rate. The page makes the case that FCL into the GCC is no longer a port-to-port purchase: the box that sits, or the landbridge that nobody priced, can cost more than the freight difference between sailings. That is where a shipper's attention belongs. The exception is cargo with a pre-cleared file and a consignee who collects immediately, where standard free time is genuinely enough and the effort is better spent on the rate.

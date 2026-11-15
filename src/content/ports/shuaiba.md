@@ -232,3 +232,7 @@ Yes, as a corridor. Kuwaiti clearance is only the first regime; the Abdali cross
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
 - [Sea vs air](/compare/sea-vs-air/)
+
+## In our view
+
+We read Shuaiba as a direct-delivery port where the landside carries the risk, and we would not confuse its low-congestion reputation with a buffer. The page shows why: twenty berths but no general warehouse and no shore cranes, cargo worked ship-to-truck, and an average waiting time of 5.4 days reported in 2026. The reading does not hold for a retailer's seasonal stock, which needs storage and a steady gate.

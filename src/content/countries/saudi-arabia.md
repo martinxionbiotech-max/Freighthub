@@ -202,3 +202,7 @@ Sometimes, for small volumes and Jeddah-adjacent destinations it rarely is. For 
 **Update log.** 4 November 2026: first publication, incorporating the September–October 2026 Suez restoration, the Al-Khumrah announcement and the November China–Red Sea service changes. Next scheduled review: 4 January 2027, or earlier if Jeddah congestion or Red Sea war-risk pricing changes materially.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and are not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We read Saudi Arabia as a compliance market with a logistics layer, and we would price VAT as cash rather than as freight cost. The page makes the case: VAT is levied on CIF plus duty and is a financing item for a registered importer, SABER decides release, and clearance varies by seven to fifteen days. The stance weakens for bulky, low-value cargo, where the ocean rate returns as the dominant number.

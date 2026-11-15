@@ -214,3 +214,7 @@ Yes, subject to the battery rules. A machine with an embedded lithium battery ma
 - [Sea vs air](/compare/sea-vs-air/) — mode choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read machinery as a project schedule with a freight quote attached, and we would treat the quote as the least important document in the file. The page shows why: dimensions, lifting points and road permits set the cost, while damage, a missing spare or a voltage mismatch stops commissioning. That stance does not hold for standard machines that fit an ordinary container, where the move is routine FCL or LCL.

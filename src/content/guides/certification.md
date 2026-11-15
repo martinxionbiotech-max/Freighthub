@@ -243,3 +243,7 @@ A final budgeting note: the certificate cost is per product family, not per cont
 - [Food sector](/sectors/food/) — SFDA and MOPH
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would treat GCC certification as a product-development task, not a customs step: test and certify the product family before production, then reuse the certificate across shipments. The page's reasoning is that the certificate, the testing and the label are a fixed cost that only pays back on repeat volume. That position does not hold for a single trial order unlikely to repeat, where certifying a whole family can cost more than the margin the order will ever earn.

@@ -1,8 +1,111 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { gccRegion } from '../regions/gcc';
+import { collection } from '../lib/content';
+
+const countries = gccRegion.countries;
+const ports = gccRegion.ports;
+const updates = collection('updates')
+  .filter((d) => d.title)
+  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+  .slice(0, 5);
+
+const vatLabel = (v: number) => (v === 0 ? 'No VAT' : `${Math.round(v * 100)}% VAT`);
+const gateway = (slug: string) => ports.find((p) => p.country === slug);
 ---
-<BaseLayout>
-  <h1>Freighthub</h1>
-  <p>China → GCC freight intelligence. The Middle East rebuild is in progress.</p>
-  <p>Planned sections: <a href="/countries/">Countries</a>, <a href="/ports/">Ports</a>, <a href="/guides/">Guides</a>, <a href="/updates/">Updates</a>.</p>
+
+<BaseLayout
+  title="Freighthub — China to GCC freight intelligence"
+  description="Independent China-to-GCC freight analysis: six markets, their ports, customs, VAT, certification and the cost stack behind a landed price."
+>
+  <h1>China to GCC freight, minus the forwarder's sales pitch</h1>
+
+  <p class="lede">
+    Freighthub is an independent editorial project about moving goods from China to the six Gulf
+    markets. It covers the ports, the customs and certification regimes, the sector economics, and the
+    decisions that sit between a factory gate and a Riyadh warehouse. It does not sell freight, book
+    containers or take commissions from carriers — which is why the numbers here can be read as
+    analysis rather than as a quote.
+  </p>
+
+  <h2>Start from the decision you actually have</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="/compare/sea-vs-air/">Sea or air?</a></h3>
+      <p>Transit time against freight cost per kilo, and the shipment sizes where the answer flips.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/ports/">Which gateway?</a></h3>
+      <p>Jebel Ali, Jeddah, Dammam, Hamad, Sohar, Shuwaikh and the inland pivots behind them.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/countries/">Which market?</a></h3>
+      <p>Six countries, six customs regimes: duty, VAT, certification and the documents each one asks for.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/guides/certification/">Which certificate?</a></h3>
+      <p>SABER and SASO for Saudi, ESMA for the UAE, and the sector rules that decide clearance.</p>
+    </div>
+  </div>
+
+  <h2>The six markets</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Market</th><th>Currency</th><th>Indirect tax</th><th>Main gateway</th><th>Guide</th></tr>
+      </thead>
+      <tbody>
+        {countries.map((c) => (
+          <tr>
+            <td>{c.name}</td>
+            <td>{c.currency}</td>
+            <td>{vatLabel(c.vat)}</td>
+            <td>{gateway(c.slug)?.name ?? '—'}</td>
+            <td><a href={`/countries/${c.slug}/`}>Open</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What actually decides landed cost</h2>
+  <p>
+    On most China–GCC lanes the ocean freight is not the line that breaks a budget. Duty, VAT, the
+    certificate that has to exist before a container is released, and the variance in clearance time
+    decide more outcomes than the per-container rate does. A forwarder quoting a low freight number
+    and leaving the certificate to the buyer is not offering a cheaper route; it is moving the cost to
+    a later page.
+  </p>
+  <p>
+    The guides therefore separate the three layers: the freight rate, the statutory charges, and the
+    handling that depends on who clears the goods. <a href="/guides/cost-and-transit/">The cost and
+    transit guide</a> sets out the stack; <a href="/compare/ddp-vs-self-clearance/">DDP versus
+    self-clearance</a> covers the decision most importers get wrong first.
+  </p>
+
+  <h2>Latest updates</h2>
+  <ul>
+    {updates.map((u) => (
+      <li>
+        <a href={`/updates/${u.slug}/`}>{u.title}</a>
+        {u.date ? <span class="meta"> · {u.date}</span> : null}
+      </li>
+    ))}
+  </ul>
+  <p><a href="/updates/">All updates</a> · <a href="/notes/">Editorial notes</a></p>
+
+  <h2>How this is researched</h2>
+  <p>
+    Every substantive page names its sources, and most of them are primary: ZATCA and the Saudi
+    customs portal, SABER and SASO, the UAE Ministry of Economy, DP World and Mawani port notices.
+    Where a figure is a range rather than a published tariff, the page says so and shows what moves
+    it. Where the position is editorial — which port to prefer for a given cargo, whether DDP is worth
+    it — the page says that too.
+  </p>
+  <p>
+    The <a href="/methodology/">methodology</a> page sets out the research and correction process; the
+    <a href="/corrections/">corrections log</a> records what changed and when; the
+    <a href="/about/">about page</a> states the independence position in full. If a page here is
+    wrong, the correction is published rather than quietly edited.
+  </p>
 </BaseLayout>

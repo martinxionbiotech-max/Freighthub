@@ -3,24 +3,125 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  /** Editorial pages pass article so the page emits Article JSON-LD. */
+  type?: 'website' | 'article';
+  published?: string;
+  updated?: string;
+  image?: string;
 }
+
 const {
   title = 'Freighthub — China → GCC Freight Intelligence',
   description = 'China to GCC freight intelligence: routes, ports, customs, certification and live updates.',
   noindex = false,
+  type = 'website',
+  published,
+  updated,
+  image = '/og-default.png',
 } = Astro.props;
-const SITE = Astro.site?.toString() ?? 'https://freighthub.net';
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : `${SITE}${Astro.url.pathname}`;
+
+const SITE = 'https://freighthub.net';
+const canonical = new URL(Astro.url.pathname, SITE).href;
+const ogImage = new URL(image, SITE).href;
+
+const orgId = `${SITE}/#organization`;
+const siteId = `${SITE}/#website`;
+
+const organization = {
+  '@type': 'Organization',
+  '@id': orgId,
+  name: 'Freighthub',
+  url: SITE,
+  description:
+    'Independent editorial analysis of China-to-GCC freight: ports, routes, customs, certification and sector economics. No carrier or forwarder commissions.',
+  email: 'editor@freighthub.net',
+  knowsAbout: [
+    'China to GCC ocean freight',
+    'GCC customs and VAT',
+    'SABER and SASO certification',
+    'GCC port operations',
+  ],
+};
+
+const website = {
+  '@type': 'WebSite',
+  '@id': siteId,
+  name: 'Freighthub',
+  url: SITE,
+  publisher: { '@id': orgId },
+  inLanguage: 'en',
+};
+
+// Breadcrumbs are derived from the path: /guides/air-freight/ becomes
+// Home > Guides > Air freight, with the last crumb unlinked.
+const segments = Astro.url.pathname.split('/').filter(Boolean);
+const humanize = (s: string) =>
+  s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const breadcrumbItems = [
+  { name: 'Home', url: `${SITE}/` },
+  ...segments.map((seg, i) => ({
+    name: humanize(seg),
+    url: `${SITE}/${segments.slice(0, i + 1).join('/')}/`,
+  })),
+];
+const breadcrumbLd =
+  segments.length > 0
+    ? {
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbItems.map((b, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: b.name,
+          item: b.url,
+        })),
+      }
+    : null;
+
+const articleLd =
+  type === 'article'
+    ? {
+        '@type': 'Article',
+        headline: title.replace(/ — Freighthub$/, ''),
+        description,
+        ...(published ? { datePublished: published } : {}),
+        ...(updated || published ? { dateModified: updated || published } : {}),
+        author: { '@id': orgId },
+        publisher: { '@id': orgId },
+        mainEntityOfPage: canonical,
+        image: ogImage,
+      }
+    : null;
+
+const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), ...(articleLd ? [articleLd] : [])];
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonical} />
-    <title>{title}</title>
+
+    <meta property="og:type" content={type === 'article' ? 'article' : 'website'} />
+    <meta property="og:site_name" content="Freighthub" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    {type === 'article' && published && <meta property="article:published_time" content={published} />}
+    {type === 'article' && updated && <meta property="article:modified_time" content={updated} />}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
   </head>
   <body>
     <header class="site-header">
@@ -43,7 +144,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
     </main>
     <footer class="site-footer">
       <div class="container">
-        <p>Freighthub — China → GCC freight intelligence. Independent editorial analysis; no carrier or forwarder commissions.</p>
+        <p>Freighthub — China to GCC freight intelligence. Independent editorial analysis; no carrier or forwarder commissions.</p>
         <p><a href="/about/">About</a> · <a href="/methodology/">Methodology</a> · <a href="/corrections/">Corrections</a> · <a href="/contact/">Contact</a></p>
       </div>
     </footer>

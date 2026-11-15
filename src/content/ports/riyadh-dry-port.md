@@ -239,3 +239,7 @@ Two to five days with a complete file, up to two weeks with a SABER gap or valua
 - [Electronics sector](/sectors/electronics/)
 - [FCL vs LCL](/compare/fcl-vs-lcl/)
 - [Sea vs air](/compare/sea-vs-air/)
+
+## In our view
+
+We read the thirty-day window at Riyadh Dry Port as a storage term, not a clearance allowance. The page is clear that duty, VAT, inspection and carrier demurrage run on separate clocks, so free storage at the inland terminal can coexist with a bill building elsewhere. The reading fails for multi-drop deliveries, overweight boxes and dangerous goods, where the extra rail leg adds handling without removing any risk.

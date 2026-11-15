@@ -181,3 +181,7 @@ Only if the broker is licensed and registered in Abu Dhabi. Many Dubai brokers d
 - [Electronics sector](/sectors/electronics/) — high-value cargo
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would choose the UAE gateway on the land leg and the empty-return location, not on the ocean rate. The page notes that the two ports price closely, so the truck, the free-time terms and where the box goes back decide the total; a Dubai consignee using Khalifa to save on freight is trading a small gain for a larger inland cost. The exception is project or heavy-lift cargo, where Khalifa's terminal capability can decide the port regardless of where the consignee sits.

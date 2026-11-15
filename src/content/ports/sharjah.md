@@ -174,3 +174,7 @@ A Dubai broker can file in Sharjah if licensed and registered, but many do not f
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read Sharjah as three ports with three different cost bases, and we would choose between them by road leg rather than by port brand. The page makes the distinction concrete: Khalid for general and project cargo, Hamriyah for the free zone and northern industry, Khor Fakkan as the container bypass outside Hormuz. The reading fails for shippers who need the widest sailing board or the deepest broker pool.

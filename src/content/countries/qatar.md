@@ -232,3 +232,7 @@ Hormuz. Qatar has no maritime alternative to the strait, so a risk event hits ev
 **Update log.** 5 November 2026: first publication, incorporating H1 and October 2026 throughput, the July tariff decree, the November poultry duty change, QatarEnergy's Hormuz guidance and the current Hamad service pattern. Next scheduled review: 5 January 2027, or earlier if Hormuz risk or Hamad connectivity changes materially.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and are not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We read Qatar as a one-port market where the risk sits in the rotation, not the terminal. The page supports that: Hamad has capacity to spare, almost every container enters through Hormuz, and zero VAT makes a DDP quote simpler without making it cheaper. The reading fails for regulated product launches, where QGOSM conformity is the gate and routing is a secondary question.

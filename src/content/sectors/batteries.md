@@ -228,3 +228,7 @@ DG surcharges, UN packaging, insurance and limited carrier capacity add cost. Th
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read battery freight as a documentation business wearing a transport label. The page's own evidence points there: the most common air rejection is not a rule violation but an incomplete file, and the shippers who clear repeatedly hold a UN38.3 summary per cell, a packing instruction per configuration and a carrier approval per route. That reading fails for damaged, defective or recalled batteries, where no file is good enough and local disposal beats a better forwarder.

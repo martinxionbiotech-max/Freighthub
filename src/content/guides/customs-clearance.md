@@ -231,3 +231,7 @@ Not always. A forwarder may arrange transport and sub-contract the brokerage. Co
 - [Chemicals sector](/sectors/chemicals/) — SDS and permits
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would spend the effort on classification, valuation and certification before the vessel sails, and choose a broker who files weekly at the actual port of entry. The page's evidence is that the shippers with the fewest delays are the ones with complete, consistent files rather than the best contacts, and that a broker strong in one port may be average in another. The exception is a genuinely novel product whose tariff treatment is unsettled; there, an early ruling is worth more than any amount of file polish.

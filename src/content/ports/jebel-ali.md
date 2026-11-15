@@ -151,3 +151,7 @@ Expect a temporary closure, carrier suspensions and a scramble for trucks. The r
 ---
 
 *Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations.*
+
+## In our view
+
+We read Jebel Ali's 2026 problem as commercial rather than physical: the terminal works, the direct rotation does not. That is why we would judge any Jebel Ali quote by the named trucker and the contracted landbridge, not by the sailing schedule, since most boxes now arrive overland from Khor Fakkan or Fujairah. The reading changes for a JAFZA-based consignee or breakbulk and reefer cargo, where the port is still the right door.

@@ -176,3 +176,7 @@ It is 15% on CIF plus duty, and it is recoverable by a registered Saudi importer
 - [Cost and transit](/guides/cost-and-transit/) — landed cost
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would start direct where the product actually sells and add a UAE hub only when multi-market volume can carry its fixed cost. The page warns that the hub adds handling and a UAE entity, and a single-market seller who sets up a free-zone company to save duty often finds rent, licence and carrying cost exceed the saving. Prove first, then consolidate. The exception is a supplier whose business is re-export or multi-market distribution from the first order, where the hub is the operating model rather than an optimisation.

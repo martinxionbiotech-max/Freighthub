@@ -244,3 +244,7 @@ The cargo may not have been pre-cooled, the reefer may not have been plugged in,
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read food as a registration and labelling market before we read it as a cold-chain one. The page supports that ordering: labelling is the most common rejection, registration has to start before production, and remaining shelf life at arrival is a hard constraint rather than a buffer. It stops holding once a product is registered and its artwork approved, because the binding constraint then moves to reefer equipment and the shelf-life clock.

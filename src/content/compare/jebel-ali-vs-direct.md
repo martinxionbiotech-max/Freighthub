@@ -173,3 +173,7 @@ Yes, but the connection risk is higher. Use a carrier with a reliable feeder and
 - [Customs clearance](/guides/customs-clearance/) — transit procedures
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would default to a direct call for a major Saudi or Qatari destination and treat Jebel Ali transhipment as the exception. The page's reasoning is that each additional handling adds a party, a charge and uncertainty to the delivery date, and a direct rotation removes all three. That is right when a reliable direct service exists. The exception is a market where direct space is unavailable or the sailing board is too thin to protect the delivery date; then frequency at Jebel Ali is worth the extra handling.

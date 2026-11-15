@@ -224,3 +224,7 @@ Yes, but Saudi duty, VAT and SABER apply when the goods enter Saudi Arabia. The 
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read GCC ecommerce as an import-model decision rather than a parcel-rate decision. The page makes the case: a B2B2C shipment to a fulfilment centre clears duty and VAT once, while direct-to-consumer parcels clear per order, and certification, Arabic labelling and returns decide whether a SKU survives. The position fails for a first test batch, where cross-border parcels are a cheaper way to learn demand before committing stock.

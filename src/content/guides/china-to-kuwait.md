@@ -235,3 +235,7 @@ It is a strategic project under development, not a current commercial routing op
 - [Food sector](/sectors/food/) — PAFN registration
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would not book a Kuwait shipment until the local agent and the product registration are settled. The page is explicit that the binding constraint is usually the agent or the registration rather than the vessel, and that the market rewards one good relationship repeated over time. That makes Kuwait a commitment decision, not a freight decision. It does not hold for a supplier shipping through a distributor who already holds the registrations; that supplier can test demand without building the local structure first.
