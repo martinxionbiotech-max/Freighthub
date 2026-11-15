@@ -13,6 +13,35 @@ const td = new TurndownService({
 });
 td.remove(['script', 'style', 'nav']);
 
+// Turndown drops tables by default. These pages carry 100+ comparison tables, so
+// the markdown twin would lose the most structured part of the page. Emit a GFM
+// pipe table instead: first row as header, everything after as body rows.
+td.addRule('table', {
+  filter: 'table',
+  replacement: (_content, node) => {
+    // Domino (turndown's DOM in Node) exposes getElementsByTagName but not
+    // querySelectorAll on the node handed to a rule, so walk it that way.
+    const trs = node.getElementsByTagName ? Array.from(node.getElementsByTagName('tr')) : [];
+    const grid = trs
+      .map((tr) =>
+        Array.from(tr.childNodes)
+          .filter((cell) => cell.nodeType === 1)
+          .map((cell) => (cell.textContent || '').replace(/\s+/g, ' ').trim().replace(/\|/g, '\\|'))
+      )
+      .filter((row) => row.length > 0);
+    if (grid.length === 0) return '';
+    const width = Math.max(...grid.map((r) => r.length));
+    const pad = (r) => [...r, ...Array(width - r.length).fill('')];
+    const header = pad(grid[0]);
+    const lines = [
+      `| ${header.join(' | ')} |`,
+      `| ${header.map(() => '---').join(' | ')} |`,
+      ...grid.slice(1).map((r) => `| ${pad(r).join(' | ')} |`),
+    ];
+    return `\n\n${lines.join('\n')}\n\n`;
+  },
+});
+
 function walk(dir) {
   const out = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
