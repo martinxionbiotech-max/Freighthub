@@ -155,3 +155,73 @@ Expect a temporary closure, carrier suspensions and a scramble for trucks. The r
 ## In our view
 
 We read Jebel Ali's 2026 problem as commercial rather than physical: the terminal works, the direct rotation does not. That is why we would judge any Jebel Ali quote by the named trucker and the contracted landbridge, not by the sailing schedule, since most boxes now arrive overland from Khor Fakkan or Fujairah. The reading changes for a JAFZA-based consignee or breakbulk and reefer cargo, where the port is still the right door.
+
+## Case simulation: one 40HQ, free zone versus mainland
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation, not a customs ruling, and not a measurement of any real consignment.
+
+**Assumptions**
+
+1. One 40HQ, FOB value USD 60,000. Author assumption — the page quotes no cargo value.
+2. The customs value equals the FOB value. Ocean freight and insurance are excluded because they are the same on both routings, so the comparison isolates the clearance treatment.
+3. Duty is 5% of the customs value — the statutory rate the page's declaration logic applies.
+4. VAT is 5% of the customs value plus duty. Author assumption on the base: the page states that VAT is assessed at declaration, not the arithmetic base.
+5. Free-zone storage runs 30 days, then a transfer declaration to the mainland. Author assumption for the scenario.
+6. Working capital costs 8% a year, simple. Author assumption, not a market rate.
+7. The importer is VAT-registered, so the 5% VAT is recoverable and is a cash-flow item, not a final cost.
+
+**Parameters**
+
+| Parameter | Value | Range | Source |
+|---|---|---|---|
+| FOB and customs value | USD 60,000 | — | author assumption |
+| Duty | 5% | statutory | UAE import duty, as the page describes |
+| VAT | 5% | statutory | UAE VAT, as the page describes |
+| VAT base | customs value + duty | — | author assumption |
+| Free-zone storage | 30 days | 30–90 | scenario assumption |
+| Cost of capital | 8% a year, simple | 4–12% | author assumption |
+| Storage tariff | not quoted | solved as a break-even | the page gives no tariff |
+
+**Calculation**
+
+Mainland entry, day 0: duty = 60,000 × 5% = **3,000**; VAT = (60,000 + 3,000) × 5% = **3,150**; cash at clearance = **6,150**, which is 10.25% of FOB.  
+Free zone, day 0: duty and VAT are deferred while the goods remain in the free zone.  
+Free zone, day 30: the transfer declaration to the mainland pays the same 3,000 + 3,150 = **6,150**.  
+Value of the delay = 6,150 × 8% × 30 ÷ 365 = **40.44**.  
+Break-even storage budget = 40.44 ÷ 30 = **1.35 per day**.
+
+**Result**
+
+| Route | Day 0 cash | Day 30 cash | Total cash | Net cost, VAT recoverable |
+|---|---:|---:|---:|---:|
+| Mainland entry | 6,150 | 0 | 6,150 | 3,000 |
+| Free zone, 30 days, then transfer | 0 | 6,150 | 6,150 | 3,000 |
+
+The free zone does not reduce the duty or the VAT on a box that ends up in the mainland. It moves 6,150 by 30 days, and at an 8% cost of capital that deferral is worth 40.44 — which is also the entire free-zone storage budget at which the two routes break even, or 1.35 a day. A storage tariff above that makes mainland entry the cheaper route on cash, before any handling or transfer fee is counted.
+
+**Sensitivity**
+
+| Case | Value of the deferral | Break-even storage |
+|---|---:|---:|
+| 30 days at 8% | 40.44 | 1.35 per day |
+| 90 days at 8% | 121.32 | 1.35 per day |
+| 30 days at 4% | 20.22 | 0.67 per day |
+| 30 days at 12% | 60.66 | 2.02 per day |
+| Re-export, no mainland entry | 6,150 never paid | 205.00 per day over 30 days; 68.33 over 90 |
+
+- **30 versus 90 days.** The deferral triples, from 40.44 to 121.32, but so does the storage bill. The per-day break-even stays at 1.35, so a longer stay does not rescue a warehouse that costs more than that per day.
+- **Re-export is the case that changes the answer.** The page states that goods in the free zone are not subject to duty or import VAT until they leave for the mainland. If they leave for a third country instead, the 6,150 is never paid, and the free zone wins by 6,150 minus storage and handling.
+- **Cost of capital.** At 4% or 12%, the 30-day break-even moves between 0.67 and 2.02 a day. The conclusion holds across that range.
+
+**Limits**
+
+- The transfer declaration fee, handling and the truck leg between the free zone and the mainland are excluded. The page says the transfer is a separate declaration and payment but quotes no fee, so the model solves a break-even instead of assuming one.
+- No JAFZA licence or lease cost is included; that is a fixed cost that does not depend on this box.
+- Customs value is taken as FOB. Duty and VAT are assessed on CIF, so any freight and insurance component raises both lines by 5% of that component, equally on both routes.
+- The 12–15 day landbridge and the port congestion described on this page are ignored, and they can consume free time before the box reaches either destination.
+- The model assumes the HS line and the 5% duty are correct. A different line changes the duty, and with it every number above.
+- A non-VAT-registered importer bears the 3,150 as a real cost, but equally in both routes; only the timing differs.
+
+## Related
+
+The cash-flow question only decides where the box clears. The [customs clearance guide](/guides/customs-clearance/) covers the declaration that follows, and the [UAE country hub](/countries/uae/) sets out the licence and importer requirements. If the real choice is between ports rather than clearance treatments, read the [Jebel Ali versus Khalifa comparison](/compare/jebel-ali-vs-khalifa/); for the cargo that fills the box, the [ecommerce sector](/sectors/ecommerce/) covers the replenishment case JAFZA is usually used for.

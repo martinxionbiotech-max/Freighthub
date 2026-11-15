@@ -79,6 +79,25 @@ This is a driver list, not a rate card. A single "China to UAE" number in this m
 
 **Transit benchmarks.** Pre-war port-to-port times were commonly quoted as Shanghai 18–24 days, Ningbo 18–24, Shenzhen 14–20, Guangzhou 16–22, Qingdao 22–28. Treat those as historical. Now add east-coast discharge, the 12–15 day port-to-door transfer, and truck variability: a realistic FCL door-to-door range is 30–50 days, LCL 55–70. [Air freight](/guides/air-freight/) is 4–7 days for priority cargo, with tight capacity and rates well above 2025. *(Industry claim)*
 
+## Landed-cost snapshot
+
+The lines a buyer budgets, expressed only in figures this guide already states. Nothing here is a quotation; the last column says what moves the number.
+
+| Component | What to budget | What the figure depends on | Basis |
+|---|---|---|---|
+| Ocean freight | Under USD 2,000 to above USD 8,000 per container was the observed Shanghai–Jebel Ali spread in May 2026; add war-risk and emergency surcharges of USD 200–500 per container | Discharge port (Khor Fakkan, Fujairah, Sharjah, or an ad hoc Jebel Ali call), carrier, whether trucking sits inside the quote, and how old the quote is | Reported fact, May 2026 snapshot — not a current rate |
+| Customs duty | 5% of CIF on most goods; up to 67.5% of CIF where anti-dumping applies (car batteries, ceramic tile, hydraulic cement); 100% excise on tobacco and energy drinks | HS code, declared valuation, origin, and whether the line is under anti-dumping | Reported fact |
+| Import VAT | 5% of customs value plus duty plus excise. At the standard 5% duty that is about 10.25% of CIF payable at clearance | Excise status, duty rate, and whether the importer is registered and can reclaim | Reported fact |
+| Clearance | 2–5 working days on a clean file; 1–3 weeks when a certificate or HS code is wrong. No broker fee is quoted in this guide; the exposure that matters is demurrage and detention, which can exceed the ocean freight | Documentation completeness, ECAS/TDRA/food/medical certificates, valuation queries, importer-of-record status | Industry claim on timing; no fee figure stated here |
+| Inland | Khor Fakkan to Jebel Ali is about 120 km, Fujairah about 150 km, plus the 12–15 day port-to-door transfer. Salalah is 1,200+ km and Jeddah 1,800 km | Consignee location, truck availability, and whether the B/L names the land leg and who pays for a carrier-initiated diversion | Reported fact on distances and transfer time; no per-container rate stated here |
+| Duty and VAT together | About 10.25% of CIF at the 5% + 5% stack, before anti-dumping and excise | As the two tax rows above | Reported fact |
+
+Read the table in that order and the budgeting logic falls out. The tax stack is the one line that behaves like a rate — 10.25% of CIF is fixed by the HS code, not by the market — so it should be the first number in the model, not the last. *(Editorial judgment)*
+
+The inland line is the one that changed in 2026. It used to be a rounding error against ocean freight; with discharge at Khor Fakkan it is now a first-order cost that a port-to-port quote does not contain. *(Editorial judgment)*
+
+Freight is the line to re-quote, not the line to plan against: it is the only figure in the table that has moved by a multiple within a year. *(Editorial judgment)*
+
 ## Ports and routing: the new UAE gateway map
 
 **Khor Fakkan (Sharjah, east coast).** The main container valve. It sits on the Gulf of Oman, outside Hormuz, in Sharjah's east-coast exclave. It is handling ships up to 24,000 TEU on MSC's expanded Far East–Middle East service, with average waits of 7.25 days. The terminal is doubling capacity, but not before the current congestion peak. Expect 12–15 days from discharge to Jebel Ali, Sharjah or Abu Dhabi — three times the pre-war five-day transfer. *(Reported fact)*
@@ -194,6 +213,81 @@ Yes, for a normal commercial import: a UAE trade licence, a customs client code 
 **Is air freight a viable alternative?**
 For high-value, urgent or launch cargo, yes. For routine replenishment of bulky or low-margin goods, no — the [sea-versus-air trade-off](/compare/sea-vs-air/) rarely favours air at scale. Capacity into Dubai is tight, rates are elevated, and the advantage shrinks once customs and last-mile delivery are included. *(Editorial judgment)*
 
+## Case simulation: one 20ft to Jebel Ali
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation, not a customs ruling, and not a measurement of any real consignment.
+
+**Assumptions**
+
+1. One 20ft FCL, FOB value USD 25,000, China origin, consignee in Dubai holding a mainland trade licence — so duty and VAT are paid at import rather than deferred in a free zone.
+2. Discharge at Khor Fakkan and truck 120 km to Jebel Ali. Direct Jebel Ali calls are largely restricted, so the inland leg is priced as part of the shipment instead of being left at the port gate.
+3. Ocean freight USD 1,600 and cargo insurance at 0.5% of FOB plus freight. The freight is a stipulated input for this case, not a market rate: this guide's only observed ocean figure is above USD 8,000 per container in May 2026, so the first sensitivity row reinstates a market-level number.
+4. Duty at 5% of CIF, with no excise and no anti-dumping, on an HS code confirmed at the standard line.
+5. VAT at 5% of customs value plus duty. The importer is VAT-registered, so cash outlay and net cost are shown separately.
+6. Clearance USD 350 and inland USD 450 per container, both author assumptions. The guide gives clearance time (2–5 working days clean) and the distance (120 km), not fees.
+
+**Parameters**
+
+| Parameter | Value | Range | Source |
+|---|---|---|---|
+| FOB value | USD 25,000 | fixed for this case | assumption |
+| Ocean freight | USD 1,600 | 1,600–8,000+ | author assumption; upper bound is Freightos's May 2026 observation of above USD 8,000 per container |
+| Insurance | 0.5% of FOB + freight | 0.3–0.7% | author assumption; war-risk cover is priced separately and is not in this line |
+| Duty rate | 5% of CIF | 5% standard; up to 67.5% anti-dumping | this guide; confirm the HS line |
+| VAT | 5% of CIF + duty | statutory | this guide |
+| Clearance | USD 350 | 350–1,200 | author assumption; timing from this guide is 2–5 working days clean, 1–3 weeks if documents fail |
+| Inland, Khor Fakkan–Jebel Ali | USD 450 | 450–900 | author assumption; the 120 km distance is from this guide |
+
+**Calculation**
+
+Insurance = (25,000 + 1,600) × 0.5% = **133.00**.  
+CIF = 25,000 + 1,600 + 133.00 = **26,733.00**.  
+Duty = 26,733.00 × 5% = **1,336.65**.  
+VAT = (26,733.00 + 1,336.65) × 5% = 28,069.65 × 5% = **1,403.48**.  
+Duty + VAT = **2,740.13**, which is 10.25% of CIF — the stack this guide quotes for a standard product, arrived at from the components rather than assumed.  
+Cash outlay = 25,000 + 1,600 + 133.00 + 1,336.65 + 1,403.48 + 350 + 450 = **30,273.13**.  
+Net cost with VAT recovered = 30,273.13 − 1,403.48 = **28,869.65**.
+
+**Result**
+
+| Line | USD | Share of landed cost |
+|---|---:|---:|
+| FOB | 25,000.00 | 82.6% |
+| Ocean freight | 1,600.00 | 5.3% |
+| Insurance | 133.00 | 0.4% |
+| Duty | 1,336.65 | 4.4% |
+| VAT | 1,403.48 | 4.6% |
+| Clearance | 350.00 | 1.2% |
+| Inland | 450.00 | 1.5% |
+| **Landed, cash outlay** | **30,273.13** | 100% |
+| Landed, net of VAT recovery | 28,869.65 | — |
+
+The box lands at 121.1% of FOB on a cash basis, or 115.5% after VAT recovery. Of the USD 5,273.13 premium over FOB, freight is 30% and duty plus VAT is 52%: at this freight level the tax stack, not the ocean leg, is the larger half of the add-on.
+
+**Sensitivity**
+
+| Change | Landed, cash | Change vs base |
+|---|---:|---:|
+| Base | 30,273.13 | — |
+| Freight at the guide's May 2026 observation, USD 8,000 | 37,364.41 | +7,091.28 |
+| Freight doubled to USD 3,200 | 32,045.95 | +1,772.82 |
+| War-risk surcharge at USD 500 per container | 30,827.14 | +554.01 |
+| Clearance fails: 1–3 weeks, storage equal to the ocean freight | 31,873.13 | +1,600.00 |
+| Inland doubles to USD 900 | 30,723.13 | +450.00 |
+| Anti-dumping applies: duty at 67.5% | 47,816.67 | +17,543.54 |
+
+Two things fall out of that table. First, USD 500 of war risk is USD 554 of landed cost, because the surcharge sits inside CIF and therefore attracts duty and VAT; it is the one line where a dollar of cost becomes more than a dollar. Second, the conclusion flips on classification rather than on freight: doubling the ocean leg adds USD 1,772, while moving the same box onto an anti-dumping line adds USD 17,543. If the HS code is uncertain, that is the number to resolve before the rate.
+
+**Limits**
+
+- Excludes destination terminal handling, documentation, bank charges, and any inspection or laboratory fee. This guide states none of them as a rate, so none is priced here.
+- Excludes demurrage and detention from the base case. The sensitivity treats them as a single stress, not as a daily schedule.
+- Assumes a clean file with no ECAS, TDRA, food or medical certificate gap. Per this guide such a gap costs 1–3 weeks, and the storage that accrues with it is not modelled day by day.
+- Assumes a mainland consignee. Entry into JAFZA or another bonded zone defers duty and VAT, so both lines disappear until goods are released to the mainland.
+- USD 1,600 of freight is far below the only ocean figure this guide reports, above USD 8,000 per container in May 2026. It is an arithmetic anchor, not a market rate, and the first sensitivity row is the realistic stress.
+- Insurance follows a 0.5%-of-FOB-plus-freight convention. Charging it on CIF instead moves the base by a few dollars, not the conclusion.
+- Not a customs ruling. Valuation, origin and HS classification are customs decisions, not model inputs.
+
 ## Sources and update log
 
 - Freightos, "Strait of Hormuz Shipping Impact: What You Need to Know," updated 13 May 2026 — https://www.freightos.com/freight-resources/strait-of-hormuz-shipping-impact-what-you-need-to-know/
@@ -216,3 +310,7 @@ For high-value, urgent or launch cargo, yes. For routine replenishment of bulky 
 ## In our view
 
 We read the UAE in late 2026 as a land-bridge market, which makes the discharge port a trucking decision rather than a shipping one. The page supports that: most boxes land at Khor Fakkan, Fujairah or Sohar and move by road, with thirty to fifty days door to door and a five-plus-five duty and VAT stack. The reading fails for inventory held in JAFZA, where the deferral benefit can justify keeping Jebel Ali in the plan.
+
+## Related
+
+Fix the route before you fix a number. The [Jebel Ali port profile](/ports/jebel-ali/) explains why a direct call is no longer the default, the [customs clearance guide](/guides/customs-clearance/) covers the file that decides whether clearance takes days or weeks, and the [certification guide](/guides/certification/) covers ECAS and TDRA — the two certificate gaps that stop a UAE container. If you are weighing a forwarder's all-in price against importing in your own name, read the [DDP versus self-clearance comparison](/compare/ddp-vs-self-clearance/); if the container size or the free-time terms are still open, start with the [FCL guide](/guides/fcl/).

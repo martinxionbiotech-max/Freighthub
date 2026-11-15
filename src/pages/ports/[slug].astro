@@ -20,4 +20,13 @@ const doc = getDoc('ports', port.slug);
   ) : (
     <p>{country?.name} · port profile scaffold — content production pending.</p>
   )}
+  <section class="related">
+    <h2>Related pages</h2>
+    <ul>
+      {country && <li><a href={`/countries/${country.slug}/`}>China to {country.name}: customs, VAT and ports</a></li>}
+      <li><a href="/guides/fcl/">FCL shipping to the GCC</a></li>
+      <li><a href="/guides/customs-clearance/">Customs clearance</a></li>
+      <li><a href="/compare/sea-vs-air/">Sea versus air</a></li>
+    </ul>
+  </section>
 </BaseLayout>

@@ -96,6 +96,23 @@ Transit time behaves the same way. Direct China–Jeddah rotations are commonly 
 
 [Air freight](/guides/air-freight/) is a different product, not a faster version of the same one. China–Riyadh or China–Jeddah air is typically 3–6 days door to door and priced per kilo with a volumetric minimum. It makes sense for launch inventory, spare parts and high-value electronics; it rarely makes sense for furniture, machinery or anything that can wait three weeks.
 
+## Landed-cost snapshot
+
+The same ranges as the cost-bucket table above, cut the way a buyer commits the money: lines fixed by law or HS code, and lines that move with the booking.
+
+| Component | What to budget | What the figure depends on | Basis |
+|---|---|---|---|
+| Ocean freight and BAF | 20–35% of landed cost. Conflict surcharges are levied per box: US$3,000/FEU on Persian Gulf and Red Sea cargo in the March 2026 escalation, US$800 per container on MSC | Suez versus Cape routing, contract allocation versus spot booking, carrier and season | Editorial judgment on the share; surcharge levels reported via Flexport |
+| Customs duty | 5% of CIF on most lines; 3–15% of CIF across the cost stack, with a 15% duty line realistic for some categories | HS classification, the current tariff schedule (the December 2025 amendment is the latest broad revision), origin and preferential treatment | GCC common tariff; confirm the heading before quoting |
+| Import VAT | 15% of the duty-inclusive value. On a 5% duty line that is a 20.75% add-on to CIF; on a 15% duty line, roughly 32% | Whether the importer of record is VAT-registered — a recoverable input for them, a permanent cost for a DDP seller | Statutory rate; arithmetic from the rates above |
+| Clearance, inspection, SABER | 2–6% of landed cost, on top of 7–15 days of clearance variance. Budget a 7–10 day buffer and 10% of landed cost as contingency | Product category, laboratory testing, whether the PC was started before production, red-channel inspection | Industry claim and editorial judgment |
+| Inland delivery | 5–15% of landed cost | Riyadh and the centre versus the Eastern Province, distance from Jeddah or Dammam, truck availability, appointment delays | Editorial judgment |
+| Outside the five | Destination THC 5–9%; origin charges 3–6%; demurrage and storage 0–20% | Terminal, container type, prepaid versus collect, free time granted at that terminal | Editorial judgment |
+
+The split matters as much as the total. Duty and VAT are the only two lines an importer can price before booking with any confidence, because both are rates applied to a value that the invoice already states. Every other line is a range that moves with the sailing or with the file. *(Editorial judgment)*
+
+The duty band is where DDP quotes quietly diverge. The gap between a 5% line and a 15% line is roughly 11.5 percentage points of CIF once VAT on the duty is counted — 20.75% against 32% — which is the whole reason this page argues for quoting a duty band rather than a duty rate. *(Editorial judgment)*
+
 ## Ports and routing: three doors and one bridge
 
 **Jeddah Islamic Port** is the default for western Saudi and the transshipment door for Upper Gulf cargo. It is the second-busiest port in the Arab world after Jebel Ali and handles about two-thirds of Saudi seaborne imports. Its container terminals are operated separately, which is why two shipments to the same city can have completely different dwell times. Details are on the [Jeddah port profile](/ports/jeddah/).
@@ -206,3 +223,7 @@ Sometimes, for small volumes and Jeddah-adjacent destinations it rarely is. For 
 ## In our view
 
 We read Saudi Arabia as a compliance market with a logistics layer, and we would price VAT as cash rather than as freight cost. The page makes the case: VAT is levied on CIF plus duty and is a financing item for a registered importer, SABER decides release, and clearance varies by seven to fifteen days. The stance weakens for bulky, low-value cargo, where the ocean rate returns as the dominant number.
+
+## Related
+
+Routing, documents and the DDP decision each have their own guide. The [customs clearance guide](/guides/customs-clearance/) covers the Fasah sequence, the [certification guide](/guides/certification/) covers SABER PC and SC sequencing, and the [DDP versus self-clearance comparison](/compare/ddp-vs-self-clearance/) sets out who carries the 15% VAT. If container type and free-time terms are still open, start with the [FCL guide](/guides/fcl/); if you are testing the Jebel Ali road option for Eastern Province cargo, read the [Jebel Ali port profile](/ports/jebel-ali/) before you price the border.

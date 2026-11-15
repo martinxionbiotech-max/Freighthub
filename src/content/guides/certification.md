@@ -247,3 +247,47 @@ A final budgeting note: the certificate cost is per product family, not per cont
 ## In our view
 
 We would treat GCC certification as a product-development task, not a customs step: test and certify the product family before production, then reuse the certificate across shipments. The page's reasoning is that the certificate, the testing and the label are a fixed cost that only pays back on repeat volume. That position does not hold for a single trial order unlikely to repeat, where certifying a whole family can cost more than the margin the order will ever earn.
+
+## Market, scheme and issuer: a desk matrix
+
+The key-facts table above says which country uses which scheme. This one adds the two fields a desk actually needs: who signs the document, and what it holds up when it is absent. Only the schemes named on this page appear, and the issue channel is the one described in the country section above.
+
+| Market | Scheme | Who issues it | Covers | What it gates |
+|---|---|---|---|---|
+| Saudi Arabia | SABER PCoC, under a SASO technical regulation | Accredited conformity body; registered on SABER | Product and manufacturer, named models | Admissibility of the product — and without it no SCoC can be issued |
+| Saudi Arabia | SABER SCoC | Accredited conformity body, referencing the invoice and the PCoC | One shipment | The declaration at the Saudi port; this is the document customs sees |
+| Saudi Arabia | SFDA approval | Saudi Food and Drug Authority | Food, drugs, cosmetics, medical devices | Sector clearance for those categories, on top of the SABER file |
+| Saudi Arabia | CITC approval | CITC | Telecoms and radio equipment | Import of radio and telecoms equipment |
+| Saudi Arabia | Energy-efficiency label | Saudi Energy Efficiency Center | Appliances in scope | Appliance labelling, and therefore the sale of the model |
+| UAE | ECAS certificate | Accredited conformity assessment body; registered with ESMA | Product | Import and sale of regulated products; the ECAS mark or label where the category requires it |
+| UAE | EQM | ESMA | Product | A voluntary quality mark — a marketing asset, not a clearance document |
+| UAE | Emirate registration | Dubai Municipality, and the Abu Dhabi and Sharjah inspection regimes | Food and cosmetic premises and products | Municipal registration, which a federal certificate does not satisfy |
+| Kuwait | KUCAS certificate | Accredited body, under the Public Authority for Industry | Product, per shipment | Import; may need to be issued in the registered agent's name |
+| Qatar | QGOSM certificate | QGOSM | Product, per shipment | Import of regulated products |
+| Oman | National scheme on GSO standards | MOCI | Product, per shipment | Import |
+| Bahrain | National scheme on GSO standards | Standards and Metrology Directorate, Ministry of Industry and Commerce | Product, per shipment | Import |
+| GCC (multi-state) | G-Mark | Conformity body in the GSO member state | Low-voltage electrical equipment and toys | Marking only; does not replace the national certificate |
+
+Two readings of the matrix matter at a desk. Rows that say "product" are reusable and get cheaper per unit as volume rises; rows that say "one shipment" recur on every booking. And the Saudi column stacks: a radio appliance needs CITC, a PCoC and an SCoC, plus the energy label if it is in scope — three or four documents for one carton.
+
+## Worked example
+
+Six SKUs into Jeddah, two of them regulated. The point of the arithmetic is that certificate lines track regulations and models, not SKUs, and that the shipment certificate recurs while the product certificate does not.
+
+**Assumptions.** One commercial invoice, one container, one importer, one manufacturer. SKU 1 is a low-voltage charger in one model; SKU 2 is a toy in two colourways that the certificate treats as two models. SKUs 3–6 are non-electrical display fixtures and printed point-of-sale material, assumed to fall outside the SASO technical regulations listed above — an assumption to confirm against the HS code, not a conclusion. One PCoC per product family, which is the combination the Qatar section argues for where the standard allows it. Both regulated SKUs are tested once and pass, and no standard revision lands during the period.
+
+**Arithmetic.**
+
+- Regulated SKUs: 2 of 6.
+- Model lines to cover: 1 + 2 = 3.
+- PCoC lines: the charger and the toy sit under different technical regulations, so 1 + 1 = 2.
+- SCoC lines: one per shipment, referencing the invoice and the PCoC file, so 1.
+- Certificate documents for this shipment: 2 + 1 = 3, covering 3 model lines across 2 of the 6 SKUs.
+- If both SKUs were one family under one regulation, the count falls to 1 + 1 = 2 — one document fewer and one test programme fewer. That is the whole value of a family certificate.
+- Four shipments in a year on the same valid PCoCs: 2 + 4 = 6 certificate lines. Re-certifying the product for each one would be 3 × 4 = 12.
+
+**What changes at the port.** The dependency chain is the story. Steps 1–7 are inputs to step 8, and step 8 is the document the declaration rests on, which is why the checklist above asks that the shipment certificate be issuable before arrival rather than before release. The failure mode to test is the model gap: ship SKU 2 in a third colourway and the covered lines remain 3 while the consignment needs 4. One uncovered model line is enough to stop the SCoC, so the model matrix is the thing to check before the packing list, not after arrival.
+
+## Related
+
+Saudi Arabia is the long pole in this file, and [the Saudi Arabia page](/countries/saudi-arabia/) carries the duty, importer and port context that sits around the certificate. [The UAE page](/countries/uae/) covers the emirate layer that the federal certificate does not reach. When a forwarder rather than the buyer is the importer of record, [the DDP guide](/guides/ddp/) and [DDP vs self-clearance](/compare/ddp-vs-self-clearance/) settle who must hold the PCoC; on a western-Saudi routing, [Jeddah](/ports/jeddah/) is where the SCoC is checked.

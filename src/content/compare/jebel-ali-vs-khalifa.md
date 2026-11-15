@@ -125,6 +125,21 @@ The Khalifa route usually wins for an Abu Dhabi consignee, even if the ocean rat
 
 Sharjah is the third option, and it is not a tie-breaker. Port Khalid is the city port, Hamriyah serves the free zone, and Khor Fakkan is the east-coast container gateway outside Hormuz. Sharjah is better for a Sharjah consignee, a Hamriyah tenant or a cargo that wants the Hormuz bypass. It is not a substitute for Jebel Ali's frequency or Khalifa's Abu Dhabi hinterland. See the [Sharjah port profile](/ports/sharjah/).
 
+## Decision matrix by deciding variable
+
+The sections above are the argument; this table is the instrument. Each row is a variable that changes the answer, and each cell names the gateway that wins it and why in a clause. Three of the six turn on where the licence sits, which is why the port question is usually a customs question wearing a shipping costume.
+
+| Deciding variable | Jebel Ali | Khalifa |
+|---|---|---|
+| **Who holds the import licence** | **Jebel Ali wins** for a Dubai-licensed importer, because the trade licence and the customs registration already match the port. | **Khalifa wins** for an Abu Dhabi-licensed importer, because a Dubai licence needs an Abu Dhabi customs registration before the first entry. |
+| **VAT registration** | **No difference** — VAT is federal through the FTA, so one registration covers either gateway. | **No difference** — the same registration, the same return and the same recovery apply. |
+| **Cash-flow tolerance** | **Jebel Ali wins** for a Dubai consignee that turns the box in days, because the depot, the warehouse and the trucking sit in one cluster. | **Khalifa wins** for an Abu Dhabi consignee, because the short truck and the Abu Dhabi empty return cut the inland bill that the ocean rate cannot recover. |
+| **Control of clearance** | **Jebel Ali wins** where the buyer's broker files only in Dubai, because that is the deepest broker pool in the country. | **Khalifa wins** where the broker is Abu Dhabi-registered, because a Dubai broker cannot file there without it. |
+| **Liability** | **Jebel Ali wins** for a Dubai importer, because the declaration, the penalty and the audit sit with the administration that holds the licence. | **Khalifa wins** for an Abu Dhabi importer for the same reason — the customs record follows the licence, not the ship. |
+| **Documentation burden** | **Jebel Ali wins** on system familiarity, because Dubai Customs filing is what most brokers run daily. | **Khalifa wins** for KEZAD-bound cargo, because the zone and the port share one customs regime and one gate. |
+
+VAT is the one variable that does not separate the two ports, and saying so matters: a forwarder that presents the gateway choice as a tax decision is describing a difference the federal system does not create. The real separators are the licence, the broker registration and the length of the land leg — and of those three, only the land leg is priced openly in the quote.
+
 ## Our read
 
 The UAE port choice is a land-leg decision disguised as an ocean-rate decision. Jebel Ali is the better port for most cargo, but "better port" is not the same as "better total cost" for an Abu Dhabi consignee.
@@ -181,6 +196,10 @@ Only if the broker is licensed and registered in Abu Dhabi. Many Dubai brokers d
 - [Electronics sector](/sectors/electronics/) — high-value cargo
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## Related
+
+The clearance side of either gateway is covered in [customs clearance](/guides/customs-clearance/), which explains why a Dubai broker needs an Abu Dhabi registration before it can file at Khalifa, and the [DDP guide](/guides/ddp/) sets out why the importer of record, not the port, carries the liability. The [Jebel Ali port profile](/ports/jebel-ali/) holds the terminal and free-time detail behind this comparison, [FCL vs LCL](/compare/fcl-vs-lcl/) settles whether the box is the right unit in the first place, and the [Saudi Arabia country page](/countries/saudi-arabia/) is the next question for cargo that lands in the UAE and moves on by road.
 
 ## In our view
 

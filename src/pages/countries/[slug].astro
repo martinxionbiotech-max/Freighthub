@@ -21,4 +21,15 @@ const pageDescription = doc?.description || `China to ${country.name} freight: p
   ) : (
     <p>China → {country.name} freight guide. Draft scaffold — content production pending.</p>
   )}
+  <section class="related">
+    <h2>Related pages</h2>
+    <ul>
+      {gccRegion.ports.filter((pt) => pt.country === country.slug).map((pt) => (
+        <li><a href={`/ports/${pt.slug}/`}>{pt.name}</a></li>
+      ))}
+      <li><a href={`/guides/china-to-${country.slug}/`}>China to {country.name} freight guide</a></li>
+      <li><a href="/guides/customs-clearance/">Customs clearance</a></li>
+      <li><a href="/guides/certification/">Certification</a></li>
+    </ul>
+  </section>
 </BaseLayout>

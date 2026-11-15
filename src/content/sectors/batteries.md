@@ -232,3 +232,77 @@ DG surcharges, UN packaging, insurance and limited carrier capacity add cost. Th
 ## In our view
 
 We read battery freight as a documentation business wearing a transport label. The page's own evidence points there: the most common air rejection is not a rule violation but an incomplete file, and the shippers who clear repeatedly hold a UN38.3 summary per cell, a packing instruction per configuration and a carrier approval per route. That reading fails for damaged, defective or recalled batteries, where no file is good enough and local disposal beats a better forwarder.
+
+## Compliance gate: who checks what, and what proves it
+
+Battery freight is checked at several different desks, and each one asks for a different document. The table sets out the document set behind the DG file; it is not a certification scheme, and it does not replace the carrier's dangerous goods acceptance.
+
+| Requirement | Who checks it | What document proves it | If it is missing |
+|---|---|---|---|
+| UN38.3 test summary | The airline's DG acceptance desk, and destination customs | A UN38.3 summary whose model, capacity and chemistry match the cell or battery in the box | The shipment is not offered — the booking is refused at acceptance |
+| Class 9 classification and UN number | The carrier's DG desk; the terminal's DG officer on sea cargo | The shipper's DG declaration carrying UN3480, UN3481, UN3090 or UN3091 with the proper shipping name, plus the Class 9 label and the UN number | The cargo is re-labelled or rejected at acceptance; if it was declared as general cargo, it is a mis-declaration |
+| SDS (MSDS) | The carrier's DG desk, and the terminal on request | A current safety data sheet for the exact chemistry and model | The DG desk cannot close acceptance, and the cargo is held |
+| State of charge, air | The airline's DG acceptance desk | A signed declaration at or below 30% for lithium-ion shipped alone | The airline refuses the pallet even when the UN38.3 file is complete |
+| UN specification packaging and marks | The carrier at acceptance; the terminal at the gate | UN specification packaging, the lithium battery mark, orientation arrows and the UN number | The pallet is refused, or repacked before the cutoff |
+| Carrier approval | The airline or the vessel operator — not the forwarder | Written acceptance of the DG class and the specific commodity, referenced on the booking | A forwarder's booking is not the airline's acceptance; the cargo is refused at the gate |
+| Port and terminal acceptance, sea | The terminal's DG officer | Terminal acceptance of Class 9 for that port and that stowage plan | The container is not gated in, and is held or diverted |
+
+The pattern is the page's own finding: the most common air rejection is an incomplete file, not a rule violation. A valid UN38.3 summary does not compensate for a missing state-of-charge declaration, and none of these transport documents substitutes for the destination's product certificate — SASO, ESMA, KUCAS or QGOSM.
+
+## Case simulation: one 400 kg pallet of lithium batteries by air
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation, not a customs ruling, and not a measurement of any real consignment.
+
+**Assumptions**
+
+1. One pallet, gross weight 400 kg, built to 120 × 100 × 120 cm.
+2. Air billing uses the 1:167 convention: volumetric weight = length × width × height in cm ÷ 6,000, which is 167 kg per cubic metre.
+3. Chargeable weight is the greater of gross weight and volumetric weight.
+4. The batteries are lithium-ion shipped alone (UN3480), so the cargo-aircraft-only rule and the 30% state-of-charge limit apply.
+5. No freight rate is assumed. The page quotes none, so the output is a billed weight, not a price.
+
+**Parameters**
+
+| Parameter | Value | Range | Source |
+|---|---|---|---|
+| Gross weight | 400 kg | — | assumption |
+| Pallet dimensions | 120 × 100 × 120 cm | — | assumption |
+| Volume | 1.44 cbm | — | 120 × 100 × 120 ÷ 1,000,000 |
+| Volumetric weight | 240.0 kg | — | 1,440,000 ÷ 6,000 |
+| Chargeable weight | 400 kg | 240.0–400 | greater of the two |
+| State of charge | ≤30% | the page's air limit | page |
+
+**Calculation**
+
+Volume = 120 × 100 × 120 = 1,440,000 cm³ = **1.44 cbm**.  
+Volumetric weight = 1,440,000 ÷ 6,000 = **240.0 kg** (1.44 × 167 ≈ 240).  
+Chargeable weight = max(400, 240.0) = **400 kg**.  
+Flip point = 400 × 6,000 ÷ 1,000,000 = **2.40 cbm**, the volume at which the two weights are equal.
+
+**Result**
+
+The billed weight is **400 kg**, the actual weight. The pallet is dense enough that the 1:167 rule does not bite: the volumetric weight is 160 kg, or 40%, below the gross weight. For this commodity the bill is driven by weight rather than space, which is the reverse of the electronics case.
+
+**Documents that must exist before the booking**
+
+1. A UN38.3 test summary that matches the cell or battery — model, capacity and chemistry.
+2. An SDS for the exact chemistry and model.
+3. The shipper's DG declaration for UN3480, Class 9, with the packing instruction and the air waybill notation.
+4. A state-of-charge declaration at or below 30%.
+5. Written carrier approval for the DG class and the specific commodity.
+6. UN specification packaging with the Class 9 label, the lithium battery mark and the UN number.
+7. For the destination, the product conformity certificate — SASO, ESMA, KUCAS or QGOSM. It is not a booking document, but clearance fails without it.
+
+**Sensitivity**
+
+- Rebuild the pallet to 120 × 120 × 170 cm → 2.448 cbm → volumetric 408.0 kg. Volume now governs, and the billed weight rises by 8 kg, or 2%.
+- At 120 × 120 × 180 cm → 2.592 cbm → 432.0 kg, up 32 kg or 8%. Above the 2.40 cbm flip point, every extra 0.1 cbm adds 16.7 kg to the bill.
+- **If the carrier refuses.** The 400 kg does not change; it is a property of the pallet, not of the booking. What changes is everything around it. The booking is not an acceptance, so the pallet has no flight and must be re-offered to a carrier that accepts Class 9 — a new approval, possibly a different routing and a cargo-aircraft-only slot. The alternative is sea under the IMDG Code, where the DG declaration, UN packaging and port or terminal acceptance become the gate, at a transit time measured in weeks rather than days. The page's warning is that rejected cargo can sit for weeks, so the delay, not the rate, is the cost that moves first.
+
+**Limits**
+
+The model computes weight only; it does not price the shipment, because the page quotes no rate. It ignores the packing-instruction quantity limits per package and per consignment, which can force a 400 kg pallet to be split across pieces, and it ignores any per-piece weight limit the carrier applies. It assumes the UN38.3 summary covers the exact battery; if it does not, the cargo cannot be offered at all and no weight calculation rescues it.
+
+## Related
+
+The battery file is only half the story: the [air freight guide](/guides/air-freight/) covers the capacity and chargeable-weight mechanics used above, the [certification guide](/guides/certification/) maps the product certificates that a UN38.3 summary does not replace, and [customs clearance](/guides/customs-clearance/) is where the DG declaration is actually read. For power banks and e-scooters, start with the [ecommerce sector](/sectors/ecommerce/) on marketplace restrictions and returns, and settle the port question with the [Jebel Ali versus Khalifa comparison](/compare/jebel-ali-vs-khalifa/) before routing Class 9 cargo into Dubai.

@@ -117,6 +117,96 @@ DAP is often the best contract for an established importer. It gives the buyer c
 | Regulated products | Self-clearance | The certificate is in the seller's name |
 | Project cargo | Self-clearance or DAP | The contractor has a global DDP agreement |
 
+## Decision matrix by deciding variable
+
+The table above sorts buyers by profile. This one sorts the decision by what actually varies between the two models, so a buyer can find its own constraint and read across.
+
+| Deciding variable | DDP | Self-clearance |
+|---|---|---|
+| **Who holds the import licence** | **DDP wins** where the buyer has no licence, because the service supplies a licensed local importer and the shipment still moves. | **Self-clearance wins** where the licence is already in-house, because no third party sits on the declaration. |
+| **VAT registration** | **DDP wins** for a buyer outside the VAT net, because one delivered price replaces a recovery it cannot claim. | **Self-clearance wins** for a registered buyer, because the entry and the tax invoice are in its own name and the VAT comes back. |
+| **Cash-flow tolerance** | **DDP wins only on a genuinely all-in quote**, because one payment replaces the border bill; if the buyer is the importer of record it still funds the VAT. | **Self-clearance wins** where the buyer can carry the float for one return cycle, because it keeps the working-capital benefit rather than paying the seller for it. |
+| **Control of clearance** | **DDP wins only where the buyer has no customs function**, because a file it cannot run is not control it has lost. | **Self-clearance wins** where the buyer has a broker it trusts, because it sets the HS code, the value and the release timing. |
+| **Liability** | **DDP wins on commercial recourse only**, because the seller carries the re-quote and the penalty argument while the legal liability stays with the importer of record. | **Self-clearance wins** on legal clarity, because the party on the declaration is the party that filed it. |
+| **Documentation burden** | **DDP wins** where the buyer has no customs team, because the HS code, the certificate and the entry sit with the seller. | **Self-clearance wins** where the buyer needs the file for its own audit, because it holds the originals rather than copies. |
+
+Read down the DDP column and the wins are conditional on absence: no licence, no registration, no customs function. Read down the self-clearance column and the wins are conditional on presence. That asymmetry is the whole decision — DDP is a substitute for capability, self-clearance is a use of it.
+
+## Case simulation: the DDP premium on one 40HQ
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation and not a customs ruling.
+
+**Assumptions**
+
+1. One 40HQ, FOB value USD 50,000, insured at 0.5% of FOB plus freight.
+2. Ocean freight USD 2,800.
+3. Duty is applied to CIF at 5%; VAT at 15% is applied to CIF plus duty, which is the Saudi basis.
+4. The buyer's own clearance cost under self-clearance is USD 400.
+5. The DDP all-in quote is assumed at 8% above CIF.
+6. The buyer is VAT-registered, so VAT is a cash-flow item rather than a final cost — both views are shown.
+
+**Parameters**
+
+| Parameter | Value | Basis | Source |
+|---|---|---|---|
+| FOB value | USD 50,000 | stated | assumption |
+| Ocean freight | USD 2,800 | stated | assumption |
+| Insurance | 0.5% of FOB + freight = USD 264 | stated rate | assumption |
+| CIF value | USD 53,064 | FOB + freight + insurance | arithmetic |
+| Duty rate | 5% of CIF | stated | assumption |
+| VAT rate | 15% of CIF + duty | stated | assumption |
+| Buyer's clearance cost | USD 400 | stated | assumption |
+| DDP quote | 8% above CIF = USD 57,309.12 | stated margin | assumption |
+
+**Calculation**
+
+Insurance = 0.5% × (50,000 + 2,800) = **264.00**.  
+CIF = 50,000 + 2,800 + 264 = **53,064.00**.  
+Duty = 5% × 53,064.00 = **2,653.20**.  
+VAT base = 53,064.00 + 2,653.20 = **55,717.20**; VAT = 15% × 55,717.20 = **8,357.58**.
+
+Self-clearance cash outlay = 53,064.00 + 2,653.20 + 8,357.58 + 400.00 = **64,474.78**.  
+Self-clearance net of VAT recovery = 64,474.78 − 8,357.58 = **56,117.20**, which is CIF + duty + the buyer's clearance cost.
+
+DDP all-in quote = 53,064.00 × 1.08 = **57,309.12**.
+
+Difference in cash = 64,474.78 − 57,309.12 = **7,165.66 lower under DDP**.  
+Difference net of recovery = 57,309.12 − 56,117.20 = **1,191.92 higher under DDP**, or 2.12% of the self-clearance net cost.
+
+One arithmetic check matters before those figures are used. The 8% margin is 4,245.12 over CIF, while duty plus VAT is 11,010.78 — 20.75% of CIF. An 8% all-in quote therefore cannot fund both duty and VAT at these rates, so the quote is one of two things:
+
+- **VAT-exclusive DDP.** The seller covers freight, duty and clearance; the buyer stays importer of record and pays the VAT at the border, recovering it later. Cash outlay rises to 57,309.12 + 8,357.58 = **65,666.70** and the net cost is still 57,309.12. On this reading DDP is worse on cash as well as on net.
+- **Truly all-in DDP.** The seller or its forwarder is the importer and absorbs duty and VAT inside 57,309.12. The buyer recovers nothing, holds no declaration in its own name, and is relying on a price that only balances if the declared value, the freight treatment or the next quote changes.
+
+The net comparison for a VAT-registered buyer is 1,191.92 either way. The cash position and the compliance exposure are not.
+
+**Result**
+
+| Line | Self-clearance | DDP at 8% above CIF |
+|---|---:|---:|
+| Paid to the supplier for CIF | 53,064.00 | — |
+| Paid to the seller, all-in | — | 57,309.12 |
+| Duty at the border | 2,653.20 | included |
+| VAT at the border | 8,357.58 | included under all-in DDP, buyer-paid under VAT-exclusive DDP |
+| Buyer's clearance cost | 400.00 | — |
+| **Cash outlay** | **64,474.78** | **57,309.12** (65,666.70 if VAT-exclusive) |
+| VAT recovered | 8,357.58 | 0 (8,357.58 under VAT-exclusive DDP) |
+| **Net cost** | **56,117.20** | **57,309.12** |
+
+DDP is 7,165.66 better on cash and 1,191.92 worse on net. The premium is 2.12% of the self-clearance net, but the buyer that takes DDP also gives up the declaration in its own name — which is the asset that makes the 8,357.58 recoverable at all.
+
+**Sensitivity**
+
+- Break-even DDP premium = (duty + buyer's clearance cost) ÷ CIF = 3,053.20 ÷ 53,064.00 = **5.75% above CIF**. The assumed 8% sits 2.25 points above break-even, worth 1,191.92 on this shipment.
+- DDP at 4% above CIF → 55,186.56, which is **930.64 below** the self-clearance net; at 6% → 56,247.84, **130.64 above**; at 10% → 58,370.40, **2,253.20 above**; at 15% → 61,023.60, **4,906.40 above**.
+- Duty is the variable that flips the answer. At 0% duty the self-clearance net is 53,464.00 and DDP costs 3,845.12 more; at 10% duty the net is 58,770.40 and DDP is 1,461.28 cheaper; at 15% it is 61,423.60 and DDP is 4,114.48 cheaper. Break-even duty rate at an 8% quote = **7.25% of CIF**.
+- Freight moves both sides almost equally, because it enters CIF, duty and the DDP price. A 30% freight increase (2,800 → 3,640) adds 844.20 to CIF, 42.21 to duty, 132.96 to VAT and 911.74 to the DDP quote. At these assumptions the premium is 3% of CIF less 400 — 8% DDP minus 5% duty, minus the buyer's clearance cost — so the same freight rise moves the premium by only **25.33**.
+- If the quote is VAT-exclusive, the 8% case is worse on cash by 1,191.92 as well as on net, which reverses the usual argument for DDP and leaves only the licence and capability reasons standing.
+
+**Limits**
+
+One 40HQ, one HS line, one point in time. The model ignores demurrage, storage, inspection and certificate costs, currency movement between order and arrival, credit terms on either side, and the buyer's fixed cost of maintaining a customs function — that last omission flatters self-clearance for a buyer shipping twice a year. Insurance is simplified to 0.5% of FOB plus freight rather than the 110%-of-CIF convention, and duty is a flat 5% with no preferential or GCC tariff treatment. VAT recovery is assumed complete and within one return period; a partial recovery, a blocked input or a delayed refund changes the cash line but not the duty line. The 8% DDP margin is an assumption, not a market quote. Classification is the largest single risk in the whole model: a different HS line changes the duty rate, and every figure above with it.
+
 ## Our read
 
 DDP is a service for buyers who cannot or do not want to import. Self-clearance is a capability for buyers who do it regularly. The mistake is to use DDP for a high-value, regulated or VAT-recoverable shipment where the buyer has the capability to clear.
@@ -178,6 +268,10 @@ DDP or a marketplace import model is standard, because the consumer is not an im
 - [Electronics sector](/sectors/electronics/) — high-value cargo
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## Related
+
+The structure behind the DDP quote is set out in the [DDP guide](/guides/ddp/), and the file that actually clears — the entry, the certificate and the broker's role — is in [customs clearance](/guides/customs-clearance/). The [Saudi Arabia country page](/countries/saudi-arabia/) covers the licence and VAT registration an importer needs before either model works, and the [Jebel Ali port profile](/ports/jebel-ali/) shows where a DDP structure usually breaks, which is at the gate rather than in the contract. For the container decision underneath this one, [FCL vs LCL](/compare/fcl-vs-lcl/) sets the volume at which a buyer's own clearance cost starts to amortise.
 
 ## In our view
 
