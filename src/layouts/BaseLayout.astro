@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title?: string;
   description?: string;
@@ -8,6 +10,7 @@ interface Props {
   published?: string;
   updated?: string;
   image?: string;
+  jsonLd?: Record<string, unknown>[];
 }
 
 const {
@@ -18,6 +21,7 @@ const {
   published,
   updated,
   image = '/og-default.png',
+  jsonLd = [],
 } = Astro.props;
 
 const SITE = 'https://freighthub.net';
@@ -122,6 +126,12 @@ const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), .
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
+    {jsonLd.map((entry) => (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify({ '@context': 'https://schema.org', ...entry })}
+      />
+    ))}
   </head>
   <body>
     <header class="site-header">
@@ -131,6 +141,7 @@ const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), .
           <a href="/countries/">Countries</a>
           <a href="/ports/">Ports</a>
           <a href="/guides/">Guides</a>
+          <a href="/tools/">Tools</a>
           <a href="/sectors/">Sectors</a>
           <a href="/compare/">Compare</a>
           <a href="/updates/">Updates</a>

@@ -83,6 +83,27 @@ const gateway = (slug: string) => ports.find((p) => p.country === slug);
     self-clearance</a> covers the decision most importers get wrong first.
   </p>
 
+  <h2>Put a planning number beside the decision</h2>
+  <p>
+    Three calculators apply the same definitions used in the guides. Enter your own values; the tools
+    do not supply freight rates, duty rates or certificates.
+  </p>
+  <div class="grid">
+    <div class="card">
+      <h3><a href="/tools/landed-cost/">Landed cost</a></h3>
+      <p>Build CIF, duty, VAT, total outlay and a VAT-recoverable view for a GCC import.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/tools/chargeable-weight/">Chargeable weight</a></h3>
+      <p>Compare air volumetric kilograms at ÷6000 with LCL W/M revenue tons.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/tools/transit-buffer/">Transit buffer</a></h3>
+      <p>Turn transit, clearance and buffer days into dates and a departure deadline.</p>
+    </div>
+  </div>
+  <p><a href="/tools/">All freight tools</a></p>
+
   <h2>Latest updates</h2>
   <ul>
     {updates.map((u) => (

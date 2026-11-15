@@ -1,0 +1,425 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { gccRegion } from '../../../regions/gcc';
+
+const title = 'Landed Cost Calculator: China to Saudi Arabia | Freighthub';
+const description =
+  'Estimate CIF, duty, VAT, total outlay and net landed cost for China to Saudi Arabia, UAE, Qatar, Kuwait, Oman or Bahrain imports.';
+
+const faqs = [
+  {
+    q: 'Is VAT included in the CIF value used for duty?',
+    a: 'No. CIF is FOB plus freight plus insurance, and duty is applied to CIF. GCC import VAT is then applied to CIF plus duty. The calculator follows that order and converts a percentage such as 15 to 0.15 internally. Free-zone treatment or a product-specific exemption is outside the model, so confirm the legal treatment.',
+  },
+  {
+    q: 'How should I choose the duty rate?',
+    a: 'Use the rate attached to the HS classification of the product in the destination tariff. The calculator has no duty-rate database and deliberately leaves the field blank; no freight-rate estimate is implied. If classification is unresolved, ask a customs broker or the relevant authority. Entering zero is valid only when the classified product is genuinely duty-free.',
+  },
+  {
+    q: 'Why are total outlay and net cost different?',
+    a: 'Total outlay is cash leaving the business: CIF, duty, VAT and charges. If the importer is VAT-registered and input tax is recoverable, VAT is a timing cost, so net cost deducts it. The toggle does not determine legal recoverability; it shows the arithmetic under that assumption. Confirm eligibility with your tax adviser.',
+  },
+  {
+    q: 'Can I compare Saudi Arabia with the UAE?',
+    a: 'Yes. Run the same FOB, freight and charges twice, changing destination market and duty rate. VAT changes to 15% for Saudi Arabia or 5% for the UAE. Keep values in one currency and do not use the tool for FX conversion. Different duty lines can outweigh the VAT difference.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const webApplication = {
+  '@type': 'WebApplication',
+  name: 'Freighthub Landed Cost Calculator',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: {
+    '@type': 'Offer',
+    price: 0,
+    priceCurrency: 'USD',
+  },
+  url: 'https://freighthub.net/tools/landed-cost/',
+  description:
+    'A free browser calculator for CIF value, duty, VAT, total outlay and recoverable-VAT cost on China-to-GCC imports.',
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[webApplication, faqPage]}>
+  <h1>Landed cost calculator for China to GCC imports</h1>
+  <p class="lede">
+    Estimate the cash needed at import, and the net cost after recoverable VAT, for shipments from
+    China to Saudi Arabia, the UAE, Qatar, Kuwait, Oman or Bahrain. It is for importers, sourcing and
+    finance teams who already have an invoice, freight quote and HS duty rate. It supplies none of
+    those figures.
+  </p>
+
+  <h2>What does the landed cost calculator show?</h2>
+  <form id="landed-cost-form" class="calculator" novalidate>
+    <fieldset>
+      <legend>Destination and currency</legend>
+      <div class="field-grid">
+        <div class="field">
+          <label for="destination-market">Destination market</label>
+          <select id="destination-market" name="destination-market">
+            <option value="">Select a GCC market</option>
+            {gccRegion.countries.map((country) => (
+              <option value={country.slug} data-vat={country.vat}>
+                {country.name} — {Math.round(country.vat * 100)}% VAT
+              </option>
+            ))}
+          </select>
+          <small>VAT presets are a statutory rate, confirm before use.</small>
+        </div>
+        <div class="field">
+          <label for="currency">Currency</label>
+          <select id="currency" name="currency">
+            <option value="USD" selected>USD — US dollar</option>
+            <option value="CNY">CNY — Chinese yuan</option>
+            <option value="SAR">SAR — Saudi riyal</option>
+            <option value="AED">AED — UAE dirham</option>
+            <option value="QAR">QAR — Qatari riyal</option>
+            <option value="KWD">KWD — Kuwaiti dinar</option>
+            <option value="OMR">OMR — Omani rial</option>
+            <option value="BHD">BHD — Bahraini dinar</option>
+            <option value="EUR">EUR — Euro</option>
+          </select>
+          <small>Every amount must use this currency. No FX conversion is applied.</small>
+        </div>
+        <div class="field">
+          <label for="vat-rate">VAT rate (%)</label>
+          <input id="vat-rate" name="vat-rate" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="Select a market" />
+          <small>Selecting a market fills the preset. The field remains editable.</small>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Commercial value and freight</legend>
+      <div class="field-grid">
+        <div class="field">
+          <label for="fob-value">FOB value</label>
+          <input id="fob-value" name="fob-value" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Your supplier invoice value" />
+        </div>
+        <div class="field">
+          <label for="freight">Freight</label>
+          <input id="freight" name="freight" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Your quoted freight" />
+        </div>
+        <div class="field">
+          <label for="insurance-rate">Insurance rate (%)</label>
+          <input id="insurance-rate" name="insurance-rate" type="number" inputmode="decimal" min="0" max="100" step="0.01" value="0.5" />
+          <small>Default 0.5% of FOB; replace it with your policy rate.</small>
+        </div>
+        <div class="field">
+          <label for="duty-rate">Duty rate (%)</label>
+          <input id="duty-rate" name="duty-rate" type="number" inputmode="decimal" min="0" max="100" step="0.01" placeholder="Rate for the HS line" />
+          <small>Enter 0 if the classified product is duty-free.</small>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional charges</legend>
+      <div class="field-grid">
+        <div class="field">
+          <label for="origin-charges">Origin charges</label>
+          <input id="origin-charges" name="origin-charges" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0 if none entered" />
+        </div>
+        <div class="field">
+          <label for="destination-charges">Destination charges</label>
+          <input id="destination-charges" name="destination-charges" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0 if none entered" />
+        </div>
+        <div class="field">
+          <label for="clearance">Clearance</label>
+          <input id="clearance" name="clearance" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0 if none entered" />
+        </div>
+        <div class="field">
+          <label for="inland-delivery">Inland delivery</label>
+          <input id="inland-delivery" name="inland-delivery" type="number" inputmode="decimal" min="0" step="0.01" placeholder="0 if none entered" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>VAT treatment</legend>
+      <div class="checkbox-field">
+        <input id="vat-registered" name="vat-registered" type="checkbox" aria-describedby="vat-toggle-note" />
+        <label for="vat-registered">VAT is recoverable (registered importer)</label>
+      </div>
+      <p id="vat-toggle-note" class="field-note">When checked, the net-cost result deducts VAT. This is an arithmetic view, not a tax determination.</p>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Calculate landed cost</button>
+      <button type="reset" class="secondary">Reset</button>
+    </div>
+
+    <div class="results" id="landed-results" aria-live="polite" aria-atomic="true">
+      <p class="form-message" id="landed-message">Enter an FOB value, freight, duty rate and VAT rate to calculate.</p>
+      <dl class="result-list" id="landed-output" hidden>
+        <div><dt>CIF value</dt><dd id="result-cif">—</dd></div>
+        <div><dt>Duty</dt><dd id="result-duty">—</dd></div>
+        <div><dt>VAT</dt><dd id="result-vat">—</dd></div>
+        <div><dt>Total outlay</dt><dd id="result-total">—</dd></div>
+        <div><dt id="result-net-label">Net cost if VAT recoverable</dt><dd id="result-net">—</dd></div>
+        <div><dt>Cost as % of FOB (total outlay ÷ FOB)</dt><dd id="result-percent">—</dd></div>
+      </dl>
+    </div>
+  </form>
+
+  <h2>How is landed cost calculated?</h2>
+  <p>
+    The model starts with FOB, adds freight and insurance to reach CIF, then applies duty and VAT in
+    that order. Insurance uses FOB as its base. Additional charges are added after VAT because they
+    are invoice amounts, not dutiable value. The currency code is a label only; no conversion is
+    applied.
+  </p>
+  <div class="formula">
+    <p>Insurance = FOB × insurance rate</p>
+    <p>CIF = FOB + freight + insurance</p>
+    <p>Duty = CIF × duty rate</p>
+    <p>VAT = (CIF + duty) × VAT rate</p>
+    <p>Extras = origin charges + destination charges + clearance + inland delivery</p>
+    <p>Total outlay = CIF + duty + VAT + extras</p>
+    <p>Net cost if VAT recoverable = total outlay − VAT</p>
+    <p>Cost as % of FOB = total outlay ÷ FOB × 100</p>
+  </div>
+  <p>
+    FOB, freight, insurance, duty, VAT and extras are amounts in the selected currency. Rates are
+    percentages converted to decimals. The <a href="/guides/cost-and-transit/">China–GCC cost and
+    transit guide</a> describes the wider quote stack from which these inputs should be drawn.
+  </p>
+
+  <h2>What does a worked example look like?</h2>
+  <p class="meta">Illustrative values only; not a current rate, a customs ruling or a quotation.</p>
+  <ol>
+    <li>Assume FOB USD 10,000, freight USD 1,200 and insurance at 0.5%: USD 10,000 × 0.005 = USD 50.</li>
+    <li>CIF = 10,000 + 1,200 + 50 = <strong>USD 11,250</strong>.</li>
+    <li>At an illustrative 5% duty: 11,250 × 0.05 = <strong>USD 562.50</strong>.</li>
+    <li>At an illustrative 15% VAT: (11,250 + 562.50) × 0.15 = 11,812.50 × 0.15 = <strong>USD 1,771.88</strong>.</li>
+    <li>Extras of 150 + 250 + 100 + 300 = <strong>USD 800</strong>.</li>
+    <li>Total outlay = 11,250 + 562.50 + 1,771.88 + 800 = <strong>USD 14,384.38</strong>.</li>
+    <li>Net cost with recoverable VAT = 14,384.38 − 1,771.88 = <strong>USD 12,612.50</strong>.</li>
+    <li>Total outlay as a share of FOB = 14,384.38 ÷ 10,000 × 100 = <strong>143.8%</strong>.</li>
+  </ol>
+  <p>Without recovery, USD 14,384.38 is the economic cost in this simplified model.</p>
+
+  <h2>What are the assumptions and data sources?</h2>
+  <p>The table separates user-entered facts from calculator conventions.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Input</th><th>What it means</th><th>Where the figure comes from</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>FOB value</td><td>Supplier price at the named origin port, before international freight and insurance.</td><td>User input from the commercial invoice.</td></tr>
+        <tr><td>Freight</td><td>International freight charge for the shipment.</td><td>User input from a forwarder or carrier quote.</td></tr>
+        <tr><td>Insurance rate</td><td>Percentage of FOB used to estimate insurance.</td><td>Site default of 0.5%; user-editable, not a market quote.</td></tr>
+        <tr><td>Duty rate</td><td>Tariff percentage for the product’s HS line.</td><td>User input; confirm classification and rate.</td></tr>
+        <tr><td>VAT rate</td><td>Statutory import VAT percentage for the destination.</td><td>Country preset; user-editable. Statutory rate, confirm before use.</td></tr>
+        <tr><td>Origin, destination, clearance, inland</td><td>Four additional invoice amounts.</td><td>User input from your own quotes or invoices.</td></tr>
+        <tr><td>VAT-registered toggle</td><td>Whether to show VAT as recoverable in the arithmetic.</td><td>User input; eligibility is not checked.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Country VAT presets — statutory rate, confirm before use</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Market</th><th>Preset</th></tr></thead>
+      <tbody>
+        {gccRegion.countries.map((country) => (
+          <tr>
+            <td>{country.name}</td>
+            <td>{Math.round(country.vat * 100)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Duty follows the HS line, so it is not preset. The <a href="/guides/customs-clearance/">customs
+    clearance guide</a> explains classification, CIF valuation and inspection.
+  </p>
+
+  <h2>What the calculator does not include</h2>
+  <ul>
+    <li>Demurrage, detention, storage, washing, inspection or terminal charges not entered above.</li>
+    <li>Certificate, testing or conformity-assessment fees, which vary by product and route.</li>
+    <li>Currency movement between quote, invoice and settlement; no FX conversion is applied.</li>
+    <li>HS classification disputes, valuation adjustments or duty exemptions; the <a href="/compare/ddp-vs-self-clearance/">DDP versus self-clearance comparison</a> shows who may bear these risks.</li>
+    <li>The timing or partial recoverability of input VAT, and any blocked or apportioned input tax.</li>
+    <li>Freight surcharges, minimum charges or insurance deductibles absent from your inputs.</li>
+  </ul>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    This is a planning tool, not a quotation, customs valuation, tax advice or customs advice. It
+    cannot determine the correct HS code or legal treatment. Confirm duty, VAT and charges with the
+    relevant authorities, a licensed broker or your tax adviser before committing to a shipment.
+  </p>
+
+  <h2>What else should importers ask about landed cost?</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where can I read more about landed cost?</h2>
+    <ul>
+      <li><a href="/countries/saudi-arabia/">China to Saudi Arabia freight guide</a></li>
+      <li><a href="/countries/uae/">China to UAE freight guide</a></li>
+      <li><a href="/guides/fcl/">FCL to the GCC</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    'use strict';
+    const form = document.getElementById('landed-cost-form');
+    if (!form) return;
+
+    const market = document.getElementById('destination-market');
+    const currency = document.getElementById('currency');
+    const vatRate = document.getElementById('vat-rate');
+    const fob = document.getElementById('fob-value');
+    const freight = document.getElementById('freight');
+    const insuranceRate = document.getElementById('insurance-rate');
+    const dutyRate = document.getElementById('duty-rate');
+    const origin = document.getElementById('origin-charges');
+    const destination = document.getElementById('destination-charges');
+    const clearance = document.getElementById('clearance');
+    const inland = document.getElementById('inland-delivery');
+    const registered = document.getElementById('vat-registered');
+    const message = document.getElementById('landed-message');
+    const output = document.getElementById('landed-output');
+    const netLabel = document.getElementById('result-net-label');
+
+    const resultIds = {
+      cif: document.getElementById('result-cif'),
+      duty: document.getElementById('result-duty'),
+      vat: document.getElementById('result-vat'),
+      total: document.getElementById('result-total'),
+      net: document.getElementById('result-net'),
+      percent: document.getElementById('result-percent'),
+    };
+
+    const readNumber = (input) => {
+      const raw = input.value.trim();
+      if (raw === '') return null;
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : NaN;
+    };
+
+    const showMessage = (text, isError) => {
+      message.textContent = text;
+      message.classList.toggle('is-error', Boolean(isError));
+      message.hidden = false;
+      output.hidden = true;
+    };
+
+    const money = (value, code) =>
+      new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: code,
+        currencyDisplay: 'code',
+      }).format(value);
+
+    const calculate = () => {
+      const fobValue = readNumber(fob);
+      const freightValue = readNumber(freight);
+      const insuranceValue = readNumber(insuranceRate);
+      const dutyValue = readNumber(dutyRate);
+      const vatValue = readNumber(vatRate);
+      const originValue = readNumber(origin) ?? 0;
+      const destinationValue = readNumber(destination) ?? 0;
+      const clearanceValue = readNumber(clearance) ?? 0;
+      const inlandValue = readNumber(inland) ?? 0;
+      const code = currency.value || 'USD';
+
+      if (!Number.isFinite(fobValue) || fobValue <= 0) {
+        showMessage('Enter an FOB value greater than zero.', true);
+        return;
+      }
+      if (!Number.isFinite(freightValue) || freightValue < 0) {
+        showMessage('Enter the freight amount. Use 0 only if it is genuinely zero or included elsewhere.', true);
+        return;
+      }
+      if (!Number.isFinite(insuranceValue) || insuranceValue < 0) {
+        showMessage('Enter an insurance rate of 0 or more.', true);
+        return;
+      }
+      if (!Number.isFinite(dutyValue) || dutyValue < 0) {
+        showMessage('Enter a duty rate. Enter 0 only if the HS line is duty-free.', true);
+        return;
+      }
+      if (!Number.isFinite(vatValue) || vatValue < 0) {
+        showMessage('Select a destination market or enter a VAT rate.', true);
+        return;
+      }
+      if ([originValue, destinationValue, clearanceValue, inlandValue].some((value) => !Number.isFinite(value) || value < 0)) {
+        showMessage('Additional charges must be zero or a positive number, or left blank.', true);
+        return;
+      }
+      if (insuranceValue > 100 || dutyValue > 100 || vatValue > 100) {
+        showMessage('Rates cannot exceed 100%.', true);
+        return;
+      }
+
+      const insurance = fobValue * (insuranceValue / 100);
+      const cif = fobValue + freightValue + insurance;
+      const duty = cif * (dutyValue / 100);
+      const vat = (cif + duty) * (vatValue / 100);
+      const extras = originValue + destinationValue + clearanceValue + inlandValue;
+      const total = cif + duty + vat + extras;
+      const net = registered.checked ? total - vat : total;
+      const percent = (total / fobValue) * 100;
+
+      resultIds.cif.textContent = money(cif, code);
+      resultIds.duty.textContent = money(duty, code);
+      resultIds.vat.textContent = money(vat, code);
+      resultIds.total.textContent = money(total, code);
+      resultIds.net.textContent = money(net, code);
+      resultIds.percent.textContent = new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: 1,
+        maximumFractionDigits: 1,
+      }).format(percent) + '%';
+      netLabel.textContent = registered.checked
+        ? 'Net cost if VAT recoverable'
+        : 'Net cost if VAT is not recovered';
+      message.hidden = true;
+      output.hidden = false;
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      calculate();
+    });
+    form.addEventListener('input', calculate);
+    form.addEventListener('change', calculate);
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        message.textContent = 'Enter an FOB value, freight, duty rate and VAT rate to calculate.';
+        message.classList.remove('is-error');
+        message.hidden = false;
+        output.hidden = true;
+      }, 0);
+    });
+    market.addEventListener('change', () => {
+      const selected = market.options[market.selectedIndex];
+      const preset = selected ? selected.dataset.vat : '';
+      vatRate.value = preset === undefined || preset === '' ? '' : String(Number(preset) * 100);
+      calculate();
+    });
+  })();
+</script>

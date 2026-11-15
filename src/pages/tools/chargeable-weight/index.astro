@@ -1,0 +1,337 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Air & LCL Chargeable Weight Calculator | Freighthub';
+const description =
+  'Calculate air volumetric weight at ÷6000 or LCL W/M revenue tons for China-to-GCC shipments, then see which weight rule governs.';
+
+const faqs = [
+  {
+    q: 'Why is my chargeable weight higher than the actual weight?',
+    a: 'Air and LCL pricing recover both payload and space. Light cargo occupies volume that could otherwise carry denser freight, so the carrier compares actual weight with a volumetric measure and bills the greater. For air freight the volumetric measure is length × width × height in centimetres divided by 6,000. For LCL it is cubic metres compared with tonnes. A light shipment can therefore bill above its scale weight.',
+  },
+  {
+    q: 'Does LCL use the same divisor as air freight?',
+    a: 'No. Air freight uses a volumetric divisor, conventionally 6,000 cm³ per kilogram, which makes one cubic metre equal to about 166.7 kilograms. LCL uses the W/M rule: one cubic metre is treated as one revenue ton, equivalent to 1,000 kilograms. The LCL chargeable quantity is the greater of total cubic metres and gross tonnes, not a 6,000 divisor result.',
+  },
+  {
+    q: 'Does this calculator round chargeable weight like a carrier?',
+    a: 'It does not apply a carrier rounding rule. Results are shown to two decimal places for kilograms and three for cubic metres or W/M. Airlines, consolidators and forwarders may round up to the next half kilogram, kilogram or weight-break band, and their dimensional measurements can differ. Ask for the rounding rule and the dimensions used when you request a quote.',
+  },
+  {
+    q: 'What dimensions should I measure?',
+    a: 'Measure the outside dimensions of each carton or pallet in centimetres, including any overhang, pallet base or protective packaging. Use the longest length, width and height rather than the product dimensions. If the consignment contains different sizes, calculate each line separately and add the chargeable results. Carriers may re-measure and scan the shipment, so retain photographs and your measurement record.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const webApplication = {
+  '@type': 'WebApplication',
+  name: 'Freighthub Chargeable Weight Calculator',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: {
+    '@type': 'Offer',
+    price: 0,
+    priceCurrency: 'USD',
+  },
+  url: 'https://freighthub.net/tools/chargeable-weight/',
+  description:
+    'A free air and LCL chargeable weight calculator using the 6,000 air divisor and the 1,000 kg per cubic metre W/M convention.',
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[webApplication, faqPage]}>
+  <h1>Air and LCL chargeable weight calculator</h1>
+  <p class="lede">
+    Work out what an airline or LCL consolidator is likely to bill for a China-to-GCC shipment.
+    Enter one piece’s dimensions and gross weight plus the number of identical pieces, then compare
+    air volumetric kilograms at the ÷6000 convention with LCL revenue tons under the W/M rule. It is
+    for importers and freight coordinators checking a quote before booking.
+  </p>
+
+  <h2>What does the chargeable weight calculator show?</h2>
+  <form id="chargeable-form" class="calculator" novalidate>
+    <fieldset>
+      <legend>Freight mode</legend>
+      <div class="field-grid">
+        <div class="radio-option">
+          <input id="mode-air" name="mode" type="radio" value="air" checked />
+          <label for="mode-air">Air freight — volumetric divisor 6,000</label>
+        </div>
+        <div class="radio-option">
+          <input id="mode-lcl" name="mode" type="radio" value="lcl" />
+          <label for="mode-lcl">LCL — W/M at 1,000 kg per cbm</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Shipment measurements</legend>
+      <div class="field-grid field-grid--three">
+        <div class="field">
+          <label for="pieces">Pieces</label>
+          <input id="pieces" name="pieces" type="number" inputmode="numeric" min="1" step="1" value="1" />
+          <small>Number of identical pieces.</small>
+        </div>
+        <div class="field">
+          <label for="length">Length per piece (cm)</label>
+          <input id="length" name="length" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="Outside length" />
+        </div>
+        <div class="field">
+          <label for="width">Width per piece (cm)</label>
+          <input id="width" name="width" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="Outside width" />
+        </div>
+        <div class="field">
+          <label for="height">Height per piece (cm)</label>
+          <input id="height" name="height" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="Outside height" />
+        </div>
+        <div class="field">
+          <label for="gross-per-piece">Gross weight per piece (kg)</label>
+          <input id="gross-per-piece" name="gross-per-piece" type="number" inputmode="decimal" min="0" step="0.01" placeholder="Including packaging" />
+        </div>
+        <p class="field-note field--wide">Measure the outside dimensions of one piece, including pallet or packaging. All values above refer to that same piece.</p>
+      </div>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Calculate chargeable weight</button>
+      <button type="reset" class="secondary">Reset</button>
+    </div>
+
+    <div class="results" id="chargeable-results" aria-live="polite" aria-atomic="true">
+      <p class="form-message" id="chargeable-message">Enter pieces, dimensions and gross weight to calculate.</p>
+      <dl class="result-list" id="chargeable-output" hidden>
+        <div><dt>Total volume</dt><dd id="result-volume">—</dd></div>
+        <div><dt>Volumetric weight</dt><dd id="result-volumetric">—</dd></div>
+        <div><dt>Gross weight</dt><dd id="result-gross">—</dd></div>
+        <div><dt>Chargeable weight</dt><dd id="result-chargeable">—</dd></div>
+        <div><dt>Governing rule</dt><dd id="result-rule">—</dd></div>
+      </dl>
+    </div>
+  </form>
+
+  <h2>What is chargeable weight for air freight?</h2>
+  <p>
+    Chargeable weight is the greater of gross weight and volumetric weight. The air convention used
+    here is a divisor of 6,000 cubic centimetres per kilogram. One cubic metre therefore produces
+    about 166.7 volumetric kilograms. LCL uses a different convention: one cubic metre is treated as
+    one revenue ton, or 1,000 kilograms. The consolidator compares volume in cubic metres with gross
+    weight in tonnes and bills the larger W/M figure.
+  </p>
+  <div class="formula">
+    <p>Piece volume (cbm) = L × W × H ÷ 1,000,000</p>
+    <p>Total volume (cbm) = piece volume × pieces</p>
+    <p>Air volumetric weight (kg) = (L × W × H ÷ 6,000) × pieces</p>
+    <p>Gross weight (kg) = gross weight per piece × pieces</p>
+    <p>Air chargeable weight (kg) = max(volumetric weight, gross weight)</p>
+    <p>LCL gross tonnes = total gross kg ÷ 1,000</p>
+    <p>LCL chargeable W/M = max(total volume cbm, gross tonnes)</p>
+    <p>Convention: 1 cbm = 1,000 kg = 1 W/M for LCL</p>
+  </div>
+  <p>
+    L, W and H are the outside dimensions of one piece in centimetres. Pieces is a whole number.
+    Gross weight per piece is in kilograms and includes packaging. The displayed kilograms and W/M
+    values are unrounded calculation results, apart from presentation decimals. The
+    <a href="/guides/air-freight/">air freight guide</a> explains how the divisor interacts with
+    airline weight breaks, while the <a href="/guides/lcl/">LCL guide</a> covers W/M pricing at the
+    consolidation warehouse.
+  </p>
+
+  <h2>How does a worked example add up?</h2>
+  <p class="meta">Illustrative measurements and weights only; not a quotation or a carrier measurement.</p>
+  <ol>
+    <li>Assume 20 identical pieces, each 60 × 50 × 40 cm and 18 kg gross.</li>
+    <li>One piece’s volume = 60 × 50 × 40 = 120,000 cm³ = <strong>0.12 cbm</strong>.</li>
+    <li>Total volume = 0.12 × 20 = <strong>2.4 cbm</strong>.</li>
+    <li>Air volumetric weight per piece = 120,000 ÷ 6,000 = 20 kg; for 20 pieces = <strong>400 kg</strong>.</li>
+    <li>Total gross weight = 18 × 20 = <strong>360 kg</strong>.</li>
+    <li>Air chargeable weight = max(400, 360) = <strong>400 kg</strong>; volumetric weight governs.</li>
+    <li>For LCL, gross tonnes = 360 ÷ 1,000 = 0.36 tonnes. Compare 2.4 cbm with 0.36 tonnes: chargeable weight = <strong>2.4 W/M</strong>; volume governs.</li>
+  </ol>
+  <p>The same shipment is light relative to its space in both models, so volume rather than gross weight drives the billable quantity.</p>
+
+  <h2>What are the assumptions and data sources?</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Input</th><th>What it means</th><th>Where the figure comes from</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pieces</td><td>Number of identical cartons or units measured.</td><td>User input.</td></tr>
+        <tr><td>Length, width, height</td><td>Outside dimensions of one piece in centimetres.</td><td>User measurement, including packaging.</td></tr>
+        <tr><td>Gross weight per piece</td><td>Actual weight of one piece in kilograms.</td><td>User measurement, including packaging.</td></tr>
+        <tr><td>Mode</td><td>Whether to apply the air divisor or the LCL W/M comparison.</td><td>User selection.</td></tr>
+        <tr><td>Air divisor</td><td>6,000 cm³ per kilogram.</td><td>Air-freight convention used on this site; carrier terms can vary.</td></tr>
+        <tr><td>LCL W/M rule</td><td>One cubic metre equals one revenue ton, or 1,000 kg.</td><td>LCL pricing convention; confirm the consolidator’s tariff.</td></tr>
+        <tr><td>Rounding</td><td>Presentation decimals only.</td><td>Calculator convention; no carrier rounding rule is applied.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What the calculator does not include</h2>
+  <ul>
+    <li>Airline or consolidator rounding, minimum charges, weight-break pricing or rate tiers.</li>
+    <li>Re-measurement or dimensional scanning differences at the origin or destination facility.</li>
+    <li>Pallet overhang, irregular shapes, stacking restrictions or unusable container space.</li>
+    <li>Dangerous-goods handling, temperature control, ULD constraints or special equipment.</li>
+    <li>Freight rates, surcharges, fuel, security, screening or documentation charges.</li>
+    <li>Customs duty and VAT based on value, or any certificate and inspection cost.</li>
+    <li>Measurement tolerance, packaging compression or mixed-SKU consignment logic.</li>
+  </ul>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    This is a planning tool, not a quotation or a carrier measurement. It is not customs advice and
+    does not determine freight rates. Ask your airline, consolidator or forwarder to confirm the
+    divisor, rounding rule, measurement method and billed chargeable weight before you commit cargo.
+  </p>
+
+  <h2>What else should shippers ask about chargeable weight?</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where can I read more about air and LCL measurement?</h2>
+    <ul>
+      <li><a href="/compare/sea-vs-air/">Sea versus air freight</a></li>
+      <li><a href="/compare/fcl-vs-lcl/">FCL versus LCL</a></li>
+      <li><a href="/countries/uae/">China to UAE freight guide</a></li>
+      <li><a href="/guides/cost-and-transit/">China–GCC costs and transit</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    'use strict';
+    const form = document.getElementById('chargeable-form');
+    if (!form) return;
+
+    const piecesInput = document.getElementById('pieces');
+    const lengthInput = document.getElementById('length');
+    const widthInput = document.getElementById('width');
+    const heightInput = document.getElementById('height');
+    const grossInput = document.getElementById('gross-per-piece');
+    const message = document.getElementById('chargeable-message');
+    const output = document.getElementById('chargeable-output');
+    const resultVolume = document.getElementById('result-volume');
+    const resultVolumetric = document.getElementById('result-volumetric');
+    const resultGross = document.getElementById('result-gross');
+    const resultChargeable = document.getElementById('result-chargeable');
+    const resultRule = document.getElementById('result-rule');
+
+    const readNumber = (input) => {
+      const raw = input.value.trim();
+      if (raw === '') return null;
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : NaN;
+    };
+
+    const format = (value, digits) =>
+      new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits,
+      }).format(value);
+
+    const showMessage = (text) => {
+      message.textContent = text;
+      message.classList.add('is-error');
+      message.hidden = false;
+      output.hidden = true;
+    };
+
+    const calculate = () => {
+      const pieces = readNumber(piecesInput);
+      const length = readNumber(lengthInput);
+      const width = readNumber(widthInput);
+      const height = readNumber(heightInput);
+      const grossPerPiece = readNumber(grossInput);
+
+      if (!Number.isInteger(pieces) || pieces < 1) {
+        showMessage('Enter a whole number of pieces, at least 1.');
+        return;
+      }
+      if (![length, width, height].every((value) => Number.isFinite(value) && value > 0)) {
+        showMessage('Enter length, width and height as positive values in centimetres.');
+        return;
+      }
+      if (!Number.isFinite(grossPerPiece) || grossPerPiece < 0) {
+        showMessage('Enter gross weight per piece as zero or a positive number in kilograms.');
+        return;
+      }
+
+      const pieceVolume = (length * width * height) / 1000000;
+      const totalVolume = pieceVolume * pieces;
+      const volumetricKg = ((length * width * height) / 6000) * pieces;
+      const grossKg = grossPerPiece * pieces;
+      const isAir = form.querySelector('input[name="mode"]:checked').value === 'air';
+      const tolerance = 0.000001;
+      let chargeableText;
+      let ruleText;
+
+      resultVolume.textContent = format(totalVolume, 3) + ' cbm';
+      resultGross.textContent = format(grossKg, 2) + ' kg';
+
+      if (isAir) {
+        resultVolumetric.textContent = format(volumetricKg, 2) + ' kg';
+        resultChargeable.textContent = format(Math.max(volumetricKg, grossKg), 2) + ' kg';
+        if (Math.abs(volumetricKg - grossKg) < tolerance) {
+          ruleText = 'Both measures are equal; the same chargeable weight applies.';
+        } else if (volumetricKg > grossKg) {
+          ruleText = 'Volumetric weight governs at the 6,000 divisor.';
+        } else {
+          ruleText = 'Gross weight governs.';
+        }
+      } else {
+        const grossTonnes = grossKg / 1000;
+        const revenueTons = Math.max(totalVolume, grossTonnes);
+        resultVolumetric.textContent =
+          format(totalVolume, 3) + ' cbm (' + format(totalVolume * 1000, 0) + ' kg equivalent)';
+        chargeableText =
+          format(revenueTons, 3) + ' W/M (' + format(revenueTons * 1000, 0) + ' kg equivalent)';
+        resultChargeable.textContent = chargeableText;
+        if (Math.abs(totalVolume - grossTonnes) < tolerance) {
+          ruleText = 'Volume and gross weight are equal; the same W/M applies.';
+        } else if (totalVolume > grossTonnes) {
+          ruleText = 'Volume (measurement) governs under the W/M rule.';
+        } else {
+          ruleText = 'Gross weight governs under the W/M rule.';
+        }
+      }
+
+      resultRule.textContent = ruleText;
+      message.hidden = true;
+      output.hidden = false;
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      calculate();
+    });
+    form.addEventListener('input', calculate);
+    form.addEventListener('change', calculate);
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        message.textContent = 'Enter pieces, dimensions and gross weight to calculate.';
+        message.classList.remove('is-error');
+        message.hidden = false;
+        output.hidden = true;
+      }, 0);
+    });
+  })();
+</script>
