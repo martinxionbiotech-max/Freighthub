@@ -55,6 +55,11 @@ When all four are scarce at once, the marginal box is priced by desperation. Two
 
 **The pallet question is where cube disappears.** A 40HQ is about 2,350 mm wide inside. A 1,200 × 1,000 mm pallet loaded 1,000 mm across fits two side by side and leaves 350 mm; loaded 1,200 mm across it does not fit twice. Get the orientation wrong and you lose a row and roughly 10–12% of usable volume. This is the most common reason a "76 cbm" container only holds 63. *(Industry claim)*
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-containers.png" alt="Side elevations of 20 ft GP, 40 ft HQ and 40 ft RF containers with nominal length and height dimensions." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 03 — Container types, side elevation. Nominal external dimensions; schematic, not to scale.</figcaption>
+</figure>
+
 ## The weight trap: VGM says yes, the checkpoint says no
 
 SOLAS VGM is an origin problem: you weigh the box, submit the figure, and the terminal accepts or rejects it. Gulf road limits are a destination problem: a container that is legal at the terminal gate can be over an axle limit on the Riyadh run, and the fine lands on the trucker, who passes it to you. *(Industry claim)*

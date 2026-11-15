@@ -88,6 +88,11 @@ See the [battery sector guide](/sectors/batteries/) for the detailed rules.
 
 Electronics is vulnerable to shock, moisture, electrostatic discharge and theft.
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-packing.png" alt="Side view of a palletised carton stack with stretch wrap, corner boards, vertical straps, a dunnage bag and lashing straps to the container floor." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 05 — Packing and lashing, side view. Shows an arrangement, not a certified securing plan.</figcaption>
+</figure>
+
 **Shock.** Use the original retail packaging plus an outer carton with adequate cushioning. A container is not a shock-free environment; a port crane and a truck suspension are not gentle.
 
 **Moisture.** Sea containers can experience condensation, especially on a route that crosses climate zones. Use desiccant, moisture-barrier bags for sensitive items, and avoid loading wet pallets.

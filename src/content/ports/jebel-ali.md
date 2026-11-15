@@ -10,6 +10,11 @@ updated: "2026-11-04"
 
 Jebel Ali is not a normal container gateway in November 2026. Direct liner calls are ad hoc; most boxes discharge at [Khor Fakkan](/ports/sharjah/) or Fujairah and arrive by truck. Use Jebel Ali only with a confirmed landbridge, a named trucker and 12–15 days of port-to-door time built into your plan. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-berth.png" alt="Line drawing of a container vessel at berth with a rail-mounted gantry crane, containers on deck, fenders and mooring lines." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 01 — Berth operations. A generic container berth, not a chart of Jebel Ali's actual layout.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | November 2026 position |

@@ -27,6 +27,11 @@ GCC customs clearance is won or lost before the vessel arrives. A complete file 
 
 Clearance is a sequence, not an event. Understanding the sequence tells you where a shipment is stuck.
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-customs.png" alt="Six-step customs clearance sequence: documents, declaration, inspection, duty and VAT, release, inland delivery, with a hold branch back to step one." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 04 — Clearance sequence. The order and holding points vary by market; schematic, not a promise of duration.</figcaption>
+</figure>
+
 1. **Pre-arrival filing.** The broker files the draft declaration before the vessel arrives, using the bill of lading, invoice and packing list. Errors caught here are cheap.
 2. **Manifest and gate-in.** The carrier files the manifest; the container is discharged and gated into the terminal. The free-time clock starts.
 3. **Declaration submission.** The broker submits the final declaration with the HS code, value, origin and documents.

@@ -87,3 +87,22 @@ tr:last-child td { border-bottom: 0; }
 @media (min-width: 860px) {
   main.container { padding-top: 44px; }
 }
+
+/* Editorial line drawings */
+.drawing-figure { margin: 28px 0 34px; }
+.drawing-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f7f4ec;
+}
+.drawing-figure figcaption {
+  margin-top: 10px;
+  padding-left: 12px;
+  border-left: 3px solid var(--amber);
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
