@@ -1,5 +1,5 @@
 ---
-seoTitle: "Jebel Ali vs Khalifa Port (2026) — Freighthub"
+seoTitle: "Jebel Ali vs Khalifa Port (2026) — Freightgcc"
 title: "Jebel Ali vs Khalifa Port: Which UAE Gateway? (2026)"
 description: "Jebel Ali versus Khalifa Port: sailing frequency, terminal economics, Abu Dhabi versus Dubai hinterlands, free-zone treatment and total cost."
 country: "uae"
@@ -194,7 +194,7 @@ Only if the broker is licensed and registered in Abu Dhabi. Many Dubai brokers d
 - [DDP guide](/guides/ddp/) — importer of record
 - [Machinery sector](/sectors/machinery/) — project cargo
 - [Electronics sector](/sectors/electronics/) — high-value cargo
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## Related

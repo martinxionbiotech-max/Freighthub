@@ -1,5 +1,5 @@
 ---
-seoTitle: "Machinery Freight to the GCC (2026) — Freighthub"
+seoTitle: "Machinery Freight to the GCC (2026) — Freightgcc"
 title: "Machinery Freight to the GCC: Project Cargo, Crating and Installation Risk (2026)"
 description: "Shipping machinery from China to the GCC: HS 84/85/90, flat racks, heavy lift, ISPM 15 crating, voltage requirements and installation risk."
 country: "saudi-arabia"
@@ -212,7 +212,7 @@ Yes, subject to the battery rules. A machine with an embedded lithium battery ma
 - [Khalifa Port](/ports/khalifa/) — Abu Dhabi projects
 - [Sohar Port](/ports/sohar/) — Oman industrial
 - [Sea vs air](/compare/sea-vs-air/) — mode choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

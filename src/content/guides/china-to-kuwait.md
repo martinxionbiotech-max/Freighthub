@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Kuwait Freight Guide 2026 — Freighthub"
+seoTitle: "China to Kuwait Freight Guide 2026 — Freightgcc"
 title: "China to Kuwait Freight: Shuwaikh, Shuaiba and the Agency Question (2026)"
 description: "Shipping from China to Kuwait in 2026: Shuwaikh and Shuaiba, transit ranges, 5% duty, no VAT, KUCAS, agency rules and the cost drivers."
 country: "kuwait"
@@ -238,7 +238,7 @@ It is a strategic project under development, not a current commercial routing op
 - [DDP vs self-clearance](/compare/ddp-vs-self-clearance/) — who clears
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [Food sector](/sectors/food/) — PAFN registration
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

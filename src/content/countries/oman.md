@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Oman Freight 2026 — Freighthub"
+seoTitle: "China to Oman Freight 2026 — Freightgcc"
 title: "China to Oman Freight 2026: Sohar, Salalah and the Only GCC Door Outside Hormuz"
 description: "Why Oman became the Gulf's pressure valve in 2026: Sohar's container surge, Salalah's 2028 concession cliff, 5% duty, 5% VAT and the Bayan and CoC gates."
 country: "oman"

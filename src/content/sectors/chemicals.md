@@ -1,5 +1,5 @@
 ---
-seoTitle: "Chemical Freight to the GCC (2026) — Freighthub"
+seoTitle: "Chemical Freight to the GCC (2026) — Freightgcc"
 title: "Chemical Freight to the GCC: Classification, SDS and Import Permits (2026)"
 description: "Shipping chemicals from China to the GCC: UN classification, GHS safety data sheets, import permits, packaging, segregation and storage rules."
 country: "saudi-arabia"
@@ -249,7 +249,7 @@ Yes, but a sample is still a DG shipment. The classification, packaging and docu
 - [Jebel Ali Port](/ports/jebel-ali/) — DG terminal
 - [Dammam Port](/ports/dammam/) — industrial gateway
 - [Sea vs air](/compare/sea-vs-air/) — mode decision
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

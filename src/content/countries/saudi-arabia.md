@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Saudi Arabia Freight 2026 — Freighthub"
+seoTitle: "China to Saudi Arabia Freight 2026 — Freightgcc"
 title: "China to Saudi Arabia Freight 2026: Jeddah, Dammam and the Hormuz Detour"
 description: "How China–Saudi freight actually works in late 2026: Jeddah congestion, Dammam routing, SABER certificates, 15% VAT and the real cost stack behind a 双清 quote."
 country: "saudi-arabia"

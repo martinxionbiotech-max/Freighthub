@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" role="img" aria-labelledby="title desc">
+  <title id="title">Freightgcc</title>
+  <desc id="desc">Freightgcc — China to GCC freight intelligence</desc>
+  <rect x="0" y="8" width="48" height="48" rx="12" fill="#ffffff"/>
+  <path d="M14 19h23v7H21v6h13v7H21v7h-7V19z" fill="#0b1f3a"/>
+  <circle cx="37" cy="22.5" r="3.2" fill="#d97706"/>
+  <path d="M31 45c6.5-4.5 10.5-9.8 13-16" fill="none" stroke="#d97706" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="62" y="35" fill="#ffffff" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="27" font-weight="800" letter-spacing="1.4">FREIGHTGCC</text>
+  <text x="64" y="51" fill="#93c5fd" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="10.5" font-weight="600" letter-spacing="2.2">CHINA → GCC</text>
+</svg>

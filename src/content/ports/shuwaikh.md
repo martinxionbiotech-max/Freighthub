@@ -1,5 +1,5 @@
 ---
-seoTitle: "Shuwaikh Port 2026 — Freighthub"
+seoTitle: "Shuwaikh Port 2026 — Freightgcc"
 title: "Shuwaikh Port 2026: Tide Windows, Two Box Berths"
 description: "Shuwaikh Port in November 2026: the 8.5 m channel, the tide window, 21 berths of which two take containers, KUCAS clearance and drone-attack risk."
 country: "kuwait"
@@ -164,7 +164,7 @@ Not this decade. Phase one is a 1,200 m container terminal on Boubyan Island wit
 
 ---
 
-*Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

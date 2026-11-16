@@ -1,5 +1,5 @@
 ---
-seoTitle: "Hamad Port 2026: Channel and Capacity — Freighthub"
+seoTitle: "Hamad Port 2026: Channel and Capacity — Freightgcc"
 title: "Hamad Port 2026: 14 m Channel, 7.5 m TEU"
 description: "Hamad Port in November 2026: 17 m berths behind a 14 m channel, CT1 versus CT2, Mwani Qatar's fee discount, free-zone customs rules and real transit times."
 country: "qatar"
@@ -169,7 +169,7 @@ QGOSM conformity for tyres, brake pads, seat belts, rims and some electricals; a
 
 ---
 
-*Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

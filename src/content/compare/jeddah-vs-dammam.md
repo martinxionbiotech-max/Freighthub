@@ -1,5 +1,5 @@
 ---
-seoTitle: "Jeddah vs Dammam: Saudi Gateway (2026) — Freighthub"
+seoTitle: "Jeddah vs Dammam: Saudi Gateway (2026) — Freightgcc"
 title: "Jeddah vs Dammam: Choosing a Saudi Gateway (2026)"
 description: "Jeddah versus Dammam: transit, congestion, inland distance to Riyadh, rail, Red Sea risk and the consignee geography that decides the cheaper port."
 country: "saudi-arabia"
@@ -178,7 +178,7 @@ Often, especially for the Eastern Province industrial belt. Jeddah has project c
 - [Food sector](/sectors/food/) — reefer cargo
 - [Machinery sector](/sectors/machinery/) — project cargo
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

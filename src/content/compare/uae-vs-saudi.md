@@ -1,5 +1,5 @@
 ---
-seoTitle: "UAE vs Saudi Arabia: Market First? (2026) — Freighthub"
+seoTitle: "UAE vs Saudi Arabia: Market First? (2026) — Freightgcc"
 title: "UAE vs Saudi Arabia for Importers: Which Market First? (2026)"
 description: "The UAE versus Saudi Arabia: market size, VAT, duty, certification, free zones, logistics costs and the buyer profiles that suit each market."
 country: "uae"
@@ -189,7 +189,7 @@ Yes, and it is a common strategy. Start the Saudi certification early so the exp
 - [Cost and transit](/guides/cost-and-transit/) — landed cost
 - [Ecommerce sector](/sectors/ecommerce/) — UAE test market
 - [Food sector](/sectors/food/) — SFDA versus UAE
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

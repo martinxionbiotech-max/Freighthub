@@ -1,9 +1,9 @@
 ---
-seoTitle: "Why DDP Quotes Hide the Risk — Freighthub"
+seoTitle: "Why DDP Quotes Hide the Risk — Freightgcc"
 title: "Why DDP quotes hide the risk that matters"
 description: "A DDP price looks like certainty. In the GCC it often hides an importer-of-record mismatch, unrecoverable VAT and a certificate that belongs to someone else."
 date: "2026-11-11"
-author: "Freighthub editorial"
+author: "Freightgcc editorial"
 updated: "2026-11-11"
 ---
 

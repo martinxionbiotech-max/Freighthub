@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Oman Freight Guide 2026 — Freighthub"
+seoTitle: "China to Oman Freight Guide 2026 — Freightgcc"
 title: "China to Oman Freight: Sohar, Salalah and the Hormuz Hedge (2026)"
 description: "Shipping from China to Oman in 2026: Sohar and Salalah, Duqm, 5% VAT, 5% duty, free zones, conformity and the cost drivers behind two coasts."
 country: "oman"
@@ -238,7 +238,7 @@ A special economic zone and port on Oman's central coast, focused on heavy indus
 - [DDP vs self-clearance](/compare/ddp-vs-self-clearance/) — who clears
 - [Machinery sector](/sectors/machinery/) — project cargo
 - [Food sector](/sectors/food/) — labelling and shelf life
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

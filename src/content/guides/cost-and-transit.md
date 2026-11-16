@@ -1,5 +1,5 @@
 ---
-seoTitle: "China–GCC Freight Costs & Transit 2026 — Freighthub"
+seoTitle: "China–GCC Freight Costs & Transit 2026 — Freightgcc"
 title: "China to GCC Freight Costs and Transit: Ranges, Drivers and Quote Anatomy (2026)"
 description: "What China–GCC freight costs in 2026: planning ranges by mode and country, the eight lines in every quote, transit bands and hidden charges."
 country: "saudi-arabia"
@@ -256,7 +256,7 @@ One to three days of storage plus the broker fee, and a contingency for inspecti
 - [Sea vs air](/compare/sea-vs-air/) — mode decision
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container decision
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/) — routing decision
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

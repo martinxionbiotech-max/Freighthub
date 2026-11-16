@@ -1,5 +1,5 @@
 ---
-seoTitle: "Furniture Freight to the GCC (2026) — Freighthub"
+seoTitle: "Furniture Freight to the GCC (2026) — Freightgcc"
 title: "Furniture Freight to the GCC: Volume, Damage and Container Loading (2026)"
 description: "Shipping furniture from China to the GCC: LCL versus FCL, volumetric weight, flat-pack loading, moisture damage, ISPM 15 and upholstery rules."
 country: "uae"
@@ -208,7 +208,7 @@ It depends on the Incoterm and the insurance. Under CIF or DAP, the seller usual
 - [Sharjah Ports](/ports/sharjah/) — the industrial belt
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — the decision
 - [Sea vs air](/compare/sea-vs-air/) — mode choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

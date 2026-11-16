@@ -1,5 +1,5 @@
 ---
-seoTitle: "Lithium Battery Freight to the GCC (2026) — Freighthub"
+seoTitle: "Lithium Battery Freight to the GCC (2026) — Freightgcc"
 title: "Lithium Battery Freight to the GCC: UN38.3, DG and Carrier Reality (2026)"
 description: "Shipping lithium batteries and battery products from China to the GCC: UN38.3, state of charge, air and sea rules, carrier approval and certification."
 country: "uae"
@@ -226,7 +226,7 @@ DG surcharges, UN packaging, insurance and limited carrier capacity add cost. Th
 - [Jeddah Port](/ports/jeddah/) — DG acceptance
 - [Sea vs air](/compare/sea-vs-air/) — mode decision
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

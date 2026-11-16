@@ -1,8 +1,8 @@
 ---
-seoTitle: "LCL Shipping to the GCC 2026 — Freighthub"
+seoTitle: "LCL Shipping to the GCC 2026 — Freightgcc"
 title: "LCL to the GCC in 2026: W/M Pricing, CFS Reality and the Destination-Charge Trap"
 description: "LCL from China to Dubai, Jeddah and Dammam in 2026: per-cbm ranges, W/M measurement, destination charges and the CFS bottlenecks."
-author: "Freighthub editorial"
+author: "Freightgcc editorial"
 updated: "2026-11-04"
 ---
 

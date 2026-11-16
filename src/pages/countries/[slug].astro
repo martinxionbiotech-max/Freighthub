@@ -7,7 +7,7 @@ export function getStaticPaths() {
 }
 const { country } = Astro.props;
 const doc = getDoc('countries', country.slug);
-const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${country.name} — Freighthub`);
+const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freightgcc` : `${country.name} — Freightgcc`);
 const pageDescription = doc?.description || `China to ${country.name} freight: ports, customs, VAT and route context.`;
 ---
 <BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={pageTitle} description={pageDescription} noindex={!doc}>
@@ -15,7 +15,7 @@ const pageDescription = doc?.description || `China to ${country.name} freight: p
   <h1>{country.name}</h1>
   {doc ? (
     <>
-      <p class="article-meta">By Freighthub editorial · Last reviewed {doc.updated || '2026-11-05'}</p>
+      <p class="article-meta">By Freightgcc editorial · Last reviewed {doc.updated || '2026-11-05'}</p>
       <div set:html={doc.html} />
     </>
   ) : (

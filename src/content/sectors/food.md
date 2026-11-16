@@ -1,5 +1,5 @@
 ---
-seoTitle: "Food Freight to the GCC (2026) — Freighthub"
+seoTitle: "Food Freight to the GCC (2026) — Freightgcc"
 title: "Food Freight to the GCC: SFDA, Labelling and the Cold Chain (2026)"
 description: "Shipping food and beverages from China to the GCC: SFDA and municipal registration, Arabic labelling, shelf life, halal, reefer logistics and inspection."
 country: "saudi-arabia"
@@ -242,7 +242,7 @@ The cargo may not have been pre-cooled, the reefer may not have been plugged in,
 - [Hamad Port](/ports/hamad/) — Qatar gateway
 - [Sea vs air](/compare/sea-vs-air/) — mode decision
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

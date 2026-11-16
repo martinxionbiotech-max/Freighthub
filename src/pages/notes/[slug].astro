@@ -6,11 +6,11 @@ export function getStaticPaths() {
 }
 const { doc } = Astro.props;
 ---
-<BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={doc.seoTitle || `${doc.title} — Freighthub`} description={doc.description} noindex={!doc}>
+<BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={doc.seoTitle || `${doc.title} — Freightgcc`} description={doc.description} noindex={!doc}>
   <p><a href="/notes/">Notes</a> / {doc.date}</p>
   <article>
     <h1>{doc.title}</h1>
-    <p class="article-meta">By {doc.author || 'Freighthub editorial'} · {doc.date} · Last reviewed {doc.updated || doc.date}</p>
+    <p class="article-meta">By {doc.author || 'Freightgcc editorial'} · {doc.date} · Last reviewed {doc.updated || doc.date}</p>
     <div set:html={doc.html} />
   </article>
 </BaseLayout>

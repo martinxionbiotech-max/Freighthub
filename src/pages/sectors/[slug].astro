@@ -8,14 +8,14 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const doc = getDoc('sectors', String(slug));
 const label = String(slug);
-const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${label} freight to GCC — Freighthub`);
+const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freightgcc` : `${label} freight to GCC — Freightgcc`);
 ---
 <BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={pageTitle} description={doc?.description || `China to GCC freight for ${label}.`} noindex={!doc}>
   <p><a href="/sectors/">Sectors</a> / {label}</p>
   {doc ? (
     <article>
       <h1>{doc.title || label}</h1>
-      <p class="article-meta">By {doc.author || 'Freighthub editorial'} · Last reviewed {doc.updated || '2026-11-11'}</p>
+      <p class="article-meta">By {doc.author || 'Freightgcc editorial'} · Last reviewed {doc.updated || '2026-11-11'}</p>
       <div set:html={doc.html} />
     </article>
   ) : (

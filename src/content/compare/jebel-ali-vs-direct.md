@@ -1,5 +1,5 @@
 ---
-seoTitle: "Jebel Ali vs Direct Calls (2026) — Freighthub"
+seoTitle: "Jebel Ali vs Direct Calls (2026) — Freightgcc"
 title: "Jebel Ali vs Direct: Transhipment or a Direct Call? (2026)"
 description: "When transhipping through Jebel Ali beats a direct call to Jeddah, Dammam, Hamad or Shuwaikh, and when the extra handling makes direct the obvious choice."
 country: "uae"
@@ -171,7 +171,7 @@ Yes, but the connection risk is higher. Use a carrier with a reliable feeder and
 - [Sea vs air](/compare/sea-vs-air/) — mode choice
 - [Cost and transit](/guides/cost-and-transit/) — quote anatomy
 - [Customs clearance](/guides/customs-clearance/) — transit procedures
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

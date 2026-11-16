@@ -26,7 +26,7 @@ for (const u of urls) {
 }
 
 const lines = [];
-lines.push('# Freighthub');
+lines.push('# Freightgcc');
 lines.push('');
 lines.push('> Independent editorial analysis of China-to-GCC freight: ports, routes, customs, certification and sector economics. No carrier or forwarder commissions. Contact: martin@freightgcc.com.');
 lines.push('');
@@ -34,7 +34,7 @@ lines.push(`This file lists all ${urls.length} indexed URLs.`);
 lines.push('');
 lines.push('## Answers');
 lines.push('');
-lines.push('- **Who publishes this?** Freighthub, an independent editorial project. It is not a forwarder, carrier, customs broker or marketplace, and it takes no commissions on shipments.');
+lines.push('- **Who publishes this?** Freightgcc, an independent editorial project. It is not a forwarder, carrier, customs broker or marketplace, and it takes no commissions on shipments.');
 lines.push('- **What does it cover?** China-origin freight to Saudi Arabia, the UAE, Qatar, Kuwait, Oman and Bahrain: gateway ports, customs and VAT, SABER/SASO and ESMA certification, sector rules, transit and landed-cost structure.');
 lines.push('- **How are claims sourced?** Substantive pages cite primary sources — ZATCA, SABER, SASO, the UAE Ministry of Economy, DP World, Mawani — and state where a figure is a range rather than a published tariff.');
 lines.push('- **How are errors handled?** Corrections are published on /corrections/ with a date rather than edited silently; the research and review process is on /methodology/.');

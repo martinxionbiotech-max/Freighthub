@@ -1,5 +1,5 @@
 ---
-seoTitle: "UAE Hub vs Direct Import (2026) — Freighthub"
+seoTitle: "UAE Hub vs Direct Import (2026) — Freightgcc"
 title: "UAE Hub vs Direct Import: Which Supply Model? (2026)"
 description: "Using the UAE as a GCC distribution hub versus importing direct: cost, duty, stock, control and the order profiles that make each model work."
 country: "uae"
@@ -174,7 +174,7 @@ It is 15% on CIF plus duty, and it is recoverable by a registered Saudi importer
 - [Khalifa Port](/ports/khalifa/) — Abu Dhabi alternative
 - [Ecommerce sector](/sectors/ecommerce/) — hub fulfilment
 - [Cost and transit](/guides/cost-and-transit/) — landed cost
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

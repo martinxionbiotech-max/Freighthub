@@ -1,5 +1,5 @@
 ---
-seoTitle: "Jebel Ali Port 2026 — Freighthub"
+seoTitle: "Jebel Ali Port 2026 — Freightgcc"
 title: "Jebel Ali Port 2026: Landbridge, Congestion and Clearance"
 description: "Jebel Ali in November 2026: ad hoc vessel calls, the Khor Fakkan landbridge, 12–15 day transfers, JAFZA clearance and what to book instead."
 country: "united-arab-emirates"
@@ -160,7 +160,7 @@ Expect a temporary closure, carrier suspensions and a scramble for trucks. The r
 
 ---
 
-*Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations.*
+*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations.*
 
 ## In our view
 

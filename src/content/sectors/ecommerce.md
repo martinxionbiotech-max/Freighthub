@@ -1,5 +1,5 @@
 ---
-seoTitle: "Ecommerce Freight to the GCC (2026) — Freighthub"
+seoTitle: "Ecommerce Freight to the GCC (2026) — Freightgcc"
 title: "Ecommerce Freight to the GCC: Amazon FBA, noon and the Last Mile (2026)"
 description: "Selling physical products in the UAE and Saudi Arabia: FBA and noon fulfilment, import models, VAT, thresholds, certification and unit economics."
 country: "uae"
@@ -222,7 +222,7 @@ Yes, but Saudi duty, VAT and SABER apply when the goods enter Saudi Arabia. The 
 - [China → Saudi route](/guides/china-to-saudi-arabia/) — the scale market
 - [Jebel Ali Port](/ports/jebel-ali/) — the fulfilment hub
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

@@ -1,9 +1,9 @@
 ---
-seoTitle: "What the Red Sea Return Changes — Freighthub"
+seoTitle: "What the Red Sea Return Changes — Freightgcc"
 title: "What the Red Sea return changes — and what it doesn't"
 description: "A partial return to Suez helps schedules and equipment. It does not change the Gulf's Hormuz exposure, customs regimes or the case for a second route."
 date: "2026-11-11"
-author: "Freighthub editorial"
+author: "Freightgcc editorial"
 updated: "2026-11-11"
 ---
 

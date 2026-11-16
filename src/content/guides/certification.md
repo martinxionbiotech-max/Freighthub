@@ -1,5 +1,5 @@
 ---
-seoTitle: "GCC Product Certification 2026 — Freighthub"
+seoTitle: "GCC Product Certification 2026 — Freightgcc"
 title: "GCC Product Certification: SABER, ECAS, KUCAS and the Rest (2026)"
 description: "How GCC product conformity works in 2026: Saudi SABER, UAE ECAS, Kuwait KUCAS, Qatar QGOSM, the certificates each shipment needs and what stops cargo."
 country: "saudi-arabia"
@@ -241,7 +241,7 @@ A final budgeting note: the certificate cost is per product family, not per cont
 - [Batteries sector](/sectors/batteries/) — UN38.3 and DG
 - [Chemicals sector](/sectors/chemicals/) — SDS and labelling
 - [Food sector](/sectors/food/) — SFDA and MOPH
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

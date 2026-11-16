@@ -1,9 +1,9 @@
 {
-  "name": "freighthub",
+  "name": "freightgcc",
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "Freighthub \u2014 China \u2192 GCC freight intelligence (Middle East only).",
+  "description": "Freightgcc \u2014 China \u2192 GCC freight intelligence (Middle East only).",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/generate-llms.mjs && node scripts/generate-sidecars.mjs",

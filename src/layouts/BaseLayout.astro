@@ -14,7 +14,7 @@ interface Props {
 }
 
 const {
-  title = 'Freighthub — China → GCC Freight Intelligence',
+  title = 'Freightgcc — China → GCC Freight Intelligence',
   description = 'China to GCC freight intelligence: routes, ports, customs, certification and live updates.',
   noindex = false,
   type = 'website',
@@ -34,7 +34,7 @@ const siteId = `${SITE}/#website`;
 const organization = {
   '@type': 'Organization',
   '@id': orgId,
-  name: 'Freighthub',
+  name: 'Freightgcc',
   url: SITE,
   description:
     'Independent editorial analysis of China-to-GCC freight: ports, routes, customs, certification and sector economics. No carrier or forwarder commissions.',
@@ -55,7 +55,7 @@ const organization = {
 const website = {
   '@type': 'WebSite',
   '@id': siteId,
-  name: 'Freighthub',
+  name: 'Freightgcc',
   url: SITE,
   publisher: { '@id': orgId },
   inLanguage: 'en',
@@ -90,7 +90,7 @@ const articleLd =
   type === 'article'
     ? {
         '@type': 'Article',
-        headline: title.replace(/ — Freighthub$/, ''),
+        headline: title.replace(/ — Freightgcc$/, ''),
         description,
         ...(published ? { datePublished: published } : {}),
         ...(updated || published ? { dateModified: updated || published } : {}),
@@ -109,13 +109,14 @@ const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), .
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonical} />
 
     <meta property="og:type" content={type === 'article' ? 'article' : 'website'} />
-    <meta property="og:site_name" content="Freighthub" />
+    <meta property="og:site_name" content="Freightgcc" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -141,7 +142,9 @@ const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), .
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="/"><strong>Freighthub</strong> · China → GCC</a>
+        <a href="/" class="brand-link" aria-label="Freightgcc home">
+          <img src="/logo.svg" alt="Freightgcc — China to GCC freight intelligence" class="brand-logo" width="280" height="50" />
+        </a>
         <nav class="site-nav" aria-label="Main">
           <a href="/countries/">Countries</a>
           <a href="/ports/">Ports</a>
@@ -160,7 +163,7 @@ const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), .
     </main>
     <footer class="site-footer">
       <div class="container">
-        <p>Freighthub — China to GCC freight intelligence. Independent editorial analysis; no carrier or forwarder commissions.</p>
+        <p>Freightgcc — China to GCC freight intelligence. Independent editorial analysis; no carrier or forwarder commissions.</p>
         <p class="footer-contact">
           <strong>Sales:</strong> <a href="mailto:inquiry@freightgcc.com">inquiry@freightgcc.com</a> ·
           <strong>Admin:</strong> <a href="mailto:admin@freightgcc.com">admin@freightgcc.com</a> ·

@@ -1,5 +1,5 @@
 ---
-seoTitle: "FCL vs LCL to the GCC: The Crossover (2026) — Freighthub"
+seoTitle: "FCL vs LCL to the GCC: The Crossover (2026) — Freightgcc"
 title: "FCL vs LCL to the GCC: The Crossover Point (2026)"
 description: "FCL versus LCL for China–GCC shipping: the cost crossover, handling risk, transit, destination charges and the volume rules that decide."
 country: "uae"
@@ -203,7 +203,7 @@ Usually, but a direct LCL service can beat a slow FCL rotation. Check the routin
 - [Furniture sector](/sectors/furniture/) — volume cargo
 - [Electronics sector](/sectors/electronics/) — high-value cargo
 - [Batteries sector](/sectors/batteries/) — DG
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

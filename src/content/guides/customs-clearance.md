@@ -1,5 +1,5 @@
 ---
-seoTitle: "GCC Customs Clearance Guide 2026 — Freighthub"
+seoTitle: "GCC Customs Clearance Guide 2026 — Freightgcc"
 title: "Customs Clearance in the GCC: The File That Actually Clears (2026)"
 description: "A practical guide to GCC customs clearance in 2026: documents, HS classification, CIF valuation, inspection, free time and choosing a broker."
 country: "saudi-arabia"
@@ -234,7 +234,7 @@ Not always. A forwarder may arrange transport and sub-contract the brokerage. Co
 - [LCL guide](/guides/lcl/) — consolidation
 - [Batteries sector](/sectors/batteries/) — DG documentation
 - [Chemicals sector](/sectors/chemicals/) — SDS and permits
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

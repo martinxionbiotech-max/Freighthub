@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Qatar Freight 2026 — Freighthub"
+seoTitle: "China to Qatar Freight 2026 — Freightgcc"
 title: "China to Qatar Freight 2026: Hamad Port, Hormuz Exposure and the Zero-VAT Trap"
 description: "How China–Qatar freight works in late 2026: Hamad Port's capacity versus service frequency, Hormuz-only access, 5% duty, no VAT and QGOSM conformity."
 country: "qatar"

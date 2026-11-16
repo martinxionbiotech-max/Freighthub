@@ -1,5 +1,5 @@
 ---
-seoTitle: "Shuaiba Port 2026: Berths and Limits — Freighthub"
+seoTitle: "Shuaiba Port 2026: Berths and Limits — Freightgcc"
 title: "Shuaiba Port 2026: 20 Berths, No Storage"
 description: "Shuaiba Port in November 2026: 20 berths, 282,870 TEU, no storage and no shore cranes, the AD Ports MoU, the 2026 tender and Kuwait's war-risk premium."
 country: "kuwait"
@@ -208,7 +208,7 @@ Yes, as a corridor. Kuwaiti clearance is only the first regime; the Abdali cross
 - Anadolu Agency, "Drone attack targets Kuwait's main port, authorities say", 27 March 2026 — https://www.aa.com.tr/en/middle-east/drone-attack-targets-kuwait-s-main-port-authorities-say/3881194
 - CCTV, "伊朗军方警告：将袭击科威特及巴林港口油轮 船员需立即撤离", 9 September 2026 — https://news.cctv.com/
 - Logistics Middle East, "Kuwait Ports Authority appoints consultants for 2035 strategy", 4 November 2026 — https://www.logisticsmiddleeast.com/
-- Kuwait country hub, Freighthub — https://freightgcc.com/countries/kuwait/
+- Kuwait country hub, Freightgcc — https://freightgcc.com/countries/kuwait/
 - Intertek, Kuwait Conformity Assurance Scheme (KUCAS) — https://www.intertek.com/government/product-conformity/kuwait/
 - SGS, Kuwait product conformity assessment (KUCAS) — https://www.sgs.com/en-us/services/kuwait-product-conformity-assessment-pca
 - The Energy Year, "Kuwait shuts down Shuaiba refinery", March 2020 — https://theenergyyear.com/
@@ -216,7 +216,7 @@ Yes, as a corridor. Kuwaiti clearance is only the first regime; the Abdali cross
 
 **Update log.** 8 November 2026: first publication. Covers the AD Ports MoU, the April 2026 infrastructure tender and July bid round, the 1 March strike on the military site at Port Shuaiba, the September tanker warning, the KPMG strategy mandate and the 2026 waiting-time data. Next scheduled review: 8 January 2027, or earlier if the AD Ports feasibility, the infrastructure tender or the security picture changes materially.
 
-*Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

@@ -1,5 +1,5 @@
 ---
-seoTitle: "Khalifa Bin Salman Port 2026 — Freighthub"
+seoTitle: "Khalifa Bin Salman Port 2026 — Freightgcc"
 title: "Khalifa Bin Salman Port 2026: Bahrain's Single Gate After the Shock"
 description: "KBSP in November 2026: the March shutdown, the 80% import collapse, the June general-cargo rebound, four cranes, 15 m depth and the Saudi causeway play."
 country: "bahrain"
@@ -256,7 +256,7 @@ KBSP is smaller, shallower and more concentrated. It is a competent gateway for 
 
 **Update log.** 9 November 2026: first publication. Covers the March–April 2026 port closure and force majeure, the 80% import collapse and partial recovery, the Q1 and Q2 2026 financial results, the June general-cargo rebound, the October car-shipment restart, KBSP's terminal specifications and the Bahrain Logistics Zone. Next scheduled review: 9 January 2027, or earlier if the Q3 results, the Saudi causeway plan or KBSP volumes change materially.
 
-*Freighthub editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

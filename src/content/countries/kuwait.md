@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Kuwait Freight 2026 — Freighthub"
+seoTitle: "China to Kuwait Freight 2026 — Freightgcc"
 title: "China to Kuwait Freight 2026: Shuwaikh's Draft Limit and the Feeder Trap"
 description: "How China–Kuwait freight works in late 2026: Shuwaikh's 8.5 m channel, feeder dependence, 5% duty, no VAT, KUCAS TER/TIR, and the Mubarak Al-Kabeer timeline."
 country: "kuwait"

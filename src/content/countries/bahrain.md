@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Bahrain Freight 2026 — Freighthub"
+seoTitle: "China to Bahrain Freight 2026 — Freightgcc"
 title: "China to Bahrain Freight 2026: One Port, One Causeway and a 10% VAT Bill"
 description: "How China–Bahrain freight works after the 2026 Hormuz shock: KBSP's 80% import collapse, the Saudi causeway play, 5% duty plus 10% VAT and conformity."
 country: "bahrain"

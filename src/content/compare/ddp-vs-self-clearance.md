@@ -1,5 +1,5 @@
 ---
-seoTitle: "DDP vs Self-Clearance in the GCC (2026) — Freighthub"
+seoTitle: "DDP vs Self-Clearance in the GCC (2026) — Freightgcc"
 title: "DDP vs Self-Clearance in the GCC: Who Should Clear? (2026)"
 description: "Delivered duty paid versus self-clearance in the GCC: control, VAT recovery, importer-of-record risk, cost and the buyer profiles each model suits."
 country: "saudi-arabia"
@@ -266,7 +266,7 @@ DDP or a marketplace import model is standard, because the consumer is not an im
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/) — routing
 - [Ecommerce sector](/sectors/ecommerce/) — DDP fulfilment
 - [Electronics sector](/sectors/electronics/) — high-value cargo
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## Related

@@ -1,5 +1,5 @@
 ---
-seoTitle: "Jeddah Islamic Port 2026 — Freighthub"
+seoTitle: "Jeddah Islamic Port 2026 — Freightgcc"
 title: "Jeddah Islamic Port: Terminals, Congestion and Clearance (2026)"
 description: "Jeddah Islamic Port in 2026: SCT and RSGT terminal differences, the Hormuz-driven congestion cycle, the 15-day transit rule and clearance sequence."
 country: "saudi-arabia"

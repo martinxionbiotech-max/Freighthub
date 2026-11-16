@@ -1,5 +1,5 @@
 ---
-seoTitle: "Sharjah Ports 2026 — Freighthub"
+seoTitle: "Sharjah Ports 2026 — Freightgcc"
 title: "Sharjah Ports: Khalid, Hamriyah and Khor Fakkan (2026)"
 description: "Sharjah's three ports in 2026: Port Khalid for city and project cargo, Hamriyah for free-zone industry, and Khor Fakkan outside the Strait of Hormuz."
 country: "uae"
@@ -177,7 +177,7 @@ A Dubai broker can file in Sharjah if licensed and registered, but many do not f
 - [LCL guide](/guides/lcl/) — consolidation
 - [Furniture sector](/sectors/furniture/) — a Sharjah staple
 - [Electronics sector](/sectors/electronics/) — regulated cargo
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

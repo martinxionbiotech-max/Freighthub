@@ -1,5 +1,5 @@
 ---
-seoTitle: "Electronics Freight to the GCC (2026) — Freighthub"
+seoTitle: "Electronics Freight to the GCC (2026) — Freightgcc"
 title: "Electronics Freight to the GCC: Air, Sea and the Certification Trap (2026)"
 description: "Shipping electronics from China to the GCC: air versus sea economics, battery rules, SABER/ECAS certification, packaging, insurance and returns."
 country: "uae"
@@ -233,7 +233,7 @@ Yes, but the product must be certified for the market, labelled correctly and co
 - [Khalifa Port](/ports/khalifa/) — Abu Dhabi alternative
 - [Sea vs air](/compare/sea-vs-air/) — mode decision
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

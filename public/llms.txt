@@ -1,4 +1,4 @@
-# Freighthub
+# Freightgcc
 
 > China → GCC freight intelligence. Middle East only.
 

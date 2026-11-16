@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Bahrain Freight Guide 2026 — Freighthub"
+seoTitle: "China to Bahrain Freight Guide 2026 — Freightgcc"
 title: "China to Bahrain Freight: Khalifa Bin Salman Port and the Causeway Economy (2026)"
 description: "Shipping from China to Bahrain in 2026: KBSP, 10% VAT, 5% duty, the Saudi causeway, conformity, importer rules and the cost drivers."
 country: "bahrain"
@@ -242,7 +242,7 @@ The domestic land leg is cheaper and shorter, but the ocean leg is usually more 
 - [UAE vs Saudi](/compare/uae-vs-saudi/) — regional comparison
 - [Food sector](/sectors/food/) — registration and shelf life
 - [Electronics sector](/sectors/electronics/) — regulated cargo
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

@@ -1,5 +1,5 @@
 ---
-seoTitle: "Sea vs Air to the GCC: Break-Even (2026) — Freighthub"
+seoTitle: "Sea vs Air to the GCC: Break-Even (2026) — Freightgcc"
 title: "Sea vs Air Freight to the GCC: The Break-Even (2026)"
 description: "Sea versus air from China to the GCC: cost per kilo, transit, value density, capacity, battery limits and the rules that decide when speed pays."
 country: "uae"
@@ -180,7 +180,7 @@ Not in one container, but you can split a purchase order across modes: air for t
 - [Batteries sector](/sectors/batteries/) — air restrictions
 - [Food sector](/sectors/food/) — perishables
 - [Ecommerce sector](/sectors/ecommerce/) — launch stock
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

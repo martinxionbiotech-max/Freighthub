@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Qatar Freight Guide 2026 — Freighthub"
+seoTitle: "China to Qatar Freight Guide 2026 — Freightgcc"
 title: "China to Qatar Freight: Hamad Port, 0% VAT and Small-Market Economics (2026)"
 description: "Shipping from China to Qatar in 2026: Hamad Port, transit ranges, 5% duty, no VAT, QGOSM conformity, importer rules and small-market economics."
 country: "qatar"
@@ -224,7 +224,7 @@ No, usually more expensive per container because of lower volumes and transhipme
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [Food sector](/sectors/food/) — MOPH registration
 - [Machinery sector](/sectors/machinery/) — project cargo
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

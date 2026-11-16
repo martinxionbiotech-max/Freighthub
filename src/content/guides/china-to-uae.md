@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to UAE Freight Guide 2026 — Freighthub"
+seoTitle: "China to UAE Freight Guide 2026 — Freightgcc"
 title: "China to UAE Freight: Ports, Free Zones and Landed Cost (2026)"
 description: "Shipping from China to the UAE in 2026: Jebel Ali, Khalifa and Sharjah, 5% VAT, 5% duty, free zones, ECAS conformity and the cost traps."
 country: "uae"
@@ -245,7 +245,7 @@ Only if the broker is licensed and registered there. Many Dubai brokers do not f
 - [UAE vs Saudi](/compare/uae-vs-saudi/) — market comparison
 - [Ecommerce sector](/sectors/ecommerce/) — FBA and noon
 - [Electronics sector](/sectors/electronics/) — regulated cargo
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

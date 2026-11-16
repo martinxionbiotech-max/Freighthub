@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to UAE Freight 2026 — Freighthub"
+seoTitle: "China to UAE Freight 2026 — Freightgcc"
 title: "UAE Freight Guide 2026: Customs, VAT and Routing After the Hormuz Closure"
 description: "China to UAE shipping in November 2026: Jebel Ali's landbridge, Khor Fakkan congestion, 5% VAT, 5% duty and the free-zone choice that changes landed cost."
 country: "united-arab-emirates"
@@ -305,7 +305,7 @@ Two things fall out of that table. First, USD 500 of war risk is USD 554 of land
 
 ---
 
-*Freighthub editorial. We label claims as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations; confirm with a licensed forwarder before booking.*
+*Freightgcc editorial. We label claims as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations; confirm with a licensed forwarder before booking.*
 
 ## In our view
 

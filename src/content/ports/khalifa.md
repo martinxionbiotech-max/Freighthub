@@ -1,5 +1,5 @@
 ---
-seoTitle: "Khalifa Port Abu Dhabi 2026 — Freighthub"
+seoTitle: "Khalifa Port Abu Dhabi 2026 — Freightgcc"
 title: "Khalifa Port: Abu Dhabi's Deep-Water Gateway (2026)"
 description: "Khalifa Port in 2026: the Taweelah terminal, CMA Terminals, KEZAD's industrial hinterland, Abu Dhabi clearance and the cost drivers versus Jebel Ali."
 country: "uae"
@@ -191,7 +191,7 @@ The Khalifa Economic Zones Abu Dhabi, the industrial and free-zone area around t
 - [LCL guide](/guides/lcl/) — consolidation economics
 - [Electronics sector](/sectors/electronics/) — high-value cargo
 - [Machinery sector](/sectors/machinery/) — project and heavy lift
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

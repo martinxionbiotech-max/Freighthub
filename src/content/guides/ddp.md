@@ -1,5 +1,5 @@
 ---
-seoTitle: "DDP Shipping to the GCC 2026 — Freighthub"
+seoTitle: "DDP Shipping to the GCC 2026 — Freightgcc"
 title: "DDP Shipping to the GCC: What It Really Means (2026)"
 description: "DDP in Saudi Arabia, the UAE and the GCC: importer of record, VAT and duty, why all-in quotes fail, DDP versus DAP and when it fits."
 country: "saudi-arabia"
@@ -225,7 +225,7 @@ Sometimes, for small or low-value shipments. For large or regulated shipments, a
 - [LCL guide](/guides/lcl/) — consolidation
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [Ecommerce sector](/sectors/ecommerce/) — DDP fulfilment
-- [About Freighthub](/about/) — editorial standards
+- [About Freightgcc](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view

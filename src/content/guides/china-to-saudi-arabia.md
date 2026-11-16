@@ -1,5 +1,5 @@
 ---
-seoTitle: "China to Saudi Arabia Freight Guide 2026 — Freighthub"
+seoTitle: "China to Saudi Arabia Freight Guide 2026 — Freightgcc"
 title: "China to Saudi Arabia Freight: Routes, Customs and Realistic Transit (2026)"
 description: "A working guide to China–Saudi freight in 2026: Jeddah, Dammam and Riyadh Dry Port, 15% VAT, SABER, importer rules and the cost drivers."
 country: "saudi-arabia"
@@ -238,7 +238,7 @@ A missing or mismatched conformity certificate. The second is a valuation query.
 - [Electronics sector](/sectors/electronics/) — regulated high-value cargo
 - [Food sector](/sectors/food/) — SFDA and shelf life
 - [Machinery sector](/sectors/machinery/) — project cargo
-- [About Freighthub](/about/) — who writes this
+- [About Freightgcc](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
 
 ## In our view
