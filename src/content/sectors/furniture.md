@@ -210,3 +210,7 @@ It depends on the Incoterm and the insurance. Under CIF or DAP, the seller usual
 - [Sea vs air](/compare/sea-vs-air/) — mode choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read furniture as a packaging and loading problem, not a freight-rate problem. The page's cost logic supports that: cubic metres, container utilisation and damage drive the bill, and a loading plan that wastes a fifth of the box costs more than a few dollars on the ocean rate. It stops holding for project furniture and fit-outs, where specification compliance and the delivery date govern, and freight is priced around them.

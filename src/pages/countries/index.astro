@@ -1,11 +1,66 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { gccRegion } from '../../regions/gcc';
+
+const gateway = (slug: string) => gccRegion.ports.find((p) => p.country === slug);
 ---
-<BaseLayout title="Countries — Freighthub" description="China to GCC country guides: Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain.">
-  <h1>GCC countries</h1>
-  <p>Six markets, one sourcing origin. Pick a country for customs, ports and route context.</p>
-  <ul>
-    {gccRegion.countries.map((c) => <li><a href={`/countries/${c.slug}/`}>{c.name}</a> — VAT {(c.vat * 100).toFixed(0)}%</li>)}
-  </ul>
+
+<BaseLayout
+  title="China to GCC country guides"
+  description="China to Saudi Arabia, the UAE, Qatar, Kuwait, Oman and Bahrain: customs duty, VAT, certification, gateway ports and route context for each market."
+>
+  <h1>China to GCC country guides</h1>
+
+  <p class="lede">
+    Six markets share one sourcing origin, but not one import regime. Duty rates, VAT, certification
+    requirements and the port that makes sense all differ. Each country guide answers the same four
+    questions in the same order so they can be read side by side.
+  </p>
+
+  <figure class="drawing-figure">
+    <img src="/images/map-gcc-ports.png" alt="GCC port system map: the six markets and their gateways, with seaports and Riyadh dry port." width="1600" height="1000" loading="lazy" decoding="async" />
+    <figcaption>Drawing 07 — Where the six markets sit and which gateways serve them. Base map Natural Earth 1:10m; not for navigation.</figcaption>
+  </figure>
+
+<h2>The six markets at a glance</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Market</th><th>Currency</th><th>Indirect tax</th><th>Gateway</th><th>Guide</th></tr>
+      </thead>
+      <tbody>
+        {gccRegion.countries.map((c) => (
+          <tr>
+            <td>{c.name}</td>
+            <td>{c.currency}</td>
+            <td>{c.vat === 0 ? 'No VAT' : `${Math.round(c.vat * 100)}% VAT`}</td>
+            <td>{gateway(c.slug)?.name ?? '—'}</td>
+            <td><a href={`/countries/${c.slug}/`}>Open guide</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What each guide covers</h2>
+  <ol>
+    <li>The customs position: duty basis, valuation, and the charges that appear after arrival.</li>
+    <li>Certification: which scheme applies, who issues it, and what happens when it is missing.</li>
+    <li>The gateway: which port or airports serve the market, and the inland leg behind them.</li>
+    <li>Route context: transit ranges by mode, and the seasonal or regulatory events that move them.</li>
+  </ol>
+
+  <h2>Why the differences matter</h2>
+  <p>
+    A landed-cost model built on one Gulf country will misprice the next. Saudi Arabia applies 15% VAT
+    and requires SABER conformity for most regulated goods; the UAE applies 5% and a different
+    conformity regime; Qatar and Kuwait currently apply no VAT but have their own documentation and
+    inspection practice. A quote that treats "GCC" as a single destination is a quote that has not
+    been checked against the destination's rules.
+  </p>
+  <p>
+    Where a country page and a guide disagree, the country page carries the customs detail and the
+    guide carries the mode economics; both name their sources. The
+    <a href="/methodology/">methodology</a> explains how those sources are chosen.
+  </p>
 </BaseLayout>

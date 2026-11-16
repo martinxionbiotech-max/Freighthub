@@ -88,6 +88,11 @@ See the [battery sector guide](/sectors/batteries/) for the detailed rules.
 
 Electronics is vulnerable to shock, moisture, electrostatic discharge and theft.
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-packing.png" alt="Side view of a palletised carton stack with stretch wrap, corner boards, vertical straps, a dunnage bag and lashing straps to the container floor." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 05 — Packing and lashing, side view. Shows an arrangement, not a certified securing plan.</figcaption>
+</figure>
+
 **Shock.** Use the original retail packaging plus an outer carton with adequate cushioning. A container is not a shock-free environment; a port crane and a truck suspension are not gentle.
 
 **Moisture.** Sea containers can experience condensation, especially on a route that crosses climate zones. Use desiccant, moisture-barrier bags for sensitive items, and avoid loading wet pallets.
@@ -230,3 +235,30 @@ Yes, but the product must be certified for the market, labelled correctly and co
 - [FCL vs LCL](/compare/fcl-vs-lcl/) — container choice
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read electronics as a certification timetable that happens to need freight. The page is explicit that the binding constraints are SABER, ECAS, telecoms approval and battery rules, not the ocean rate, so air versus sea is really a question about when the certificate lands. The reading breaks for accessories and slow-moving stock, where the sailing board and unit cost genuinely decide the mode.
+
+## Inspection and certification touchpoints by market
+
+Electronics clears through a product certificate, a shipment certificate and, for connected devices, a type approval. The page names the scheme for each market; the table keeps to what it names.
+
+| Market | Touchpoint | What the page says is checked | What proves it |
+|---|---|---|---|
+| Saudi Arabia | SABER | Electrical and electronic products covered by SASO technical regulations, Arabic labelling, the Saudi plug and voltage configuration | A PCoC for the product and an SCoC for each shipment |
+| Saudi Arabia | CITC | A connected device with a radio module or a connection to a public network | CITC type approval |
+| UAE | ESMA/ECAS | Regulated electrical and electronic products, the required label, and a certificate that must match the model | The ECAS certificate, in the model's name |
+| UAE | TDRA | Telecoms devices | TDRA type approval |
+| Kuwait | KUCAS | Product conformity, with GSO standards as the baseline | The KUCAS scheme — the page names no separate certificate |
+| Qatar | QGOSM | Product conformity, with GSO standards as the baseline | The QGOSM scheme — the page names no separate certificate |
+| Oman | National scheme | Product conformity, with GSO standards as the baseline | The national scheme, which the page does not name |
+| Bahrain | National scheme | Product conformity, with GSO standards as the baseline | The national scheme, which the page does not name |
+
+Two things follow from the table. Only Saudi Arabia carries a shipment-level document here, the SCoC, because it is issued per shipment; everything else is a product or model approval that has to exist before the first order. And the page groups Kuwait, Qatar, Oman and Bahrain under "KUCAS, QGOSM and the national schemes" without naming a certificate for any of them, so those cells stop at the scheme rather than invent a document name.
+
+The failure modes the page names are mismatch failures, not absence failures: a certificate that covers a product family but not the new model in the box, a certificate registered to a different importer, a radio module approved in one country but not the destination, a label in the wrong language or format, and a plug or voltage configuration wrong for the market. The page's advice follows from that: certify the model before the first production run, not after the first order.
+
+## Related
+
+The [certification guide](/guides/certification/) is the full scheme map behind the table above, and the [UAE country hub](/countries/uae/) covers the ESMA and TDRA ground in more detail. For the mode decision, the [air freight guide](/guides/air-freight/) explains the chargeable-weight mechanics that make a light carton expensive, and the [Jebel Ali versus Khalifa comparison](/compare/jebel-ali-vs-khalifa/) is the port decision to settle before a Dubai launch. Sellers moving to marketplaces should start with the [ecommerce sector](/sectors/ecommerce/).

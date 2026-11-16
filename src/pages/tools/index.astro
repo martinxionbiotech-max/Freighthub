@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'China to GCC Freight Calculators | Freighthub';
+const description =
+  'Use free Freighthub calculators for landed cost, air and LCL chargeable weight, and transit buffers on China-to-GCC freight.';
+
+const faqs = [
+  {
+    q: 'Are the Freighthub calculators free to use?',
+    a: 'Yes. All three tools run in your browser and are free. There is no account, subscription, cookie-based tracking or email capture. You enter the shipment values, the page calculates locally, and nothing is sent to a server. The calculators are planning aids rather than commercial services, so there is no quote request and no forwarding of your data.',
+  },
+  {
+    q: 'Do the calculators use live freight rates?',
+    a: 'No. Freighthub does not publish live carrier or forwarder rates, and the tools do not fetch market prices. You supply the FOB value, freight, charges and transit days from your own quotes or operating data. The results show only what follows from those inputs. A freight rate changes weekly, while the arithmetic linking it to duty, VAT and dates should remain inspectable.',
+  },
+  {
+    q: 'Which calculator should I use first?',
+    a: 'Start with chargeable weight if you are comparing air and LCL quotes, because it tells you the billable quantity. Use landed cost once you have a freight figure and an HS duty rate. Use transit buffer when the commercial question is a delivery date rather than a price. The three results can be combined manually; the tools do not pass data from one to another.',
+  },
+  {
+    q: 'Can I use these tools outside the GCC?',
+    a: 'The arithmetic is generic, but the built-in VAT presets and explanations are specific to Saudi Arabia, the UAE, Qatar, Kuwait, Oman and Bahrain. For another destination, use the formulas as a template and enter that country’s statutory rates yourself. Confirm classification and tax treatment with a local broker or customs adviser. This site does not provide customs advice.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[faqPage]}>
+  <h1>Freight calculators for China to GCC shipments</h1>
+  <p class="lede">
+    These three free planning tools turn the definitions used across Freighthub into working
+    arithmetic: landed cost, chargeable weight and transit buffers. They are designed for importers,
+    sourcing teams and operations staff moving goods from China to Saudi Arabia, the UAE, Qatar,
+    Kuwait, Oman and Bahrain. Every commercial number comes from you; the calculators do not quote
+    freight or customs charges.
+  </p>
+
+  <h2>Which calculator should I use?</h2>
+  <p>
+    The right tool depends on the question in front of you. If a forwarder has quoted a per-kilogram
+    air rate and a per-cubic-metre LCL rate, chargeable weight tells you which quantity will be
+    billed. If the question is what the shipment costs after duty, VAT and delivery, use landed cost.
+    If the customer has asked for a date and you need to know how much calendar float to protect, use
+    transit buffer. Each calculator is deliberately narrow so its arithmetic can be checked.
+  </p>
+  <div class="grid">
+    <div class="card tool-card">
+      <h3><a href="/tools/landed-cost/">Landed cost calculator</a></h3>
+      <p>
+        Combines FOB value, freight, insurance, duty, VAT and four user-entered charges into CIF,
+        total outlay and net cost after recoverable VAT. Use it for a Saudi, UAE, Qatari, Kuwaiti,
+        Omani or Bahraini import.
+      </p>
+      <p class="meta">Best for: import budgets, supplier comparisons and DDP checks.</p>
+    </div>
+    <div class="card tool-card">
+      <h3><a href="/tools/chargeable-weight/">Chargeable weight calculator</a></h3>
+      <p>
+        Calculates air volumetric kilograms at the ÷6000 convention and LCL revenue tons under the
+        W/M rule. It shows total volume, gross weight and which measure governs the bill.
+      </p>
+      <p class="meta">Best for: checking air and LCL quotes before booking.</p>
+    </div>
+    <div class="card tool-card">
+      <h3><a href="/tools/transit-buffer/">Transit buffer calculator</a></h3>
+      <p>
+        Converts departure date, ocean or air transit days, clearance days and a buffer into an
+        arrival estimate, an arrival window, a latest departure date and days remaining.
+      </p>
+      <p class="meta">Best for: delivery promises and purchase-order deadlines.</p>
+    </div>
+  </div>
+
+  <h2>What do the three calculators calculate?</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Tool</th><th>Question it answers</th><th>Core calculation</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Landed cost</td>
+          <td>What will the goods cost once GCC duty and VAT are included?</td>
+          <td>Duty on CIF; VAT on CIF plus duty; extras added at the end.</td>
+        </tr>
+        <tr>
+          <td>Chargeable weight</td>
+          <td>Which quantity will the airline or LCL consolidator bill?</td>
+          <td>Air: greater of actual and volumetric kilograms. LCL: greater of tonnes and cubic metres.</td>
+        </tr>
+        <tr>
+          <td>Transit buffer</td>
+          <td>When could it arrive, and when must it leave to meet a target?</td>
+          <td>Calendar-date arithmetic using transit, clearance and buffer days.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Which inputs do I need before I start?</h2>
+  <p>
+    For landed cost, collect the commercial invoice value, a freight quote, your insurance rate, the
+    destination market, and the duty rate attached to the HS code. The destination charges,
+    clearance fee and inland delivery should be your own figures. The calculator supplies only the
+    country VAT preset, and that preset is a statutory rate to confirm before use. It does not supply
+    a duty rate, because duty depends on classification and the tariff line.
+  </p>
+  <p>
+    For chargeable weight, measure one carton or pallet in centimetres and weigh it in kilograms.
+    Record the number of identical pieces. If the consignment contains mixed carton sizes, calculate
+    each line separately and add the chargeable results. For transit buffer, use the sailing or flight
+    transit quoted by your forwarder, add your broker’s expected clearance days, and choose a buffer
+    that reflects the consequence of a late arrival rather than a wish for certainty.
+  </p>
+
+  <h2>Why use a range instead of a single number?</h2>
+  <p>
+    A calculator produces a point estimate from point inputs. In real freight planning, several
+    inputs are ranges: the sailing may arrive two days early or six days late, the customs officer
+    may inspect the container, and the duty line may be reviewed. The result is still useful because
+    it shows the structure of the cost or schedule. Change one input at a time and the sensitivity
+    becomes visible. That is more honest than presenting a single “all-in” number as if every
+    assumption were settled.
+  </p>
+  <p>
+    Use the result as a base case, then test the downside. Re-run landed cost with a higher duty rate,
+    re-run chargeable weight with the dimensions the carrier may use, or re-run transit buffer with a
+    larger clearance allowance. The tools do not model probability, and they do not predict carrier
+    behaviour. They make the consequences of different assumptions easy to compare.
+  </p>
+
+  <h2>What are the shared assumptions and limitations?</h2>
+  <p>
+    All three tools use arithmetic conventions explained on the individual pages. Landed cost assumes
+    duty is assessed on CIF and VAT on CIF plus duty. Chargeable weight uses a 6,000 cm³/kg air
+    divisor and a 1,000 kg per cubic metre LCL convention. Transit buffer uses calendar days, not
+    working days. None of the tools tracks live rates, reads a customs database, converts currency,
+    or checks an HS code. They are not connected to a carrier or a customs authority.
+  </p>
+  <p>
+    Those boundaries matter. A calculator cannot tell you whether a free-zone treatment changes VAT,
+    whether an inspection fee will apply, or whether a carrier rounds the chargeable weight differently.
+    It cannot see blank sailings or a public holiday. Use the output to structure a conversation with
+    a broker or forwarder, not to replace the documents and advice that support an import.
+  </p>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    These are planning tools, not quotations, customs rulings or financial advice. Every result
+    depends on the values entered. Confirm rates, classification, tax treatment and dates with the
+    relevant authorities or your appointed service providers before making a commercial commitment.
+  </p>
+
+  <h2>What else should importers ask about these tools?</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where should I read next?</h2>
+    <ul>
+      <li><a href="/guides/cost-and-transit/">China–GCC freight costs and transit</a></li>
+      <li><a href="/guides/air-freight/">Air freight to the GCC</a></li>
+      <li><a href="/guides/lcl/">LCL to the GCC</a></li>
+      <li><a href="/compare/ddp-vs-self-clearance/">DDP versus self-clearance</a></li>
+      <li><a href="/countries/">Country guides</a></li>
+    </ul>
+  </section>
+</BaseLayout>

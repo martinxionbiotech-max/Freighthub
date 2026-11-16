@@ -216,3 +216,7 @@ DDP is a commercial arrangement, not a customs status. The importer of record mu
 **Update log.** 6 November 2026: first publication, incorporating the January–October 2026 KBSP import container series, APM Terminals Bahrain's Q2 2026 results commentary, the May 2026 BHD 100 duty and VAT threshold, the King Hamad Causeway status, and the Hormuz disruption timeline. Next scheduled review: 6 January 2027, or earlier if KBSP volumes or the concession terms change materially.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and are not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We read Bahrain as a single-gate market where concentration is the risk you price, not the rate you negotiate. The page's 2026 series supports that: one port, one operator, no alternative channel, monthly imports down eighty per cent at the trough, and a 15.5 per cent entry cost second only to Saudi Arabia. The reading fails for bonded re-export through the logistics zone that never enters Saudi consumption.

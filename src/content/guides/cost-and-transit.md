@@ -258,3 +258,7 @@ One to three days of storage plus the broker fee, and a contingency for inspecti
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/) — routing decision
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would build the budget from the landed-cost lines rather than the ocean rate: destination charges, inland delivery and the cost of a clearance delay decide more than a small saving on freight. The page also warns against comparing quotes across countries, since each lane carries its own inland leg and tax treatment. That discipline matters once you are choosing between real quotes. The exception is screening a new market, where a planning band is enough and a full landed-cost model would be wasted effort.

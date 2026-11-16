@@ -12,6 +12,11 @@ King Abdulaziz Port in Dammam is Saudi Arabia's Gulf-facing container gateway an
 
 Use Dammam for Riyadh, the Eastern Province and the Gulf corridor. Do not use it as a substitute for [Jeddah](/ports/jeddah/) when your customer is in Makkah, Madinah or the Red Sea hinterland. The two ports look interchangeable on a Saudi map and behave nothing alike in a disrupted week. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-saudi-ports.png" alt="Saudi Arabia locator: Jeddah and Yanbu on the Red Sea, Dammam and Jubail on the Gulf, and Riyadh dry port inland." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 09 — Saudi gateway locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
@@ -220,3 +225,7 @@ For most Riyadh cargo, yes. Dammam is about 400 km from Riyadh with a direct rai
 - [Machinery sector](/sectors/machinery/)
 - [Chemicals sector](/sectors/chemicals/)
 - [Food sector](/sectors/food/)
+
+## In our view
+
+We read Dammam as a rail product for central Saudi rather than a Gulf gateway competing with Jeddah. The page's own numbers make the case: up to seven daily trains into Riyadh Dry Port, thirty days of free storage at the inland end, and eighteen to twenty-six days from China. The reading stops holding west of Riyadh, where Makkah, Madinah and the Red Sea hinterland make Jeddah the shorter and cheaper land leg.

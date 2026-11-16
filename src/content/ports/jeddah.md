@@ -10,6 +10,11 @@ updated: "2026-11-04"
 
 Jeddah Islamic Port is Saudi Arabia's largest container gateway and, in 2026, the peninsula's pressure valve: Hormuz disruption pushed Gulf-bound cargo onto its berths, so the yard and truck gate became the constraint. Expect 18–26 days from China, then 5–12 days of clearance. Fix terminal, free time and the 15-day rule before booking.
 
+<figure class="drawing-figure">
+  <img src="/images/map-saudi-ports.png" alt="Saudi Arabia locator: Jeddah and Yanbu on the Red Sea, Dammam and Jubail on the Gulf, and Riyadh dry port inland." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 09 — Saudi gateway locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
@@ -186,3 +191,7 @@ Yes, subject to carrier acceptance, UN38.3 documentation and terminal DG rules. 
 - [Machinery sector](/sectors/machinery/)
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Sea vs air](/compare/sea-vs-air/)
+
+## In our view
+
+We read Jeddah's constraint as landside, not maritime, so the terminal and the free-time terms deserve more attention than the ocean rate. The page points the same way: diverted volumes made the yard and truck gate the bottleneck, clearance runs five to twelve days, and SCT and RSGT differ in equipment, free time and release behaviour. The reading matters less for Eastern Province cargo, where Dammam's rail link is the better answer.

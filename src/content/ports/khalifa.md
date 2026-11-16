@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 Khalifa Port is Abu Dhabi's deep-water commercial gateway at Taweelah, roughly halfway between Abu Dhabi city and Jebel Ali. Use it when your consignee is in Abu Dhabi, Al Ain or the western Emirates, when you need project or heavy-lift capacity, or when you want a port outside Dubai's congestion. Expect China transit in the same 18–28 day band as Jebel Ali, but treat the landside and free-zone status as the real differentiators.
 
+<figure class="drawing-figure">
+  <img src="/images/map-uae-ports.png" alt="UAE port locator: Khalifa Port and Jebel Ali on the Gulf coast, Sharjah, Khor Fakkan and Fujairah on the east coast, with Musandam and the Strait of Hormuz." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 08 — UAE port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |
@@ -188,3 +193,7 @@ The Khalifa Economic Zones Abu Dhabi, the industrial and free-zone area around t
 - [Machinery sector](/sectors/machinery/) — project and heavy lift
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We read Khalifa as a hinterland port, not a hub. Its value is set by the consignee's postcode and free-zone status rather than by sailing frequency, and the page supports that: China transit sits in the same eighteen-to-twenty-eight-day band as Jebel Ali, so the landside and KEZAD are the only real differentiators. The stance fails for feeder-dependent or transshipment cargo, where Jebel Ali's sailing board still wins.

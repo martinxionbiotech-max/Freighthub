@@ -1,82 +1,137 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout
-  title="Contact — Freighthub"
-  description="Contact Freighthub Sales, Admin and Editorial: quotation enquiries, account and privacy questions, corrections, research and republication requests."
->
+<BaseLayout title="Contact — Freighthub" description="Contact Freighthub Sales, Admin and Editorial: quotation enquiries, account and privacy questions, corrections, research and republication requests.">
   <article>
     <h1>Contact</h1>
     <p class="article-meta">Sales · Admin · Editorial · Last reviewed 16 November 2026</p>
 
     <p class="lede">
       Use the department that matches your question. Commercial and quotation enquiries go to Sales;
-      corrections, research and republication requests go to the Editor; account, privacy and data
+      corrections, research and republication requests go to Editorial; account, privacy and data
       requests go to Admin.
     </p>
 
+    <h2>Departments</h2>
     <div class="contact-grid">
       <section class="contact-card">
         <h2>Sales</h2>
         <p><a href="mailto:inquiry@freightgcc.com">inquiry@freightgcc.com</a></p>
         <p>Commercial enquiries, quotation requests, supplier introductions and partnership discussions.</p>
       </section>
-
       <section class="contact-card">
         <h2>Admin</h2>
         <p><a href="mailto:admin@freightgcc.com">admin@freightgcc.com</a></p>
         <p>Accounts, invoicing, privacy requests and data-correction requests.</p>
       </section>
-
       <section class="contact-card">
         <h2>Editorial</h2>
         <p><a href="mailto:martin@freightgcc.com">martin@freightgcc.com</a></p>
         <p>Corrections, factual challenges, source suggestions, research questions and republication permission.</p>
       </section>
     </div>
-
     <p>
       <a class="btn-whatsapp" href="https://wa.me/8613323237275" target="_blank" rel="noopener">
         Contact us now
       </a>
       <span class="contact-note">WhatsApp: +86 133 2323 7275</span>
     </p>
-
-    <h2>What we can help with</h2>
     <p>
-      Sales can discuss a commercial enquiry and tell you whether a routing or supply question can be
-      quoted. Editorial can point you to the page that covers a topic, explain the reasoning behind a
-      judgement, and correct a factual error. Admin handles account, privacy and data requests.
+      For editorial mail, put the category in the subject — <em>Correction</em>, <em>Republication</em>,
+      <em>Accessibility</em>, <em>Security</em> — so the message reaches the right queue. Mail is read on
+      working days, without out-of-hours cover.
     </p>
 
-    <h2>What we cannot do</h2>
+    <h2>What Editorial can answer</h2>
     <ul>
-      <li><strong>We do not publish live carrier pricing.</strong> Sales can confirm whether a routing enquiry can be quoted; any rate is subject to carrier confirmation and is confirmed in writing.</li>
-      <li><strong>We cannot clear a shipment.</strong> We are not a customs broker.</li>
-      <li><strong>We cannot give legal, tax or investment advice.</strong> The pages are editorial analysis; the decisions remain yours.</li>
-      <li><strong>Editorial does not accept payment for coverage.</strong> Commercial introductions are handled by Sales and disclosed as commercial.</li>
+      <li><strong>Editorial questions.</strong> Why a page reaches a judgement, how a range was built, and which source supports a figure.</li>
+      <li><strong>Source suggestions.</strong> A customs notice, tariff schedule or port circular we have missed. If it holds up, it is cited in the page and dated in the update log.</li>
+      <li><strong>Corrections.</strong> A wrong number, a misnamed authority or a dead link, handled under the <a href="/corrections/">corrections policy</a>.</li>
+      <li><strong>Republication and media.</strong> Quoting at length, translation, syndication, or comment on a sector.</li>
+      <li><strong>Accessibility and privacy.</strong> Barrier reports and data requests, handled under their own policies.</li>
+    </ul>
+
+    <h2>What Editorial cannot answer</h2>
+    <ul>
+      <li><strong>Quotations and bookings.</strong> Editorial does not quote freight rates, nominate vessels or take bookings. Use Sales for a commercial enquiry; any rate or booking is subject to written confirmation.</li>
+      <li><strong>Customs rulings.</strong> We cannot classify goods, issue a ruling, or predict how an officer will treat a specific entry.</li>
+      <li><strong>Shipment-specific advice.</strong> Whether a consignment will clear, what a certificate must say for your product, or what to do about a container already held at a port.</li>
+      <li><strong>Legal, tax or investment advice.</strong> The pages are editorial analysis; a qualified local adviser is the right source for a decision.</li>
+      <li><strong>Editorial recommendations.</strong> Editorial does not rate or vet suppliers; commercial introductions are handled by Sales and disclosed as commercial.</li>
+    </ul>
+    <p>Out-of-scope questions get a straight no, not a stretched answer.</p>
+
+    <h2>What to include</h2>
+    <ul>
+      <li><strong>The page URL</strong>, not just the title.</li>
+      <li><strong>The sentence or table row</strong>, quoted, so there is no doubt which claim is in question.</li>
+      <li><strong>The source that contradicts it</strong>, with a link and, for a PDF, the page number.</li>
+      <li><strong>The outcome you want</strong>: correction, explanation, or a reply you can quote.</li>
+      <li><strong>Whether your name may be published</strong>, and any deadline with the reason for it.</li>
     </ul>
 
     <h2>Response times</h2>
-    <p>
-      Editorial aims to acknowledge within five working days. Correction reports are prioritised.
-      Sales and Admin enquiries are handled separately; include the page URL, company name and the
-      decision you need to make so the message reaches the right person.
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Message</th><th scope="col">Target</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Any first reply</td><td>Five working days</td></tr>
+          <tr><td>A confirmed factual error fixed</td><td>Ten working days from confirmation</td></tr>
+          <tr><td>Republication or media decision</td><td>Ten working days</td></tr>
+          <tr><td>Accessibility barrier acknowledged</td><td>Five working days; the fix date follows in the reply</td></tr>
+          <tr><td>Privacy request</td><td>Within 30 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="meta">
+      These are targets, not guarantees. A question needing a source checked can take longer; if a reply
+      will miss the target, the acknowledgement says when to expect it.
     </p>
 
-    <h2>Before you write</h2>
+    <h2>Languages</h2>
     <p>
-      Check the <a href="/corrections/">corrections policy</a> and the
-      <a href="/methodology/">methodology</a>. If your question is about a specific number, include the
-      page URL and the sentence. For a commercial enquiry, include the product, route, volume and
-      destination; for a privacy request, use Admin rather than the editorial inbox.
+      The site and the desk work in English, and an English message gets the most precise reply. Messages
+      in other languages are accepted and read as well as they can be, but answered in English. Where a
+      point rests on Arabic or Chinese wording, send the original with an English summary.
+    </p>
+
+    <h2>Media and republication</h2>
+    <ul>
+      <li><strong>Short quotation</strong> with attribution and a link needs no permission.</li>
+      <li><strong>Full reproduction, translation or syndication</strong> needs a written yes first: send the outlet, page, intended use and whether it will be edited or paywalled.</li>
+      <li><strong>Images and data</strong> are not licensed by default, and charts built on a third party's data carry that party's terms. Corrections travel with a republished piece.</li>
+    </ul>
+
+    <h2>Security reports</h2>
+    <p>
+      Use the same address with <em>Security</em> in the subject: the affected URL, what an attacker could
+      do, and the steps to reproduce it. Please do not degrade the service, access data that is not yours,
+      or test a third party's systems. There is no bug bounty; reports are handled in good faith,
+      acknowledged within five working days, and given a reasonable window to fix before publication. Most
+      of the surface is static: no login, no database, no stored user content.
     </p>
 
     <h2>Postal and company details</h2>
     <p>
-      Freighthub is an independent editorial and freight-intelligence project. It does not publish a
-      public office address or a company registration at this stage. If that changes, it will be added
-      here rather than invented.
+      Freighthub publishes the department emails and WhatsApp number above. It does not publish a public
+      office address or company registration at this stage. If a legal entity is established, its details
+      will appear here and in the <a href="/privacy/">privacy policy</a> first.
+    </p>
+    <p>
+      Email and the WhatsApp number above are the verified channels. Treat any other address, phone
+      number, invoice or registration number presented as Freighthub's as unverified — the desk will never
+      ask for payment, card details or credentials.
+    </p>
+
+    <h2>Related</h2>
+    <p>
+      <a href="/methodology/">Methodology</a> ·
+      <a href="/corrections/">Corrections</a> ·
+      <a href="/about/">About</a> ·
+      <a href="/accessibility/">Accessibility</a> ·
+      <a href="/privacy/">Privacy</a>
     </p>
   </article>
 </BaseLayout>

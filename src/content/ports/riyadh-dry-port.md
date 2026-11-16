@@ -12,6 +12,11 @@ Riyadh Dry Port is Saudi Arabia's largest inland container terminal, in Al-Malaz
 
 The dry port is a tool for importers with a rail slot, a Saudi bond and a clean SABER file. Without those three, it is a warehouse with a customs desk and a long truck ride back to the coast. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-saudi-ports.png" alt="Saudi Arabia locator: Jeddah and Yanbu on the Red Sea, Dammam and Jubail on the Gulf, and Riyadh dry port inland." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 09 — Saudi gateway locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
@@ -239,3 +244,7 @@ Two to five days with a complete file, up to two weeks with a SABER gap or valua
 - [Electronics sector](/sectors/electronics/)
 - [FCL vs LCL](/compare/fcl-vs-lcl/)
 - [Sea vs air](/compare/sea-vs-air/)
+
+## In our view
+
+We read the thirty-day window at Riyadh Dry Port as a storage term, not a clearance allowance. The page is clear that duty, VAT, inspection and carrier demurrage run on separate clocks, so free storage at the inland terminal can coexist with a bill building elsewhere. The reading fails for multi-drop deliveries, overweight boxes and dangerous goods, where the extra rail leg adds handling without removing any risk.

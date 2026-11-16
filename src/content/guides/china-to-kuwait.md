@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 Kuwait is a small, rich market with two working commercial ports and a lot of procedural friction. Most containers enter through Shuwaikh for Kuwait City or Shuaiba for the industrial south. Plan 20–30 days port to port, then 3–8 days for clearance. Duty is usually 5%, there is no VAT, and the binding constraint is often the local agent or the product registration, not the ship.
 
+<figure class="drawing-figure">
+  <img src="/images/map-hormuz-approach.png" alt="Strait of Hormuz approach: Khor Fakkan, Fujairah and Sohar outside the strait, Jebel Ali and Dammam inside it, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 13 — Hormuz approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |
@@ -235,3 +240,7 @@ It is a strategic project under development, not a current commercial routing op
 - [Food sector](/sectors/food/) — PAFN registration
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would not book a Kuwait shipment until the local agent and the product registration are settled. The page is explicit that the binding constraint is usually the agent or the registration rather than the vessel, and that the market rewards one good relationship repeated over time. That makes Kuwait a commitment decision, not a freight decision. It does not hold for a supplier shipping through a distributor who already holds the registrations; that supplier can test demand without building the local structure first.

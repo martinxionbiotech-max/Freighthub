@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 Oman is a two-coast market. Sohar serves the north, Muscat and the industrial belt; Salalah serves the south and the Indian Ocean transhipment trade. Both sit outside the Strait of Hormuz, which makes Oman a strategic hedge when the strait is disrupted. Plan 16–28 days port to port, then 3–7 days for clearance. VAT is 5%, duty is usually 5%, and the land border to the UAE is a real alternative to sea for some cargo.
 
+<figure class="drawing-figure">
+  <img src="/images/map-hormuz-approach.png" alt="Strait of Hormuz approach: Khor Fakkan, Fujairah and Sohar outside the strait, Jebel Ali and Dammam inside it, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 13 — Hormuz approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |
@@ -235,3 +240,7 @@ A special economic zone and port on Oman's central coast, focused on heavy indus
 - [Food sector](/sectors/food/) — labelling and shelf life
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would separate Oman's strategic case from its tactical one. Pay for the Hormuz hedge only if you have regional exposure that justifies a route which is not always the cheapest; for a single-market importer, choose Sohar or Salalah by where the consignee actually is. The page makes that distinction, noting the strategic case can be worth building even when the daily rate is not the lowest. The exception is project cargo tied to a free zone, where the zone's incentives rather than either argument should decide the port.

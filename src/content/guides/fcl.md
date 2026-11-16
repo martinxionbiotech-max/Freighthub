@@ -55,6 +55,11 @@ When all four are scarce at once, the marginal box is priced by desperation. Two
 
 **The pallet question is where cube disappears.** A 40HQ is about 2,350 mm wide inside. A 1,200 × 1,000 mm pallet loaded 1,000 mm across fits two side by side and leaves 350 mm; loaded 1,200 mm across it does not fit twice. Get the orientation wrong and you lose a row and roughly 10–12% of usable volume. This is the most common reason a "76 cbm" container only holds 63. *(Industry claim)*
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-containers.png" alt="Side elevations of 20 ft GP, 40 ft HQ and 40 ft RF containers with nominal length and height dimensions." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 03 — Container types, side elevation. Nominal external dimensions; schematic, not to scale.</figcaption>
+</figure>
+
 ## The weight trap: VGM says yes, the checkpoint says no
 
 SOLAS VGM is an origin problem: you weigh the box, submit the figure, and the terminal accepts or rejects it. Gulf road limits are a destination problem: a container that is legal at the terminal gate can be over an axle limit on the Riyadh run, and the fine lands on the trucker, who passes it to you. *(Industry claim)*
@@ -183,3 +188,56 @@ Only for regulated products, but the regulated list is broad: electronics, elect
 **Update log.** 4 November 2026: first publication, reflecting the post-February Hormuz closure, the October Khor Fakkan rotation change, the 30 October congestion data and the current free-time environment. Next scheduled review: 4 January 2027, or earlier if a sustained Hormuz reopening or a Jeddah clearance improvement is confirmed.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and operational practice, not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We would negotiate free time and a demurrage-and-detention cap at the same time as the ocean rate. The page makes the case that FCL into the GCC is no longer a port-to-port purchase: the box that sits, or the landbridge that nobody priced, can cost more than the freight difference between sailings. That is where a shipper's attention belongs. The exception is cargo with a pre-cleared file and a consignee who collects immediately, where standard free time is genuinely enough and the effort is better spent on the rate.
+
+## Case simulation: one 40HQ from Shenzhen to Riyadh, at 5% and 15% duty
+
+> [Simulation] A desk calculation from stated assumptions. It is not a quotation, not a customs ruling, and not a measurement of any real consignment.
+
+**Assumptions**
+
+1. One 40HQ, FOB value USD 40,000, insured at 0.5% of FOB.
+2. Ocean freight USD 2,400 Shenzhen–Jeddah (working range 1,800–3,200).
+3. Origin charges USD 350; Jeddah destination charges USD 420; clearance USD 180; inland Jeddah–Riyadh USD 900.
+4. Duty is applied to CIF; VAT at 15% is applied to CIF plus duty.
+5. The importer is VAT-registered, so VAT is a cash-flow item, not a final cost — both views are shown.
+
+**Parameters**
+
+| Parameter | Value | Range | Source |
+|---|---|---|---|
+| FOB value | USD 40,000 | — | assumption |
+| Ocean freight | USD 2,400 | 1,800–3,200 | working range |
+| Insurance | 0.5% of FOB | 0.3–0.7% | assumption |
+| Duty rate | 5% or 15% | 0–15% by HS line | assumption; confirm the line |
+| VAT | 15% | statutory | Saudi VAT rate |
+| Origin + destination + clearance + inland | USD 1,850 | 1,600–2,300 | working range |
+
+**Calculation**
+
+CIF = 40,000 + 2,400 + 200 = **42,600**.  
+At 5% duty: duty = 2,130; VAT = (42,600 + 2,130) × 15% = **6,709.50**; total outlay = 42,600 + 2,130 + 6,709.50 + 1,850 = **53,289.50**.  
+At 15% duty: duty = 6,390; VAT = (42,600 + 6,390) × 15% = **7,348.50**; total outlay = **58,188.50**.  
+VAT-registered importer, VAT excluded: **46,580** at 5% duty, **50,840** at 15%.
+
+**Result**
+
+| Duty | Duty paid | VAT paid | Total outlay | Net cost if VAT recoverable |
+|---|---:|---:|---:|---:|
+| 5% | 2,130 | 6,709.50 | 53,289.50 | 46,580 |
+| 15% | 6,390 | 7,348.50 | 58,188.50 | 50,840 |
+
+The duty line, not the freight line, is the largest single swing here: ten percentage points of duty move the net cost by USD 4,260, while a 30% freight increase (to USD 3,120) moves the total by USD 869.
+
+**Sensitivity**
+
+- Freight +30% → total 54,158.90 (+869.40).
+- Duty 5% → 15% → net cost +4,260.
+- If the inland leg is quoted at USD 1,300 instead of 900, the total rises by 400 — smaller than either of the two above.
+
+**Limits**
+
+The model ignores demurrage, storage and inspection fees, any certificate cost, and currency movement between order and arrival. It also assumes the HS line and the duty rate are known before shipment; in practice that is the first thing to confirm, because a wrong classification makes every downstream number wrong.

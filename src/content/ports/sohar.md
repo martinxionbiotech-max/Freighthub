@@ -12,6 +12,11 @@ Sohar is the only deepwater container gateway in the GCC that a ship can reach w
 
 The number to keep in mind is not 52 million. It is 545,295 TEU, because the port's own cargo table shows container volume rising while dry bulk fell. Sohar's 2026 boom is a container and breakbulk story created by the Hormuz closure, not a surge in Omani consumption. Use Sohar as a northern gateway for Oman and the UAE border, as a project-cargo port, and as your non-Hormuz contingency. Do not mistake its throughput for a market of 50 million consumers. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-oman-ports.png" alt="Oman port locator: Sohar in the north, Duqm in the centre and Salalah in Dhofar, with Muscat." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 10 — Oman port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
@@ -252,3 +257,7 @@ A US$2.5 billion Oman–UAE railway link, about 40% complete in April 2026, with
 - [Chemicals sector](/sectors/chemicals/)
 - [Food sector](/sectors/food/)
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+
+## In our view
+
+We read Sohar's 2026 growth as diverted cargo rather than Omani demand, which makes it a contingency worth keeping warm instead of a market to build around. The page supports that: container volume rose while dry bulk fell, and the throughput came from a strait closure, not from local consumption. The reading weakens if Hormuz normalises and carriers restore direct Gulf calls, when Sohar returns to being a northern-Oman gateway.

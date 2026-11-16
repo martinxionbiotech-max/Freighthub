@@ -246,3 +246,7 @@ The relay. Kuwait's draft limits direct calls, so most cargo transships, and a m
 **Update log.** 5 November 2026: first publication, incorporating the 2026–2030 fiscal plan's omission of VAT, the Mubarak Al-Kabeer financing update, KPA expansion works and late-October congestion. Next scheduled review: 5 January 2027, or earlier if the Shuwaikh channel, KUCAS list or Mubarak Al-Kabeer timeline changes.
 
 *Method note: our research and labelling conventions are described in [methodology](/methodology/). Figures labelled "reported" come from the cited trade press or official statements. Figures labelled "industry claim" are ranges assembled from forwarder quotes and are not a rate survey. "Editorial judgment" marks our own assessment of cost structure and routing trade-offs.*
+
+## In our view
+
+We read Kuwait as a feeder market pretending to be a direct one, so we would price the connection rather than the sailing. The page gives the reason: an 8.5-metre channel limits vessel size and therefore direct China rotations, leaving a large share of boxes to relay through Jebel Ali, Dammam or Hamad. The reading does not hold for industrial and project cargo through Shuaiba, where berth capability matters more than schedule.

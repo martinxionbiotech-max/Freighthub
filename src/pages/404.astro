@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page not found — Freighthub"
+  description="That page does not exist. Start from the six GCC markets, the port profiles, or the freight guides for China-origin cargo."
+  noindex
+>
+  <h1>That page does not exist</h1>
+  <p class="lede">
+    The URL may have changed when the site moved from the old <code>/middleeast/</code> structure to
+    country, port, guide and sector pages. Most of those old addresses redirect automatically; if this
+    one did not, start from a hub below.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3><a href="/countries/">Countries</a></h3>
+      <p>Saudi Arabia, the UAE, Qatar, Kuwait, Oman and Bahrain — customs, VAT and gateway ports.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/ports/">Ports</a></h3>
+      <p>Jebel Ali, Jeddah, Dammam, Hamad, Sohar, Shuwaikh, Salalah and the inland dry ports.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/guides/">Guides</a></h3>
+      <p>Sea, air and land freight, customs clearance, certification, cost and transit time.</p>
+    </div>
+    <div class="card">
+      <h3><a href="/compare/">Compare</a></h3>
+      <p>Sea versus air, FCL versus LCL, DDP versus self-clearance, port against port.</p>
+    </div>
+  </div>
+
+  <p>
+    If you followed a link from this site to get here, <a href="/contact/">tell the editorial desk</a>
+    which page sent you — a broken internal link is a correction we want to make.
+  </p>
+</BaseLayout>

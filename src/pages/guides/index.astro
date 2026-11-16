@@ -1,15 +1,68 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-const guides = [
-  ['china-to-saudi-arabia', 'China → Saudi Arabia'], ['china-to-uae', 'China → UAE'],
-  ['china-to-qatar', 'China → Qatar'], ['china-to-kuwait', 'China → Kuwait'],
-  ['china-to-oman', 'China → Oman'], ['china-to-bahrain', 'China → Bahrain'],
-  ['fcl', 'FCL'], ['lcl', 'LCL'], ['air-freight', 'Air freight'],
-  ['ddp', 'DDP'], ['customs-clearance', 'Customs clearance'], ['certification', 'Certification'],
-  ['cost-and-transit', 'Cost & transit'],
+
+const lanes = [
+  ['china-to-saudi-arabia', 'China → Saudi Arabia'],
+  ['china-to-uae', 'China → UAE'],
+  ['china-to-qatar', 'China → Qatar'],
+  ['china-to-kuwait', 'China → Kuwait'],
+  ['china-to-oman', 'China → Oman'],
+  ['china-to-bahrain', 'China → Bahrain'],
+];
+const modes = [
+  ['fcl', 'FCL', 'Full containers: what a rate includes, what it excludes, and when a 40ft beats two 20ft.'],
+  ['lcl', 'LCL', 'Groupage: chargeable weight versus volume, co-loading risk, and the ports where it works.'],
+  ['air-freight', 'Air freight', 'Chargeable weight, Gulf airport choices, battery rules and the lanes where air is rational.'],
+  ['ddp', 'DDP', 'Delivered duty paid: what the seller carries, what the buyer loses control of, and where it fails.'],
+  ['customs-clearance', 'Customs clearance', 'Documents, valuation, inspection and the variance that decides demurrage.'],
+  ['certification', 'Certification', 'SABER and SASO for Saudi, ESMA for the UAE, and the sector schemes that gate release.'],
+  ['cost-and-transit', 'Cost and transit', 'The full landed-cost stack and realistic transit ranges by mode and gateway.'],
 ];
 ---
-<BaseLayout title="Guides — Freighthub" description="China to GCC freight guides: methods, customs, certification and cost drivers.">
-  <h1>Guides</h1>
-  <ul>{guides.map(([slug, label]) => <li><a href={`/guides/${slug}/`}>{label}</a></li>)}</ul>
+
+<BaseLayout
+  title="China to GCC freight guides"
+  description="Guides to China-to-GCC freight: sea, air and land modes, FCL and LCL, DDP, customs clearance, SABER certification, cost and transit time."
+>
+  <h1>China to GCC freight guides</h1>
+
+  <p class="lede">
+    The guides are organised by the decision a shipper has to make, not by keyword. Each one separates
+    the part of the cost that is freight from the part that is statutory, and says which figures come
+    from a published tariff and which are working ranges.
+  </p>
+
+  <h2>By market</h2>
+  <p>
+    Country guides combine the ports, the customs and VAT position, the certification regime and the
+    route context for one destination. Start here if you know where the goods are going but not how
+    the market works.
+  </p>
+  <ul>
+    {lanes.map(([slug, label]) => (
+      <li><a href={`/guides/${slug}/`}>{label}</a></li>
+    ))}
+  </ul>
+
+  <h2>By mode and by problem</h2>
+  <ul>
+    {modes.map(([slug, label, blurb]) => (
+      <li><a href={`/guides/${slug}/`}>{label}</a> — {blurb}</li>
+    ))}
+  </ul>
+
+  <h2>How to read a guide</h2>
+  <p>
+    Every guide opens with a direct answer to the question in its title, then shows the working: the
+    documents involved, the charges, the places where practice diverges from the published rule, and
+    the mistakes that recur. Where a claim depends on a regulator, the page links to the regulator
+    rather than to a forwarder's summary of it. Where the position is editorial — whether DDP is worth
+    the premium, which port suits a given cargo — it is written as a judgement with its exception
+    stated.
+  </p>
+  <p>
+    Two companion pages explain the standard behind the guides: the
+    <a href="/methodology/">methodology</a> for how sources are chosen and checked, and the
+    <a href="/corrections/">corrections log</a> for what has changed since publication.
+  </p>
 </BaseLayout>

@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { collection } from '../../lib/content';
 const updates = collection('updates').sort((a, b) => (a.date < b.date ? 1 : -1));
 ---
-<BaseLayout title="Updates — GCC Freight Intelligence" description="Dated briefings on GCC freight, customs, VAT and port conditions, with impact and action notes.">
+<BaseLayout title="Updates — GCC Freight Intelligence" description="Dated briefings on GCC freight, customs, VAT and port conditions, each with what changed, who it affects and what to do about it.">
   <h1>Updates</h1>
   <p class="article-meta">Dated briefings. Each entry states what changed, who is affected and what to do. Newest first.</p>
   <ul class="update-list">

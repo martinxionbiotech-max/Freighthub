@@ -1,0 +1,348 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'Transit Time & Buffer Calculator: China to GCC | Freighthub';
+const description =
+  'Estimate arrival dates, buffer windows, latest departure dates and days remaining for China-to-GCC ocean or air shipments.';
+
+const faqs = [
+  {
+    q: 'Should buffer days be added before and after the arrival date?',
+    a: 'The calculator shows an arrival window from the estimated date minus the buffer to the estimated date plus the buffer. That makes the uncertainty visible on both sides of the central estimate. The latest-departure result also subtracts the full buffer from the target date, along with transit and clearance days, so leaving later than that date uses up all of your planning margin.',
+  },
+  {
+    q: 'Does the calculator count weekends and public holidays?',
+    a: 'No. Every day count is a calendar day. A 28-day ocean transit plus five clearance days is 33 calendar days, regardless of weekends or public holidays. Customs, terminals, truckers and warehouses may work different schedules, and a holiday can add delay. Use a larger buffer, or check the relevant holiday calendar separately, if a deadline falls around Eid, National Day or year-end.',
+  },
+  {
+    q: 'What if the latest departure date has already passed?',
+    a: 'The tool will show the date and a negative days-remaining result where relevant. That means the target cannot be met under the entered transit, clearance and buffer assumptions. You can shorten clearance or buffer expectations only if they were overstated, or move the target date. The calculator does not search for faster sailings or air options; compare those quotes separately.',
+  },
+  {
+    q: 'Should customs clearance be included in transit time?',
+    a: 'Yes for a door-delivery commitment. The estimated arrival here is departure plus ocean or air transit plus clearance days. If your target is vessel or aircraft arrival rather than availability after clearance, enter zero clearance days and label the result as port or airport arrival. Keep the definition consistent when comparing the estimate with a forwarder’s quoted transit time.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const webApplication = {
+  '@type': 'WebApplication',
+  name: 'Freighthub Transit Time and Buffer Calculator',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: {
+    '@type': 'Offer',
+    price: 0,
+    priceCurrency: 'USD',
+  },
+  url: 'https://freighthub.net/tools/transit-buffer/',
+  description:
+    'A free calendar-day calculator for China-to-GCC arrival windows, latest departure dates and transit buffer planning.',
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[webApplication, faqPage]}>
+  <h1>Transit time and buffer calculator</h1>
+  <p class="lede">
+    Turn a departure date, ocean or air transit, clearance time and planning buffer into an
+    estimated arrival date, an arrival window, a latest departure deadline and days remaining. It is
+    for importers, sourcing teams and operations planners working on China-to-GCC purchase orders or
+    delivery promises. The calculator uses calendar days and does not predict carrier schedules.
+  </p>
+
+  <h2>What does the transit buffer calculator show?</h2>
+  <form id="transit-form" class="calculator" novalidate>
+    <fieldset>
+      <legend>Shipment dates and transit</legend>
+      <div class="field-grid">
+        <div class="field">
+          <label for="departure-date">Departure date</label>
+          <input id="departure-date" name="departure-date" type="date" />
+          <small>The sailing or flight departure date.</small>
+        </div>
+        <div class="field">
+          <label for="transit-days">Ocean or air transit days</label>
+          <input id="transit-days" name="transit-days" type="number" inputmode="numeric" min="0" step="1" placeholder="Days in transit" />
+          <small>Use the forwarder’s port-to-port or airport-to-airport days.</small>
+        </div>
+        <div class="field">
+          <label for="clearance-days">Clearance days</label>
+          <input id="clearance-days" name="clearance-days" type="number" inputmode="numeric" min="0" step="1" placeholder="Days for clearance" />
+          <small>Calendar days you allow after arrival.</small>
+        </div>
+        <div class="field">
+          <label for="buffer-days">Buffer days</label>
+          <input id="buffer-days" name="buffer-days" type="number" inputmode="numeric" min="0" step="1" placeholder="Planning float" />
+          <small>Applied on both sides of the estimated arrival.</small>
+        </div>
+        <div class="field field--wide">
+          <label for="target-date">Target arrival date (optional)</label>
+          <input id="target-date" name="target-date" type="date" />
+          <small>Used to calculate the latest departure date and days remaining.</small>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Calculate arrival window</button>
+      <button type="reset" class="secondary">Reset</button>
+    </div>
+
+    <div class="results" id="transit-results" aria-live="polite" aria-atomic="true">
+      <p class="form-message" id="transit-message">Enter a departure date, transit days and clearance days to calculate.</p>
+      <dl class="result-list" id="transit-output" hidden>
+        <div><dt>Estimated arrival date</dt><dd id="result-arrival">—</dd></div>
+        <div><dt>Arrival window (± buffer)</dt><dd id="result-window">—</dd></div>
+        <div><dt>Latest departure to hit target</dt><dd id="result-latest">—</dd></div>
+        <div><dt id="result-days-label">Days remaining</dt><dd id="result-days">—</dd></div>
+      </dl>
+    </div>
+  </form>
+
+  <h2>How many buffer days should I add?</h2>
+  <p>
+    There is no universal buffer. The right number reflects how much a late arrival would cost, what
+    the forwarder’s schedule reliability has been on that lane, and how much uncertainty sits in
+    clearance. The calculator does not choose a buffer for you. A useful method is to start with the
+    transit and clearance days you can defend from a quote and a broker’s estimate, then test the
+    result against a target date. If the deadline is critical, use a wider buffer and compare that
+    with the cost of a faster mode or an earlier booking.
+  </p>
+  <div class="formula">
+    <p>Estimated arrival = departure date + transit days + clearance days</p>
+    <p>Arrival window = estimated arrival − buffer days to estimated arrival + buffer days</p>
+    <p>Latest departure = target arrival − (transit days + clearance days + buffer days)</p>
+    <p>Days remaining = target arrival − today; if target is blank, estimated arrival − today</p>
+  </div>
+  <p>
+    All date additions and subtractions use calendar days and plain date arithmetic, with no library
+    and no working-day calendar. The variables are dates in YYYY-MM-DD input format and whole numbers
+    of days. The earliest window date is the central estimate minus the buffer; the latest is the
+    central estimate plus the buffer. The latest departure reserves the full buffer before the target.
+    See the <a href="/guides/cost-and-transit/">cost and transit guide</a> for how schedule and
+    clearance ranges are discussed on this site.
+  </p>
+
+  <h2>How does a worked example add up?</h2>
+  <p class="meta">Illustrative dates and day counts only, as of 15 November 2026; not a schedule or a promise.</p>
+  <ol>
+    <li>Assume departure on 20 November 2026, ocean transit of 28 days and clearance of 5 days.</li>
+    <li>Estimated arrival = 20 November + 28 + 5 = <strong>23 December 2026</strong>.</li>
+    <li>With a 7-day buffer, the arrival window = 23 December − 7 to 23 December + 7 = <strong>16 December to 30 December 2026</strong>.</li>
+    <li>For a target of 31 December 2026, latest departure = 31 December − (28 + 5 + 7) = <strong>21 November 2026</strong>.</li>
+    <li>From the illustrative as-of date of 15 November to the target is <strong>46 calendar days</strong>.</li>
+  </ol>
+  <p>The example shows why the buffer belongs inside the latest-departure calculation: leaving on 28 November would still precede the target by 33 calendar days, but it would consume the seven-day planning margin.</p>
+
+  <h2>What are the assumptions and data sources?</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Input</th><th>What it means</th><th>Where the figure comes from</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Departure date</td><td>Planned sailing or flight departure.</td><td>User input from booking or schedule.</td></tr>
+        <tr><td>Ocean or air transit days</td><td>Calendar days from departure to arrival.</td><td>User input from a forwarder or carrier quote.</td></tr>
+        <tr><td>Clearance days</td><td>Calendar days allowed from arrival to release or delivery readiness.</td><td>User input or broker estimate; not predicted.</td></tr>
+        <tr><td>Buffer days</td><td>Planning float shown on both sides of the central estimate.</td><td>User input based on risk tolerance.</td></tr>
+        <tr><td>Target arrival date</td><td>Optional commercial deadline.</td><td>User input from purchase order or customer promise.</td></tr>
+        <tr><td>Date arithmetic</td><td>Calendar-day addition and subtraction.</td><td>Calculator convention; no holiday calendar is consulted.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What the calculator does not include</h2>
+  <ul>
+    <li>Blank sailings, rolled cargo, missed flights or schedule changes after booking.</li>
+    <li>Port congestion, berth waits, terminal cut-offs or container availability.</li>
+    <li>Customs inspection, document queries, certificate delays or valuation holds.</li>
+    <li>Weekends, public holidays, Eid closures and the working calendars of each party.</li>
+    <li>Inland haulage, destination storage, delivery appointments or last-mile delays.</li>
+    <li>Weather, security incidents, Red Sea routing changes or other disruption.</li>
+    <li>Probability of arrival: the range is arithmetic around the inputs, not a confidence interval.</li>
+  </ul>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    This is a planning tool, not a quotation, a carrier schedule or customs advice. Dates depend
+    entirely on the transit, clearance and buffer values entered. Confirm schedules with your
+    forwarder, and clearance expectations with your broker, before relying on a date in a contract.
+  </p>
+
+  <h2>What else should planners ask about transit buffers?</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where can I read more about China–GCC transit?</h2>
+    <ul>
+      <li><a href="/compare/sea-vs-air/">Sea versus air freight</a></li>
+      <li><a href="/countries/saudi-arabia/">China to Saudi Arabia freight guide</a></li>
+      <li><a href="/ports/jeddah/">Jeddah Islamic Port</a></li>
+      <li><a href="/updates/q4-booking-window/">Q4 booking window update</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    'use strict';
+    const form = document.getElementById('transit-form');
+    if (!form) return;
+
+    const departureInput = document.getElementById('departure-date');
+    const transitInput = document.getElementById('transit-days');
+    const clearanceInput = document.getElementById('clearance-days');
+    const bufferInput = document.getElementById('buffer-days');
+    const targetInput = document.getElementById('target-date');
+    const message = document.getElementById('transit-message');
+    const output = document.getElementById('transit-output');
+    const resultArrival = document.getElementById('result-arrival');
+    const resultWindow = document.getElementById('result-window');
+    const resultLatest = document.getElementById('result-latest');
+    const resultDays = document.getElementById('result-days');
+    const resultDaysLabel = document.getElementById('result-days-label');
+
+    const DAY = 86400000;
+    const parseDate = (value) => {
+      const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+      if (!match) return null;
+      const year = Number(match[1]);
+      const month = Number(match[2]) - 1;
+      const day = Number(match[3]);
+      const date = new Date(Date.UTC(year, month, day));
+      if (
+        date.getUTCFullYear() !== year ||
+        date.getUTCMonth() !== month ||
+        date.getUTCDate() !== day
+      ) {
+        return null;
+      }
+      return date;
+    };
+
+    const addDays = (date, days) => {
+      const copy = new Date(date.getTime());
+      copy.setUTCDate(copy.getUTCDate() + days);
+      return copy;
+    };
+
+    const formatDate = (date) =>
+      new Intl.DateTimeFormat('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        timeZone: 'UTC',
+      }).format(date);
+
+    const readDays = (input) => {
+      const raw = input.value.trim();
+      if (raw === '') return null;
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : NaN;
+    };
+
+    const todayUtc = () => {
+      const now = new Date();
+      return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+    };
+
+    const daysBetween = (from, to) => Math.round((to.getTime() - from.getTime()) / DAY);
+
+    const describeRemaining = (days) => {
+      if (days === 0) return 'Today';
+      if (days > 0) return days + ' calendar days';
+      return Math.abs(days) + ' calendar days ago';
+    };
+
+    const showMessage = (text) => {
+      message.textContent = text;
+      message.classList.add('is-error');
+      message.hidden = false;
+      output.hidden = true;
+    };
+
+    const calculate = () => {
+      const departure = parseDate(departureInput.value);
+      const transit = readDays(transitInput);
+      const clearance = readDays(clearanceInput);
+      const buffer = readDays(bufferInput);
+
+      if (!departure) {
+        showMessage('Enter a valid departure date.');
+        return;
+      }
+      if (!Number.isInteger(transit) || transit < 0) {
+        showMessage('Enter transit days as a whole number, zero or more.');
+        return;
+      }
+      if (!Number.isInteger(clearance) || clearance < 0) {
+        showMessage('Enter clearance days as a whole number, zero or more.');
+        return;
+      }
+      if (!Number.isInteger(buffer) || buffer < 0) {
+        showMessage('Enter buffer days as a whole number, zero or more.');
+        return;
+      }
+
+      const arrival = addDays(departure, transit + clearance);
+      const windowStart = addDays(arrival, -buffer);
+      const windowEnd = addDays(arrival, buffer);
+
+      let latest = null;
+      let target = null;
+      if (targetInput.value.trim() !== '') {
+        target = parseDate(targetInput.value);
+        if (!target) {
+          showMessage('Enter a valid target arrival date, or leave it blank.');
+          return;
+        }
+        if (target < departure) {
+          showMessage('Target arrival cannot be earlier than the departure date.');
+          return;
+        }
+        latest = addDays(target, -(transit + clearance + buffer));
+      }
+
+      const remainingDate = target || arrival;
+      const remaining = daysBetween(todayUtc(), remainingDate);
+
+      resultArrival.textContent = formatDate(arrival);
+      resultWindow.textContent = formatDate(windowStart) + ' – ' + formatDate(windowEnd);
+      resultLatest.textContent = latest ? formatDate(latest) : 'Enter a target arrival date';
+      resultDaysLabel.textContent = target ? 'Days remaining to target' : 'Days remaining to estimated arrival';
+      resultDays.textContent = describeRemaining(remaining);
+      message.hidden = true;
+      output.hidden = false;
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      calculate();
+    });
+    form.addEventListener('input', calculate);
+    form.addEventListener('change', calculate);
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        message.textContent = 'Enter a departure date, transit days and clearance days to calculate.';
+        message.classList.remove('is-error');
+        message.hidden = false;
+        output.hidden = true;
+      }, 0);
+    });
+  })();
+</script>

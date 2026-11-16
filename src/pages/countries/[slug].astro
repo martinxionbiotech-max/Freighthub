@@ -10,7 +10,7 @@ const doc = getDoc('countries', country.slug);
 const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freighthub` : `${country.name} — Freighthub`);
 const pageDescription = doc?.description || `China to ${country.name} freight: ports, customs, VAT and route context.`;
 ---
-<BaseLayout title={pageTitle} description={pageDescription} noindex={!doc}>
+<BaseLayout type="article" published={doc?.date || doc?.updated} updated={doc?.updated} title={pageTitle} description={pageDescription} noindex={!doc}>
   <p><a href="/countries/">Countries</a> / {country.name}</p>
   <h1>{country.name}</h1>
   {doc ? (
@@ -21,4 +21,15 @@ const pageDescription = doc?.description || `China to ${country.name} freight: p
   ) : (
     <p>China → {country.name} freight guide. Draft scaffold — content production pending.</p>
   )}
+  <section class="related">
+    <h2>Related pages</h2>
+    <ul>
+      {gccRegion.ports.filter((pt) => pt.country === country.slug).map((pt) => (
+        <li><a href={`/ports/${pt.slug}/`}>{pt.name}</a></li>
+      ))}
+      <li><a href={`/guides/china-to-${country.slug}/`}>China to {country.name} freight guide</a></li>
+      <li><a href="/guides/customs-clearance/">Customs clearance</a></li>
+      <li><a href="/guides/certification/">Certification</a></li>
+    </ul>
+  </section>
 </BaseLayout>

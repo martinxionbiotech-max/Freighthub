@@ -182,3 +182,7 @@ Not in one container, but you can split a purchase order across modes: air for t
 - [Ecommerce sector](/sectors/ecommerce/) — launch stock
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would decide sea versus air on inventory and margin, not on freight. The page's test is whether the air premium fits inside the unit's contribution margin and what a late arrival would cost; by that measure sea is the default for volume and air is for launches, replacements and exceptions. Shippers who default either way usually pay for it. The exception is a product with a short selling season or a fixed launch date, where sea's transit variance, not its average, is the deciding risk.

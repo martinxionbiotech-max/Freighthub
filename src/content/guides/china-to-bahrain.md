@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 Bahrain is the GCC's smallest market and its most causeway-dependent economy. Most containers enter through Khalifa Bin Salman Port at Hidd, then either stay in Bahrain or cross the King Fahd Causeway to Saudi Arabia's Eastern Province. Plan 20–30 days port to port, then 3–7 days for clearance. VAT is 10%, duty is usually 5%, and the Saudi border is often the most important part of the route.
 
+<figure class="drawing-figure">
+  <img src="/images/map-hormuz-approach.png" alt="Strait of Hormuz approach: Khor Fakkan, Fujairah and Sohar outside the strait, Jebel Ali and Dammam inside it, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 13 — Hormuz approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |
@@ -239,3 +244,7 @@ The domestic land leg is cheaper and shorter, but the ocean leg is usually more 
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would decide Bahrain on the destination of the cargo, not on the attractiveness of the port. If the goods are bound for Saudi Arabia's Eastern Province, Bahrain is a credible stockholding base; if they sell only inside Bahrain, the causeway is irrelevant and the small-market premium is the whole story. The page is clear that Bahrain is not a shortcut into Saudi Arabia, and we agree. The exception is a Bahrain-only importer with steady volume, for whom one port and one customs authority make the market genuinely simple.

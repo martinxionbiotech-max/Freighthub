@@ -12,6 +12,11 @@ Hamad Port is a capacity-rich, service-poor gateway. The terminal can berth two 
 
 The binding constraint is not the quay. It is the 14-metre maximum draft in the approach channel, the small number of direct China rotations, and the fact that all of them transit the Strait of Hormuz. Book Hamad as a direct call only when the carrier confirms the rotation in writing. Otherwise price it as a relay through [Jebel Ali](/ports/jebel-ali/), [Salalah](/ports/salalah/) or Colombo, and put the connection days in your delivery promise rather than in your buffer. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-qatar-bahrain-ports.png" alt="Qatar and Bahrain locator: Hamad Port, Khalifa Bin Salman Port and Dammam across the Gulf." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 12 — Qatar and Bahrain port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
@@ -185,3 +190,7 @@ QGOSM conformity for tyres, brake pads, seat belts, rims and some electricals; a
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Sea vs air](/compare/sea-vs-air/)
 - [Jebel Ali vs direct](/compare/jebel-ali-vs-direct/)
+
+## In our view
+
+We read Hamad as a terminal ahead of its market: the quay is not the constraint, the rotation is. The page's figures support that, with a design capacity of seven and a half million TEU against roughly half a million TEU moved nationally in the first half of 2026 and few direct China calls, all through Hormuz. The stance fails for project and breakbulk cargo, which cares about berth availability rather than service frequency.

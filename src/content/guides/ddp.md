@@ -227,3 +227,7 @@ Sometimes, for small or low-value shipments. For large or regulated shipments, a
 - [Ecommerce sector](/sectors/ecommerce/) — DDP fulfilment
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would reserve DDP for samples, ecommerce and low-value goods, and use DAP with a local broker for industrial or high-value cargo unless the importer-of-record question is settled in writing. The reason is on the page: a foreign seller usually cannot be the importer, and VAT may be recoverable by the importer rather than the seller, so an all-in DDP price can hide a cost the buyer could have reclaimed. The exception is a seller with its own licensed local entity, for which DDP can be a controlled, legitimate offer.

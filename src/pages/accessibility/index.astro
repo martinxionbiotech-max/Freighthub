@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Accessibility — Freighthub"
+  description="Freighthub's accessibility position: the WCAG 2.2 AA target, how the pages are checked by hand, known limitations and how to report a barrier."
+>
+  <article>
+    <h1>Accessibility</h1>
+    <p class="article-meta">Last reviewed 15 November 2026</p>
+
+    <p class="lede">
+      The site is built to be read without a mouse, without colour and without images. This page gives the
+      standard aimed at, how the pages are checked, where they fall short, and how to report a barrier.
+    </p>
+
+    <h2>Target and status</h2>
+    <p>
+      The target is <strong>WCAG 2.2 Level AA</strong> for the content pages and the three calculators. No
+      external audit or third-party overlay has been used, so full conformance is not claimed: conformance
+      is a tested result and this site has not been tested to that standard. What is claimed is narrower:
+      the checks below are by hand, most AA criteria they cover pass, and every exception is listed under
+      <a href="#limitations">known limitations</a>.
+    </p>
+
+    <h2>How the site is checked</h2>
+    <p>Checks are manual and repeated at review:</p>
+    <ul>
+      <li><strong>Keyboard.</strong> Each page is tabbed from address bar to footer. Focus order follows the document, links activate with Enter, and nothing traps focus: no modal, menu or custom control.</li>
+      <li><strong>Zoom and reflow.</strong> Viewed at 200% and 400% zoom and at 320 px: the page must not scroll sideways; tables may scroll inside their container.</li>
+      <li><strong>Contrast.</strong> Palette values against their backgrounds: body 14.0:1, secondary 4.55:1, links 13.8:1, navigation 14.5:1 — all above 4.5:1.</li>
+      <li><strong>Structure.</strong> Heading order, landmarks, table headers and form labels are read from the DOM and accessibility tree, as a screen reader receives them.</li>
+      <li><strong>Without images or JavaScript.</strong> Content pages are read with images blocked and scripting off: the text survives both, the calculators do not.</li>
+    </ul>
+    <p>No screen-reader matrix across every pairing has been attempted.</p>
+
+    <h2>What is in place</h2>
+    <ul>
+      <li><strong>Semantic HTML.</strong> One <code>h1</code> per page, headings in order, lists as lists, real links.</li>
+      <li><strong>Landmarks.</strong> A <code>header</code>, a labelled <code>nav</code>, one <code>main</code> and a <code>footer</code>, with the language declared as English.</li>
+      <li><strong>No moving parts.</strong> No autoplay, carousel, animation or timed content.</li>
+      <li><strong>Labelled inputs.</strong> Calculator fields sit in <code>fieldset</code> groups with <code>legend</code>s and labels; results go into a polite live region, so changes are announced, not just shown.</li>
+      <li><strong>Resizable type.</strong> Relative sizes and a fluid container, so text grows with the browser setting.</li>
+    </ul>
+
+    <h2 id="limitations">Known limitations</h2>
+    <ul>
+      <li><strong>No skip link.</strong> Nine navigation links precede content on every page, so keyboard users tab through them each time. The fix needs a layout change and has not been made.</li>
+      <li><strong>Wide tables scroll sideways.</strong> Tables carry a 640 px minimum width inside a horizontal scroll container: four columns are cramped on a phone, and the header row is not sticky, so column meanings scroll out of view.</li>
+      <li><strong>Secondary text has little headroom.</strong> The grey used for dates and captions measures 4.55:1 — a pass, but barely, and the least legible text on the page.</li>
+      <li><strong>Focus is the browser default.</strong> No custom focus ring: the default is never removed, but varies by browser and operating system and is not tuned for this palette.</li>
+      <li><strong>Calculators need JavaScript.</strong> There is no <code>noscript</code> fallback: with scripting off, the method is explained but no result is produced.</li>
+      <li><strong>External documents are outside our control.</strong> Some regulator PDFs are untagged or scanned; where that is the only source, the page summarises the point in text.</li>
+      <li><strong>Mixed-script names.</strong> Chinese characters and transliterated Arabic depend on the reader's screen-reader language data.</li>
+    </ul>
+
+    <h2>Compatibility</h2>
+    <p>
+      Current Chrome, Edge, Firefox and Safari, plus Safari on iOS and Chrome on Android. No plugin or
+      proprietary API, so reader modes get the same text; Internet Explorer is unsupported. A pairing that
+      behaves differently is worth reporting: a gap in the check, not a user error.
+    </p>
+
+    <h2>Reporting a barrier</h2>
+    <p>
+      Write to <a href="mailto:editor@freighthub.net">editor@freighthub.net</a> with
+      <em>Accessibility</em> in the subject, and include:
+    </p>
+    <ul>
+      <li>The page URL and the part you were trying to use.</li>
+      <li>Browser, operating system, and any assistive technology and version.</li>
+      <li>What you did, what happened, and what you expected.</li>
+      <li>Whether it blocked a task or only made it harder; both matter, the first is triaged first.</li>
+    </ul>
+    <p>
+      Reports are acknowledged within five working days. A wording or markup fix usually lands in the next
+      review cycle, targeting twenty working days; a structural fix is scheduled and the reply says when, or
+      that it is not. There is no charge, no customer status required — material fixes are dated.
+    </p>
+
+    <h2>Escalation</h2>
+    <p>
+      If nothing arrives within ten working days, resend with <em>Escalation</em> in the subject and the
+      original attached. One desk runs the site, so there is no separate support tier: escalation is
+      a labelled second pass through the same mailbox, and an unanswered report is a process failure, not a
+      reader's mistake. Thirty days after acknowledgement the reply must give a fix date or say it will not
+      be fixed.
+    </p>
+
+    <h2>Review cadence</h2>
+    <p>
+      Reviewed at least twice a year and whenever the layout, stylesheet or navigation changes. The date
+      above is the last review, not first publication. Material changes go in the
+      <a href="/corrections/">corrections log</a>; a limitation leaves the list when fixed.
+    </p>
+
+    <h2>Related</h2>
+    <p>
+      <a href="/privacy/">Privacy policy</a> ·
+      <a href="/terms/">Terms of use</a> ·
+      <a href="/corrections/">Corrections</a> ·
+      <a href="/contact/">Contact</a> ·
+      <a href="/cookies/">Cookies</a>
+    </p>
+  </article>
+</BaseLayout>

@@ -27,6 +27,11 @@ GCC customs clearance is won or lost before the vessel arrives. A complete file 
 
 Clearance is a sequence, not an event. Understanding the sequence tells you where a shipment is stuck.
 
+<figure class="drawing-figure">
+  <img src="/images/drawing-customs.png" alt="Six-step customs clearance sequence: documents, declaration, inspection, duty and VAT, release, inland delivery, with a hold branch back to step one." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 04 — Clearance sequence. The order and holding points vary by market; schematic, not a promise of duration.</figcaption>
+</figure>
+
 1. **Pre-arrival filing.** The broker files the draft declaration before the vessel arrives, using the bill of lading, invoice and packing list. Errors caught here are cheap.
 2. **Manifest and gate-in.** The carrier files the manifest; the container is discharged and gated into the terminal. The free-time clock starts.
 3. **Declaration submission.** The broker submits the final declaration with the HS code, value, origin and documents.
@@ -231,3 +236,46 @@ Not always. A forwarder may arrange transport and sub-contract the brokerage. Co
 - [Chemicals sector](/sectors/chemicals/) — SDS and permits
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would spend the effort on classification, valuation and certification before the vessel sails, and choose a broker who files weekly at the actual port of entry. The page's evidence is that the shippers with the fewest delays are the ones with complete, consistent files rather than the best contacts, and that a broker strong in one port may be average in another. The exception is a genuinely novel product whose tariff treatment is unsettled; there, an early ruling is worth more than any amount of file polish.
+
+## Document matrix: issuer, timing, and what breaks
+
+The core-file list above says what belongs in the file. This matrix says who produces each document, the step in the sequence where it is read, and what its absence does to the shipment. Step numbers refer to the seven-step sequence above.
+
+| Document | Who issues it | When it is needed | If it is missing |
+|---|---|---|---|
+| Commercial invoice | Seller | Pre-arrival filing, step 1 | No price and no HS line to declare; the declaration cannot be lodged |
+| Packing list | Seller | Pre-arrival filing, step 1; re-read at inspection, step 4 | Quantity and weight cannot be reconciled against the invoice, and the mismatch triggers a query |
+| Bill of lading or airway bill | Carrier or forwarder | Pre-arrival filing, step 1 | No transport document and no confirmed consignee; filing cannot start |
+| Certificate of origin | Chamber of commerce or authorised body, sometimes legalised | Declaration submission, step 3 | The origin field is unsupported and the declaration is incomplete |
+| Conformity certificate — SABER PCoC and SCoC, ECAS, KUCAS, QGOSM or the national scheme | Accredited conformity body, registered with the national regulator | SCoC before arrival; PCoC before production | Cargo cannot be cleared. The only fixes are to obtain the certificate or to re-export |
+| Insurance certificate | Insurer | Declaration submission, step 3, when the sale is CIF or the importer requires it | The CIF value is unsupported at a valuation query |
+| Import licence and customs registration | The importer's licensing authority, and the customs administration for the customs account | Before the first declaration under that importer | No importer of record; nothing can be filed under the consignee's name |
+| Sector approval — SFDA, Ministry of Public Health in Qatar, PAFN in Kuwait, Dubai Municipality | The sector regulator | Before release of the affected lines, step 6 | Release is held for those lines whatever the customs file says |
+| Arabic labelling artwork | Shipper or manufacturer | Before the labels are printed; checked at inspection, step 4 | A label gap surfaces as a query while free time is already running |
+| Freight invoice and payment evidence | Forwarder or carrier; the importer's bank | At a value query in step 4, and before release in step 6 | The declared CIF cannot be defended, and a correction adds duty plus a penalty |
+
+Read the "when" column as a deadline, not a schedule. The file is read at step 1 and step 3, which is the argument for the 48-hour review further down: by the time the container is at the gate, the only document work left is fixing what was wrong.
+
+## Worked example
+
+Six SKUs, one container, Jeddah, two of the SKUs regulated. The arithmetic counts document lines, not pages: a document issued once counts once, whatever its length.
+
+**Assumptions.** One commercial invoice, one packing list, one bill of lading, one certificate of origin, one insurance certificate because the sale is CIF, and one importer with a valid commercial registration and customs account. SKUs 1 and 2 are electrical appliances covered by a SASO technical regulation; SKUs 3–6 are assumed outside the regulated categories, to be confirmed against the HS code. Each regulated SKU is its own product family, so each needs its own PCoC. All figures below are counts of documents, not fees.
+
+**Arithmetic.**
+
+- Consignment-level lines: invoice 1 + packing list 1 + bill of lading 1 + certificate of origin 1 + insurance 1 + importer registration 1 = 6. These do not change with the number of SKUs.
+- SKU-level lines: one PCoC per regulated family × 2 = 2, plus one SCoC per shipment = 1, so 3.
+- Total for this shipment: 6 + 3 = 9 document lines for 6 SKUs. Three of the nine cover 2 SKUs; six cover the consignment as a whole.
+- If the two SKUs were one family under one regulation: 6 + 1 + 1 = 8 lines. One family decision removes one document line and one test programme.
+- Four shipments in a year on still-valid PCoCs: 6 × 4 = 24 consignment-level lines, plus 2 PCoC, plus 4 SCoC = 30. Rebuilding the product certificates each time would be 9 × 4 = 36. The difference of 6 is the PCoC set reissued three times.
+
+**How the sequence changes.** With six unregulated SKUs the file is complete at step 1 and the sequence runs straight through. With two regulated SKUs, step 3 cannot be submitted until the SCoC exists, and the SCoC cannot be issued until a PCoC covers the exact model and the correct importer is registered. So steps 3, 4, 5, 6 and 7 queue behind one document — five of the seven steps. The free-time clock started at step 2 regardless, which is why the delay is measured from gate-in rather than from the day the certificate arrives. And if SKU 2 lands in a variant the PCoC does not name, the count stays at 9 lines while the certificate covers 1 of the 2 regulated SKUs: the file is one document short of clearable, and no broker can close that gap.
+
+## Related
+
+[Jeddah](/ports/jeddah/) carries the terminal, free-time and hinterland detail behind step 2 of the sequence. [DDP vs self-clearance](/compare/ddp-vs-self-clearance/) and [the DDP guide](/guides/ddp/) settle who is the importer of record before the file is built, which decides whose registration appears on the declaration. For the country layer, [Saudi Arabia](/countries/saudi-arabia/) and [the UAE](/countries/uae/) give the registration, single-window and emirate rules for the two largest GCC markets.

@@ -1,0 +1,126 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Cookie policy — Freighthub"
+  description="Freighthub sets no cookies of its own. The host's security cookie is the only one: categories, why there is no banner, storage and browser controls."
+>
+  <article>
+    <h1>Cookie policy</h1>
+    <p class="article-meta">Last reviewed 15 November 2026</p>
+
+    <p class="lede">
+      Freighthub is a static site with no login, no forms and no analytics. It sets no cookie for
+      measurement, advertising or personalisation. The only cookie involved in serving a page comes from
+      the hosting provider, and it exists to keep automated traffic from taking the site down.
+    </p>
+
+    <h2>Cookie categories</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Category</th><th scope="col">Used here</th><th scope="col">What it would do</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Strictly necessary</strong></td><td>Yes — one host-set security cookie</td><td>Keep the site reachable and tell a browser apart from automated traffic</td></tr>
+          <tr><td><strong>Preferences</strong></td><td>None</td><td>Remember a setting such as language or theme; the site has no such settings</td></tr>
+          <tr><td><strong>Statistics</strong></td><td>None</td><td>Count visits and see which pages are read; no analytics script is loaded</td></tr>
+          <tr><td><strong>Marketing</strong></td><td>None</td><td>Follow a reader across sites or target ads; there is no advertising tag or pixel</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The one cookie</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Cookie</th><th scope="col">Set by</th><th scope="col">Purpose</th><th scope="col">Lifetime</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>__cf_bm</code> and similar</td>
+            <td>The CDN and hosting provider, not Freighthub's code</td>
+            <td>Distinguish a real browser from automated traffic and keep the service available during abuse or a spike</td>
+            <td>Short-lived; it expires on its own and is not a persistent identifier</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      It is written by the infrastructure that serves the site, is not read by Freighthub, and cannot build
+      a profile of what you read. If the provider changes its cookie set, this table is updated.
+    </p>
+
+    <h2>Why there is no consent banner</h2>
+    <p>
+      European and UK law requires consent before a non-essential cookie is set. The exception is a cookie
+      strictly necessary to deliver the service the reader asked for, and that is the only kind present.
+      Without the host's security cookie, the provider cannot tell a reader from a bot flood and may not
+      serve the page at all.
+    </p>
+    <p>
+      A banner would ask permission for something the site does not do, and would have to store the answer
+      — adding a cookie to manage the absence of cookies. If a non-essential cookie is ever introduced, a
+      working consent mechanism will exist before it is set, and this page will name it first.
+    </p>
+
+    <h2>Local and session storage</h2>
+    <p>
+      None is used: no <code>localStorage</code>, no <code>sessionStorage</code>, no IndexedDB, no service
+      worker, no fingerprinting script. The article pages carry no client-side code at all.
+    </p>
+    <p>
+      The three calculators on the <a href="/tools/">tools pages</a> run entirely in the browser tab. What
+      you type stays in the page's memory, is not transmitted and is not saved; reloading or closing the
+      tab discards it. There is no saved calculation to clear. Your browser's HTTP cache may keep static
+      files, but that is a cache rather than a cookie or storage record.
+    </p>
+
+    <h2>Third-party requests</h2>
+    <p>
+      There are none beyond the hosting provider: no Google Fonts or Adobe Fonts, no analytics, no embedded
+      video, no map, no social widget, no advertising pixel. Type uses fonts already on your device,
+      falling back to the system font. The Content-Security-Policy allows its own origin only
+      (<code>default-src 'self'</code>), so a third-party script or font could not load even by mistake.
+      Links to regulators and ports are ordinary links; nothing is requested from them unless you click.
+    </p>
+
+    <h2>Controlling cookies</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Browser</th><th scope="col">Where the setting lives</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chrome</td><td>Settings → Privacy and security → Third-party cookies; on Android, Settings → Site settings</td></tr>
+          <tr><td>Firefox</td><td>Settings → Privacy &amp; Security → Cookies and Site Data</td></tr>
+          <tr><td>Safari</td><td>macOS: Settings → Privacy → Manage Website Data. iOS: Settings → Apps → Safari → Advanced → Website Data</td></tr>
+          <tr><td>Edge</td><td>Settings → Cookies and site permissions → Manage and delete cookies and site data</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Labels move between versions; the settings search box finds the page in any of them. Private windows
+      discard cookies when they close. Blocking third-party cookies is the broadest setting most browsers
+      offer and has no effect here, because the only cookie is first-party. Global Privacy Control and Do
+      Not Track have nothing to act on: there is no tracking to switch off.
+    </p>
+
+    <h2>If you block cookies</h2>
+    <ul>
+      <li><strong>Reading is unaffected.</strong> Every page is static HTML and CSS.</li>
+      <li><strong>The bot check may repeat.</strong> Each request may be re-checked; a challenge loop is worth reporting.</li>
+      <li><strong>No feature is lost.</strong> There are no preferences or saved state to degrade.</li>
+      <li><strong>Calculators still work.</strong> They need JavaScript, not cookies.</li>
+    </ul>
+
+    <h2>Related</h2>
+    <p>
+      <a href="/privacy/">Privacy policy</a> — what is processed and why ·
+      <a href="/terms/">Terms of use</a> — the basis on which the site is published ·
+      <a href="/accessibility/">Accessibility</a> ·
+      <a href="/contact/">Contact</a>
+    </p>
+  </article>
+</BaseLayout>

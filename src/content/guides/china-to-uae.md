@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 The UAE is the GCC's easiest market to enter and its easiest market to mis-price. Jebel Ali handles most China-origin containers, Khalifa serves Abu Dhabi, and Sharjah's Khor Fakkan offers a route outside Hormuz. Plan 16–30 days port to port. Budget 5% duty on CIF and 5% VAT, unless the goods stay in a free zone. The decisive question is not the ocean rate; it is whether your cargo is a mainland import or a free-zone movement.
 
+<figure class="drawing-figure">
+  <img src="/images/map-hormuz-approach.png" alt="Strait of Hormuz approach: Khor Fakkan, Fujairah and Sohar outside the strait, Jebel Ali and Dammam inside it, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 13 — Hormuz approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |
@@ -242,3 +247,7 @@ Only if the broker is licensed and registered there. Many Dubai brokers do not f
 - [Electronics sector](/sectors/electronics/) — regulated cargo
 - [About Freighthub](/about/) — who writes this
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would decide mainland or free zone before choosing a port, because that single question sets the duty and VAT treatment and therefore the landed cost. The page is blunt that a quote naming only the UAE is not a quote, since Dubai, Abu Dhabi and Sharjah carry different ports, brokers and costs. Our position holds for anyone selling into the local market. It does not hold for cargo re-exported without entering the mainland, where the free zone is the default and the sailing board should pick the port.

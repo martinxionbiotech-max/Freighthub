@@ -205,3 +205,7 @@ Usually, but a direct LCL service can beat a slow FCL rotation. Check the routin
 - [Batteries sector](/sectors/batteries/) — DG
 - [About Freighthub](/about/) — editorial standards
 - [Corrections](/corrections/) — how we fix errors
+
+## In our view
+
+We would choose FCL once the total, including destination charges, crosses below the LCL alternative, and not before. The page shows that an LCL quote which looks cheaper on the ocean line can lose that advantage to destination fees and handling, while fragile or high-value cargo pays an additional risk premium in groupage. Volume alone is a poor trigger. The exception is a mixed-supplier order or a test volume, where the flexibility of consolidating several factories into one shipment is worth more than the unit-cost gap.

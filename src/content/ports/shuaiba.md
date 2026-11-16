@@ -12,6 +12,11 @@ Shuaiba is Kuwait's industrial port, not a second consumer gateway. It has 20 be
 
 That combination makes Shuaiba excellent for factory inputs, project cargo, cement, chemicals and heavy equipment, and wrong for a retailer's seasonal stock. The port's reputation for "no congestion" was built on general cargo; in 2026 the aggregate average waiting time reported across ship types was 5.4 days, and the March drone strike on a US military site about a mile from the cargo piers repriced the security risk. Book Shuaiba when the consignee has a factory, a crane and a truck. Book [Shuwaikh](/ports/shuwaikh/) when the consignee has a shop. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-kuwait-ports.png" alt="Kuwait port locator: Shuwaikh and Shuaiba at the head of the Gulf, with Kuwait City." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 11 — Kuwait port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
@@ -232,3 +237,7 @@ Yes, as a corridor. Kuwaiti clearance is only the first regime; the Abdali cross
 - [UAE vs Saudi](/compare/uae-vs-saudi/)
 - [Jeddah vs Dammam](/compare/jeddah-vs-dammam/)
 - [Sea vs air](/compare/sea-vs-air/)
+
+## In our view
+
+We read Shuaiba as a direct-delivery port where the landside carries the risk, and we would not confuse its low-congestion reputation with a buffer. The page shows why: twenty berths but no general warehouse and no shore cranes, cargo worked ship-to-truck, and an average waiting time of 5.4 days reported in 2026. The reading does not hold for a retailer's seasonal stock, which needs storage and a steady gate.
