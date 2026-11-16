@@ -14,7 +14,7 @@ const doc = getDoc('ports', port.slug);
   <h1>{port.name}</h1>
   {doc ? (
     <>
-      <p class="article-meta">By {doc.author || 'Freightgcc editorial'} · Last reviewed {doc.updated || '2026-11-04'}</p>
+      <p class="article-meta">By <a href="/author/wei-wong/">Wei Wong</a> · Last reviewed {doc.updated || '2026-11-04'}</p>
       <div set:html={doc.html} />
     </>
   ) : (

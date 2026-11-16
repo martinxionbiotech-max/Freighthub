@@ -3,7 +3,7 @@ seoTitle: "Saudi Certification Is a Data Problem — Freightgcc"
 title: "Saudi certification is a data problem"
 description: "SABER failures are usually not failed tests. They are mismatched model numbers, factories, importers and label versions — a master-data problem."
 date: "2026-11-11"
-author: "Freightgcc editorial"
+author: "Wei Wong"
 updated: "2026-11-11"
 ---
 

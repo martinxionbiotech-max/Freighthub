@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const personId = 'https://freightgcc.com/author/wei-wong/#person';
+const profilePage = {
+  '@type': 'ProfilePage',
+  mainEntity: { '@id': personId },
+};
+---
+
+<BaseLayout
+  title="Wei Wong — Author & Editorial Lead | Freightgcc"
+  description="Wei Wong is the author and editorial lead of Freightgcc, published by YIWU DINGWEI TRADING COMPANY. Editorial responsibility, corrections and AI disclosure."
+  jsonLd={[profilePage]}
+>
+  <article>
+    <h1>Wei Wong</h1>
+    <p class="article-meta">Author and Editorial Lead · Freightgcc · Last reviewed 16 November 2026</p>
+
+    <p class="lede">
+      Wei Wong is the author and editorial lead of Freightgcc, published by YIWU DINGWEI TRADING
+      COMPANY. The role covers topic selection, editorial review, corrections and the separation of
+      editorial coverage from commercial enquiries.
+    </p>
+
+    <h2>What the role covers</h2>
+    <ul>
+      <li><strong>Editorial responsibility</strong> — deciding what is published under the Freightgcc name and answering for the judgement in a page.</li>
+      <li><strong>Review</strong> — checking claims against the cited source, the methodology and the page's stated limits before publication.</li>
+      <li><strong>Corrections</strong> — reviewing error reports and ensuring a material correction is recorded rather than silently replaced.</li>
+      <li><strong>Commercial separation</strong> — keeping Sales enquiries separate from editorial decisions; coverage is not for sale.</li>
+    </ul>
+
+    <h2>Disclosure</h2>
+    <p>
+      Research and drafting are supported by AI tools under editorial direction. That assistance is
+      disclosed rather than presented as unaided human research. This page states the author's role; it
+      does not invent a professional licence, publication record or client list.
+    </p>
+    <p>
+      Freightgcc is published by YIWU DINGWEI TRADING COMPANY, 3# Building, North Silicon Valley,
+      Qiaodong District, Zhangjiakou City, Hebei, China. D-U-N-S Number: 585974555.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Editorial corrections and research questions:
+      <a href="mailto:martin@freightgcc.com">martin@freightgcc.com</a>.
+      For commercial enquiries, use <a href="/contact/">the contact page</a> and the Sales address;
+      the <a href="/corrections/">corrections policy</a> explains what happens to an error report.
+    </p>
+
+    <section class="related">
+      <h2>Related</h2>
+      <ul>
+        <li><a href="/about/">About Freightgcc</a></li>
+        <li><a href="/methodology/">Methodology</a></li>
+        <li><a href="/corrections/">Corrections policy</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </section>
+  </article>
+</BaseLayout>

@@ -169,7 +169,7 @@ QGOSM conformity for tyres, brake pads, seat belts, rims and some electricals; a
 
 ---
 
-*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial desk. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

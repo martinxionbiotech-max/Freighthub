@@ -15,7 +15,7 @@ const pageDescription = doc?.description || `China to ${country.name} freight: p
   <h1>{country.name}</h1>
   {doc ? (
     <>
-      <p class="article-meta">By Freightgcc editorial · Last reviewed {doc.updated || '2026-11-05'}</p>
+      <p class="article-meta">By <a href="/author/wei-wong/">Wei Wong</a> · Last reviewed {doc.updated || '2026-11-05'}</p>
       <div set:html={doc.html} />
     </>
   ) : (

@@ -164,7 +164,7 @@ Not this decade. Phase one is a 1,200 m container terminal on Boubyan Island wit
 
 ---
 
-*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial desk. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

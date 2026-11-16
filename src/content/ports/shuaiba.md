@@ -216,7 +216,7 @@ Yes, as a corridor. Kuwaiti clearance is only the first regime; the Abdali cross
 
 **Update log.** 8 November 2026: first publication. Covers the AD Ports MoU, the April 2026 infrastructure tender and July bid round, the 1 March strike on the military site at Port Shuaiba, the September tanker warning, the KPMG strategy mandate and the 2026 waiting-time data. Next scheduled review: 8 January 2027, or earlier if the AD Ports feasibility, the infrastructure tender or the security picture changes materially.
 
-*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial desk. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

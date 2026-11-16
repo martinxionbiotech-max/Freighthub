@@ -305,7 +305,7 @@ Two things fall out of that table. First, USD 500 of war risk is USD 554 of land
 
 ---
 
-*Freightgcc editorial. We label claims as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations; confirm with a licensed forwarder before booking.*
+*Freightgcc editorial desk. We label claims as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations; confirm with a licensed forwarder before booking.*
 
 ## In our view
 

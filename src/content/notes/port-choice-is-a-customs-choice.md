@@ -3,7 +3,7 @@ seoTitle: "Port Choice Is a Customs Choice — Freightgcc"
 title: "The Gulf's port choice is a customs choice"
 description: "Shippers compare Gulf ports on ocean rates and transit. The decision that actually changes the landed cost is the customs regime behind the gate."
 date: "2026-11-11"
-author: "Freightgcc editorial"
+author: "Wei Wong"
 updated: "2026-11-11"
 ---
 

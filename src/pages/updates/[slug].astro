@@ -10,7 +10,7 @@ const { doc } = Astro.props;
   <p><a href="/updates/">Updates</a> / {doc.date}</p>
   <article>
     <h1>{doc.title}</h1>
-    <p class="article-meta">Published {doc.date} · {doc.country} · {doc.topic}</p>
+    <p class="article-meta">By <a href="/author/wei-wong/">Wei Wong</a> · Published {doc.date} · {doc.country} · {doc.topic}</p>
     <div set:html={doc.html} />
   </article>
 </BaseLayout>

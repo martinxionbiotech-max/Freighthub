@@ -2,7 +2,7 @@
 seoTitle: "Air Freight to the GCC 2026 — Freightgcc"
 title: "Air Freight to the GCC in 2026: Chargeable Weight, Capacity and the Real Cost per Kilo"
 description: "China to Dubai, Riyadh and Doha by air in 2026: per-kilo ranges, chargeable weight, Gulf airport choices and battery rules."
-author: "Freightgcc editorial"
+author: "Wei Wong"
 updated: "2026-11-04"
 ---
 

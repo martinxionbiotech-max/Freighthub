@@ -160,7 +160,7 @@ Expect a temporary closure, carrier suspensions and a scramble for trucks. The r
 
 ---
 
-*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations.*
+*Freightgcc editorial desk. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges, not quotations.*
 
 ## In our view
 

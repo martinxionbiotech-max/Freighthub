@@ -15,7 +15,7 @@ const pageTitle = doc?.seoTitle || (doc?.title ? `${doc.title} — Freightgcc` :
   {doc ? (
     <article>
       <h1>{doc.title || label}</h1>
-      <p class="article-meta">By {doc.author || 'Freightgcc editorial'} · Last reviewed {doc.updated || '2026-11-11'}</p>
+      <p class="article-meta">By <a href="/author/wei-wong/">Wei Wong</a> · Last reviewed {doc.updated || '2026-11-11'}</p>
       <div set:html={doc.html} />
     </article>
   ) : (

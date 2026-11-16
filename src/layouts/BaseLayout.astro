@@ -30,6 +30,7 @@ const ogImage = new URL(image, SITE).href;
 
 const orgId = `${SITE}/#organization`;
 const siteId = `${SITE}/#website`;
+const personId = `${SITE}/author/wei-wong/#person`;
 
 const organization = {
   '@type': 'Organization',
@@ -38,6 +39,7 @@ const organization = {
   url: SITE,
   legalName: 'YIWU DINGWEI TRADING COMPANY',
   duns: '585974555',
+  foundingDate: '2025-10',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '3# Building, North Silicon Valley',
@@ -53,12 +55,22 @@ const organization = {
     { '@type': 'ContactPoint', contactType: 'administrative', email: 'admin@freightgcc.com' },
     { '@type': 'ContactPoint', contactType: 'editorial', email: 'martin@freightgcc.com' },
   ],
+  employee: { '@id': personId },
   knowsAbout: [
     'China to GCC ocean freight',
     'GCC customs and VAT',
     'SABER and SASO certification',
     'GCC port operations',
   ],
+};
+
+const person = {
+  '@type': 'Person',
+  '@id': personId,
+  name: 'Wei Wong',
+  url: `${SITE}/author/wei-wong/`,
+  jobTitle: 'Author and Editorial Lead',
+  worksFor: { '@id': orgId },
 };
 
 const website = {
@@ -103,14 +115,14 @@ const articleLd =
         description,
         ...(published ? { datePublished: published } : {}),
         ...(updated || published ? { dateModified: updated || published } : {}),
-        author: { '@id': orgId },
+        author: { '@id': personId },
         publisher: { '@id': orgId },
         mainEntityOfPage: canonical,
         image: ogImage,
       }
     : null;
 
-const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), ...(articleLd ? [articleLd] : [])];
+const graph = [organization, website, person, ...(breadcrumbLd ? [breadcrumbLd] : []), ...(articleLd ? [articleLd] : [])];
 ---
 
 <!doctype html>

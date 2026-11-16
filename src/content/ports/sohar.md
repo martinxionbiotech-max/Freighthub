@@ -236,7 +236,7 @@ A US$2.5 billion Oman–UAE railway link, about 40% complete in April 2026, with
 
 **Update log.** 8 November 2026: first publication. Covers Sohar's H1 2026 throughput, the CMA CGM–Asyad terminal agreement, the new CEO, the October tanker attack, the freezone's OMR 63 million agreements, Hafeet Rail's progress and the Marsa LNG schedule slip. Next scheduled review: 8 January 2027, or earlier if the CMA CGM terminal, Hafeet Rail or the security picture changes materially.
 
-*Freightgcc editorial. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
+*Freightgcc editorial desk. Claims are labelled as reported fact, industry claim or editorial judgment. Rates are ranges and dated observations, not quotations.*
 
 ## Related reading
 

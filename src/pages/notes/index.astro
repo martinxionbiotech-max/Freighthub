@@ -9,7 +9,7 @@ const notes = collection('notes').sort((a, b) => (a.date < b.date ? 1 : -1));
   <ul class="note-list">
     {notes.map((n) => (
       <li>
-        <p class="article-meta">{n.date} · {n.author || 'Freightgcc editorial'}</p>
+        <p class="article-meta">{n.date} · <a href="/author/wei-wong/">Wei Wong</a></p>
         <h2><a href={`/notes/${n.slug}/`}>{n.title}</a></h2>
         <p>{n.description}</p>
       </li>
