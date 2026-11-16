@@ -36,6 +36,15 @@ const organization = {
   '@id': orgId,
   name: 'Freightgcc',
   url: SITE,
+  legalName: 'YIWU DINGWEI TRADING COMPANY',
+  duns: '585974555',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '3# Building, North Silicon Valley',
+    addressLocality: 'Qiaodong District, Zhangjiakou City',
+    addressRegion: 'Hebei',
+    addressCountry: 'CN',
+  },
   description:
     'Independent editorial analysis of China-to-GCC freight: ports, routes, customs, certification and sector economics. No carrier or forwarder commissions.',
   email: 'inquiry@freightgcc.com',
@@ -164,6 +173,10 @@ const graph = [organization, website, ...(breadcrumbLd ? [breadcrumbLd] : []), .
     <footer class="site-footer">
       <div class="container">
         <p>Freightgcc — China to GCC freight intelligence. Independent editorial analysis; no carrier or forwarder commissions.</p>
+        <p class="footer-legal">
+          Published by <strong>YIWU DINGWEI TRADING COMPANY</strong> · D-U-N-S 585974555 ·
+          3# Building, North Silicon Valley, Qiaodong District, Zhangjiakou City, Hebei, China
+        </p>
         <p class="footer-contact">
           <strong>Sales:</strong> <a href="mailto:inquiry@freightgcc.com">inquiry@freightgcc.com</a> ·
           <strong>Admin:</strong> <a href="mailto:admin@freightgcc.com">admin@freightgcc.com</a> ·

@@ -21,6 +21,7 @@ a { color: var(--navy); }
 .site-footer { background: #fff; }
 .site-footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 24px 0; color: var(--muted); }
 .site-footer p { margin: 8px 0; }
+.footer-legal { font-size: 0.85rem; line-height: 1.6; }
 .footer-contact { line-height: 1.8; }
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0 28px; }
 .contact-card { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 16px; }
