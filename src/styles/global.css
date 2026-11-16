@@ -14,4 +14,21 @@ a { color: var(--navy); }
 .site-header { background: var(--navy); color: #fff; padding: 16px 0; }
 .site-header a { color: #fff; text-decoration: none; }
 .site-footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 24px 0; color: var(--muted); }
+.site-footer p { margin: 8px 0; }
+.footer-contact { line-height: 1.8; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0 28px; }
+.contact-card { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 16px; }
+.contact-card h2 { margin: 0 0 8px; font-size: 1.1rem; }
+.contact-card p { margin: 6px 0; }
+.contact-note { display: inline-block; margin-left: 10px; color: var(--muted); font-size: 0.95rem; }
+.btn-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-whatsapp:hover { background: #1ebe5a; color: #fff; }
 h1, h2, h3 { line-height: 1.2; }

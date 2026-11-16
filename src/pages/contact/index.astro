@@ -1,33 +1,82 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Contact — Freighthub" description="How to contact the Freighthub editorial desk: corrections, research questions and republication requests.">
+<BaseLayout
+  title="Contact — Freighthub"
+  description="Contact Freighthub Sales, Admin and Editorial: quotation enquiries, account and privacy questions, corrections, research and republication requests."
+>
   <article>
     <h1>Contact</h1>
-    <p class="article-meta">Editorial desk · Last reviewed 11 November 2026</p>
+    <p class="article-meta">Sales · Admin · Editorial · Last reviewed 16 November 2026</p>
 
-    <h2>Email</h2>
-    <p><strong>editorial@freighthub.net</strong></p>
-    <p>The address is monitored by the editorial desk. It is the right channel for corrections and factual challenges, source suggestions, questions about a page's reasoning, and permission requests for republishing.</p>
+    <p class="lede">
+      Use the department that matches your question. Commercial and quotation enquiries go to Sales;
+      corrections, research and republication requests go to the Editor; account, privacy and data
+      requests go to Admin.
+    </p>
+
+    <div class="contact-grid">
+      <section class="contact-card">
+        <h2>Sales</h2>
+        <p><a href="mailto:inquiry@freightgcc.com">inquiry@freightgcc.com</a></p>
+        <p>Commercial enquiries, quotation requests, supplier introductions and partnership discussions.</p>
+      </section>
+
+      <section class="contact-card">
+        <h2>Admin</h2>
+        <p><a href="mailto:admin@freightgcc.com">admin@freightgcc.com</a></p>
+        <p>Accounts, invoicing, privacy requests and data-correction requests.</p>
+      </section>
+
+      <section class="contact-card">
+        <h2>Editorial</h2>
+        <p><a href="mailto:martin@freightgcc.com">martin@freightgcc.com</a></p>
+        <p>Corrections, factual challenges, source suggestions, research questions and republication permission.</p>
+      </section>
+    </div>
+
+    <p>
+      <a class="btn-whatsapp" href="https://wa.me/8613323237275" target="_blank" rel="noopener">
+        Contact us now
+      </a>
+      <span class="contact-note">WhatsApp: +86 133 2323 7275</span>
+    </p>
 
     <h2>What we can help with</h2>
-    <p>We can point you to the page that covers a topic, explain the reasoning behind a judgement, and correct a factual error. We can also tell you when a question is outside the site's scope.</p>
+    <p>
+      Sales can discuss a commercial enquiry and tell you whether a routing or supply question can be
+      quoted. Editorial can point you to the page that covers a topic, explain the reasoning behind a
+      judgement, and correct a factual error. Admin handles account, privacy and data requests.
+    </p>
 
     <h2>What we cannot do</h2>
     <ul>
-      <li><strong>We cannot quote a freight rate.</strong> We are not a forwarder and do not have live carrier pricing.</li>
+      <li><strong>We do not publish live carrier pricing.</strong> Sales can confirm whether a routing enquiry can be quoted; any rate is subject to carrier confirmation and is confirmed in writing.</li>
       <li><strong>We cannot clear a shipment.</strong> We are not a customs broker.</li>
       <li><strong>We cannot give legal, tax or investment advice.</strong> The pages are editorial analysis; the decisions remain yours.</li>
-      <li><strong>We cannot recommend a specific forwarder or broker.</strong> We do not take commissions or referral fees.</li>
+      <li><strong>Editorial does not accept payment for coverage.</strong> Commercial introductions are handled by Sales and disclosed as commercial.</li>
     </ul>
 
     <h2>Response times</h2>
-    <p>We aim to acknowledge within five working days. Correction reports are prioritised. Research questions are answered when they fit the editorial calendar; not every question gets a custom reply.</p>
+    <p>
+      Editorial aims to acknowledge within five working days. Correction reports are prioritised.
+      Sales and Admin enquiries are handled separately; include the page URL, company name and the
+      decision you need to make so the message reaches the right person.
+    </p>
 
     <h2>Before you write</h2>
-    <p>Check the <a href="/corrections/">corrections policy</a> and the <a href="/methodology/">methodology</a>. If your question is about a specific number, include the page URL and the sentence. It makes the response faster and more useful.</p>
+    <p>
+      Check the <a href="/corrections/">corrections policy</a> and the
+      <a href="/methodology/">methodology</a>. If your question is about a specific number, include the
+      page URL and the sentence. For a commercial enquiry, include the product, route, volume and
+      destination; for a privacy request, use Admin rather than the editorial inbox.
+    </p>
 
     <h2>Postal and company details</h2>
-    <p>Freighthub is an independent editorial project. It does not have a public office address or a company registration to publish at this stage. If that changes, it will be added here rather than invented.</p>
+    <p>
+      Freighthub is an independent editorial and freight-intelligence project. It does not publish a
+      public office address or a company registration at this stage. If that changes, it will be added
+      here rather than invented.
+    </p>
   </article>
 </BaseLayout>
