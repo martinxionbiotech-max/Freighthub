@@ -1,0 +1,285 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'DDP vs DAP Cost Comparison | Freighthub';
+const description =
+  'Compare DDP and DAP landed costs with your own invoice, freight, duty, VAT and destination charges, and see who pays each import cost.';
+
+const faqs = [
+  {
+    q: 'What is the main difference between DDP and DAP?',
+    a: 'Under DDP, the seller delivers goods cleared for import and pays the import duty, VAT and clearance costs. Under DAP, the seller delivers to the named place but the buyer is responsible for import clearance, duty, VAT and destination charges. Both terms normally include the seller paying international freight and insurance to the named place.',
+  },
+  {
+    q: 'Why is a DDP price higher than a DAP price?',
+    a: 'A DDP price normally includes the import charges and destination clearance that the seller pays on the buyer’s behalf. A DAP price leaves those costs with the buyer. The difference is not automatically profit: it should reflect the duty, VAT, clearance and any delivery cost the seller has taken on.',
+  },
+  {
+    q: 'Can I recover import VAT under DDP or DAP?',
+    a: 'Recovery depends on the importer of record, the local VAT rules and the buyer’s registration status. A DDP price may include VAT that the buyer cannot recover if the seller is the importer of record. The calculator does not decide recoverability; confirm the treatment with a tax adviser and make the importer of record explicit in the contract.',
+  },
+  {
+    q: 'Does the calculator include customs duty classification?',
+    a: 'No. You enter the duty rate. The rate must come from the correct HS classification and the destination tariff; the calculator cannot classify the product or confirm whether a preferential rate applies. Use the result as a planning comparison, not a customs ruling.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const webApplication = {
+  '@type': 'WebApplication',
+  name: 'Freighthub DDP vs DAP Cost Comparison',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+  url: 'https://freightgcc.com/tools/ddp-vs-dap/',
+  description:
+    'A free DDP and DAP cost comparison using user-supplied invoice value, freight, insurance, duty, VAT and destination charges.',
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[webApplication, faqPage]}>
+  <h1>DDP vs DAP cost comparison</h1>
+  <p class="lede">
+    Compare the two delivery terms on the costs you can see. Enter the invoice value, freight,
+    insurance, duty and VAT rates and destination charges. The calculator separates the seller’s
+    DDP cost floor from the buyer’s DAP import charges, so the commercial difference is not hidden
+    inside one all-in number.
+  </p>
+
+  <h2>What does the calculator compare?</h2>
+  <form id="ddp-dap-form" class="calculator" novalidate>
+    <fieldset>
+      <legend>Invoice and freight</legend>
+      <div class="field-grid field-grid--three">
+        <div class="field">
+          <label for="fob">FOB goods value (USD)</label>
+          <input id="fob" name="fob" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="e.g. 25000" />
+        </div>
+        <div class="field">
+          <label for="freight">International freight (USD)</label>
+          <input id="freight" name="freight" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 2800" />
+        </div>
+        <div class="field">
+          <label for="insurance-rate">Insurance rate (% of FOB)</label>
+          <input id="insurance-rate" name="insurance-rate" type="number" inputmode="decimal" min="0" step="0.01" value="0.5" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Import charges</legend>
+      <div class="field-grid field-grid--three">
+        <div class="field">
+          <label for="duty-rate">Duty rate (% of CIF)</label>
+          <input id="duty-rate" name="duty-rate" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 5" />
+        </div>
+        <div class="field">
+          <label for="vat-rate">VAT rate (%)</label>
+          <input id="vat-rate" name="vat-rate" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 15" />
+        </div>
+        <div class="field">
+          <label for="destination">Destination clearance / handling / delivery (USD)</label>
+          <input id="destination" name="destination" type="number" inputmode="decimal" min="0" step="0.01" value="0" />
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Compare DDP and DAP</button>
+      <button type="reset" class="secondary">Reset</button>
+    </div>
+
+    <div class="results" id="ddp-dap-results" aria-live="polite" aria-atomic="true">
+      <p class="form-message" id="ddp-dap-message">Enter FOB value, freight, duty and VAT rates to compare.</p>
+      <dl class="result-list" id="ddp-dap-output" hidden>
+        <div><dt>CIF value</dt><dd id="result-cif">—</dd></div>
+        <div><dt>Duty</dt><dd id="result-duty">—</dd></div>
+        <div><dt>VAT</dt><dd id="result-vat">—</dd></div>
+        <div><dt>DDP seller cost floor</dt><dd id="result-ddp">—</dd></div>
+        <div><dt>DAP buyer import charges</dt><dd id="result-dap-charges">—</dd></div>
+        <div><dt>DAP seller cost</dt><dd id="result-dap-seller">—</dd></div>
+        <div><dt>DDP vs DAP buyer total</dt><dd id="result-difference">—</dd></div>
+      </dl>
+    </div>
+  </form>
+
+  <h2>How the comparison is calculated</h2>
+  <div class="formula">
+    <p>Insurance = FOB × insurance rate</p>
+    <p>CIF = FOB + freight + insurance</p>
+    <p>Duty = CIF × duty rate</p>
+    <p>VAT = (CIF + duty) × VAT rate</p>
+    <p>DDP seller cost floor = CIF + duty + VAT + destination charges</p>
+    <p>DAP buyer import charges = duty + VAT + destination charges</p>
+    <p>DAP seller cost = CIF</p>
+    <p>DDP buyer total = DDP seller cost floor</p>
+    <p>DAP buyer total = FOB + DAP buyer import charges</p>
+  </div>
+  <p>
+    The DDP figure is a cost floor, not a quoted selling price. A seller may add margin, financing,
+    compliance or risk cost. The DAP buyer total excludes the freight and insurance that the seller
+    pays under DAP, which is why the two buyer totals do not differ by the duty alone.
+  </p>
+
+  <h2>Who pays what?</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Cost</th><th>DDP</th><th>DAP</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Export clearance</td><td>Seller</td><td>Seller</td></tr>
+        <tr><td>International freight</td><td>Seller</td><td>Seller</td></tr>
+        <tr><td>Insurance to named place</td><td>Seller</td><td>Seller</td></tr>
+        <tr><td>Import clearance</td><td>Seller</td><td>Buyer</td></tr>
+        <tr><td>Duty</td><td>Seller</td><td>Buyer</td></tr>
+        <tr><td>Import VAT</td><td>Seller</td><td>Buyer</td></tr>
+        <tr><td>Destination handling / delivery</td><td>Seller (per quote)</td><td>Buyer (per quote)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Why the importer of record matters</h2>
+  <p>
+    The Incoterm does not by itself decide who can recover import VAT or who is the importer of
+    record. Under DDP, the seller often acts as importer of record; under DAP, the buyer usually does.
+    That choice affects the VAT treatment, the customs declaration, the documents and the buyer’s
+    ability to claim input tax. Make it explicit in the contract and confirm it with a local adviser.
+  </p>
+  <p>
+    The comparison also excludes anti-dumping duty, excise, product certification, inspection,
+    demurrage and delays. Those can change the answer materially, especially for regulated products.
+    Add them as separate lines in your commercial evaluation rather than assuming the calculator’s
+    duty rate covers them.
+  </p>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    This is a planning tool, not a quotation, customs ruling or tax opinion. It uses the rates and
+    charges you enter and does not determine the importer of record, VAT recovery, classification or
+    the final Incoterm obligations. Confirm the contract terms and local tax treatment before making
+    a commitment.
+  </p>
+
+  <h2>Frequently asked questions</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where to read next</h2>
+    <ul>
+      <li><a href="/tools/landed-cost/">Landed cost calculator</a></li>
+      <li><a href="/tools/fcl-vs-lcl/">FCL vs LCL calculator</a></li>
+      <li><a href="/compare/ddp-vs-self-clearance/">DDP versus self-clearance</a></li>
+      <li><a href="/guides/ddp/">DDP shipping guide</a></li>
+      <li><a href="/guides/customs-clearance/">Customs clearance guide</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    'use strict';
+    const form = document.getElementById('ddp-dap-form');
+    if (!form) return;
+
+    const fobInput = document.getElementById('fob');
+    const freightInput = document.getElementById('freight');
+    const insuranceInput = document.getElementById('insurance-rate');
+    const dutyInput = document.getElementById('duty-rate');
+    const vatInput = document.getElementById('vat-rate');
+    const destinationInput = document.getElementById('destination');
+    const message = document.getElementById('ddp-dap-message');
+    const output = document.getElementById('ddp-dap-output');
+
+    const readNumber = (input) => {
+      const raw = input.value.trim();
+      if (raw === '') return null;
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : NaN;
+    };
+
+    const money = (value) =>
+      new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        currencyDisplay: 'code',
+        maximumFractionDigits: 0,
+      }).format(value);
+
+    const fail = (text) => {
+      message.textContent = text;
+      message.classList.add('is-error');
+      message.hidden = false;
+      output.hidden = true;
+    };
+
+    const calculate = () => {
+      const fob = readNumber(fobInput);
+      const freight = readNumber(freightInput);
+      const insuranceRate = readNumber(insuranceInput);
+      const dutyRate = readNumber(dutyInput);
+      const vatRate = readNumber(vatInput);
+      const destination = readNumber(destinationInput) ?? 0;
+
+      if (!Number.isFinite(fob) || fob <= 0) return fail('Enter a FOB value greater than zero.');
+      if (!Number.isFinite(freight) || freight < 0) return fail('Enter freight as zero or a positive number.');
+      if (!Number.isFinite(insuranceRate) || insuranceRate < 0) return fail('Enter an insurance rate of zero or more.');
+      if (!Number.isFinite(dutyRate) || dutyRate < 0) return fail('Enter a duty rate of zero or more.');
+      if (!Number.isFinite(vatRate) || vatRate < 0) return fail('Enter a VAT rate of zero or more.');
+      if ([insuranceRate, dutyRate, vatRate].some((value) => value > 100)) return fail('Rates cannot exceed 100%.');
+      if (!Number.isFinite(destination) || destination < 0) return fail('Destination charges must be zero or a positive number.');
+
+      const insurance = fob * (insuranceRate / 100);
+      const cif = fob + freight + insurance;
+      const duty = cif * (dutyRate / 100);
+      const vat = (cif + duty) * (vatRate / 100);
+      const ddpFloor = cif + duty + vat + destination;
+      const dapCharges = duty + vat + destination;
+      const dapSeller = cif;
+      const dapBuyerTotal = fob + dapCharges;
+      const difference = ddpFloor - dapBuyerTotal;
+
+      document.getElementById('result-cif').textContent = money(cif);
+      document.getElementById('result-duty').textContent = money(duty);
+      document.getElementById('result-vat').textContent = money(vat);
+      document.getElementById('result-ddp').textContent = money(ddpFloor);
+      document.getElementById('result-dap-charges').textContent = money(dapCharges);
+      document.getElementById('result-dap-seller').textContent = money(dapSeller);
+      document.getElementById('result-difference').textContent =
+        money(Math.abs(difference)) + (difference >= 0 ? ' higher under DDP' : ' lower under DDP');
+
+      message.hidden = true;
+      output.hidden = false;
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      calculate();
+    });
+    form.addEventListener('input', calculate);
+    form.addEventListener('change', calculate);
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        message.textContent = 'Enter FOB value, freight, duty and VAT rates to compare.';
+        message.classList.remove('is-error');
+        message.hidden = false;
+        output.hidden = true;
+      }, 0);
+    });
+  })();
+</script>

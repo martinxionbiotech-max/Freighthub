@@ -3,12 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = 'China to GCC Freight Calculators | Freighthub';
 const description =
-  'Use free Freighthub calculators for landed cost, air and LCL chargeable weight, and transit buffers on China-to-GCC freight.';
+  'Use free Freighthub calculators for landed cost, chargeable weight, FCL versus LCL, DDP versus DAP and transit buffers on China-to-GCC freight.';
 
 const faqs = [
   {
     q: 'Are the Freighthub calculators free to use?',
-    a: 'Yes. All three tools run in your browser and are free. There is no account, subscription, cookie-based tracking or email capture. You enter the shipment values, the page calculates locally, and nothing is sent to a server. The calculators are planning aids rather than commercial services, so there is no quote request and no forwarding of your data.',
+    a: 'Yes. All five tools run in your browser and are free. There is no account, subscription, cookie-based tracking or email capture. You enter the shipment values, the page calculates locally, and nothing is sent to a server. The calculators are planning aids rather than commercial services, so there is no quote request and no forwarding of your data.',
   },
   {
     q: 'Do the calculators use live freight rates?',
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Which calculator should I use first?',
-    a: 'Start with chargeable weight if you are comparing air and LCL quotes, because it tells you the billable quantity. Use landed cost once you have a freight figure and an HS duty rate. Use transit buffer when the commercial question is a delivery date rather than a price. The three results can be combined manually; the tools do not pass data from one to another.',
+    a: 'Start with chargeable weight if you are comparing air and LCL quotes, because it tells you the billable quantity. Use landed cost once you have a freight figure and an HS duty rate. Use transit buffer when the commercial question is a delivery date rather than a price. The five results can be combined manually; the tools do not pass data from one to another.',
   },
   {
     q: 'Can I use these tools outside the GCC?',
@@ -37,8 +37,8 @@ const faqPage = {
 <BaseLayout title={title} description={description} jsonLd={[faqPage]}>
   <h1>Freight calculators for China to GCC shipments</h1>
   <p class="lede">
-    These three free planning tools turn the definitions used across Freighthub into working
-    arithmetic: landed cost, chargeable weight and transit buffers. They are designed for importers,
+    These five free planning tools turn the definitions used across Freighthub into working
+    arithmetic: landed cost, chargeable weight, FCL versus LCL, DDP versus DAP and transit buffers. They are designed for importers,
     sourcing teams and operations staff moving goods from China to Saudi Arabia, the UAE, Qatar,
     Kuwait, Oman and Bahrain. Every commercial number comes from you; the calculators do not quote
     freight or customs charges.
@@ -78,9 +78,25 @@ const faqPage = {
       </p>
       <p class="meta">Best for: delivery promises and purchase-order deadlines.</p>
     </div>
+    <div class="card tool-card">
+      <h3><a href="/tools/fcl-vs-lcl/">FCL vs LCL calculator</a></h3>
+      <p>
+        Compares full-container and less-than-container freight from your own rates. It shows LCL
+        chargeable W/M, the container count, the break-even volume and the lower-cost option.
+      </p>
+      <p class="meta">Best for: choosing a mode before requesting a booking.</p>
+    </div>
+    <div class="card tool-card">
+      <h3><a href="/tools/ddp-vs-dap/">DDP vs DAP calculator</a></h3>
+      <p>
+        Separates the seller’s DDP cost floor from the buyer’s DAP import charges, using your invoice,
+        freight, duty, VAT and destination figures.
+      </p>
+      <p class="meta">Best for: comparing incoterm quotes and import cash flow.</p>
+    </div>
   </div>
 
-  <h2>What do the three calculators calculate?</h2>
+  <h2>What do the five calculators calculate?</h2>
   <div class="table-wrap">
     <table>
       <thead>
@@ -101,6 +117,16 @@ const faqPage = {
           <td>Transit buffer</td>
           <td>When could it arrive, and when must it leave to meet a target?</td>
           <td>Calendar-date arithmetic using transit, clearance and buffer days.</td>
+        </tr>
+        <tr>
+          <td>FCL vs LCL</td>
+          <td>Is a full container or LCL cheaper for this volume and weight?</td>
+          <td>LCL W/M versus FCL container count at the capacity you enter.</td>
+        </tr>
+        <tr>
+          <td>DDP vs DAP</td>
+          <td>What does the seller include under DDP, and what does the buyer pay under DAP?</td>
+          <td>DDP cost floor versus DAP buyer import charges.</td>
         </tr>
       </tbody>
     </table>
@@ -140,7 +166,7 @@ const faqPage = {
 
   <h2>What are the shared assumptions and limitations?</h2>
   <p>
-    All three tools use arithmetic conventions explained on the individual pages. Landed cost assumes
+    All five tools use arithmetic conventions explained on the individual pages. Landed cost assumes
     duty is assessed on CIF and VAT on CIF plus duty. Chargeable weight uses a 6,000 cm³/kg air
     divisor and a 1,000 kg per cubic metre LCL convention. Transit buffer uses calendar days, not
     working days. None of the tools tracks live rates, reads a customs database, converts currency,

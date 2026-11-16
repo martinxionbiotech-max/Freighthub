@@ -1,0 +1,287 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'FCL vs LCL Calculator | Freighthub';
+const description =
+  'Compare FCL and LCL freight using your own rates: calculate LCL W/M, container count, break-even volume and the lower-cost option.';
+
+const faqs = [
+  {
+    q: 'What is the break-even volume in an FCL vs LCL comparison?',
+    a: 'The break-even is the LCL chargeable quantity at which the LCL freight equals the FCL freight for the number of containers required. It is not a universal number: it changes with the LCL rate per W/M, the FCL rate per container, the minimum LCL charge and the container capacity you assume. The calculator shows the break-even for the inputs you enter, not a market benchmark.',
+  },
+  {
+    q: 'Does LCL always win for small shipments?',
+    a: 'Not always. LCL has a minimum charge, origin and destination CFS handling, and per-shipment documentation that can dominate a very small consignment. FCL can be cheaper once the container is reasonably full, or when the cargo cannot be consolidated safely. The calculator compares the freight figures you enter; add the charges that apply to your booking before deciding.',
+  },
+  {
+    q: 'How is LCL chargeable weight calculated?',
+    a: 'LCL usually uses the W/M rule: one cubic metre equals one revenue ton, or 1,000 kilograms. The chargeable quantity is the greater of total volume in cubic metres and gross weight in tonnes. The calculator uses that convention; a consolidator may apply a minimum, a different rounding rule or a tariff-specific definition.',
+  },
+  {
+    q: 'Why does the calculator ask for container capacity?',
+    a: 'It needs a planning capacity to estimate how many containers the volume requires. A 20-foot or 40-foot container does not hold a fixed usable volume for every cargo; cartons, pallets, stacking and weight limits change the answer. Edit the capacity to the figure your forwarder or loading plan supports, and treat the container count as a planning estimate.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const webApplication = {
+  '@type': 'WebApplication',
+  name: 'Freighthub FCL vs LCL Calculator',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+  url: 'https://freightgcc.com/tools/fcl-vs-lcl/',
+  description:
+    'A free FCL versus LCL calculator using user-supplied freight rates, LCL W/M and a planning container capacity.',
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[webApplication, faqPage]}>
+  <h1>FCL vs LCL calculator</h1>
+  <p class="lede">
+    Compare full-container and less-than-container freight using your own quotes. Enter the shipment
+    volume and weight, the LCL rate per W/M, the FCL rate per container and the capacity you want to
+    assume. The calculator shows the LCL chargeable quantity, the container count, the break-even
+    volume and which option is cheaper on the figures entered.
+  </p>
+
+  <h2>What does the calculator compare?</h2>
+  <form id="fcl-lcl-form" class="calculator" novalidate>
+    <fieldset>
+      <legend>Shipment</legend>
+      <div class="field-grid field-grid--three">
+        <div class="field">
+          <label for="volume">Total volume (cbm)</label>
+          <input id="volume" name="volume" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="e.g. 12.5" />
+        </div>
+        <div class="field">
+          <label for="gross">Gross weight (kg)</label>
+          <input id="gross" name="gross" type="number" inputmode="decimal" min="0" step="0.01" placeholder="e.g. 3200" />
+        </div>
+        <div class="field">
+          <label for="capacity">FCL planning capacity (cbm)</label>
+          <input id="capacity" name="capacity" type="number" inputmode="decimal" min="1" step="0.1" value="28" />
+          <small>Editable planning figure; not a carrier limit.</small>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Freight rates (your quotes)</legend>
+      <div class="field-grid field-grid--three">
+        <div class="field">
+          <label for="lcl-rate">LCL rate per W/M (USD)</label>
+          <input id="lcl-rate" name="lcl-rate" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="e.g. 95" />
+        </div>
+        <div class="field">
+          <label for="lcl-min">LCL minimum charge (USD)</label>
+          <input id="lcl-min" name="lcl-min" type="number" inputmode="decimal" min="0" step="0.01" value="0" />
+        </div>
+        <div class="field">
+          <label for="fcl-rate">FCL rate per container (USD)</label>
+          <input id="fcl-rate" name="fcl-rate" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="e.g. 2400" />
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Compare FCL and LCL</button>
+      <button type="reset" class="secondary">Reset</button>
+    </div>
+
+    <div class="results" id="fcl-lcl-results" aria-live="polite" aria-atomic="true">
+      <p class="form-message" id="fcl-lcl-message">Enter volume, gross weight and both freight rates to compare.</p>
+      <dl class="result-list" id="fcl-lcl-output" hidden>
+        <div><dt>LCL chargeable quantity</dt><dd id="result-lcl-wm">—</dd></div>
+        <div><dt>LCL freight</dt><dd id="result-lcl-total">—</dd></div>
+        <div><dt>FCL containers required</dt><dd id="result-fcl-containers">—</dd></div>
+        <div><dt>FCL freight</dt><dd id="result-fcl-total">—</dd></div>
+        <div><dt>Break-even LCL quantity</dt><dd id="result-break-even">—</dd></div>
+        <div><dt>Lower freight option</dt><dd id="result-winner">—</dd></div>
+      </dl>
+    </div>
+  </form>
+
+  <h2>How the comparison is calculated</h2>
+  <div class="formula">
+    <p>LCL chargeable W/M = max(total cbm, gross kg ÷ 1,000)</p>
+    <p>LCL freight = max(LCL W/M × LCL rate, LCL minimum)</p>
+    <p>FCL containers = max(1, ceil(total cbm ÷ planning capacity))</p>
+    <p>FCL freight = FCL containers × FCL rate per container</p>
+    <p>Break-even LCL W/M = FCL freight ÷ LCL rate</p>
+  </div>
+  <p>
+    The break-even line is the LCL quantity at which both options cost the same on freight alone. Below
+    it, LCL is cheaper in this model; above it, FCL is cheaper. The result is sensitive to the capacity
+    assumption and the rates, so change those inputs rather than treating one run as a market rule.
+  </p>
+
+  <h2>What is included — and what is not</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Cost line</th><th>Included in this calculator?</th><th>What to add before booking</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ocean or consolidation freight</td><td>Yes, from your inputs</td><td>Quote validity, peak-season surcharge and fuel</td></tr>
+        <tr><td>LCL minimum and W/M</td><td>Yes</td><td>CFS handling, documentation and destination fees</td></tr>
+        <tr><td>FCL container count</td><td>Planning estimate</td><td>Verified loading plan, weight limits and equipment type</td></tr>
+        <tr><td>Duty and VAT</td><td>No</td><td>Use the landed cost calculator and confirm classification</td></tr>
+        <tr><td>Insurance</td><td>No</td><td>Your policy or quote</td></tr>
+        <tr><td>Inland delivery and clearance</td><td>No</td><td>Your broker or forwarder quote</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Why the decision is not only price</h2>
+  <p>
+    LCL shares container space, so the cargo may be handled more often and the schedule may depend on
+    consolidation. FCL gives dedicated equipment and often a more predictable loading window, but the
+    container is paid for whether it is full or not. For fragile, high-value or tightly scheduled
+    cargo, the lower freight figure may not be the lower total cost.
+  </p>
+  <p>
+    Use the calculator to establish the freight break-even, then check the operational differences:
+    origin and destination CFS handling, consolidation cut-off, container demurrage risk and the
+    receiver's ability to unload a full container. Those are not arithmetic inputs here, but they can
+    change the decision.
+  </p>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    This is a planning tool, not a quotation. It uses the rates and capacity you enter and does not
+    fetch live carrier pricing. Confirm the applicable tariff, minimums, surcharges, container capacity
+    and charges with your forwarder or consolidator before booking.
+  </p>
+
+  <h2>Frequently asked questions</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where to read next</h2>
+    <ul>
+      <li><a href="/tools/chargeable-weight/">Chargeable weight calculator</a></li>
+      <li><a href="/tools/landed-cost/">Landed cost calculator</a></li>
+      <li><a href="/compare/fcl-vs-lcl/">FCL versus LCL: the full comparison</a></li>
+      <li><a href="/guides/fcl/">FCL freight guide</a></li>
+      <li><a href="/guides/lcl/">LCL freight guide</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    'use strict';
+    const form = document.getElementById('fcl-lcl-form');
+    if (!form) return;
+
+    const volumeInput = document.getElementById('volume');
+    const grossInput = document.getElementById('gross');
+    const capacityInput = document.getElementById('capacity');
+    const lclRateInput = document.getElementById('lcl-rate');
+    const lclMinInput = document.getElementById('lcl-min');
+    const fclRateInput = document.getElementById('fcl-rate');
+    const message = document.getElementById('fcl-lcl-message');
+    const output = document.getElementById('fcl-lcl-output');
+
+    const readNumber = (input) => {
+      const raw = input.value.trim();
+      if (raw === '') return null;
+      const value = Number(raw);
+      return Number.isFinite(value) ? value : NaN;
+    };
+
+    const money = (value) =>
+      new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        currencyDisplay: 'code',
+        maximumFractionDigits: 0,
+      }).format(value);
+
+    const number = (value, digits = 2) =>
+      new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: digits,
+        maximumFractionDigits: digits,
+      }).format(value);
+
+    const fail = (text) => {
+      message.textContent = text;
+      message.classList.add('is-error');
+      message.hidden = false;
+      output.hidden = true;
+    };
+
+    const calculate = () => {
+      const volume = readNumber(volumeInput);
+      const gross = readNumber(grossInput);
+      const capacity = readNumber(capacityInput);
+      const lclRate = readNumber(lclRateInput);
+      const lclMin = readNumber(lclMinInput);
+      const fclRate = readNumber(fclRateInput);
+
+      if (!Number.isFinite(volume) || volume <= 0) return fail('Enter a total volume greater than zero.');
+      if (!Number.isFinite(gross) || gross < 0) return fail('Enter gross weight as zero or a positive number.');
+      if (!Number.isFinite(capacity) || capacity <= 0) return fail('Enter a planning capacity greater than zero.');
+      if (!Number.isFinite(lclRate) || lclRate <= 0) return fail('Enter an LCL rate greater than zero.');
+      if (!Number.isFinite(lclMin) || lclMin < 0) return fail('Enter an LCL minimum of zero or more.');
+      if (!Number.isFinite(fclRate) || fclRate <= 0) return fail('Enter an FCL rate greater than zero.');
+
+      const lclWm = Math.max(volume, gross / 1000);
+      const lclTotal = Math.max(lclWm * lclRate, lclMin);
+      const containers = Math.max(1, Math.ceil(volume / capacity));
+      const fclTotal = containers * fclRate;
+      const breakEven = fclTotal / lclRate;
+      const difference = Math.abs(fclTotal - lclTotal);
+
+      document.getElementById('result-lcl-wm').textContent = number(lclWm, 2) + ' W/M';
+      document.getElementById('result-lcl-total').textContent = money(lclTotal);
+      document.getElementById('result-fcl-containers').textContent = String(containers);
+      document.getElementById('result-fcl-total').textContent = money(fclTotal);
+      document.getElementById('result-break-even').textContent = number(breakEven, 2) + ' W/M';
+
+      const winner = document.getElementById('result-winner');
+      if (Math.abs(fclTotal - lclTotal) < 0.01) {
+        winner.textContent = 'Equal on the entered freight figures.';
+      } else if (lclTotal < fclTotal) {
+        winner.textContent = 'LCL is lower by ' + money(difference) + ' on the entered figures.';
+      } else {
+        winner.textContent = 'FCL is lower by ' + money(difference) + ' on the entered figures.';
+      }
+
+      message.hidden = true;
+      output.hidden = false;
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      calculate();
+    });
+    form.addEventListener('input', calculate);
+    form.addEventListener('change', calculate);
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        message.textContent = 'Enter volume, gross weight and both freight rates to compare.';
+        message.classList.remove('is-error');
+        message.hidden = false;
+        output.hidden = true;
+      }, 0);
+    });
+  })();
+</script>
