@@ -9,7 +9,7 @@ const description =
 const faqs = [
   {
     q: 'Is VAT included in the CIF value used for duty?',
-    a: 'No. CIF is FOB plus freight plus insurance, and duty is applied to CIF. GCC import VAT is then applied to CIF plus duty. The calculator follows that order and converts a percentage such as 15 to 0.15 internally. Free-zone treatment or a product-specific exemption is outside the model, so confirm the legal treatment.',
+    a: 'No. CIF is FOB plus freight plus insurance, and duty is applied to CIF. GCC import VAT is then applied to CIF plus duty, plus any other taxable charges you confirm and enter. The calculator follows that order and converts a percentage such as 15 to 0.15 internally. Free-zone treatment or a product-specific exemption is outside the model, so confirm the legal treatment.',
   },
   {
     q: 'How should I choose the duty rate?',
@@ -152,6 +152,11 @@ const webApplication = {
         <label for="vat-registered">VAT is recoverable (registered importer)</label>
       </div>
       <p id="vat-toggle-note" class="field-note">When checked, the net-cost result deducts VAT. This is an arithmetic view, not a tax determination.</p>
+      <div class="field">
+        <label for="vat-base-extra">Other charges included in VAT base</label>
+        <input id="vat-base-extra" name="vat-base-extra" type="number" inputmode="decimal" min="0" step="0.01" value="0" />
+        <small>Only amounts your tax adviser confirms are taxable. This amount is also added to total outlay.</small>
+      </div>
     </fieldset>
 
     <div class="form-actions">
@@ -165,6 +170,7 @@ const webApplication = {
         <div><dt>CIF value</dt><dd id="result-cif">—</dd></div>
         <div><dt>Duty</dt><dd id="result-duty">—</dd></div>
         <div><dt>VAT</dt><dd id="result-vat">—</dd></div>
+        <div><dt>VAT base</dt><dd id="result-vat-base">—</dd></div>
         <div><dt>Total outlay</dt><dd id="result-total">—</dd></div>
         <div><dt id="result-net-label">Net cost if VAT recoverable</dt><dd id="result-net">—</dd></div>
         <div><dt>Cost as % of FOB (total outlay ÷ FOB)</dt><dd id="result-percent">—</dd></div>
@@ -183,8 +189,9 @@ const webApplication = {
     <p>Insurance = FOB × insurance rate</p>
     <p>CIF = FOB + freight + insurance</p>
     <p>Duty = CIF × duty rate</p>
-    <p>VAT = (CIF + duty) × VAT rate</p>
-    <p>Extras = origin charges + destination charges + clearance + inland delivery</p>
+    <p>VAT base = CIF + duty + other taxable charges</p>
+    <p>VAT = VAT base × VAT rate</p>
+    <p>Extras = origin charges + destination charges + clearance + inland delivery + other taxable charges</p>
     <p>Total outlay = CIF + duty + VAT + extras</p>
     <p>Net cost if VAT recoverable = total outlay − VAT</p>
     <p>Cost as % of FOB = total outlay ÷ FOB × 100</p>
@@ -222,6 +229,7 @@ const webApplication = {
         <tr><td>Insurance rate</td><td>Percentage of FOB used to estimate insurance.</td><td>Site default of 0.5%; user-editable, not a market quote.</td></tr>
         <tr><td>Duty rate</td><td>Tariff percentage for the product’s HS line.</td><td>User input; confirm classification and rate.</td></tr>
         <tr><td>VAT rate</td><td>Statutory import VAT percentage for the destination.</td><td>Country preset; user-editable. Statutory rate, confirm before use.</td></tr>
+        <tr><td>Other VAT-base charges</td><td>Charges your tax adviser confirms are included in the import VAT base.</td><td>User input; default 0. Also added to total outlay.</td></tr>
         <tr><td>Origin, destination, clearance, inland</td><td>Four additional invoice amounts.</td><td>User input from your own quotes or invoices.</td></tr>
         <tr><td>VAT-registered toggle</td><td>Whether to show VAT as recoverable in the arithmetic.</td><td>User input; eligibility is not checked.</td></tr>
       </tbody>
@@ -230,12 +238,13 @@ const webApplication = {
   <p><strong>Country VAT presets — statutory rate, confirm before use</strong></p>
   <div class="table-wrap">
     <table>
-      <thead><tr><th>Market</th><th>Preset</th></tr></thead>
+      <thead><tr><th>Market</th><th>VAT preset</th><th>Import-VAT note</th></tr></thead>
       <tbody>
         {gccRegion.countries.map((country) => (
           <tr>
             <td>{country.name}</td>
             <td>{Math.round(country.vat * 100)}%</td>
+            <td>{country.vatNote}</td>
           </tr>
         ))}
       </tbody>
@@ -292,6 +301,7 @@ const webApplication = {
     const market = document.getElementById('destination-market');
     const currency = document.getElementById('currency');
     const vatRate = document.getElementById('vat-rate');
+    const vatBaseExtra = document.getElementById('vat-base-extra');
     const fob = document.getElementById('fob-value');
     const freight = document.getElementById('freight');
     const insuranceRate = document.getElementById('insurance-rate');
@@ -309,6 +319,7 @@ const webApplication = {
       cif: document.getElementById('result-cif'),
       duty: document.getElementById('result-duty'),
       vat: document.getElementById('result-vat'),
+      vatBase: document.getElementById('result-vat-base'),
       total: document.getElementById('result-total'),
       net: document.getElementById('result-net'),
       percent: document.getElementById('result-percent'),
@@ -341,6 +352,7 @@ const webApplication = {
       const insuranceValue = readNumber(insuranceRate);
       const dutyValue = readNumber(dutyRate);
       const vatValue = readNumber(vatRate);
+      const vatBaseExtraValue = readNumber(vatBaseExtra) ?? 0;
       const originValue = readNumber(origin) ?? 0;
       const destinationValue = readNumber(destination) ?? 0;
       const clearanceValue = readNumber(clearance) ?? 0;
@@ -367,6 +379,10 @@ const webApplication = {
         showMessage('Select a destination market or enter a VAT rate.', true);
         return;
       }
+      if (!Number.isFinite(vatBaseExtraValue) || vatBaseExtraValue < 0) {
+        showMessage('Other VAT-base charges must be zero or a positive number.', true);
+        return;
+      }
       if ([originValue, destinationValue, clearanceValue, inlandValue].some((value) => !Number.isFinite(value) || value < 0)) {
         showMessage('Additional charges must be zero or a positive number, or left blank.', true);
         return;
@@ -379,8 +395,9 @@ const webApplication = {
       const insurance = fobValue * (insuranceValue / 100);
       const cif = fobValue + freightValue + insurance;
       const duty = cif * (dutyValue / 100);
-      const vat = (cif + duty) * (vatValue / 100);
-      const extras = originValue + destinationValue + clearanceValue + inlandValue;
+      const vatBase = cif + duty + vatBaseExtraValue;
+      const vat = vatBase * (vatValue / 100);
+      const extras = originValue + destinationValue + clearanceValue + inlandValue + vatBaseExtraValue;
       const total = cif + duty + vat + extras;
       const net = registered.checked ? total - vat : total;
       const percent = (total / fobValue) * 100;
@@ -388,6 +405,7 @@ const webApplication = {
       resultIds.cif.textContent = money(cif, code);
       resultIds.duty.textContent = money(duty, code);
       resultIds.vat.textContent = money(vat, code);
+      resultIds.vatBase.textContent = money(vatBase, code);
       resultIds.total.textContent = money(total, code);
       resultIds.net.textContent = money(net, code);
       resultIds.percent.textContent = new Intl.NumberFormat('en-US', {

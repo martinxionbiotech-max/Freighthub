@@ -2,12 +2,12 @@ export const gccRegion = {
   slug: 'gcc',
   name: 'China → GCC',
   countries: [
-    { slug: 'saudi-arabia', name: 'Saudi Arabia', currency: 'SAR', vat: 0.15 },
-    { slug: 'uae', name: 'United Arab Emirates', currency: 'AED', vat: 0.05 },
-    { slug: 'qatar', name: 'Qatar', currency: 'QAR', vat: 0 },
-    { slug: 'kuwait', name: 'Kuwait', currency: 'KWD', vat: 0 },
-    { slug: 'oman', name: 'Oman', currency: 'OMR', vat: 0.05 },
-    { slug: 'bahrain', name: 'Bahrain', currency: 'BHD', vat: 0.10 },
+    { slug: 'saudi-arabia', name: 'Saudi Arabia', currency: 'SAR', vat: 0.15, vatNote: '15% standard rate; confirm the import VAT base and free-zone treatment with ZATCA.' },
+    { slug: 'uae', name: 'United Arab Emirates', currency: 'AED', vat: 0.05, vatNote: '5% standard rate; the import VAT base can include customs value, duty and excise. Free-zone rules differ.' },
+    { slug: 'qatar', name: 'Qatar', currency: 'QAR', vat: 0, vatNote: 'No general VAT at the time of this model; duty and fees still apply.' },
+    { slug: 'kuwait', name: 'Kuwait', currency: 'KWD', vat: 0, vatNote: 'No general VAT at the time of this model; duty and fees still apply.' },
+    { slug: 'oman', name: 'Oman', currency: 'OMR', vat: 0.05, vatNote: '5% standard rate; confirm the import VAT base and any exemption with the tax authority.' },
+    { slug: 'bahrain', name: 'Bahrain', currency: 'BHD', vat: 0.10, vatNote: '10% standard rate; confirm the import VAT base and any exemption with the tax authority.' },
   ],
   ports: [
     { slug: 'jeddah', name: 'Jeddah Islamic Port', country: 'saudi-arabia' },
