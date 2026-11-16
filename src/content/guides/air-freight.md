@@ -23,6 +23,8 @@ Air freight from China to the GCC in November 2026 costs roughly USD 4.50–8.50
 | Dangerous goods | Lithium batteries, aerosols and chemicals need pre-approval and often cargo-only aircraft | A mis-declared DG shipment is refused, not repriced |
 | Capacity | Middle East and South Asia belly capacity constrained; freighter capacity uneven *(reported)* | Book early or pay spot |
 
+> **Source note.** Capacity: [WorldACD](https://www.worldacd.com/). Surcharges: [Cathay Cargo](https://www.cathaycargo.com/) and [UPS](https://www.ups.com/). Battery rules: [IATA DGR](https://www.iata.org/en/programs/cargo/dgr/). Rate ranges are editorial estimates.
+
 ## What changed in the last 60 days
 
 **The Hormuz closure made air the escape valve, then the bottleneck.** With container routing through [Khor Fakkan](/ports/sharjah/) and [Jeddah](/ports/jeddah/) unreliable, urgent cargo moved to air: spare parts, launch inventory, medical goods and e-commerce replenishment. Chinese trade press reported air rates at near three-year highs in 2026, with some Middle East lanes doubling versus March. The surge was not only demand; it was also a capacity problem, because passenger belly space to the Gulf had not fully recovered. The lane changes are logged in our [update feed](/updates/). *(Reported fact)*

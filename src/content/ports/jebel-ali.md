@@ -33,6 +33,8 @@ Jebel Ali is not a normal container gateway in November 2026. Direct liner calls
 | Port-to-door transfer | 12–15 days from Khor Fakkan or Fujairah, versus about 5 pre-war *(Reported fact)* |
 | Clearance | 2–5 working days when the file is clean *(Industry claim)* |
 
+> **Source note.** Port profile: [DP World](https://www.dpworld.com/en/ports-terminals/uae/jebel-ali-port). Landbridge and congestion: [Container Management](https://container-mag.com/) and [Splash247](https://splash247.com/). Transfer days are reported/industry estimates, not a carrier guarantee.
+
 ## What changed in the last 60 days
 
 **13–19 October 2026.** Gemini relaunched its Asia–Middle East loop and replaced the Jebel Ali call with [Khor Fakkan](/ports/sharjah/). The rotation was redrawn around an east-coast port, so the carrier's schedule, slot allocation and empty-container flow now assume Jebel Ali is not the first call. *(Reported fact)*

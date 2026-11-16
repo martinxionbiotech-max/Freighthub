@@ -23,6 +23,8 @@ updated: "2026-11-04"
 | JAFZA scale | 11,000+ companies from 150+ countries; 23.9% of Dubai's FDI *(Reported fact)* |
 | China→UAE door-to-door | 30–50 days FCL; 55–70 days LCL *(Industry claim)* |
 
+> **Source note.** VAT and corporate tax: [UAE Federal Tax Authority](https://tax.gov.ae/) and [PwC tax summary](https://taxsummaries.pwc.com/united-arab-emirates/corporate/other-taxes). Jebel Ali / JAFZA: [DP World](https://www.dpworld.com/) and [JAFZA](https://www.jafza.ae/about/). Door-to-door ranges are an industry claim.
+
 ## What changed in the last 60 days
 
 The UAE freight market is no longer adjusting to one event. It is adjusting to a permanent detour, and the detour is now the product. The dated items below are tracked in our [updates feed](/updates/).

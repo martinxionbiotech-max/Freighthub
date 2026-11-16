@@ -23,6 +23,8 @@ FCL into the GCC is no longer a port-to-port purchase. For [Saudi Arabia](/count
 | Transit, port to port | 18–30 days direct; 25–38 with transshipment *(industry claim)* | Schedule reliability, not the advertised average, is what hurts |
 | Surcharges | War risk, emergency conflict, PSS and BAF are per box, not per kilo | Dense, low-value cargo absorbs them worst |
 
+> **Source note.** Market context: [Freightos](https://www.freightos.com/) and [Splash247](https://splash247.com/). Payload and D&D: [Maersk](https://www.maersk.com/support/faqs/cargo-weight-limit) and [Hapag-Lloyd](https://www.hapag-lloyd.com/). Rate bands are editorial estimates.
+
 ## What changed in the last 60 days
 
 **The Hormuz closure stopped being a shipping story and became a network story.** The Strait has been effectively closed to normal container liner traffic since the end of February 2026. Tanker traffic partially recovered in October, which confused importers reading oil prices as a reopening signal. Container services are weekly networks with fixed rotations and empty flows; once a carrier rebuilds around Khor Fakkan, [Sohar](/ports/sohar/) or Jeddah, reversing the change costs months. *(Reported fact + editorial judgment)*

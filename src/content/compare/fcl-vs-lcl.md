@@ -23,6 +23,8 @@ Use FCL when you have roughly 15–20 cubic metres or more, when the cargo is fr
 | Dangerous goods | Carrier approval per container | Co-loader approval, harder |
 | Best for | 15–20+ cbm, fragile, high-value | Under 15 cbm, mixed orders, tests |
 
+> **Source note.** The 15–20 cbm crossover is an editorial rule, not a carrier formula. Market context: [Drewry](https://www.drewry.co.uk/), [Xeneta](https://www.xeneta.com/) and [Freightos](https://www.freightos.com/).
+
 ## The volume crossover
 
 The simple rule is 15 cbm. The real rule depends on four variables:

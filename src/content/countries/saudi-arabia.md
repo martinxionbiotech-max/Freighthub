@@ -23,6 +23,8 @@ China to Saudi Arabia in late 2026 is a two-gateway market: [Jeddah](/ports/jedd
 | China–Jeddah transit | Roughly 18–26 days direct; 25–35 days via transshipment *(industry claim)* | Schedule reliability, not the average, is what hurts |
 | Currency and payment | SAR; destination charges increasingly routed through ODeX Saudi Arabia | Unpaid destination charges equal no delivery order |
 
+> **Source note.** VAT 15%: [ZATCA](https://zatca.gov.sa/en/). Jeddah port scale: [Mawani](https://mawani.gov.sa/) and the [Jeddah Islamic Port profile](https://en.wikipedia.org/wiki/Jeddah_Islamic_Port). SABER: [SABER](https://saber.sa/). Transit ranges are an industry claim, not a schedule.
+
 ## What changed in the last 60 days
 
 The last two months have been about rerouting capacity, not about demand.

@@ -23,6 +23,8 @@ LCL into the GCC looks cheap on the ocean line and expensive everywhere else. In
 | UAE gateway | Jebel Ali is ad hoc; groupage increasingly routes via Khor Fakkan | A Dubai CFS booking may include a 120 km truck leg |
 | Saudi gateway | Jeddah and Dammam; Riyadh via dry port | Jeddah's 15-day onward rule applies to transit cargo |
 
+> **Source note.** W/M and CFS handling: [DHL](https://www.dhl.com/) and [Maersk](https://www.maersk.com/). Dubai destination tariff: [Beijing Haixia tariff](http://www.shipping-co.com.cn/zwxhuoyunanliUAE-destination.htm). Rate ranges are editorial estimates.
+
 ## What changed in the last 60 days
 
 **Groupage followed the containers east.** When Gemini moved its Asia–Middle East loop from Jebel Ali to [Khor Fakkan](/ports/sharjah/) in mid-October, co-loaders followed the vessel. Containers are now stripped on the east coast and the cartons trucked to Dubai consolidation warehouses — an extra handling point and 3–7 days that has become the normal path, not an exception. *(Reported fact + editorial judgment)*

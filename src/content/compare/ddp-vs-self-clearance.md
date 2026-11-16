@@ -23,6 +23,8 @@ Use self-clearance when you are an established importer with a local licence, a 
 | Best for | Small buyers, ecommerce, samples | Established importers, high-value cargo |
 | Worst for | High-value, regulated, VAT-recoverable | Buyers without a licence or broker |
 
+> **Source note.** Incoterm definitions: [ICC](https://iccwbo.org/). VAT and customs: [ZATCA](https://zatca.gov.sa/) and [UAE Federal Tax Authority](https://tax.gov.ae/). This is a commercial guide, not a tax ruling.
+
 ## The importer-of-record problem
 
 Under GCC rules, the importer of record must normally be a licensed local entity. A foreign seller cannot simply declare itself the importer.

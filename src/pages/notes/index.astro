@@ -6,6 +6,27 @@ const notes = collection('notes').sort((a, b) => (a.date < b.date ? 1 : -1));
 <BaseLayout title="Notes — Freightgcc Editorial Analysis" description="Original editorial analysis of China–GCC freight, customs and port economics, with judgement clearly separated from sourced fact.">
   <h1>Notes</h1>
   <p class="article-meta">Original analysis. These are arguments, not news: each note takes a position and shows the reasoning. Regulatory facts are sourced; the judgement is ours.</p>
+
+  <h2>Start with the decision</h2>
+  <p>
+    These notes are grouped by the decision they change, not by the news cycle. If you are choosing
+    a delivery term, start with <a href="/notes/ddp-hides-the-risk/">why DDP quotes hide the risk</a>.
+    If you are choosing a gateway, read
+    <a href="/notes/port-choice-is-a-customs-choice/">why port choice is a customs choice</a>. If a
+    certificate is stuck, the argument is in
+    <a href="/notes/saudi-certification-data-problem/">Saudi certification as a data problem</a>.
+    For the Red Sea question, start with
+    <a href="/notes/red-sea-return/">what the return changes — and what it does not</a>.
+  </p>
+
+  <h2>What a note is not</h2>
+  <p>
+    A note is not a news item and not a rate bulletin. It is a dated argument with an exception:
+    the case in which the author would not hold the position. The facts should be traceable; the
+    judgement is allowed to be disagreed with. If a note is corrected, the change belongs in the
+    <a href="/corrections/">corrections log</a>, not in a quiet rewrite.
+  </p>
+
   <ul class="note-list">
     {notes.map((n) => (
       <li>

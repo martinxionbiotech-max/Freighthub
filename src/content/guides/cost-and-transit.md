@@ -23,6 +23,8 @@ China–GCC freight in late 2026 is a range market, not a price list. A 40-foot 
 | Duty | 0–15% of CIF, often 5% | HS line decides |
 | VAT | 0–15% depending on country | Cash-flow cost, often recoverable |
 
+> **Source note.** Planning bands are editorial estimates informed by [Drewry](https://www.drewry.co.uk/), [Xeneta](https://www.xeneta.com/) and [Freightos](https://www.freightos.com/); they are not quotations. Port and VAT context: [Mawani](https://mawani.gov.sa/) and [ZATCA](https://zatca.gov.sa/).
+
 ## Why a rate is a range
 
 Ocean freight is a spot market with a schedule. The same container can be quoted at different prices on the same day by two forwarders, because they are selling different things: different carrier allocations, different free-time terms, different destination charges and different risk margins.

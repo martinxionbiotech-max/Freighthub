@@ -27,6 +27,8 @@ Jeddah Islamic Port is Saudi Arabia's largest container gateway and, in 2026, th
 | China transit | 18–26 days direct; 25–35 days via transshipment *(industry claim)* | Reliability matters more than the average |
 | Transit cargo rule | 15-day onward movement from 1 August 2026 discharge | Turns congestion into a shipper cost |
 
+> **Source note.** Port scale: [Mawani](https://mawani.gov.sa/) and the [Jeddah Islamic Port profile](https://en.wikipedia.org/wiki/Jeddah_Islamic_Port). Transit rule: [Container News / Hapag-Lloyd](https://container-news.com/). Clearance days are an industry claim.
+
 ## What changed in the last 60 days
 
 - **14 September 2026** — Maersk and Hapag-Lloyd shifted four more Gemini services (AE5, AE11, AE12, ME2) to Suez. AE15, which already calls Jeddah, was the template. More Suez transits mean more direct Jeddah calls.
