@@ -30,7 +30,7 @@ function isIndexable(page) {
 
 export default defineConfig({
   // Placeholder domain until content is complete; replace before launch.
-  site: 'https://freighthub.net',
+  site: 'https://freightgcc.com',
   trailingSlash: 'always',
   integrations: [sitemap({ filter: isIndexable })],
 });

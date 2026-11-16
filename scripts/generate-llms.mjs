@@ -28,7 +28,7 @@ for (const u of urls) {
 const lines = [];
 lines.push('# Freighthub');
 lines.push('');
-lines.push('> Independent editorial analysis of China-to-GCC freight: ports, routes, customs, certification and sector economics. No carrier or forwarder commissions. Contact: editor@freighthub.net.');
+lines.push('> Independent editorial analysis of China-to-GCC freight: ports, routes, customs, certification and sector economics. No carrier or forwarder commissions. Contact: martin@freightgcc.com.');
 lines.push('');
 lines.push(`This file lists all ${urls.length} indexed URLs.`);
 lines.push('');
