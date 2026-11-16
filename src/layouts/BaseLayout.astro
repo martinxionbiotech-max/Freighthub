@@ -27,6 +27,7 @@ const {
 const SITE = 'https://freightgcc.com';
 const canonical = new URL(Astro.url.pathname, SITE).href;
 const ogImage = new URL(image, SITE).href;
+const markdownAlternate = `${canonical.replace(/\/$/, '')}/index.md`;
 
 const orgId = `${SITE}/#organization`;
 const siteId = `${SITE}/#website`;
@@ -138,6 +139,7 @@ const graph = [organization, website, person, ...(breadcrumbLd ? [breadcrumbLd] 
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonical} />
+    {!noindex && <link rel="alternate" type="text/markdown" href={markdownAlternate} />}
 
     <meta property="og:type" content={type === 'article' ? 'article' : 'website'} />
     <meta property="og:site_name" content="Freightgcc" />
