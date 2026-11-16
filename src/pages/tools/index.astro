@@ -3,12 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const title = 'China to GCC Freight Calculators | Freightgcc';
 const description =
-  'Use free Freightgcc calculators for landed cost, chargeable weight, FCL versus LCL, DDP versus DAP and transit buffers on China-to-GCC freight.';
+  'Use free Freightgcc calculators for landed cost, chargeable weight, FCL versus LCL, DDP versus DAP, transit buffers and HS classification research.';
 
 const faqs = [
   {
     q: 'Are the Freightgcc calculators free to use?',
-    a: 'Yes. All five tools run in your browser and are free. There is no account, subscription, cookie-based tracking or email capture. You enter the shipment values, the page calculates locally, and nothing is sent to a server. The calculators are planning aids rather than commercial services, so there is no quote request and no forwarding of your data.',
+    a: 'Yes. All six tools run in your browser and are free. There is no account, subscription, cookie-based tracking or email capture. You enter the shipment values, the page calculates locally, and nothing is sent to a server. The calculators are planning aids rather than commercial services, so there is no quote request and no forwarding of your data.',
   },
   {
     q: 'Do the calculators use live freight rates?',
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'Which calculator should I use first?',
-    a: 'Start with chargeable weight if you are comparing air and LCL quotes, because it tells you the billable quantity. Use landed cost once you have a freight figure and an HS duty rate. Use transit buffer when the commercial question is a delivery date rather than a price. The five results can be combined manually; the tools do not pass data from one to another.',
+    a: 'Start with chargeable weight if you are comparing air and LCL quotes, because it tells you the billable quantity. Use landed cost once you have a freight figure and an HS duty rate. Use transit buffer when the commercial question is a delivery date rather than a price. The six results can be combined manually; the tools do not pass data from one to another.',
   },
   {
     q: 'Can I use these tools outside the GCC?',
@@ -37,8 +37,8 @@ const faqPage = {
 <BaseLayout title={title} description={description} jsonLd={[faqPage]}>
   <h1>Freight calculators for China to GCC shipments</h1>
   <p class="lede">
-    These five free planning tools turn the definitions used across Freightgcc into working
-    arithmetic: landed cost, chargeable weight, FCL versus LCL, DDP versus DAP and transit buffers. They are designed for importers,
+    These six free planning tools turn the definitions used across Freightgcc into working
+    arithmetic: landed cost, chargeable weight, FCL versus LCL, DDP versus DAP, transit buffers and an HS classification research brief. They are designed for importers,
     sourcing teams and operations staff moving goods from China to Saudi Arabia, the UAE, Qatar,
     Kuwait, Oman and Bahrain. Every commercial number comes from you; the calculators do not quote
     freight or customs charges.
@@ -94,9 +94,17 @@ const faqPage = {
       </p>
       <p class="meta">Best for: comparing incoterm quotes and import cash flow.</p>
     </div>
+    <div class="card tool-card">
+      <h3><a href="/tools/hs-code-research/">HS Code research worksheet</a></h3>
+      <p>
+        Builds a broker-ready classification brief from the product, material, function and destination.
+        It does not guess a code or query a tariff database.
+      </p>
+      <p class="meta">Best for: preparing a classification question, not replacing a ruling.</p>
+    </div>
   </div>
 
-  <h2>What do the five calculators calculate?</h2>
+  <h2>What do the six tools calculate?</h2>
   <div class="table-wrap">
     <table>
       <thead>
@@ -127,6 +135,11 @@ const faqPage = {
           <td>DDP vs DAP</td>
           <td>What does the seller include under DDP, and what does the buyer pay under DAP?</td>
           <td>DDP cost floor versus DAP buyer import charges.</td>
+        </tr>
+        <tr>
+          <td>HS Code research</td>
+          <td>What facts does a broker need to classify the product?</td>
+          <td>A structured brief; no code lookup or guessed duty rate.</td>
         </tr>
       </tbody>
     </table>
@@ -166,7 +179,7 @@ const faqPage = {
 
   <h2>What are the shared assumptions and limitations?</h2>
   <p>
-    All five tools use arithmetic conventions explained on the individual pages. Landed cost assumes
+    All six tools use arithmetic conventions explained on the individual pages. Landed cost assumes
     duty is assessed on CIF and VAT on CIF plus duty. Chargeable weight uses a 6,000 cm³/kg air
     divisor and a 1,000 kg per cubic metre LCL convention. Transit buffer uses calendar days, not
     working days. None of the tools tracks live rates, reads a customs database, converts currency,

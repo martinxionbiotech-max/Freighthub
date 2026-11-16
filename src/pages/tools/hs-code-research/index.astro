@@ -1,0 +1,270 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const title = 'HS Code Research Worksheet | Freightgcc';
+const description =
+  'Build a structured HS classification brief for a customs broker: product, material, function, destination and the questions to resolve. This is a worksheet, not a code lookup.';
+
+const faqs = [
+  {
+    q: 'Does this tool give me an HS code?',
+    a: 'No. It does not guess a code or query a tariff database. It builds a structured brief from your product facts so a customs broker or classification specialist can research the correct heading, subheading and national tariff line. A code without a classification rationale is not evidence.',
+  },
+  {
+    q: 'What information changes an HS classification?',
+    a: 'The product’s material or composition, its function or use, its essential character, the form in which it is imported, and sometimes the processing method or packaging. The same object can fall in different chapters depending on those facts. A short product name is rarely enough.',
+  },
+  {
+    q: 'Why ask for the destination market?',
+    a: 'The first six digits of the HS nomenclature are international, but national tariff lines, duty rates, certificates and restrictions are set by the destination. A Saudi line, a UAE line and a Bahraini line can diverge after the international heading. The brief keeps the destination visible so the answer is researched for the right tariff.',
+  },
+  {
+    q: 'Can I send this brief to a broker?',
+    a: 'Yes. It is designed to be copied into an email or a request for a binding ruling. Remove confidential formulas or customer names before sending. The brief asks the broker to state the classification rationale and the national line, not just a number.',
+  },
+];
+
+const faqPage = {
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
+const webApplication = {
+  '@type': 'WebApplication',
+  name: 'Freightgcc HS Code Research Worksheet',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any',
+  offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
+  url: 'https://freightgcc.com/tools/hs-code-research/',
+  description:
+    'A free HS classification research worksheet that builds a broker-ready product brief without guessing a tariff code.',
+};
+---
+
+<BaseLayout title={title} description={description} jsonLd={[webApplication, faqPage]}>
+  <h1>HS Code research worksheet</h1>
+  <p class="lede">
+    This is not a code lookup. It structures the facts a customs broker needs to classify a product:
+    what it is, what it is made of, what it does, how it is imported and which market’s national line
+    applies. The output is a brief you can send for a proper classification opinion, not a guessed
+    six-digit number.
+  </p>
+
+  <h2>Build a classification brief</h2>
+  <form id="hs-form" class="calculator" novalidate>
+    <fieldset>
+      <legend>Product facts</legend>
+      <div class="field-grid">
+        <div class="field">
+          <label for="hs-product">Product name</label>
+          <input id="hs-product" name="hs-product" type="text" placeholder="e.g. stainless steel bottle" />
+        </div>
+        <div class="field">
+          <label for="hs-material">Material or composition</label>
+          <input id="hs-material" name="hs-material" type="text" placeholder="e.g. 304 stainless steel, plastic lid" />
+        </div>
+        <div class="field">
+          <label for="hs-function">Function or use</label>
+          <input id="hs-function" name="hs-function" type="text" placeholder="e.g. reusable drinking bottle for consumers" />
+        </div>
+        <div class="field">
+          <label for="hs-market">Destination market</label>
+          <select id="hs-market" name="hs-market">
+            <option value="">Select a GCC market</option>
+            <option value="saudi-arabia">Saudi Arabia</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="qatar">Qatar</option>
+            <option value="kuwait">Kuwait</option>
+            <option value="oman">Oman</option>
+            <option value="bahrain">Bahrain</option>
+          </select>
+        </div>
+        <div class="field field--wide">
+          <label for="hs-notes">Import form, processing or notes</label>
+          <textarea id="hs-notes" name="hs-notes" rows="4" placeholder="e.g. imported empty, retail packed, assembled, spare part, sample"></textarea>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-actions">
+      <button type="submit">Build research brief</button>
+      <button type="reset" class="secondary">Reset</button>
+    </div>
+
+    <div class="results" aria-live="polite" aria-atomic="true">
+      <p class="form-message" id="hs-message">Enter product, material, function and destination to build a brief.</p>
+      <div id="hs-output-wrap" hidden>
+        <pre id="hs-output" class="formula" style="white-space: pre-wrap"></pre>
+        <div class="form-actions">
+          <button type="button" id="hs-copy">Copy brief</button>
+        </div>
+        <p class="form-message" id="hs-copy-message" hidden></p>
+      </div>
+    </div>
+  </form>
+
+  <h2>What a broker needs to see</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Fact</th><th>Why it matters</th><th>What to send</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Material or composition</td><td>Chapter and heading often turn on the material.</td><td>Percentages or the dominant material; avoid “metal” or “plastic” alone.</td></tr>
+        <tr><td>Function or use</td><td>The same shape can be a tool, a household article or a machine part.</td><td>A plain description of what it does, not a marketing name.</td></tr>
+        <tr><td>Import form</td><td>Finished article, part, kit or bulk material can change the heading.</td><td>Assembled or unassembled; retail packed or bulk; sample or sale unit.</td></tr>
+        <tr><td>Destination</td><td>The national tariff line and duty rate are country-specific.</td><td>Destination country and, if known, the intended port.</td></tr>
+        <tr><td>Documents</td><td>Specification, drawing, photo and invoice description should agree.</td><td>Spec sheet, product photo and the invoice wording.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Official starting points</h2>
+  <p>
+    Use the destination authority’s tariff or advance-ruling service. These links are starting points,
+    not a substitute for a ruling:
+  </p>
+  <ul>
+    <li><a href="https://zatca.gov.sa/en/" target="_blank" rel="noopener">Saudi Arabia — ZATCA</a></li>
+    <li><a href="https://www.fca.gov.ae/" target="_blank" rel="noopener">UAE — Federal Customs Authority</a></li>
+    <li><a href="https://www.customs.gov.qa/" target="_blank" rel="noopener">Qatar — General Authority of Customs</a></li>
+    <li><a href="https://www.customs.gov.kw/" target="_blank" rel="noopener">Kuwait — General Administration of Customs</a></li>
+    <li><a href="https://www.rop.gov.om/" target="_blank" rel="noopener">Oman — Royal Oman Police / Customs</a></li>
+    <li><a href="https://www.bahraincustoms.gov.bh/" target="_blank" rel="noopener">Bahrain — Customs Affairs</a></li>
+    <li><a href="https://www.wcoomd.org/" target="_blank" rel="noopener">World Customs Organization — HS nomenclature</a></li>
+  </ul>
+
+  <h2>What the worksheet will not do</h2>
+  <ul>
+    <li>It will not assign an HS code, a duty rate or a certificate.</li>
+    <li>It will not decide whether a product is a finished article, a part or a set.</li>
+    <li>It will not replace a binding ruling or a licensed broker’s classification opinion.</li>
+    <li>It will not store or transmit the product facts; the brief is generated in your browser.</li>
+  </ul>
+
+  <h2>What is the disclaimer?</h2>
+  <p>
+    This is a research and communication aid, not customs advice, a classification ruling or a
+    quotation. Classification depends on the full product facts and the destination tariff. Confirm
+    the result with the relevant customs authority or a qualified broker before shipping.
+  </p>
+
+  <h2>Frequently asked questions</h2>
+  <dl class="faq">
+    {faqs.map((faq) => (
+      <>
+        <dt>{faq.q}</dt>
+        <dd>{faq.a}</dd>
+      </>
+    ))}
+  </dl>
+
+  <section class="related">
+    <h2>Where to read next</h2>
+    <ul>
+      <li><a href="/guides/customs-clearance/">Customs clearance guide</a></li>
+      <li><a href="/guides/certification/">Certification guide</a></li>
+      <li><a href="/tools/landed-cost/">Landed cost calculator</a></li>
+      <li><a href="/tools/ddp-vs-dap/">DDP vs DAP calculator</a></li>
+      <li><a href="/compare/ddp-vs-self-clearance/">DDP vs self-clearance</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  (() => {
+    'use strict';
+    const form = document.getElementById('hs-form');
+    if (!form) return;
+
+    const product = document.getElementById('hs-product');
+    const material = document.getElementById('hs-material');
+    const functionInput = document.getElementById('hs-function');
+    const market = document.getElementById('hs-market');
+    const notes = document.getElementById('hs-notes');
+    const message = document.getElementById('hs-message');
+    const wrap = document.getElementById('hs-output-wrap');
+    const output = document.getElementById('hs-output');
+    const copy = document.getElementById('hs-copy');
+    const copyMessage = document.getElementById('hs-copy-message');
+
+    const labels = {
+      'saudi-arabia': 'Saudi Arabia',
+      uae: 'United Arab Emirates',
+      qatar: 'Qatar',
+      kuwait: 'Kuwait',
+      oman: 'Oman',
+      bahrain: 'Bahrain',
+    };
+
+    const fail = (text) => {
+      message.textContent = text;
+      message.classList.add('is-error');
+      message.hidden = false;
+      wrap.hidden = true;
+    };
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const p = product.value.trim();
+      const m = material.value.trim();
+      const f = functionInput.value.trim();
+      const d = market.value;
+      const n = notes.value.trim();
+
+      if (!p || !m || !f || !d) {
+        fail('Enter the product name, material, function and destination market.');
+        return;
+      }
+
+      const brief = [
+        'HS classification research brief',
+        '',
+        'Destination market: ' + labels[d],
+        'Product: ' + p,
+        'Material / composition: ' + m,
+        'Function / use: ' + f,
+        'Import form / notes: ' + (n || 'Not stated'),
+        '',
+        'Please provide:',
+        '1. The recommended heading and subheading, with the classification rationale.',
+        '2. The destination national tariff line and applicable duty rate.',
+        '3. Any certificate, licence or restriction attached to that line.',
+        '4. The documents or tests needed to support the classification.',
+        '',
+        'Please identify any fact that could change the classification if it differs from the description above.',
+      ].join('\n');
+
+      output.textContent = brief;
+      message.hidden = true;
+      wrap.hidden = false;
+      copyMessage.hidden = true;
+    });
+
+    copy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(output.textContent || '');
+        copyMessage.textContent = 'Brief copied to the clipboard.';
+        copyMessage.classList.remove('is-error');
+      } catch {
+        copyMessage.textContent = 'Copy failed. Select the brief text and copy it manually.';
+        copyMessage.classList.add('is-error');
+      }
+      copyMessage.hidden = false;
+    });
+
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        message.textContent = 'Enter product, material, function and destination to build a brief.';
+        message.classList.remove('is-error');
+        message.hidden = false;
+        wrap.hidden = true;
+        copyMessage.hidden = true;
+      }, 0);
+    });
+  })();
+</script>
