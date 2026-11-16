@@ -14,6 +14,11 @@ The physical specification is mid-sized, not mega-hub. The port has an 1,800 m q
 
 2026 was the year the single-gate model was stress-tested. The Strait of Hormuz closed at the end of February, the port shut in March and part of April, and monthly import containers fell from 19,562 TEU in January to 3,779 TEU in May — an 80% collapse. General cargo stopped entirely in March. The recovery began in May and June, with general cargo reaching a two-year high of about 112,600 tonnes in June, but container imports were still only 9,036 TEU in October, roughly half the January level. The port did not lose its capacity. It lost access to the sea, and the network that feeds it. *(Reported fact plus editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-qatar-bahrain-ports.png" alt="Qatar and Bahrain locator: Hamad Port, Khalifa Bin Salman Port and Dammam across the Gulf." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 12 — Qatar and Bahrain port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |

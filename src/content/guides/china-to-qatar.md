@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 Qatar is a single-port market with a small population and a high import intensity. Almost all China-origin container cargo enters through Hamad Port, south of Doha. Plan 18–28 days port to port, then 3–7 days for clearance. There is no VAT today, duty is usually 5%, and the small market means fewer direct services and a higher per-container cost than the UAE or Saudi Arabia.
 
+<figure class="drawing-figure">
+  <img src="/images/map-hormuz-approach.png" alt="Strait of Hormuz approach: Khor Fakkan, Fujairah and Sohar outside the strait, Jebel Ali and Dammam inside it, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 13 — Hormuz approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |

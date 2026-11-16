@@ -12,6 +12,11 @@ King Abdulaziz Port in Dammam is Saudi Arabia's Gulf-facing container gateway an
 
 Use Dammam for Riyadh, the Eastern Province and the Gulf corridor. Do not use it as a substitute for [Jeddah](/ports/jeddah/) when your customer is in Makkah, Madinah or the Red Sea hinterland. The two ports look interchangeable on a Saudi map and behave nothing alike in a disrupted week. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-saudi-ports.png" alt="Saudi Arabia locator: Jeddah and Yanbu on the Red Sea, Dammam and Jubail on the Gulf, and Riyadh dry port inland." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 09 — Saudi gateway locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |

@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 The UAE is the GCC's easiest market to enter and its easiest market to mis-price. Jebel Ali handles most China-origin containers, Khalifa serves Abu Dhabi, and Sharjah's Khor Fakkan offers a route outside Hormuz. Plan 16–30 days port to port. Budget 5% duty on CIF and 5% VAT, unless the goods stay in a free zone. The decisive question is not the ocean rate; it is whether your cargo is a mainland import or a free-zone movement.
 
+<figure class="drawing-figure">
+  <img src="/images/map-hormuz-approach.png" alt="Strait of Hormuz approach: Khor Fakkan, Fujairah and Sohar outside the strait, Jebel Ali and Dammam inside it, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 13 — Hormuz approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |

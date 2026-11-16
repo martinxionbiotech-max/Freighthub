@@ -14,6 +14,11 @@ The operating numbers are large. The container terminal has a 2.4 km quay, seven
 
 The number that matters for a shipper is smaller. In the first half of 2026, Salalah handled 77,148 import TEU against 2.03 million TEU of transshipment. The port is a carrier network node first and an Omani gateway second. Use it for relay cargo, for Dhofar, and as a contingency outside Hormuz. Do not use it for a Muscat consumer launch and expect a short truck leg: the road is about 1,000 km. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-oman-ports.png" alt="Oman port locator: Sohar in the north, Duqm in the centre and Salalah in Dhofar, with Muscat." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 10 — Oman port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |

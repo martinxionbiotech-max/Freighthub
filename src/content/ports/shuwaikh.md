@@ -12,6 +12,11 @@ Shuwaikh is a tide port with a city attached. The channel is about 8 km long and
 
 Twenty-one berths sounds generous until you count the container ones: two. The rest are general cargo, which is why a single crane outage can back up the whole box operation. Book Shuwaikh when the consignee is in Kuwait City and the cargo fits a standard box; route [Shuaiba](/ports/shuaiba/) for industrial, project and overflow cargo. *(Editorial judgment)*
 
+<figure class="drawing-figure">
+  <img src="/images/map-kuwait-ports.png" alt="Kuwait port locator: Shuwaikh and Shuaiba at the head of the Gulf, with Kuwait City." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 11 — Kuwait port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |

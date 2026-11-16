@@ -10,6 +10,11 @@ updated: "2026-11-11"
 
 Saudi Arabia is the GCC's largest import market and its most document-heavy. Most China-origin containers enter through Jeddah on the Red Sea or Dammam on the Gulf, with Riyadh Dry Port as the inland release valve. Plan 18–30 days port to port, then 3–10 days for clearance if the SABER file is complete. Budget 15% VAT on the CIF value plus duty, and do not book until you know who the importer of record is.
 
+<figure class="drawing-figure">
+  <img src="/images/map-red-sea-approach.png" alt="Red Sea approach: Bab el-Mandeb, Port Sudan, Jeddah, Yanbu and Suez, with an indicative lane." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 14 — Red Sea approach locator. Lane is indicative, not a sailing direction; not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in late 2026 | Why it matters |

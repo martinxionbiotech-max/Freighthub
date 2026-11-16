@@ -15,6 +15,11 @@ Jebel Ali is not a normal container gateway in November 2026. Direct liner calls
   <figcaption>Drawing 01 — Berth operations. A generic container berth, not a chart of Jebel Ali's actual layout.</figcaption>
 </figure>
 
+<figure class="drawing-figure">
+  <img src="/images/map-uae-ports.png" alt="UAE port locator: Khalifa Port and Jebel Ali on the Gulf coast, Sharjah, Khor Fakkan and Fujairah on the east coast, with Musandam and the Strait of Hormuz." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 08 — UAE port locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | November 2026 position |

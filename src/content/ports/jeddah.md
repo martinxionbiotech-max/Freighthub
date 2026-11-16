@@ -10,6 +10,11 @@ updated: "2026-11-04"
 
 Jeddah Islamic Port is Saudi Arabia's largest container gateway and, in 2026, the peninsula's pressure valve: Hormuz disruption pushed Gulf-bound cargo onto its berths, so the yard and truck gate became the constraint. Expect 18–26 days from China, then 5–12 days of clearance. Fix terminal, free time and the 15-day rule before booking.
 
+<figure class="drawing-figure">
+  <img src="/images/map-saudi-ports.png" alt="Saudi Arabia locator: Jeddah and Yanbu on the Red Sea, Dammam and Jubail on the Gulf, and Riyadh dry port inland." width="1600" height="1000" loading="lazy" decoding="async" />
+  <figcaption>Drawing 09 — Saudi gateway locator. Base map Natural Earth 1:10m; positions approximate, not for navigation.</figcaption>
+</figure>
+
 ## Key facts
 
 | Item | Position in November 2026 | Why it matters |
