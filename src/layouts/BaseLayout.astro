@@ -166,6 +166,7 @@ const graph = [organization, website, person, ...(breadcrumbLd ? [breadcrumbLd] 
     ))}
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container">
         <a href="/" class="brand-link" aria-label="Freightgcc home">
@@ -184,7 +185,7 @@ const graph = [organization, website, person, ...(breadcrumbLd ? [breadcrumbLd] 
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main class="container" id="main">
       <slot />
     </main>
     <footer class="site-footer">
