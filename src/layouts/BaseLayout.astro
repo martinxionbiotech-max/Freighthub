@@ -126,7 +126,17 @@ const articleLd =
       }
     : null;
 
-const graph = [organization, website, person, ...(breadcrumbLd ? [breadcrumbLd] : []), ...(articleLd ? [articleLd] : [])];
+// Keep the Person node to article and author contexts. The Organization can
+// still be useful on utility pages without resolving an employee reference.
+const isPersonPage = type === 'article' || Astro.url.pathname === '/author/wei-wong/';
+const organizationForPage = isPersonPage ? organization : { ...organization, employee: undefined };
+const graph = [
+  organizationForPage,
+  website,
+  ...(isPersonPage ? [person] : []),
+  ...(breadcrumbLd ? [breadcrumbLd] : []),
+  ...(articleLd ? [articleLd] : []),
+];
 ---
 
 <!doctype html>

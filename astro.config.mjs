@@ -29,7 +29,7 @@ function isIndexable(page) {
 }
 
 export default defineConfig({
-  // Placeholder domain until content is complete; replace before launch.
+  // Production domain. Keep canonical, sitemap and robots aligned with this value.
   site: 'https://freightgcc.com',
   trailingSlash: 'always',
   integrations: [sitemap({ filter: isIndexable })],
